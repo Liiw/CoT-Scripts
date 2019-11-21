@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string]  = {
-    
+    /*
     "Minecraft" :   [
         //Random stuff
             <minecraft:flower_pot>,
@@ -35,6 +35,8 @@ static items as IItemStack [][string]  = {
         <primal:thin_slab_glass>,
         <primal:thin_slab_soulglass>
     ]
+
+    */
 };
 
 static liquids as ILiquidStack [] = [

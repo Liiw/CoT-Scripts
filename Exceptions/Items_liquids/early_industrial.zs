@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string] = {
+    /*
     "ImmersiveEngineering buckets and shaders" : [
         <immersiveengineering:shader_bag>.withTag({rarity: "RARE"}),
         <immersiveengineering:shader_bag>.withTag({rarity: "EPIC"}),
@@ -16,17 +17,20 @@ static items as IItemStack [][string] = {
         <forge:bucketfilled>.withTag({FluidName: "potion", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "uranium", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "constantan", Amount: 1000})
-    ]    
+    ]
+    */    
 };
 
 static liquids as ILiquidStack [] = [
+    /*
     //IE liquids
-    <liquid:creosote>,
-    <liquid:plantoil>,
-    <liquid:ethanol>,
-    <liquid:biodiesel>,
-    <liquid:concrete>,
-    <liquid:potion>,
-    <liquid:uranium>,
-    <liquid:constantan>
+        <liquid:creosote>,
+        <liquid:plantoil>,
+        <liquid:ethanol>,
+        <liquid:biodiesel>,
+        <liquid:concrete>,
+        <liquid:potion>,
+        <liquid:uranium>,
+        <liquid:constantan>
+    */
 ];

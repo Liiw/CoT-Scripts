@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string]  = {
+    /*
     "Agricraft seeds" : [
         <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:carrot_plant", agri_growth: 1 as byte}),
         <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:daisy_plant", agri_growth: 1 as byte}),
@@ -343,13 +344,15 @@ static items as IItemStack [][string]  = {
         
     
     ]
+    */
 };
 
 static liquids as ILiquidStack [] = [
+    /*
     //Thaumcraft
     <liquid:liquid_death>,
     <liquid:purifying_fluid>,
     <liquid:flux_goo>
 
-    
+    */
 ];

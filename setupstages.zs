@@ -19,43 +19,43 @@ static Creative as string = "creative";
 
 //Setup mods to be staged
 static prehistoric_mods as string [] = [
-    "primal",
+  /*  "primal",
     "minecraft",
     "immcraft",
-    "tombstone"
+    "tombstone" */
 ];
 
 static stone_mods as string [] = [
-    "dungpipe",
+  /*  "dungpipe",
     "primal_tech",
     "basketcase",
-    "jarm"
+    "jarm"  */
 ]; 
 
 static early_metal_mods as string [] = [
-    "composter",
+  /*  "composter",
     "jarm",
     "waterstrainer",
     "chesttransporter",
     "comforts",
     "horsepower",
     "primalchests",
-    "astikorcarts"
+    "astikorcarts" */
 ]; 
 
 static late_metal_mods as string [] = [
-    "tconstruct",
+  /*  "tconstruct",
     "astikorcarts",
     "storagedrawers",
     "farmingforblockheads",
     "ironbackpacks",
     "naturescompass",
     "torchbandolier",
-    "opframe"
+    "opframe"   */
 ]; 
 
 static medieval_mods as string [] = [
-    "agricraft",
+  /*  "agricraft",
     "cookingforblockheads",
     "ironchest",
     "openglider",
@@ -71,22 +71,22 @@ static medieval_mods as string [] = [
     "ancientwarfarestructure",
     "ancientwarfarevehicle",
     "ancientwarfarenpc",
-    "ancientwarfareautomation"
+    "ancientwarfareautomation" */
 ];
 
 static early_industrial_mods as string [] = [
-    "immersiveengineering",
+  /*  "immersiveengineering",
     "weirdinggadget",
     "theoneprobe",
     "compactdrawers",
     "engineeredgolems",
     "immersiverailroading",
     "mctsmelteryio",
-    "thaumicaugmentation"
+    "thaumicaugmentation"   */
 ];
 
 static late_industrial_mods as string [] = [
-    "mts",
+  /*  "mts",
     "mtsofficialpack",
     "rsgauges",
     "buildinggadgets",
@@ -96,11 +96,11 @@ static late_industrial_mods as string [] = [
     "immersivepetroleum",
     "immersive_energy",
     "ompd",
-    "thaumicrestoration"
+    "thaumicrestoration"    */
 ];
 
 static atomic_mods as string [] = [
-    "projectred-core",
+  /*  "projectred-core",
     "projectred-core",
     "projectred-compat",
     "projectred-integration",
@@ -113,11 +113,11 @@ static atomic_mods as string [] = [
     "immersivetech",
     "btcivil",
     "trafficcontrol",
-    "unuparts"
+    "unuparts"  */
 ];
 
 static digital_mods as string [] = [
-    "appliedenergistics2",
+  /*  "appliedenergistics2",
     "ae2stuff",
     "enderio",
     "enderiointegrationtic",
@@ -127,20 +127,20 @@ static digital_mods as string [] = [
     "opensecurity",
     "extracells",
     "immersivecables",
-    "thaumicenergistics"
+    "thaumicenergistics"    */
 ];
 
 static space_mods as string [] = [
-    "advancedrocketry",
+  /*  "advancedrocketry",
     "wpt",
     "wct",
     "wft",
-    "wit"
+    "wit"   */
 ];
 
 static endgame_mods as string [] = [
-    "sgcraft",
-    "woot"
+  /*  "sgcraft",
+    "woot"  */
 ];
 
 //MOVE TO SOMEWHERE ELSE

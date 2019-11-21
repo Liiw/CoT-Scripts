@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string]  = {
+  /*  
     "EIO" : [
         //buckets
         <forge:bucketfilled>.withTag({FluidName: "nutrient_distillation", Amount: 1000}),
@@ -56,40 +57,43 @@ static items as IItemStack [][string]  = {
         <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "dig"}, "oc:color": 3, display: {Name: "Digger"}, "oc:lootFactory": "opencomputers:dig"}),
         <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "maze"}, "oc:color": 14, display: {Name: "Mazer"}, "oc:lootFactory": "opencomputers:maze"}),
         <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "irc"}, "oc:color": 12, display: {Name: "OpenIRC (IRC Client)"}, "oc:lootFactory": "opencomputers:irc"})
-    ]
+    ]   
+    */
 };
 
 static liquids as ILiquidStack [] = [
+  /*  
     //EIO
-    <liquid:nutrient_distillation>,
-    <liquid:ender_distillation>,
-    <liquid:vapor_of_levity>,
-    <liquid:hootch>,
-    <liquid:rocket_fuel>,
-    <liquid:fire_water>,
-    <liquid:xpjuice>,
-    <liquid:liquid_sunshine>,
-    <liquid:cloud_seed>,
-    <liquid:cloud_seed_concentrated>,
+        <liquid:nutrient_distillation>,
+        <liquid:ender_distillation>,
+        <liquid:vapor_of_levity>,
+        <liquid:hootch>,
+        <liquid:rocket_fuel>,
+        <liquid:fire_water>,
+        <liquid:xpjuice>,
+        <liquid:liquid_sunshine>,
+        <liquid:cloud_seed>,
+        <liquid:cloud_seed_concentrated>,
     //EIO-TiC
-    <liquid:glowstone>,
-    <liquid:redstone>,
-    <liquid:ender>,
-    <liquid:electrical_steel>,
-    <liquid:energetic_alloy>,
-    <liquid:vibrant_alloy>,
-    <liquid:redstone_alloy>,
-    <liquid:conductive_iron>,
-    <liquid:pulsating_iron>,
-    <liquid:dark_steel>,
-    <liquid:soularium>,
-    <liquid:end_steel>,
-    <liquid:construction_alloy>,
-    <liquid:crude_steel>,
-    <liquid:crystalline_alloy>,
-    <liquid:melodic_alloy>,
-    <liquid:stellar_alloy>,
-    <liquid:crystalline_pink_slime>,
-    <liquid:energetic_silver>,
-    <liquid:vivid_alloy>
+        <liquid:glowstone>,
+        <liquid:redstone>,
+        <liquid:ender>,
+        <liquid:electrical_steel>,
+        <liquid:energetic_alloy>,
+        <liquid:vibrant_alloy>,
+        <liquid:redstone_alloy>,
+        <liquid:conductive_iron>,
+        <liquid:pulsating_iron>,
+        <liquid:dark_steel>,
+        <liquid:soularium>,
+        <liquid:end_steel>,
+        <liquid:construction_alloy>,
+        <liquid:crude_steel>,
+        <liquid:crystalline_alloy>,
+        <liquid:melodic_alloy>,
+        <liquid:stellar_alloy>,
+        <liquid:crystalline_pink_slime>,
+        <liquid:energetic_silver>,
+        <liquid:vivid_alloy>   
+    */
 ];
