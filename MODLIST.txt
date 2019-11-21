@@ -1,0 +1,217 @@
+Mods list:
+minecraft - Minecraft - 1.12.2
+mcp - Minecraft Coder Pack - 9.42
+FML - Forge Mod Loader - 8.0.99.99
+forge - Minecraft Forge - 14.23.5.2847
+advancedrocketrycore - Advanced Rocketry Core - 1
+creativecoredummy - CreativeCoreDummy - 1.0.0
+itemphysic - ItemPhysic - 1.4.0
+littletilescore - LittleTilesCore - 1.0.0
+spongeapi - SpongeAPI - 7.1.0-0b58730f
+sponge - Sponge - 1.12.2-7.1.7-SNAPSHOT
+spongeforge - SpongeForge - 1.12.2-2838-7.1.7-RC3948
+bnbgamingcore - BnBGamingCore - 0.11.0
+foamfixcore - FoamFixCore - 7.7.4
+opencomputers|core - OpenComputers (Core) - 1.7.4.153
+damageindicatorsmod - Damage Indicators Mod - 1.0
+bspkrscore - bspkrsCore - 7.6.0.1
+movillages - Mo' Villages - 1.5.4
+treecapitator - TreeCapitator - 1.43.0
+libvulpes - Vulpes library - 0.4.2.-68
+advancedrocketry - Advanced Rocketry - 1.6.0.-187
+appliedenergistics2 - Applied Energistics 2 - rv6-stable-7
+bdlib - BD Lib - 1.14.3.12
+ae2stuff - AE2 Stuff - 0.7.0.4
+baubles - Baubles - 1.5.2
+endercore - EnderCore - 1.12.2-0.5.73
+charset - Charset - 0.5.6.4
+crafttweaker - CraftTweaker2 - 4.1.19
+mtlib - MTLib - 3.0.6
+modtweaker - Mod Tweaker - 4.0.17
+jei - Just Enough Items - 4.15.0.291
+thaumcraft - Thaumcraft - 6.1.BETA26
+enderio - Ender IO - 5.1.52
+mantle - Mantle - 1.12-1.3.3.55
+enderiointegrationtic - Ender IO Integration with Tinkers' Construct - 5.1.52
+quark - Quark - r1.6-177
+tconstruct - Tinkers' Construct - 1.12.2-2.13.0.171
+p455w0rdslib - p455w0rd's Library - 2.2.156
+ae2wtlib - AE2 Wireless Terminals (AE2WTLib) - 1.0.30
+infinitylib - InfinityLib - 1.12.2-1.12.0
+agricraft - AgriCraft - 2.12.0-1.12.0-a6
+aiimprovements - AI Improvements - 0.0.1.3
+ieclochecompat - IE Cloche Compat - 2.1.7-dev.454
+theoneprobe - The One Probe - 1.4.28
+immersiveengineering - Immersive Engineering - 0.12-92
+alternatingflux - Alternating Flux - 0.12.2-2
+codechickenlib - CodeChicken Lib - 3.2.3.358
+ancientwarfare - Ancient Warfare Core - 1.12.2-2.7.0.772
+ancientwarfarestructure - Ancient Warfare Structures - 1.12.2-2.7.0.772
+ancientwarfarevehicle - Ancient Warfare Vehicles - 1.12.2-2.7.0.772
+ancientwarfarenpc - Ancient Warfare NPCs - 1.12.2-2.7.0.772
+ancientwarfareautomation - Ancient Warfare Automation - 1.12.2-2.7.0.772
+applecore - AppleCore - 3.2.0
+aroma1997core - Aroma1997Core - 2.0.0.2.b165
+aromabackup - AromaBackup - 3.0.0.0.b129
+aromabackuprecovery - AromaBackuprecovery - 3.0.0.0.b129
+astikorcarts - AstikorCarts - 1.12.2-0.1.2.7
+attributefix - Attribute Fix - 1.0.4
+autoreglib - AutoRegLib - 1.3-32
+basketcase - BasketCase - 1.0.31
+bettercaves - YUNG's Better Caves - 1.12.2
+mts - Immersive Vehicles (formerly MTS) - 15.5.0
+unuparts - UNU Parts Pack - 2.2.1
+btcivil - BlackThorne Civilian Vehicles - 2.3.1
+bnbgaminglib - BNBGamingLib - 2.17.6
+bookshelf - Bookshelf - 2.3.585
+forgelin - Shadowfacts' Forgelin - 1.8.4
+bountiful - Bountiful - 2.2.0
+buildinggadgets - Building Gadgets - 2.7.4
+chameleon - Chameleon - 1.12-4.1.3
+chesttransporter - Chest Transporter - 2.8.8
+chunkpregenerator - Chunk Pregenerator - 2.1
+clochecall - Cloche Call - 1.1.1
+comforts - Comforts - 1.4.1.2
+storagedrawers - Storage Drawers - 1.12.2-5.4.0
+compactdrawers - Compact Drawers - 1.12.2-1.0.5.125
+wumpleutil - Wumple Util Library - 2.12.6
+composter - Canny Composter - 1.9.2
+conarm - Construct's Armory - 1.2.5.3
+cookingforblockheads - Cooking for Blockheads - 6.4.71
+cosmeticarmorreworked - CosmeticArmorReworked - 1.12.2-v4a
+crafttweakerjei - CraftTweaker JEI Support - 2.0.3
+opframe - OnlinePictureFrame - 1.4.0
+creativecore - CreativeCore - 1.9.9
+customnpcs - CustomNPCs - 1.12
+debugserverinfo - DebugServerInfo - 1.0.5
+nhc - NHAVE's Core - 4.0.3
+dse - Deep Sea Expansion - A6
+dungpipe - Dung Pipe - 1.0
+orelib - OreLib Support Mod - 3.6.0.1
+dsurround - Dynamic Surroundings - 3.6.0.1
+dynamictrees - Dynamic Trees - 1.12.2-0.9.6
+harvestcraft - Pam's HarvestCraft - 1.12.2zb
+dynamictreesphc - Dynamic Trees PHC - 1.12.2-1.4.2
+dynamictreestc - Dynamic Trees TC - 1.12.2-1.4.1e
+enderore - Ender Ore - 1.12.2-v1.1
+enderiobase - Ender IO Base - 5.1.52
+enderioconduits - Ender IO Conduits - 5.1.52
+enderioconduitsappliedenergistics - Ender IO Applied Energistics Conduits - 5.1.52
+opencomputers - OpenComputers - 1.7.4.153
+enderioconduitsopencomputers - Ender IO Open Computers Conduits - 5.1.52
+enderioconduitsrefinedstorage - Ender IO Refined Storage Conduits - 5.1.52
+enderiointegrationforestry - Ender IO Integration with Forestry - 5.1.52
+enderiointegrationticlate - Ender IO Integration with Tinkers' Construct - 5.1.52
+enderiomachines - Ender IO Machines - 5.1.52
+enderiopowertools - Ender IO Powertools - 5.1.52
+enderioendergy - Ender IO endergy - 5.1.52
+enderiozoo - Ender IO Zoo - 5.1.52
+engineeredgolems - Engineered Golems - 1.2
+extracells - Extra Cells 2 - 2.6.3
+zerocore - Zero CORE - 1.12.2-0.1.2.8
+bigreactors - Extreme Reactors - 1.12.2-0.4.5.67
+farmingforblockheads - Farming for Blockheads - 3.1.28
+foamfix - FoamFix - 0.10.8-1.12.2
+forgemultipartcbe - Forge Multipart CBE - 2.6.2.83
+microblockcbe - Forge Microblocks - 2.6.2.83
+minecraftmultipartcbe - Minecraft Multipart Plugin - 2.6.2.83
+gamestages - Game Stages - 2.0.115
+geolosys - Geolosys - 3.0.9
+guideapi - Guide-API - 1.12-2.1.8-63
+horsepower - Horse Power - 2.6sm
+mcjtylib_ng - McJtyLib - 3.5.4
+immcraft - Immersive Craft - 1.6.0
+immersivepetroleum - Immersive Petroleum - 1.1.9
+immersive_energy - Immersive Energy - 0.3.3
+immersivecables - Immersive Cables - 1.3.2
+immersiveposts - Immersive Posts - 0.1.4
+immersiveradialmenu - Immersive Radial Menu - 1.12.2-1.0.1
+trackapi - Track API - 1.1
+immersiverailroading - Immersive Railroading - 1.6.1
+immersivetech - Immersive Tech - 1.3.10
+mmersivetweaker - Immersive Tweaker - 0.1
+infernalmobs - Infernal Mobs - 1.7.6
+inworldcrafting - InWorldCrafting - 1.12.2-0.13.0
+ironbackpacks - Iron Backpacks - 1.12.2-3.0.8-12
+ironchest - Iron Chest - 1.12.2-7.0.67.844
+itemstages - Item Stages - 2.0.49
+journeymap - JourneyMap - 1.12.2-5.5.5
+journeymapdefaults - JourneyMapDefaults - 1.12-0.0.2
+jarm - Just A Raft Mod - 1.1.1
+jee - Just Enough Energistics - 1.0.8
+justenoughreactors - Just Enough Reactors - 1.1.3.61
+knowledgeshare - Knowledge Share - 1.1
+littleopener - Little Opener - 1.0.1
+littletiles - LittleTiles - 1.5.0
+mctsmelteryio - MCT Smeltery IO - 1.0.47
+minemenu - MineMenu - 1.6.11
+mineraltracker - Mineral Tracker - ${version}
+mobstages - Mob Stages - 2.0.8
+mputils - ModPack Utilities - 1.5.6
+mpbasic - ModPack Basic Tools - 1.4.7
+mrtjpcore - MrTJPCore - 2.1.4.43
+mtsofficialpack - MTS Official Vehicle Pack - 12.0.0
+multiblockstages - Multiblockstages - 1.2.0
+naturescompass - Nature's Compass - 1.6.0
+netherportalfix - NetherPortalFix - 5.3.17
+nmdar - Named Areas - 3.8
+recipehandler - NoMoreRecipeConflict - 0.13
+neid - NotEnoughIDs - 1.5.4.4
+eioocshim - EnderIO OpenComputer shim - @VERSION@
+offlineskins - OfflineSkins - 1.12.2-v6
+omlib - OMLib - 3.1.3-246
+ompd - Open Modular Passive Defense - 3.1.0-61
+openglider - Open Glider - @VERSION@
+openmodularturrets - Open Modular Turrets - 3.1.4-356
+openscreens - OpenScreens - 1.0.1
+opensecurity - OpenSecurity - 1.0-39
+orestages - Ore Stages - 2.0.37
+ping - Ping - 1.4.5
+primalchests - PrimalChests - 1.0.3
+primal - PrimalCore - 0.6.105
+projectred-core - ProjectRed Core - 4.9.4.120
+projectred-compat - projectred-compat - 1.0
+projectred-integration - ProjectRed Integration - 4.9.4.120
+projectred-transmission - ProjectRed Transmission - 4.9.4.120
+projectred-fabrication - ProjectRed Fabrication - 4.9.4.120
+projectred-illumination - ProjectRed Illumination - 4.9.4.120
+prospectors - Prospectors - 1.0.2
+recipestages - RecipeStages - 1.1.3
+rftools - RFTools - 7.72
+rsgauges - Redstone Gauges and Switches - 1.1.9
+ruins - Ruins Mod - 17.2
+sgcraft - SG Craft - 1.13.2
+silentlib - Silent Lib - 3.0.13
+stellarfluidconduits - Stellar Fluid Conduits - 1.12.2-1.0.0
+surge - Surge - 2.0.77
+thaumicaugmentation - Thaumic Augmentation - 1.12.2-1.1.11
+thaumcomp - Thaumic Computers - 0.5.1
+thaumicenergistics - Thaumic Energistics - 2.2.3
+tcinventoryscan - Thaumcrafft Inventory Scanning - 2.0.10
+thaumicrestoration - Thaumic Restoration - 1.3.2
+timestages - Time Stages - 1.2.1
+tcomplement - Tinkers' Complement - 1.12.2-0.4.2
+tinkersoc - Tinkers Construct OpenComputers Driver - 0.6
+tinkerstages - Tinker Stages - 2.0.15
+tinkertoolleveling - Tinkers Tool Leveling - 1.12.2-1.1.0.DEV.b23e769
+togetherforever - TogetherForever - 1.0.2
+tombstone - Corail Tombstone - 3.6.1
+torchbandolier - Torch Bandolier - 0.1.1
+torchlever - Torch Lever - 1.0
+trafficcontrol - Traffic Control - 0.0.8
+triumph - Triumph - 3.18.0
+wanionlib - WanionLib - 1.12.2-2.4
+watercontrolextreme - Water Control Extreme - 1.0.0
+waterstrainer - Water Strainer - 3.2.0
+weirdinggadget - The Weirding Gadget - 1.0
+wct - Wireless Crafting Terminal 2 - 3.12.93
+wft - Wireless Fluid Terminal - 1.0.1
+wit - Wireless Interface Terminal - 1.0.0
+wpt - Wireless Pattern Terminal - 1.0.1
+woot - Woot - 1.12.2-1.4.11
+worldstripper - World Stripper - 1.6.0-1.12.2
+solcarrot - Spice of Life: Carrot Edition - 1.8.3
+hungeroverhaul - Hunger Overhaul - 1.12.2-1.3.3.jenkins148
+ocsensors - OpenComputers Sensors - 1.0.4
+primal_tech - primal_tech - 0.3.5
+unidict - UniDict - 1.12.2-2.9.3
