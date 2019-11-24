@@ -67,6 +67,9 @@ static items as IItemStack [][string]  = {
             <minecraft:hardened_clay>,
             <minecraft:stained_hardened_clay>,
             <minecraft:stained_hardened_clay:*>,
+        //Concrete
+            <minecraft:concrete>,
+            <minecraft:concrete:*>,
         //Haybale, boneblock, cobweb
             <minecraft:hay_block>,
             <minecraft:bone_block>,
@@ -78,11 +81,7 @@ static items as IItemStack [][string]  = {
             <minecraft:leaves:3>,
             <minecraft:leaves2>,
             <minecraft:leaves2:1>,
-        //Concrete
-            <minecraft:concrete>,
-            <minecraft:concrete:*>,
-            <minecraft:concrete_powder>,
-            <minecraft:concrete_powder:*>,
+
         //Grass, flowers, shrooms, cactus, vines, lily pad
             <minecraft:tallgrass:*>,
             <minecraft:deadbush>,
@@ -96,14 +95,13 @@ static items as IItemStack [][string]  = {
             <minecraft:waterlily>,
             <minecraft:double_plant:*>,
         //Torch and skulls
-        <minecraft:torch>,
-        <minecraft:skull>,
-        <minecraft:skull:*>
+            <minecraft:torch>,
+            <minecraft:skull>,
+            <minecraft:skull:*>
     
         
-    ],
-    "Minecraft glazed terracotta" : 
-        itemUtils.getItemsByRegexRegistryName("minecraft:.*terracotta")
+    ]
+  
     
 
 

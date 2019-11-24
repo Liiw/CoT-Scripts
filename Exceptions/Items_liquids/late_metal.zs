@@ -4,6 +4,71 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string]  = {
+    "Minecraft" : [
+        //Iron, gold, diamond, emerald and blocks
+            <minecraft:gold_block>,
+            <minecraft:gold_ingot>,
+            <minecraft:iron_block>,
+            <minecraft:iron_ingot>,
+            <minecraft:diamond>,
+            <minecraft:diamond_block>,
+            <minecraft:emerald_block>,
+            <minecraft:emerald>,
+        //Glass blocks and panes
+            <minecraft:glass>,
+            <minecraft:stained_glass>,
+            <minecraft:stained_glass:*>,
+            <minecraft:glass_pane>,
+            <minecraft:stained_glass_pane>,
+            <minecraft:stained_glass_pane:*>,
+        //Chest, iron bars, anvils, itemframe, painting, buckets
+            <minecraft:chest>,
+            <minecraft:iron_bars>,
+            <minecraft:anvil>,
+            <minecraft:anvil:1>,
+            <minecraft:anvil:2>,
+            <minecraft:painting>,
+            <minecraft:item_frame>,
+            <minecraft:bucket>,
+            <minecraft:water_bucket>,
+            <minecraft:lava_bucket>,
+        //Glazed terracotta
+            <minecraft:white_glazed_terracotta>,
+            <minecraft:orange_glazed_terracotta>,
+            <minecraft:magenta_glazed_terracotta>,
+            <minecraft:light_blue_glazed_terracotta>,
+            <minecraft:yellow_glazed_terracotta>,
+            <minecraft:lime_glazed_terracotta>,
+            <minecraft:pink_glazed_terracotta>,
+            <minecraft:gray_glazed_terracotta>,
+            <minecraft:silver_glazed_terracotta>,
+            <minecraft:cyan_glazed_terracotta>,
+            <minecraft:purple_glazed_terracotta>,
+            <minecraft:blue_glazed_terracotta>,
+            <minecraft:brown_glazed_terracotta>,
+            <minecraft:green_glazed_terracotta>,
+            <minecraft:red_glazed_terracotta>,
+            <minecraft:black_glazed_terracotta>,
+        //Pistons, levers, buttons, pressure plates, hopper
+            <minecraft:sticky_piston>,
+            <minecraft:piston>,
+            <minecraft:stone_button>,
+            <minecraft:wooden_button>,
+            <minecraft:lever>,
+            <minecraft:stone_pressure_plate>,
+            <minecraft:wooden_pressure_plate>,
+            <minecraft:light_weighted_pressure_plate>,
+            <minecraft:heavy_weighted_pressure_plate>,
+            <minecraft:hopper>
+
+    ]
+
+
+
+
+
+
+
     /*
     "Tinkers Construct" : [
         //Tables and ingotnuggetblock
@@ -78,23 +143,7 @@ static items as IItemStack [][string]  = {
             <minecraft:bucket>,
             <minecraft:cake>,
             <minecraft:cookie>,
-        //Glazed terracotta
-            <minecraft:white_glazed_terracotta>,
-            <minecraft:orange_glazed_terracotta>,
-            <minecraft:magenta_glazed_terracotta>,
-            <minecraft:light_blue_glazed_terracotta>,
-            <minecraft:yellow_glazed_terracotta>,
-            <minecraft:lime_glazed_terracotta>,
-            <minecraft:pink_glazed_terracotta>,
-            <minecraft:gray_glazed_terracotta>,
-            <minecraft:silver_glazed_terracotta>,
-            <minecraft:cyan_glazed_terracotta>,
-            <minecraft:purple_glazed_terracotta>,
-            <minecraft:blue_glazed_terracotta>,
-            <minecraft:brown_glazed_terracotta>,
-            <minecraft:green_glazed_terracotta>,
-            <minecraft:red_glazed_terracotta>,
-            <minecraft:black_glazed_terracotta>,
+
         //Prismarine stuff
             <minecraft:sea_lantern>,
             <minecraft:prismarine>,

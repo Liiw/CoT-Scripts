@@ -4,6 +4,24 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string] = {
+    "Minecraft" : [
+        //Jukebox, lightsensor
+            <minecraft:daylight_detector>,
+            <minecraft:jukebox>
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
     "ImmersiveEngineering buckets and shaders" : [
         <immersiveengineering:shader_bag>.withTag({rarity: "RARE"}),

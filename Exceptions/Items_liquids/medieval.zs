@@ -4,6 +4,48 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 static items as IItemStack [][string]  = {
+    "Minecarft" : [
+        //Bookshelf, tnt, armorstand
+            <minecraft:bookshelf>,
+            <minecraft:armor_stand>,
+            <minecraft:noteblock>,
+            <minecraft:tnt>,
+            
+        //Redstone stuff
+            <minecraft:redstone_torch>,
+            <minecraft:redstone_lamp>,
+            <minecraft:redstone_block>,
+            <minecraft:repeater>,
+            <minecraft:comparator>,
+            <minecraft:redstone>,
+            <minecraft:tripwire_hook>,
+            <minecraft:trapped_chest>,
+            <minecraft:dispenser>,
+        //Obsidian, ench table
+            <minecraft:obsidian>,
+            <minecraft:enchanting_table>,
+        // Nether and End stuff
+            <minecraft:stone_slab:6>,
+            <minecraft:netherrack>,
+            <minecraft:nether_brick>,
+            <minecraft:nether_wart_block>,
+            <minecraft:red_nether_brick>,
+            <minecraft:nether_wart>,
+            <minecraft:nether_star>,
+            <minecraft:netherbrick>,
+            <minecraft:end_stone>,
+            <minecraft:end_bricks>,
+            <minecraft:end_portal_frame>,
+            <minecraft:ender_chest>,
+            <minecraft:end_rod>,
+            <minecraft:end_crystal>,
+            <minecraft:ender_pearl>,
+            <minecraft:ender_eye>,
+                
+    ]
+
+
+
     /*
     "Agricraft seeds" : [
         <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:carrot_plant", agri_growth: 1 as byte}),
