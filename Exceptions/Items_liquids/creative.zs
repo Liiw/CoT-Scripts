@@ -111,6 +111,11 @@ static items as IItemStack [][string]  = {
             <immcraft:dummybook:7>,
     ],
 
+    "Construct's Armory Additional tables (idk wat do with them)" : [
+        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
+        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
+        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}})
+    ],
 
     "AW stuff" : [
         <ancientwarfarenpc:npc_spawner>.withTag({npcSubtype: "", faction: "pirate", npcType: "faction.cavalry"}),
@@ -721,9 +726,5 @@ static items as IItemStack [][string]  = {
     ],
 
     
-    "Construct's Armory Additional tables (idk wat do with them)" : [
-        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
-        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
-        <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}})
-    ] */
+     */
 };
