@@ -14,6 +14,9 @@ static Digital as string = "digital";
 static Space as string = "space";
 static EndGame as string = "endgame";
 
+static AgriCulture as string = "agriculture";
+static Culinary as string = "culinary";
+
 static Disabled as string = "disabled";
 static Creative as string = "creative";
 
@@ -117,15 +120,18 @@ static atomic_mods as string [] = [
 ];
 
 static digital_mods as string [] = [
+    "extracells",
+    "enderio",
+    "opencomputers"
   /*  "appliedenergistics2",
     "ae2stuff",
-    "enderio",
+    
     "enderiointegrationtic",
     "opencomputers",
     "ocsensors",
     "openscreens",
     "opensecurity",
-    "extracells",
+    
     "immersivecables",
     "thaumicenergistics"    */
 ];

@@ -3,29 +3,11 @@
 import crafttweaker.item.IItemStack;
 
 static items as IItemStack [][string]  = {
-    "Minecraft" : [
-        //ORES
-            <minecraft:gold_ore>,
-            <minecraft:iron_ore>,
-            <minecraft:coal_ore>,
-            <minecraft:lapis_ore>,
-            <minecraft:diamond_ore>,
-            <minecraft:redstone_ore>,
-            <minecraft:emerald_ore>,
-            <minecraft:quartz_ore>,
-        //Monster eggs and command blocks
-            <minecraft:monster_egg>,
-            <minecraft:monster_egg:1>,
-            <minecraft:monster_egg:2>,
-            <minecraft:monster_egg:3>,
-            <minecraft:monster_egg:4>,
-            <minecraft:monster_egg:5>,
-            <minecraft:command_block>,
-            <minecraft:repeating_command_block>,
-            <minecraft:chain_command_block>,
-            <minecraft:command_block_minecart>
-
+    "Creative stuff": [
+        
     ],
+
+
     "AW stuff" : [
         <ancientwarfarenpc:npc_spawner>.withTag({npcSubtype: "", faction: "pirate", npcType: "faction.cavalry"}),
         <ancientwarfarenpc:npc_spawner>.withTag({npcSubtype: "", faction: "sarkonid", npcType: "faction.cavalry"}),
@@ -608,9 +590,36 @@ static items as IItemStack [][string]  = {
         <ancientwarfarestructure:altar_long_cloth>,
         <ancientwarfarestructure:altar_candle>
     ],
+    
+    /*
+    "Minecraft" : [
+        //ORES
+            <minecraft:gold_ore>,
+            <minecraft:iron_ore>,
+            <minecraft:coal_ore>,
+            <minecraft:lapis_ore>,
+            <minecraft:diamond_ore>,
+            <minecraft:redstone_ore>,
+            <minecraft:emerald_ore>,
+            <minecraft:quartz_ore>,
+        //Monster eggs and command blocks
+            <minecraft:monster_egg>,
+            <minecraft:monster_egg:1>,
+            <minecraft:monster_egg:2>,
+            <minecraft:monster_egg:3>,
+            <minecraft:monster_egg:4>,
+            <minecraft:monster_egg:5>,
+            <minecraft:command_block>,
+            <minecraft:repeating_command_block>,
+            <minecraft:chain_command_block>,
+            <minecraft:command_block_minecart>
+
+    ],
+
+    
     "Construct's Armory Additional tables (idk wat do with them)" : [
         <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
         <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
         <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}})
-    ]
+    ] */
 };
