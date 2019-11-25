@@ -1,4 +1,4 @@
-#priority 4000
+#priority 3900
 
 import scripts.setupstages.Disabled as stage;
 import scripts.setupstages.Digital as digitalstage;

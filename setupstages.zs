@@ -24,129 +24,138 @@ static Creative as string = "creative";
 static prehistoric_mods as string [] = [
   /*  "primal",
     "minecraft",
-    "immcraft",
-    "tombstone" */
+     */
 ];
 
 static stone_mods as string [] = [
-  /*  "dungpipe",
-    "primal_tech",
-    "basketcase",
-    "jarm"  */
+  "tombstone",
+  "primal",
+  "basketcase",
+  "comforts",
+  "bountiful",
+  "primal_tech",
+  "immcraft"
 ]; 
 
 static early_metal_mods as string [] = [
-  /*  "composter",
-    "jarm",
-    "waterstrainer",
-    "chesttransporter",
-    "comforts",
-    "horsepower",
-    "primalchests",
-    "astikorcarts" */
+  "dungpipe",
+  "jarm",
+  "primalchests",
+  "composter", 
+  "waterstrainer",
+  "comforts",
+  "horsepower",
+  "astikorcarts" 
 ]; 
 
 static late_metal_mods as string [] = [
-  /*  "tconstruct",
-    "astikorcarts",
-    "storagedrawers",
-    "farmingforblockheads",
-    "ironbackpacks",
-    "naturescompass",
-    "torchbandolier",
-    "opframe"   */
+  "tconstruct",
+  "ironbackpacks",
+  "naturescompass",
+  "torchbandolier",
+  "opframe"   
 ]; 
 
 static medieval_mods as string [] = [
-  /*  "agricraft",
-    "cookingforblockheads",
-    "ironchest",
-    "openglider",
-    "prospectors",
-    "torchlever",
-    "littletiles",
-    "littleopener",
-    "thaumcraft",
-    "conarm",
-    "microblockcbe",
-    "tcomplement",
-    "ancientwarfare",
-    "ancientwarfarestructure",
-    "ancientwarfarevehicle",
-    "ancientwarfarenpc",
-    "ancientwarfareautomation" */
+  "conarm",
+  "chesttransporter",
+  "storagedrawers",
+  "littletiles",
+  "littleopener",
+  "microblockcbe",
+  "thaumcraft",
+  "ancientwarfare",
+  "ancientwarfarestructure",
+  "ancientwarfarevehicle",
+  "ancientwarfarenpc",
+  "ancientwarfareautomation",
+  "tcomplement",
+  "torchlever",
+  "openglider",
+  "thaumcraft",
+  "openglider",
+  "torchlever",
+  "thaumcraft",
+  "ironchest",
+  "solcarrot",
+  "opframe"
 ];
 
 static early_industrial_mods as string [] = [
-  /*  "immersiveengineering",
-    "weirdinggadget",
-    "theoneprobe",
-    "compactdrawers",
-    "engineeredgolems",
-    "immersiverailroading",
-    "mctsmelteryio",
-    "thaumicaugmentation"   */
-];
+  "immersiverailroading",
+  "thaumicaugmentation",
+  "theoneprobe",
+  "mctsmelteryio", 
+  "immersiveengineering",
+  "weirdinggadget",
+  "compactdrawers"
+  
+];    
+    
+      
 
 static late_industrial_mods as string [] = [
-  /*  "mts",
-    "mtsofficialpack",
-    "rsgauges",
-    "buildinggadgets",
-    "dse",
-    "alternatingflux",
-    "immersive_energy",
-    "immersivepetroleum",
-    "immersive_energy",
-    "ompd",
-    "thaumicrestoration"    */
+  "thaumicrestoration",
+  "immersive_energy",
+  "immersivepetroleum",
+  "immersive_energy",
+  "immersiveposts",
+  "mts",
+  "mtsofficialpack",
+  "alternatingflux",
+  "rsgauges",
+  "buildinggadgets",
+  "dse",
+  "alternatingflux",  
+  "ompd",
+  "engineeredgolems"
 ];
 
 static atomic_mods as string [] = [
-  /*  "projectred-core",
-    "projectred-core",
-    "projectred-compat",
-    "projectred-integration",
-    "projectred-transmission",
-    "projectred-fabrication",
-    "projectred-illumination",
-    "bigreactors",
-    "openmodularturrets",
-    "rftools",
-    "immersivetech",
-    "btcivil",
-    "trafficcontrol",
-    "unuparts"  */
+  "trafficcontrol",
+  "btcivil",   
+  "unuparts",
+  "projectred-core",
+  "projectred-core",
+  "projectred-compat",
+  "projectred-integration",
+  "projectred-transmission",
+  "projectred-fabrication",
+  "projectred-illumination",
+  "bigreactors",
+  "openmodularturrets",
+  "rftools",
+  "immersivetech"
+   
 ];
 
 static digital_mods as string [] = [
-    "extracells",
-    "enderio",
-    "opencomputers"
-  /*  "appliedenergistics2",
-    "ae2stuff",
-    
-    "enderiointegrationtic",
-    "opencomputers",
-    "ocsensors",
-    "openscreens",
-    "opensecurity",
-    
-    "immersivecables",
-    "thaumicenergistics"    */
+  "opensecurity",
+  "extracells",
+  "enderio",
+  "opencomputers",
+  "appliedenergistics2",
+  "thaumicenergistics",
+  "ae2stuff",  
+  "enderiointegrationtic",
+  "opencomputers",
+  "ocsensors",
+  "openscreens",   
+  "immersivecables"
 ];
 
 static space_mods as string [] = [
-  /*  "advancedrocketry",
-    "wpt",
-    "wct",
-    "wft",
-    "wit"   */
+  "advancedrocketry",
+  "libvulpes",
+  "wpt",
+  "wct",
+  "wft",
+  "wit"   
 ];
 
 static endgame_mods as string [] = [
-  /*  "sgcraft",
-    "woot"  */
+   "sgcraft",
+   "woot"  
 ];
 
 //MOVE TO SOMEWHERE ELSE
@@ -155,7 +164,18 @@ static endgame_mods as string [] = [
 ];*/
 
 static creative_mods as string [] =[
-    "customnpcs"
+  "customnpcs"
+];
+
+static agriculture_mods as string [] = [
+  "farmingforblockheads",
+  "agricraft"
+  
+];
+
+static culinary_mods as string [] = [
+  "cookingforblockheads",
+  "harvestcraft"
 ];
 
 static already_staged as string [][] =[
@@ -170,5 +190,7 @@ static already_staged as string [][] =[
     digital_mods,
     space_mods,
     endgame_mods,
-    creative_mods
+    creative_mods,
+    agriculture_mods,
+    culinary_mods
 ];
