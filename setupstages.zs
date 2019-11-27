@@ -1,186 +1,59 @@
 #priority 9000
 
+import scripts.classes.Stage;
+import scripts.utils.AddToStage;
+import scripts.Stages.Modstaging.stagedmods.stagedmods;
+
+
+
 
 //Init stages
-static Prehistoric as string = "prehistoric";
-static Stone as string = "stone";
-static EarlyMetal as string = "early_metal";
-static LateMetal as string = "late_metal";
-static Medieval as string = "medieval";
-static EarlyIndustrial as string = "early_industrial";
-static LateIndustrial as string = "late_industrial";
-static Atomic as string = "atomic";
-static Digital as string = "digital";
-static Space as string = "space";
-static EndGame as string = "endgame";
+//static test = Stage();
 
-static AgriCulture as string = "agriculture";
-static Culinary as string = "culinary";
 
-static Disabled as string = "disabled";
-static Creative as string = "creative";
+var Prehistoric = Stage("prehistoric");
+var Stone = Stage("stone");
+var EarlyMetal = Stage("early_metal");
+var LateMetal = Stage("late_metal");
+var Medieval = Stage("medieval");
+var EarlyIndustrial = Stage("early_industrial");
+var LateIndustrial = Stage("late_industrial");
+var Atomic = Stage("atomic");
+var Digital = Stage("digital");
+var Space = Stage("space");
+var EndGame = Stage("endgame");
+var AgriCulture = Stage("agriculture");
+var Culinary = Stage("culinary");
+var Disabled = Stage("disabled");
+var Creative = Stage("creative");
 
-//Setup mods to be staged
-static prehistoric_mods as string [] = [
-  /*  "primal",
-    "minecraft",
-     */
+
+var stages as Stage[] = [
+  Prehistoric,
+  Stone,
+  EarlyMetal,
+  LateMetal,
+  Medieval,
+  EarlyIndustrial,
+  LateIndustrial,
+  Atomic,
+  Digital,
+  Space,
+  EndGame,
+  AgriCulture,
+  Culinary,
+  Disabled,
+  Creative
 ];
 
-static stone_mods as string [] = [
-  "tombstone",
-  "primal",
-  "basketcase",
-  "comforts",
-  "bountiful",
-  "primal_tech",
-  "immcraft"
-]; 
 
-static early_metal_mods as string [] = [
-  "dungpipe",
-  "jarm",
-  "primalchests",
-  "composter", 
-  "waterstrainer",
-  "comforts",
-  "horsepower",
-  "astikorcarts" 
-]; 
 
-static late_metal_mods as string [] = [
-  "tconstruct",
-  "ironbackpacks",
-  "naturescompass",
-  "torchbandolier",
-  "opframe"   
-]; 
 
-static medieval_mods as string [] = [
-  "conarm",
-  "chesttransporter",
-  "storagedrawers",
-  "littletiles",
-  "littleopener",
-  "microblockcbe",
-  "thaumcraft",
-  "ancientwarfare",
-  "ancientwarfarestructure",
-  "ancientwarfarevehicle",
-  "ancientwarfarenpc",
-  "ancientwarfareautomation",
-  "tcomplement",
-  "torchlever",
-  "openglider",
-  "thaumcraft",
-  "openglider",
-  "torchlever",
-  "thaumcraft",
-  "ironchest",
-  "solcarrot",
-  "opframe"
-];
-
-static early_industrial_mods as string [] = [
-  "immersiverailroading",
-  "thaumicaugmentation",
-  "theoneprobe",
-  "mctsmelteryio", 
-  "immersiveengineering",
-  "weirdinggadget",
-  "compactdrawers"
-  
-];    
-    
-      
-
-static late_industrial_mods as string [] = [
-  "thaumicrestoration",
-  "immersive_energy",
-  "immersivepetroleum",
-  "immersive_energy",
-  "immersiveposts",
-  "mts",
-  "mtsofficialpack",
-  "alternatingflux",
-  "rsgauges",
-  "buildinggadgets",
-  "dse",
-  "alternatingflux",  
-  "ompd",
-  "engineeredgolems"
-];
-
-static atomic_mods as string [] = [
-  "trafficcontrol",
-  "btcivil",   
-  "unuparts",
-  "projectred-core",
-  "projectred-core",
-  "projectred-compat",
-  "projectred-integration",
-  "projectred-transmission",
-  "projectred-fabrication",
-  "projectred-illumination",
-  "bigreactors",
-  "openmodularturrets",
-  "rftools",
-  "immersivetech"
-   
-];
-
-static digital_mods as string [] = [
-  "opensecurity",
-  "extracells",
-  "enderio",
-  "opencomputers",
-  "appliedenergistics2",
-  "thaumicenergistics",
-  "ae2stuff",  
-  "enderiointegrationtic",
-  "opencomputers",
-  "ocsensors",
-  "openscreens",   
-  "immersivecables"
-];
-
-static space_mods as string [] = [
-  "advancedrocketry",
-  "libvulpes",
-  "wpt",
-  "wct",
-  "wft",
-  "wit"   
-];
-
-static endgame_mods as string [] = [
-   "sgcraft",
-   "woot"  
-];
-
-//MOVE TO SOMEWHERE ELSE
-/*static disabled_stuff as string [] =[
-    ""
-];*/
-
-static creative_mods as string [] =[
-  "customnpcs"
-];
-
-static agriculture_mods as string [] = [
-  "farmingforblockheads",
-  "agricraft"
-  
-];
-
-static culinary_mods as string [] = [
-  "cookingforblockheads",
-  "harvestcraft"
-];
-
+/*
 static already_staged as string [][] =[
-    prehistoric_mods,
-    stone_mods,
+    //prehistoric_mods,
+    //Stone.mods,
+    stuff, 
     early_metal_mods,
     late_metal_mods,
     medieval_mods,
@@ -194,3 +67,12 @@ static already_staged as string [][] =[
     agriculture_mods,
     culinary_mods
 ];
+*/
+
+for stage in stages {
+  AddToStage (stage.name, stagedmods[stage.name]);
+}
+  
+
+
+//print(Stone.mods[0]);

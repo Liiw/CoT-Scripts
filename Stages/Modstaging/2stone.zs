@@ -1,3 +1,4 @@
+#norun
 #priority 4000
 
 import scripts.setupstages.Stone as stage;
