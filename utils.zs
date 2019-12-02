@@ -33,12 +33,10 @@ function RemainingModsToStage(stage as string, staged_list as string[][string]){
 }
 
 //Add items to different stage after bulk-mod-staging
-function ChangeItemStage(stage as string, item_list as IItemStack [][string]) {
-	for listname, items in item_list {
-		for item in items {
-    		mods.ItemStages.removeItemStage(item);
-    		mods.ItemStages.addItemStage(stage, item);
-		}
+function ChangeItemStage(stage as string, item_list as IItemStack []) {
+	for item in item_list {		
+		mods.ItemStages.removeItemStage(item);
+		mods.ItemStages.addItemStage(stage, item);		
 	}
 }
 
