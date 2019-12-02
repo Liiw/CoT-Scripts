@@ -15,7 +15,7 @@ function AddToStage (stage as string, modlist as string[]){
 
 
 //Add remaining mods left over from the already staged mods to a stage.
-function RemainingModsToStage(stage as string, staged_list as string[][]){
+function RemainingModsToStage(stage as string, staged_list as string[][string]){
 	for mod in loadedMods {
 		var inlist = false;
 		for mods in staged_list {

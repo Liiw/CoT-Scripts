@@ -15,7 +15,6 @@ static items as IItemStack [][string]  = {
     <theoneprobe:probe_goggles>
   ],
 
-
   "Extreme Reactors" : [
       <forge:bucketfilled>.withTag({FluidName: "yellorium", Amount: 1000}),
       <forge:bucketfilled>.withTag({FluidName: "cyanite", Amount: 1000}),
