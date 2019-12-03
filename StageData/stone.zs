@@ -1,7 +1,11 @@
 #priority 9400
 
+import scripts.classes.Stage;
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+
+static name as string = "stone";
 
 static substages as string[int] = {
     1 : "stone_1"
@@ -19,7 +23,7 @@ static mods as string[][int] = {
     ]
 };
 
-static items as IItemStack [][int]  = {
+static items as IItemStack[][int] = {
     1 : [
         //Advanced Rocketry
             <advancedrocketry:alienleaves>,
@@ -251,7 +255,7 @@ static items as IItemStack [][int]  = {
     ] 
 };
 
-static liquids as ILiquidStack [][int] = {   
+static liquids as ILiquidStack[][int] = {   
     1 : [ 
         //Minecraft
             <liquid:water>,
@@ -259,6 +263,17 @@ static liquids as ILiquidStack [][int] = {
     ] 
 };
 
-static ores as IItemStack [][string] = {
+static ores as IItemStack [][int] = {
 
 };
+
+
+static class as Stage  = Stage(
+    name,
+    substages,
+    mods,
+    items,
+    liquids,
+    ores
+
+);
