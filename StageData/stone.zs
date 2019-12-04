@@ -251,7 +251,9 @@ static items as IItemStack[][int] = {
         //JARM Rafts
             <jarm:jungle_raft>,
             <jarm:acacia_raft>,
-            <jarm:dark_oak_raft>
+            <jarm:dark_oak_raft>,
+        //Primal core crafting rocks
+            <primal_tech:rock:*>
     ] 
 };
 

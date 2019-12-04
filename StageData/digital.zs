@@ -57,6 +57,8 @@ static items as IItemStack [][int]  = {
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 24 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 24 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 24 as short}]}),
+            //Some soul vial thing
+            <enderio:item_soul_vial:1>.withTag({entityId: "minecraft:pig", customName: "Bacon in a Bottle"}),
         //EIO_TiC
             <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),

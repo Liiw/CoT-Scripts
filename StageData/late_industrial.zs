@@ -24,6 +24,7 @@ static mods as string[][int] = {
         "rsgauges",
         "buildinggadgets",
         "dse",
+        "nhc",
         "alternatingflux",  
         "ompd",
         "engineeredgolems" 

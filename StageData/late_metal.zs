@@ -301,8 +301,18 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "glass", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "blueslime", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000})
-
+            <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}),
+        //PrimalCore metal buckets
+            <forge:bucketfilled>.withTag({FluidName: "tannin", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "urushi", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "brine_netjry", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "waste", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "bitumen", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "bitumen_boiling", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "paraffin", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "magma_basaltic", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "ovis_atre_milk", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "smoke", Amount: 1000})
     ]
 
 };

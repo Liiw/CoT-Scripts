@@ -20,7 +20,7 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
-        
+        <guideapi:woot-guide>
     ] 
 };
 

@@ -30,10 +30,7 @@ import scripts.utils.RemainingModsToStage;
 import scripts.utils.ChangeItemStage;
 import scripts.utils.ChangeLiquidStage;
 
-//FOR MOVING UNSTAGED MODS AWAY TEMPORARILY
-import scripts.Stages.Modstaging.stagedmods.stagedmods;
-//Stage left over mods to "disabled" for now
-RemainingModsToStage(disabled.name, stagedmods);
+
 
 var StageList as Stage[] = [
   stone,

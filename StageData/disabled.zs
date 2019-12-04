@@ -13,7 +13,16 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "minecraft"
+        "minecraft",
+        "quark",
+        "charset",
+        "geolosys",
+        "dynamictrees",
+        "dynamictreesphc",
+        "dynamictreestc",
+        "omlib",
+        "zerocore",
+        "enderore"
     ]
 };
 

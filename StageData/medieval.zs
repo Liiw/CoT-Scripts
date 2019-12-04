@@ -34,7 +34,8 @@ static mods as string[][int] = {
         "thaumcraft",
         "ironchest",
         "solcarrot",
-        "opframe"
+        "opframe",
+        "mcjtylib_ng"
     ]
 };
 
@@ -528,8 +529,9 @@ static items as IItemStack [][int] = {
             <microblockcbe:microblock:1>.withTag({mat: "minecraft:stone[variant=stone]"}),
         //Thaumcraft fluid buckets
             <forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000})
-
+            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000}),
+        //Tool progression magic mushroom (leveling item)
+            <toolprogression:magic_mushroom>
     ]
 };
 
