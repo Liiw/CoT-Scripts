@@ -3,6 +3,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+import crafttweaker.item.IIngredient;
+
 //Add mods from list to stage
 function AddToStage (stage as string, modlist as string[]){
 	for mod in loadedMods {
@@ -33,7 +35,7 @@ function RemainingModsToStage(stage as string, staged_list as string[][string]){
 }
 
 //Add items to different stage after bulk-mod-staging
-function ChangeItemStage(stage as string, item_list as IItemStack []) {
+function ChangeItemStage(stage as string, item_list as IIngredient []) {
 	for item in item_list {		
 		mods.ItemStages.removeItemStage(item);
 		mods.ItemStages.addItemStage(stage, item);		

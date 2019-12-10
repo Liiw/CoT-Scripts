@@ -35,7 +35,9 @@ static mods as string[][int] = {
         "ironchest",
         "solcarrot",
         "opframe",
-        "mcjtylib_ng"
+        "mcjtylib_ng",
+        "quark",
+        "enderore"
     ]
 };
 

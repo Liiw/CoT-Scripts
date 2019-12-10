@@ -13,7 +13,9 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "customnpcs"
+        "customnpcs",
+        "charset",
+        "omlib"
     ]
 };
 
@@ -115,6 +117,20 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:creeper_nether"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:gator"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:shark_hammerhead"}}),
+
+            <minecraft:monster_egg>,
+            <minecraft:monster_egg:1>,
+            <minecraft:monster_egg:2>,
+            <minecraft:monster_egg:3>,
+            <minecraft:monster_egg:4>,
+            <minecraft:monster_egg:5>,
+            <minecraft:command_block>,
+            <minecraft:repeating_command_block>,
+            <minecraft:chain_command_block>,
+            <minecraft:structure_void>,
+            <minecraft:structure_block>,
+            <minecraft:command_block_minecart>,
+            <minecraft:mob_spawner>,
         //immcraft
             <immcraft:dummybook>,
             <immcraft:dummybook:1>,
@@ -708,7 +724,27 @@ static items as IItemStack [][int]  = {
             <ancientwarfarestructure:altar_sun>,
             <ancientwarfarestructure:altar_short_cloth>,
             <ancientwarfarestructure:altar_long_cloth>,
-            <ancientwarfarestructure:altar_candle>
+            <ancientwarfarestructure:altar_candle>,
+    
+
+
+        //Dynamic Trees
+            <dynamictrees:staff>.withTag({code: "P", tree: "dynamictrees:oak"}),
+            <dynamictrees:oakbranch>,
+            <dynamictrees:oakbranchx>,
+            <dynamictrees:sprucebranch>,
+            <dynamictrees:sprucebranchx>,
+            <dynamictrees:birchbranch>,
+            <dynamictrees:junglebranch>,
+            <dynamictrees:acaciabranch>,
+            <dynamictrees:darkoakbranch>,
+            <dynamictrees:darkoakbranchx>,
+            <dynamictrees:cactusbranch>,
+            <dynamictreesphc:paperbarkbranch>,
+            <dynamictreestc:greatwoodbranch>,
+            <dynamictreestc:greatwoodbranchx>,
+            <dynamictreestc:silverwoodbranch>,
+            <dynamictreestc:silverwoodbranchx>
     ]
 };
 

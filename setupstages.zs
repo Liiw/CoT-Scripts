@@ -5,6 +5,7 @@ import scripts.utils.AddToStage;
 import scripts.utils.RemainingModsToStage;
 
 
+
 //Import staging data (substages, mods, items, liquids, ores)
   //Main epochs
   import scripts.StageData.stone.class as stone;
@@ -32,7 +33,7 @@ import scripts.utils.ChangeLiquidStage;
 
 
 
-var StageList as Stage[] = [
+global StageList as Stage[] = [
   stone,
   early_metal,
   late_metal,
@@ -67,3 +68,4 @@ for stage in StageList {
     ChangeLiquidStage(stage.substages[i], stage.liquids[i]);  
   }
 }
+

@@ -13,22 +13,17 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "minecraft",
-        "quark",
-        "charset",
+        "minecraft",       
         "geolosys",
-        "dynamictrees",
-        "dynamictreesphc",
-        "dynamictreestc",
         "omlib",
-        "zerocore",
-        "enderore"
+        "zerocore"
+        
     ]
 };
 
 static items as IItemStack [][int]  = {
     1 : [
-        
+
     ] 
 };
 

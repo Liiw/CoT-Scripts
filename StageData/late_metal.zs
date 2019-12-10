@@ -256,6 +256,7 @@ static items as IItemStack [][int]  = {
             <minecraft:anvil>,
             <minecraft:anvil:1>,
             <minecraft:anvil:2>,
+            <minecraft:carrot_on_a_stick>,
         //OMPD
             <ompd:fence>,
             <ompd:wall>,

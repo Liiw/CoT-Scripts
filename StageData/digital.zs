@@ -5,6 +5,7 @@ import scripts.classes.Stage;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+
 static name as string = "digital";
 
 static substages as string[int] = {
@@ -53,7 +54,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "liquid_sunshine", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "cloud_seed", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "cloud_seed_concentrated", Amount: 1000}),
-            //ench-books
+            //ench-books (id-s might change for some reason)
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 24 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 24 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 24 as short}]}),
@@ -93,6 +94,9 @@ static items as IItemStack [][int]  = {
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "dig"}, "oc:color": 3, display: {Name: "Digger"}, "oc:lootFactory": "opencomputers:dig"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "maze"}, "oc:color": 14, display: {Name: "Mazer"}, "oc:lootFactory": "opencomputers:maze"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "irc"}, "oc:color": 12, display: {Name: "OpenIRC (IRC Client)"}, "oc:lootFactory": "opencomputers:irc"})
+    
+            
+            
     ]
 
     
