@@ -14,7 +14,8 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "cookingforblockheads",
-        "harvestcraft"
+        "harvestcraft",
+        "brewcraft"
     ]
 };
 
