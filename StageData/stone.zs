@@ -17,7 +17,6 @@ static mods as string[][int] = {
         "tombstone",
         "primal",
         "basketcase",
-        "comforts",
         "bountiful",
         "primal_tech",
         "immcraft"
