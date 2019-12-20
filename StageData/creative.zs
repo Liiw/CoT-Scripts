@@ -744,7 +744,20 @@ static items as IItemStack [][int]  = {
             <dynamictreestc:greatwoodbranch>,
             <dynamictreestc:greatwoodbranchx>,
             <dynamictreestc:silverwoodbranch>,
-            <dynamictreestc:silverwoodbranchx>
+            <dynamictreestc:silverwoodbranchx>,
+        //Basketcase barks (because primal has similar stuff and is better)
+            <basketcase:item_bark_oak>,
+            <basketcase:item_bark_spruce>,
+            <basketcase:item_bark_birch>,
+            <basketcase:item_bark_jungle>,
+            <basketcase:item_bark_acacia>,
+            <basketcase:item_bark_dark_oak>,
+            <basketcase:log_stripped_oak>,
+            <basketcase:log_stripped_dark_oak>,
+            <basketcase:log_stripped_acacia>,
+            <basketcase:log_stripped_birch>,
+            <basketcase:log_stripped_spruce>,
+            <basketcase:log_stripped_jungle>
     ]
 };
 
