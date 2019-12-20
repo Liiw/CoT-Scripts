@@ -12,8 +12,7 @@ static substages as string[int] = {
 };
 
 static mods as string[][int] = {
-    1 : [
-        "minecraft",       
+    1 : [      
         "geolosys",
         "omlib",
         "zerocore"
@@ -23,19 +22,7 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
-        //Basketcase barks (because primal has similar stuff and is better)
-            <basketcase:item_bark_oak>,
-            <basketcase:item_bark_spruce>,
-            <basketcase:item_bark_birch>,
-            <basketcase:item_bark_jungle>,
-            <basketcase:item_bark_acacia>,
-            <basketcase:item_bark_dark_oak>,
-            <basketcase:log_stripped_oak>,
-            <basketcase:log_stripped_dark_oak>,
-            <basketcase:log_stripped_acacia>,
-            <basketcase:log_stripped_birch>,
-            <basketcase:log_stripped_spruce>,
-            <basketcase:log_stripped_jungle>
+        
 
     ] 
 };

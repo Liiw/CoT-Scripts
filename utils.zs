@@ -38,7 +38,8 @@ function RemainingModsToStage(stage as string, staged_list as string[][string]){
 function ChangeItemStage(stage as string, item_list as IIngredient []) {
 	for item in item_list {		
 		mods.ItemStages.removeItemStage(item);
-		mods.ItemStages.addItemStage(stage, item);		
+		mods.ItemStages.addItemStage(stage, item);
+		mods.recipestages.Recipes.setRecipeStage(stage, item);		
 	}
 }
 

@@ -131,6 +131,12 @@ static items as IItemStack [][int]  = {
             <minecraft:structure_block>,
             <minecraft:command_block_minecart>,
             <minecraft:mob_spawner>,
+
+            <minecraft:gold_ore>,
+            <minecraft:iron_ore>,
+            <minecraft:coal_ore>,
+            <minecraft:lapis_ore>,
+            <minecraft:diamond_ore>,
         //immcraft
             <immcraft:dummybook>,
             <immcraft:dummybook:1>,
@@ -725,6 +731,7 @@ static items as IItemStack [][int]  = {
             <ancientwarfarestructure:altar_short_cloth>,
             <ancientwarfarestructure:altar_long_cloth>,
             <ancientwarfarestructure:altar_candle>,
+            <ancientwarfarestructure:stake>,
     
 
 

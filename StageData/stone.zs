@@ -25,14 +25,8 @@ static mods as string[][int] = {
 
 static items as IItemStack[][int] = {
     1 : [
-        //Advanced Rocketry
-            <advancedrocketry:alienleaves>,
-            <advancedrocketry:alienwood>,
-            <advancedrocketry:basalt>,
-            <advancedrocketry:geode>,
-            <advancedrocketry:misc:1>,
-            <advancedrocketry:planks>,      
-            <harvestcraft:aridgarden>,
+           
+            
         //Minecraft
             <minecraft:apple>,
             <minecraft:beef>,
@@ -248,6 +242,7 @@ static items as IItemStack[][int] = {
             <harvestcraft:soggygarden>,
             <harvestcraft:tropicalgarden>,
             <harvestcraft:windygarden>,
+            <harvestcraft:aridgarden>,
         //JARM Rafts
             <jarm:jungle_raft>,
             <jarm:acacia_raft>,
