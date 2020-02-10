@@ -14,13 +14,29 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "sgcraft",
-        "woot" 
+        "woot",
+        "wpt",
+        "wct",
+        "wft",
+        "wit" 
     ]
 };
 
 static items as IItemStack [][int]  = {
     1 : [
-        <guideapi:woot-guide>
+            <guideapi:woot-guide>,
+        //AE2Stuff
+            <ae2stuff:wireless>,
+            <ae2stuff:wireless_kit>,
+            <ae2wtlib:infinity_booster_card>,
+            <ae2wtlib:wut>,
+ 
+
+        
+        //OMPD
+            <ompd:fence:4>,
+            <ompd:hardened:4>,
+            <ompd:wall:4>
     ] 
 };
 

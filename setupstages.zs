@@ -16,7 +16,7 @@ import scripts.utils.RemainingModsToStage;
   import scripts.StageData.late_industrial.class as late_industrial;
   import scripts.StageData.atomic.class as atomic;
   import scripts.StageData.digital.class as digital;
-  import scripts.StageData.space.class as space;
+  //import scripts.StageData.space.class as space;
   import scripts.StageData.endgame.class as endgame;
 
   //Additional stages running parallel
@@ -42,7 +42,7 @@ global StageList as Stage[] = [
   late_industrial,
   atomic,
   digital,
-  space,
+  //space,
   endgame,
   agriculture,
   culinary,
@@ -69,3 +69,6 @@ for stage in StageList {
   }
 }
 
+//TEST RECIPE STAGE
+mods.recipestages.Recipes.setRecipeStage(stone.substages[1], "flintaxe");
+mods.recipestages.Recipes.setRecipeStage(stone.substages[1], "stickfromtwigs");

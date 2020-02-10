@@ -15,11 +15,10 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "tombstone",
-        "primal",
+
         "basketcase",
-        "bountiful",
-        "primal_tech",
-        "immcraft"
+        "bountiful"
+
     ]
 };
 
@@ -243,12 +242,7 @@ static items as IItemStack[][int] = {
             <harvestcraft:tropicalgarden>,
             <harvestcraft:windygarden>,
             <harvestcraft:aridgarden>,
-        //JARM Rafts
-            <jarm:jungle_raft>,
-            <jarm:acacia_raft>,
-            <jarm:dark_oak_raft>,
-        //Primal core crafting rocks
-            <primal_tech:rock:*>
+
     ] 
 };
 

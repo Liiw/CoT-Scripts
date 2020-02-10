@@ -23,51 +23,13 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
-        //Advanced Rocketry ???
-            <advancedrocketry:crystal>,
-            <advancedrocketry:crystal:1>,
-            <advancedrocketry:crystal:2>,
-            <advancedrocketry:crystal:3>,
-            <advancedrocketry:crystal:4>,
-            <advancedrocketry:crystal:5>,
+
         //Agricraft    
             <agricraft:agri_nugget>,
             <agricraft:agri_nugget:1>,
             <agricraft:agri_nugget:2>,
             <agricraft:agri_nugget:3>,
             <agricraft:agri_nugget:9>,
-            <agricraft:grate>.withTag({agri_material_meta: 9, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 12, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 11, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 10, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 15, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 14, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 13, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "quark:vertical_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 6, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 7, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 8, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 7, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 6, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 9, agri_material: "quark:stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 8, agri_material: "quark:stained_planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "minecraft:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "minecraft:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "minecraft:planks"}),
@@ -76,12 +38,6 @@ static items as IItemStack [][int]  = {
             <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "minecraft:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "thaumcraft:plank_silverwood"}),
             <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "minecraft:planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 15, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 14, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 13, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 12, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 11, agri_material: "quark:vertical_stained_planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 10, agri_material: "quark:vertical_stained_planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "primal:planks"}),
@@ -91,15 +47,7 @@ static items as IItemStack [][int]  = {
             <compactdrawers:compact_drawer_2by1>.withTag({}),
             <compactdrawers:compact_drawer_2by1_half>.withTag({}),
             <compactdrawers:compact_drawer_half>.withTag({}),
-        //Dynamictrees
-            <dynamictrees:dendropotion>,
-            <dynamictrees:dendropotion:1>,
-            <dynamictrees:dendropotion:2>,
-            <dynamictrees:dendropotion:3>,
-            <dynamictrees:dendropotion:4>,
-            <dynamictrees:dendropotion:5>,
-            <dynamictrees:dendropotion:6>,
-            <dynamictrees:dirtbucket>,
+
         //Minecraft
             <minecraft:acacia_door>,
             <minecraft:acacia_fence>,
@@ -261,6 +209,7 @@ static items as IItemStack [][int]  = {
             <ompd:fence>,
             <ompd:wall>,
         //Tinkers construct
+            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "structurize:blockcactusplank", Count: 1 as byte, Damage: 0 as short}}),
             <tconstruct:nuggets:5>,
             <tconstruct:ingots:5>,
             <tconstruct:metal:5>,
@@ -303,17 +252,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "blueslime", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}),
-        //PrimalCore metal buckets
-            <forge:bucketfilled>.withTag({FluidName: "tannin", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "urushi", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "brine_netjry", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "waste", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "bitumen", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "bitumen_boiling", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "paraffin", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "magma_basaltic", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "ovis_atre_milk", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "smoke", Amount: 1000})
+
     ]
 
 };
@@ -349,6 +288,7 @@ static liquids as ILiquidStack [][int] = {
         <liquid:blood>,
         <liquid:blueslime>,
         <liquid:purpleslime>
+  
     ]
 };
 

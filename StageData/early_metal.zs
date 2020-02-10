@@ -15,12 +15,8 @@ static mods as string[][int] = {
     1 : [
         "dungpipe",
         "jarm",
-        "primalchests",
-        "composter",
         "wumpleutil", 
-        "waterstrainer",
         "comforts",
-        "horsepower",
         "astikorcarts" 
     ]
 };
@@ -64,8 +60,7 @@ static items as IItemStack [][int]  = {
             <minecraft:stonebrick:3>,
         //OMPD
             <ompd:hardened>,
-        //Primal chests
-            <primalchests:primal_chest_advanced>
+
     ]
 
 };
