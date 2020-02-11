@@ -61,14 +61,16 @@ for stage in StageList {
   }
 }
 
-//Items and liquids
+//Items, recipes and liquids
 for stage in StageList {
   for i in 1 to stage.substages.length {
     ChangeItemStage (stage.substages[i], stage.items[i]);
-    ChangeLiquidStage(stage.substages[i], stage.liquids[i]);  
+    ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
+
+    for recipe in stage.recipes[i] {
+      mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
+    }  
   }
 }
 
-//TEST RECIPE STAGE
-mods.recipestages.Recipes.setRecipeStage(stone.substages[1], "flintaxe");
-mods.recipestages.Recipes.setRecipeStage(stone.substages[1], "stickfromtwigs");
+

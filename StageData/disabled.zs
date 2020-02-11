@@ -36,11 +36,18 @@ static ores as IItemStack [][int] = {
 
 };
 
+static recipes as string [][int] = {
+    1 : [
+        
+    ]
+};
+
 static class as Stage  = Stage(
     name,
     substages,
     mods,
     items,
     liquids,
-    ores
+    ores,
+    recipes
 );

@@ -1,3 +1,5 @@
+#priority 9800
+
 import crafttweaker.item.IIngredient;
 
 
@@ -70,4 +72,4 @@ var flintaxe = <tconstruct:hatchet>.withTag(
 
 //recipes.addShapeless(name,output,inputs,function,action)
 recipes.addShapeless("stickfromtwigs", stick, [twig, twig]);
-recipes.addShapeless("flintaxe", flintaxe ,[twig, stick, flint, stick]);
+recipes.addShapeless("flintaxe", flintaxe ,[cordage, stick, flint, stick]);

@@ -11,6 +11,7 @@ zenClass Stage {
     var items as IItemStack[][int] = {};
     var liquids as ILiquidStack[][int] = {};
     var ores as IItemStack [][int] = {};
+    var recipes as string[][int] = {};
 
 
     zenConstructor (
@@ -19,7 +20,8 @@ zenClass Stage {
         classMods as string[][int],
         classItems as IItemStack[][int],
         classLiquids as ILiquidStack[][int], 
-        classOres as IItemStack [][int]
+        classOres as IItemStack [][int],
+        classRecipes as string[int]
     ){
         name = className;
         substages = classSubstages;
@@ -27,6 +29,7 @@ zenClass Stage {
         items = classItems;
         liquids = classLiquids;
         ores = classOres;
+        recipes = classRecipes;
 
     }
     

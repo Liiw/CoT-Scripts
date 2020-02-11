@@ -255,7 +255,16 @@ static liquids as ILiquidStack[][int] = {
 };
 
 static ores as IItemStack [][int] = {
+    1 : [ 
+       
+    ] 
+};
 
+static recipes as string [][int] = {
+    1 : [
+        "stickfromtwigs",
+        "flintaxe"
+    ]
 };
 
 
@@ -265,6 +274,7 @@ static class as Stage  = Stage(
     mods,
     items,
     liquids,
-    ores
+    ores,
+    recipes
 
 );
