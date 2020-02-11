@@ -13,7 +13,6 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "dungpipe",
         "jarm",
         "wumpleutil", 
         "comforts",
@@ -23,6 +22,13 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
+        //Clay Bucket
+            <claybucket:unfiredclaybucket>,
+            <claybucket:claybucket>,
+            <claybucket:claybucket:1>,
+            <claybucket:claybucket:2>,
+
+
         //Agricraft
             <agricraft:agri_nugget:4>,
             <agricraft:agri_nugget:5>,

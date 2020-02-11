@@ -78,7 +78,7 @@ static items as IItemStack [][int]  = {
             <minecraft:brick_stairs>,
             <minecraft:bucket>,
             <minecraft:cauldron>,
-            <minecraft:crafting_table>,
+            
             <minecraft:dark_oak_door>,
             <minecraft:dark_oak_fence>,
             <minecraft:dark_oak_fence_gate>,

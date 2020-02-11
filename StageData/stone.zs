@@ -9,23 +9,43 @@ import crafttweaker.liquid.ILiquidStack;
 static name as string = "stone";
 
 static substages as string[int] = {
-    1 : "stone_1"
+    1 : "stone_1",
+    2 : "stone_2"
 };
 
 static mods as string[][int] = {
     1 : [
-        "tombstone",
-
         "basketcase",
+    ],
+    2 : [
+        "tombstone",
         "bountiful"
-
     ]
 };
 
 static items as IItemStack[][int] = {
     1 : [
-           
-            
+        //Minecraft
+            <minecraft:gravel>,
+            <minecraft:stick>,
+            <minecraft:flint>,
+            <minecraft:crafting_table>,
+            <minecraft:wooden_axe>,
+            <minecraft:wooden_hoe>,
+            <minecraft:wooden_pickaxe>,
+            <minecraft:wooden_shovel>,
+            <minecraft:wooden_sword>,
+
+            <minecraft:log>,
+            <minecraft:log:1>,
+            <minecraft:log:2>,
+            <minecraft:log:3>,
+            <minecraft:log2>,
+            <minecraft:log2:1>
+    ],
+
+
+    2 : [  
         //Minecraft
             <minecraft:apple>,
             <minecraft:beef>,
@@ -91,11 +111,11 @@ static items as IItemStack[][int] = {
             <minecraft:dye:15>,
             <minecraft:feather>,
             <minecraft:fishing_rod>,
-            <minecraft:flint>,
+            
             <minecraft:flower_pot>,
             <minecraft:grass>,
             <minecraft:grass_path>,
-            <minecraft:gravel>,
+            
             <minecraft:hardened_clay>,
             <minecraft:hay_block>,
             <minecraft:ice>,
@@ -113,12 +133,7 @@ static items as IItemStack[][int] = {
             <minecraft:leaves:3>,
             <minecraft:leaves2>,
             <minecraft:leaves2:1>,
-            <minecraft:log>,
-            <minecraft:log:1>,
-            <minecraft:log:2>,
-            <minecraft:log:3>,
-            <minecraft:log2>,
-            <minecraft:log2:1>,
+            
             <minecraft:mossy_cobblestone>,
             <minecraft:mycelium>,
             <minecraft:packed_ice>,
@@ -176,7 +191,7 @@ static items as IItemStack[][int] = {
             <minecraft:stained_hardened_clay:13>,
             <minecraft:stained_hardened_clay:14>,
             <minecraft:stained_hardened_clay:15>,
-            <minecraft:stick>,
+            
             <minecraft:stone>,
             <minecraft:stone:1>,
             <minecraft:stone:2>,
@@ -205,17 +220,14 @@ static items as IItemStack[][int] = {
             <minecraft:vine>,
             <minecraft:waterlily>,
             <minecraft:web>,
-            <minecraft:wooden_axe>,
-            <minecraft:wooden_hoe>,
-            <minecraft:wooden_pickaxe>,
-            <minecraft:wooden_shovel>,
+            
             <minecraft:wooden_slab>,
             <minecraft:wooden_slab:1>,
             <minecraft:wooden_slab:2>,
             <minecraft:wooden_slab:3>,
             <minecraft:wooden_slab:4>,
             <minecraft:wooden_slab:5>,
-            <minecraft:wooden_sword>,
+            
             <minecraft:wool>,
             <minecraft:wool:1>,
             <minecraft:wool:2>,
@@ -241,7 +253,7 @@ static items as IItemStack[][int] = {
             <harvestcraft:soggygarden>,
             <harvestcraft:tropicalgarden>,
             <harvestcraft:windygarden>,
-            <harvestcraft:aridgarden>,
+            <harvestcraft:aridgarden>
 
     ] 
 };
@@ -251,20 +263,30 @@ static liquids as ILiquidStack[][int] = {
         //Minecraft
             <liquid:water>,
             <liquid:lava>
-    ] 
+    ],
+    2 : [ 
+       
+    ]  
+
 };
 
 static ores as IItemStack [][int] = {
     1 : [ 
        
-    ] 
+    ],
+    2 : [ 
+       
+    ]  
 };
 
 static recipes as string [][int] = {
     1 : [
         "stickfromtwigs",
         "flintaxe"
-    ]
+    ],
+    2 : [ 
+       
+    ] 
 };
 
 

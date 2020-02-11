@@ -56,14 +56,14 @@ global StageList as Stage[] = [
 //mods
 
 for stage in StageList {
-  for i in 1 to stage.substages.length {
+  for i in 1 to stage.substages.length + 1 {
     AddToStage (stage.substages[i], stage.mods[i]);  
   }
 }
 
 //Items, recipes and liquids
 for stage in StageList {
-  for i in 1 to stage.substages.length {
+  for i in 1 to stage.substages.length + 1 {
     ChangeItemStage (stage.substages[i], stage.items[i]);
     ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
 
