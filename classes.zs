@@ -22,6 +22,7 @@ zenClass Stage {
         classLiquids as ILiquidStack[][int], 
         classOres as IItemStack [][int],
         classRecipes as string[int]
+        
     ){
         name = className;
         substages = classSubstages;
@@ -30,7 +31,6 @@ zenClass Stage {
         liquids = classLiquids;
         ores = classOres;
         recipes = classRecipes;
-
     }
     
 }

@@ -31,6 +31,8 @@ import scripts.utils.RemainingModsToStage;
 import scripts.utils.ChangeItemStage;
 import scripts.utils.ChangeLiquidStage;
 
+import scripts.StageData.stone.oretest as oretest;
+
 
 
 global StageList as Stage[] = [
@@ -73,4 +75,10 @@ for stage in StageList {
   }
 }
 
+//mods.orestages.OreStages.addReplacement(String stage, IIngredient original, IItemStack replacement);
 
+var oreT = oretest[2];
+
+
+mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][0], oretest[2][1][0]);
+mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][1], oretest[2][1][1]);

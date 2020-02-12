@@ -64,6 +64,7 @@ static items as IItemStack [][int]  = {
             <minecraft:stonebrick:1>,
             <minecraft:stonebrick:2>,
             <minecraft:stonebrick:3>,
+            <minecraft:chest>,
         //OMPD
             <ompd:hardened>,
 

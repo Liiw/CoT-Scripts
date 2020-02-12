@@ -17,7 +17,8 @@ static mods as string[][int] = {
         "ironbackpacks",
         "naturescompass",
         "torchbandolier",
-        "opframe"
+        "opframe",
+        "tombstone"
     ]
 };
 

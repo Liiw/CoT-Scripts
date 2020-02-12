@@ -18,8 +18,7 @@ static mods as string[][int] = {
         "basketcase",
     ],
     2 : [
-        "tombstone",
-        "bountiful"
+        
     ]
 };
 
@@ -31,7 +30,7 @@ static items as IItemStack[][int] = {
             <minecraft:flint>,
             <minecraft:crafting_table>,
             <minecraft:wooden_axe>,
-            <minecraft:wooden_hoe>,
+            
             <minecraft:wooden_pickaxe>,
             <minecraft:wooden_shovel>,
             <minecraft:wooden_sword>,
@@ -201,6 +200,7 @@ static items as IItemStack[][int] = {
             <minecraft:stone:6>,
             <minecraft:stone_axe>,
             <minecraft:stone_hoe>,
+            <minecraft:wooden_hoe>,
             <minecraft:stone_pickaxe>,
             <minecraft:stone_shovel>,
             <minecraft:stone_slab>,
@@ -270,13 +270,26 @@ static liquids as ILiquidStack[][int] = {
 
 };
 
-static ores as IItemStack [][int] = {
+static ores as IItemStack[][int] = {
     1 : [ 
+         
        
     ],
     2 : [ 
        
     ]  
+};
+
+//works for now
+//perhaps there is a better way?
+static oretest as IItemStack[][][int] = 
+{
+    2 : [
+            [<geolosys:ore_vanilla>,
+            <geolosys:ore_sample_vanilla>                     ],
+            [<minecraft:stone>,
+            <minecraft:log>]
+         ]
 };
 
 static recipes as string [][int] = {
