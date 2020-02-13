@@ -73,7 +73,13 @@ for stage in StageList {
     } 
 
     
+    var entry = stone.ores[i];
 
+    for x in entry.keys{
+      for y in entry[x]{
+        mods.orestages.OreStages.addReplacement(stone.substages[i], y, x);
+      }
+    }
     
 
     
@@ -81,21 +87,7 @@ for stage in StageList {
   }
 }
 
-//mods.orestages.OreStages.addReplacement(String stage, IIngredient original, IItemStack replacement);
-
-
-
-//mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][0], oretest[2][1][0]);
-//mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][1], oretest[2][1][1]);
 
 
 
 
-//THIS WORKS! Implement to iterator
-var entry = stone.ores[2];
-
-for x in entry.keys{
-  for y in entry[x]{
-    mods.orestages.OreStages.addReplacement(stone.substages[2], y, x);
-  }
-}
