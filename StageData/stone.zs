@@ -270,27 +270,15 @@ static liquids as ILiquidStack[][int] = {
 
 };
 
-static ores as IItemStack[][int] = {
-    1 : [ 
-         
-       
-    ],
-    2 : [ 
-       
-    ]  
+static ores as IItemStack[][IItemStack][int] = 
+{
+    1: {},
+    2: {
+            <minecraft:stone>:[<geolosys:ore_vanilla>],
+            <immcraft:rock>:[<geolosys:ore_sample_vanilla>]
+    }
 };
 
-//works for now
-//perhaps there is a better way?
-static oretest as IItemStack[][][int] = 
-{
-    2 : [
-            [<geolosys:ore_vanilla>,
-            <geolosys:ore_sample_vanilla>                     ],
-            [<minecraft:stone>,
-            <minecraft:log>]
-         ]
-};
 
 static recipes as string [][int] = {
     1 : [

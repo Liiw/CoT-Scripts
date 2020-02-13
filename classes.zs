@@ -10,7 +10,7 @@ zenClass Stage {
     var mods as string[][int] = {};
     var items as IItemStack[][int] = {};
     var liquids as ILiquidStack[][int] = {};
-    var ores as IItemStack [][int] = {};
+    var ores as IItemStack[][IItemStack][int] = {};
     var recipes as string[][int] = {};
 
 
@@ -20,7 +20,7 @@ zenClass Stage {
         classMods as string[][int],
         classItems as IItemStack[][int],
         classLiquids as ILiquidStack[][int], 
-        classOres as IItemStack [][int],
+        classOres as IItemStack[][IItemStack][int],
         classRecipes as string[int]
         
     ){

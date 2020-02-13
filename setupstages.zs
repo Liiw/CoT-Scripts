@@ -31,7 +31,6 @@ import scripts.utils.RemainingModsToStage;
 import scripts.utils.ChangeItemStage;
 import scripts.utils.ChangeLiquidStage;
 
-import scripts.StageData.stone.oretest as oretest;
 
 
 
@@ -71,14 +70,32 @@ for stage in StageList {
 
     for recipe in stage.recipes[i] {
       mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
-    }  
+    } 
+
+    
+
+    
+
+    
+    
   }
 }
 
 //mods.orestages.OreStages.addReplacement(String stage, IIngredient original, IItemStack replacement);
 
-var oreT = oretest[2];
 
 
-mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][0], oretest[2][1][0]);
-mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][1], oretest[2][1][1]);
+//mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][0], oretest[2][1][0]);
+//mods.orestages.OreStages.addReplacement(stone.substages[2], oretest[2][0][1], oretest[2][1][1]);
+
+
+
+
+//THIS WORKS! Implement to iterator
+var entry = stone.ores[2];
+
+for x in entry.keys{
+  for y in entry[x]{
+    mods.orestages.OreStages.addReplacement(stone.substages[2], y, x);
+  }
+}
