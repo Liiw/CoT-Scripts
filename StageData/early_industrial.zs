@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "early_industrial";
@@ -25,6 +26,13 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+
+        //Geolosys clusters
+            <geolosys:cluster:6>,
+            <geolosys:cluster:7>,
+            <geolosys:coal_coke:1>,
+            <geolosys:coal_coke>,
+
         //Agricraft
             <agricraft:agri_nugget:8>,
             <agricraft:agri_nugget:10>,
@@ -106,9 +114,14 @@ static liquids as ILiquidStack [][int] = {
     
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1: {<minecraft:stone>:[<geolosys:ore:7>],
 
+        <immcraft:rock>:[<geolosys:ore_sample:7>]
+
+    },
+    2: {}
 };
 
 static recipes as string [][int] = {

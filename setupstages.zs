@@ -6,6 +6,8 @@ import scripts.utils.RemainingModsToStage;
 
 
 
+
+
 //Import staging data (substages, mods, items, liquids, ores)
   //Main epochs
   import scripts.StageData.stone.class as stone;
@@ -71,23 +73,23 @@ for stage in StageList {
     for recipe in stage.recipes[i] {
       mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
     } 
-
-    
-    var entry = stone.ores[i];
-
-    for x in entry.keys{
-      for y in entry[x]{
-        mods.orestages.OreStages.addReplacement(stone.substages[i], y, x);
-      }
-    }
-    
-
-    
-    
   }
 }
 
-
-
+for stage in StageList {
+  for i in 1 to stage.substages.length + 1 {
+    var entry = stage.ores[i];
+      
+      for cover in entry.keys{
+        for ore in entry[cover]{
+          mods.orestages.OreStages.addReplacement(stage.substages[i], ore, cover);
+          //ChangeItemStage (stage.substages[i], ore);
+          mods.ItemStages.removeItemStage(ore);
+          mods.ItemStages.addItemStage(stage.substages[i], ore);
+          mods.recipestages.Recipes.setRecipeStage(stage.substages[i], ore);
+        }
+      }
+  }
+}
 
 

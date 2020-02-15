@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "creative";
@@ -14,13 +15,18 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "customnpcs",
-        "charset",
-        "omlib"
+        
+        "omlib",
+        
     ]
 };
 
 static items as IItemStack [][int]  = {
     1: [
+       
+        //Tconstuct
+            <tconstruct:wooden_hopper>,
+
         //Minecraft
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:bat"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:blaze"}}),
@@ -122,12 +128,8 @@ static items as IItemStack [][int]  = {
             <minecraft:structure_block>,
             <minecraft:command_block_minecart>,
             <minecraft:mob_spawner>,
-
-            <minecraft:gold_ore>,
-            <minecraft:iron_ore>,
-            <minecraft:coal_ore>,
-            <minecraft:lapis_ore>,
-            <minecraft:diamond_ore>,
+            <minecraft:barrier>,
+            
 
         //Constructs Armory some tables
             <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
@@ -140,7 +142,37 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:chiefbarbarian"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:pirate"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:archerpirate"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:chiefpirate"}})
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:chiefpirate"}}),
+        //Geolosys
+            //<geolosys:pro_pick>,
+            <geolosys:field_manual>,
+            <geolosys:ore:8>,
+            <geolosys:cluster:12>,
+            <geolosys:cluster:8>,
+            <geolosys:ore_sample:8>,
+            <geolosys:ore_sample:10>,          
+            <geolosys:cluster:10>,
+            <geolosys:ore:10>,
+
+        //Bountiful
+            <bountiful:bountyboarditem>,
+            <bountiful:bounty>,
+        
+        //Immcraft
+            <immcraft:dummybook:*>,
+            <immcraft:manual>,
+            
+            <immcraft:chisel>,
+            <immcraft:saw>,
+            <immcraft:workbench>,
+            <immcraft:workbench_sec>,
+
+        //Primal tech
+            <primal_tech:work_stump>,
+            <primal_tech:work_stump_upgraded>,
+            
+            <primal_tech:wooden_basin>,
+            <primal_tech:rock>
 
     ]
 };
@@ -151,9 +183,10 @@ static liquids as ILiquidStack [][int] = {
   ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
-
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1: {},
+    2: {}
 };
 
 static recipes as string [][int] = {

@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "culinary";
@@ -82,9 +83,10 @@ static liquids as ILiquidStack [][int] = {
   ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
-
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1: {},
+    2: {}
 };
 
 static recipes as string [][int] = {

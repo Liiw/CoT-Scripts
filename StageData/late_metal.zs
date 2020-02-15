@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "late_metal";
@@ -24,6 +25,12 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
+        //Primal_tech 
+            
+            <primal_tech:charcoal_hopper>,
+        //Geolosys clusters
+            <geolosys:cluster>,
+            <geolosys:cluster:1>,
 
         //Agricraft    
             <agricraft:agri_nugget>,
@@ -50,6 +57,7 @@ static items as IItemStack [][int]  = {
             <compactdrawers:compact_drawer_half>.withTag({}),
 
         //Minecraft
+            
             <minecraft:acacia_door>,
             <minecraft:acacia_fence>,
             <minecraft:acacia_fence_gate>,
@@ -93,7 +101,7 @@ static items as IItemStack [][int]  = {
             <minecraft:diamond_hoe>,
             <minecraft:diamond_horse_armor>,
             <minecraft:diamond_leggings>,
-            //<minecraft:diamond_ore>,
+            
             <minecraft:diamond_pickaxe>,
             <minecraft:diamond_shovel>,
             <minecraft:diamond_sword>,
@@ -108,7 +116,7 @@ static items as IItemStack [][int]  = {
             <minecraft:gold_block>,
             <minecraft:gold_ingot>,
             <minecraft:gold_nugget>,
-            //<minecraft:gold_ore>,
+           
             <minecraft:golden_axe>,
             <minecraft:golden_boots>,
             <minecraft:golden_carrot>,
@@ -132,7 +140,7 @@ static items as IItemStack [][int]  = {
             <minecraft:iron_ingot>,
             <minecraft:iron_leggings>,
             <minecraft:iron_nugget>,
-            //<minecraft:iron_ore>,
+            
             <minecraft:iron_pickaxe>,
             <minecraft:iron_shovel>,
             <minecraft:iron_sword>,
@@ -293,10 +301,24 @@ static liquids as ILiquidStack [][int] = {
     ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1: {<minecraft:stone>:[<geolosys:ore_vanilla:2>,
+                           <geolosys:ore_vanilla:5>,
+                           <geolosys:ore>,
+                           <minecraft:iron_ore>,
+                           <geolosys:ore:1>,
+                           <minecraft:diamond_ore>,
+                           <minecraft:gold_ore>],
 
+          <immcraft:rock>:[<geolosys:ore_sample_vanilla:2>,
+                           <geolosys:ore_sample_vanilla:5>,
+                           <geolosys:ore_sample>,
+                           <geolosys:ore_sample:1>]},
+    2: {}
 };
+
+
 
 static recipes as string [][int] = {
     1 : [

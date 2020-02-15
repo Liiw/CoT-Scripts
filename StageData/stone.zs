@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 
@@ -10,7 +11,8 @@ static name as string = "stone";
 
 static substages as string[int] = {
     1 : "stone_1",
-    2 : "stone_2"
+    2 : "stone_2",
+    3 : "stone_3"
 };
 
 static mods as string[][int] = {
@@ -18,7 +20,8 @@ static mods as string[][int] = {
         "basketcase",
     ],
     2 : [
-        
+        "immcraft",
+        "primal_tech"
     ]
 };
 
@@ -40,11 +43,23 @@ static items as IItemStack[][int] = {
             <minecraft:log:2>,
             <minecraft:log:3>,
             <minecraft:log2>,
-            <minecraft:log2:1>
+            <minecraft:log2:1>,
+            <minecraft:planks>,
+            <minecraft:planks:1>,
+            <minecraft:planks:2>,
+            <minecraft:planks:3>,
+            <minecraft:planks:4>,
+            <minecraft:planks:5>,
+            <minecraft:grass>,
+
+       
+            
     ],
 
 
     2 : [  
+        
+
         //Minecraft
             <minecraft:apple>,
             <minecraft:beef>,
@@ -61,7 +76,7 @@ static items as IItemStack[][int] = {
             <minecraft:coal>,
             <minecraft:coal:1>,
             <minecraft:coal_block>,
-            //<minecraft:coal_ore>,
+            
             <minecraft:cobblestone>,
             <minecraft:cobblestone_wall>,
             <minecraft:cobblestone_wall:1>,
@@ -96,7 +111,7 @@ static items as IItemStack[][int] = {
             <minecraft:dye:1>,
             <minecraft:dye:2>,
             <minecraft:dye:3>,
-            <minecraft:dye:4>,
+            
             <minecraft:dye:5>,
             <minecraft:dye:6>,
             <minecraft:dye:7>,
@@ -118,8 +133,8 @@ static items as IItemStack[][int] = {
             <minecraft:hardened_clay>,
             <minecraft:hay_block>,
             <minecraft:ice>,
-            <minecraft:lapis_block>,
-            //<minecraft:lapis_ore>,
+            
+           
             <minecraft:lead>,
             <minecraft:leather>,
             <minecraft:leather_boots>,
@@ -136,12 +151,7 @@ static items as IItemStack[][int] = {
             <minecraft:mossy_cobblestone>,
             <minecraft:mycelium>,
             <minecraft:packed_ice>,
-            <minecraft:planks>,
-            <minecraft:planks:1>,
-            <minecraft:planks:2>,
-            <minecraft:planks:3>,
-            <minecraft:planks:4>,
-            <minecraft:planks:5>,
+            
             <minecraft:rabbit_hide>,
             <minecraft:red_flower>,
             <minecraft:red_flower:1>,
@@ -215,7 +225,7 @@ static items as IItemStack[][int] = {
             <minecraft:string>,
             <minecraft:tallgrass:1>,
             <minecraft:tallgrass:2>,
-            <minecraft:torch>,
+            
             <minecraft:totem_of_undying>,
             <minecraft:vine>,
             <minecraft:waterlily>,
@@ -246,23 +256,43 @@ static items as IItemStack[][int] = {
             <minecraft:wool:15>,
             <minecraft:yellow_flower>,
         
+        //PrimalTech
+            <primal_tech:stone_anvil>,
+
         
-        //HarvestCraft
+        
+        //Harvestcraft gardens
+
             <harvestcraft:frostgarden>,
             <harvestcraft:shadedgarden>,
             <harvestcraft:soggygarden>,
             <harvestcraft:tropicalgarden>,
             <harvestcraft:windygarden>,
-            <harvestcraft:aridgarden>
+            <harvestcraft:aridgarden>    
+            
+
+    ],
+
+    3 : [
+
+        //Geolosys clusters
+            <geolosys:coal:3>,
+            <geolosys:coal:2>,
+            <geolosys:coal:1>,
+            <geolosys:coal>,
+
+        //Minecraft
+            <minecraft:lapis_block>,
+            <minecraft:dye:4>
+
+
 
     ] 
 };
 
 static liquids as ILiquidStack[][int] = {   
     1 : [ 
-        //Minecraft
-            <liquid:water>,
-            <liquid:lava>
+        
     ],
     2 : [ 
        
@@ -270,15 +300,26 @@ static liquids as ILiquidStack[][int] = {
 
 };
 
-static ores as IItemStack[][IItemStack][int] = 
+static ores as IIngredient[][IItemStack][int] = 
 {
     1: {},
-    2: {
-            <minecraft:stone>:[<geolosys:ore_vanilla>],
-            <immcraft:rock>:[<geolosys:ore_sample_vanilla>]
+    2: {},
+    3: {
+            <minecraft:stone>:[<geolosys:ore_vanilla>,
+                               <minecraft:lapis_ore>,
+                               <geolosys:ore_vanilla:3>,
+                               
+                               <minecraft:coal_ore>],
+
+            <immcraft:rock>:[<geolosys:ore_sample_vanilla>,
+                             <geolosys:ore_sample_vanilla:3>,],
+
+            
     }
 };
 
+
+ //,
 
 static recipes as string [][int] = {
     1 : [
@@ -286,7 +327,13 @@ static recipes as string [][int] = {
         "flintaxe"
     ],
     2 : [ 
-       
+        "stoneClub",
+        "stoneAxe",
+        "stonePick",
+        "stoneShovel",
+        "stoneSword",
+        "clayKiln",
+        "boneShard"
     ] 
 };
 

@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "early_metal";
@@ -16,18 +17,31 @@ static mods as string[][int] = {
         "jarm",
         "wumpleutil", 
         "comforts",
-        "astikorcarts" 
+        "astikorcarts" ,
+        "primalchests"
     ]
 };
 
 static items as IItemStack [][int]  = {
     1 : [
+        //Geolosys ore clusters
+            <geolosys:cluster:2>,
+            <geolosys:cluster:3>,    
+
         //Clay Bucket
             <claybucket:unfiredclaybucket>,
             <claybucket:claybucket>,
             <claybucket:claybucket:1>,
             <claybucket:claybucket:2>,
 
+        //Primal tech
+            <primal_tech:fluid_bladder>,
+            <primal_tech:water_saw>,
+            <primal_tech:flint_edged_disc>,
+            <primal_tech:wooden_hopper>,
+
+        //Immersive Craft
+            <immcraft:furnace>,
 
         //Agricraft
             <agricraft:agri_nugget:4>,
@@ -58,6 +72,7 @@ static items as IItemStack [][int]  = {
             <harvestcraft:hardenedleatherleggingsitem>,
         
         //Minecraft
+            <minecraft:torch>,
             <minecraft:name_tag>,
             <minecraft:saddle>,
             <minecraft:stonebrick>,
@@ -73,19 +88,35 @@ static items as IItemStack [][int]  = {
 };
 
 static liquids as ILiquidStack [][int] = {
-  1:[
-
+  1 : [
+        //Minecraft
+            
+            <liquid:lava>
   ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1: {<minecraft:stone>:[<geolosys:ore:2>,
+                           <geolosys:ore:3>,
+                           <geolosys:ore:4>,
+                           <geolosys:ore:5>],
+        
+        <immcraft:rock>:[<geolosys:ore_sample:2>,
+                         <geolosys:ore_sample:3>,
+                         <geolosys:ore_sample:4>,
+                         <geolosys:ore_sample:5>]
+                           
+       },
 
+    2: {}
 };
 
 static recipes as string [][int] = {
     1 : [
-        
+        "primalChest",
+        "primalChestAdv",
+        "woodHopper"
     ]
 };
 

@@ -1,5 +1,6 @@
 #priority 10000
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 
@@ -10,7 +11,7 @@ zenClass Stage {
     var mods as string[][int] = {};
     var items as IItemStack[][int] = {};
     var liquids as ILiquidStack[][int] = {};
-    var ores as IItemStack[][IItemStack][int] = {};
+    var ores as IIngredient[][IItemStack][int] = {};
     var recipes as string[][int] = {};
 
 
@@ -20,7 +21,7 @@ zenClass Stage {
         classMods as string[][int],
         classItems as IItemStack[][int],
         classLiquids as ILiquidStack[][int], 
-        classOres as IItemStack[][IItemStack][int],
+        classOres as IIngredient[][IItemStack][int],
         classRecipes as string[int]
         
     ){

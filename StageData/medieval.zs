@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "medieval";
@@ -38,13 +39,17 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+        //Geolosys clusters
+            <geolosys:cluster:4>,
+            <geolosys:cluster:5>,
+
         //Baubles
             <baubles:ring>,  
         //Minecraft
             <minecraft:acacia_boat>,
             <minecraft:armor_stand>,
             <minecraft:arrow>,
-            <minecraft:barrier>,
+            
             <minecraft:beacon>,
             <minecraft:bed>,
             <minecraft:bed:1>,
@@ -355,7 +360,7 @@ static items as IItemStack [][int] = {
             <minecraft:quartz_stairs>,
             <minecraft:red_glazed_terracotta>,
             <minecraft:red_nether_brick>,
-            <minecraft:redstone>,
+            
             <minecraft:redstone_block>,
             <minecraft:redstone_lamp>,
             <minecraft:redstone_ore>,
@@ -500,10 +505,24 @@ static liquids as ILiquidStack [][int] = {
     ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1 : {<minecraft:stone>:[<minecraft:redstone>,
+                            <geolosys:ore_vanilla:1>,
+                            <geolosys:ore:6>,
+                            <geolosys:ore_vanilla:6>,
+                            <geolosys:ore_vanilla:4>],
 
+        <immcraft:rock>:[<geolosys:ore_sample_vanilla:1>,
+                         <geolosys:ore_sample:6>,
+                         <geolosys:ore_sample_vanilla:6>,
+                         <geolosys:ore_sample_vanilla:4>]
+    },
+
+    2 : {}
 };
+
+
 
 static recipes as string [][int] = {
     1 : [

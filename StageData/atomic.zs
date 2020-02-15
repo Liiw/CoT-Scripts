@@ -3,6 +3,7 @@
 import scripts.classes.Stage;
 
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 
 static name as string = "atomic";
@@ -32,6 +33,11 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
   1 : [
+
+    //Geolysys ore clusters
+      <geolosys:cluster:11>,
+      <geolosys:cluster:9>,
+
     //Open modular passive defence
       <ompd:fence:3>,
       <ompd:hardened:3>,
@@ -59,9 +65,13 @@ static liquids as ILiquidStack [][int] = {
   ]
 };
 
-static ores as IItemStack [][int] = {
-  1 : []
-
+static ores as IIngredient[][IItemStack][int] = 
+{
+    1 : {<minecraft:stone>:[<geolosys:ore:9>],
+    
+         <immcraft:rock>:[<geolosys:ore_sample:9>]
+    },
+    2: {}
 };
 
 static recipes as string [][int] = {
