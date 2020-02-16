@@ -22,7 +22,8 @@ static mods as string[][int] = {
     2 : [
         "immcraft",
         "primal_tech"
-    ]
+    ],
+    3 : []
 };
 
 static items as IItemStack[][int] = {
@@ -55,7 +56,6 @@ static items as IItemStack[][int] = {
        
             
     ],
-
 
     2 : [  
         
@@ -296,7 +296,10 @@ static liquids as ILiquidStack[][int] = {
     ],
     2 : [ 
        
-    ]  
+    ],  
+    3 : [
+        
+    ]
 
 };
 
@@ -318,8 +321,11 @@ static ores as IIngredient[][IItemStack][int] =
     }
 };
 
-
- //,
+static TiCMat as string [][int] = {
+    1:[],
+    2:[],
+    3:[]
+};
 
 static recipes as string [][int] = {
     1 : [
@@ -334,8 +340,10 @@ static recipes as string [][int] = {
         "stoneSword",
         "clayKiln",
         "boneShard"
-    ] 
+    ], 
+    3 : []
 };
+
 
 
 static class as Stage  = Stage(
@@ -345,6 +353,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
 
 );

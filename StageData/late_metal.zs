@@ -25,6 +25,28 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
+
+        //Harvestcraft
+            <harvestcraft:candledeco1>,
+            <harvestcraft:candledeco10>,
+            <harvestcraft:candledeco11>,
+            <harvestcraft:candledeco12>,
+            <harvestcraft:candledeco13>,
+            <harvestcraft:candledeco14>,
+            <harvestcraft:candledeco15>,
+            <harvestcraft:candledeco16>,
+            <harvestcraft:candledeco2>,
+            <harvestcraft:candledeco3>,
+            <harvestcraft:candledeco4>,
+            <harvestcraft:candledeco5>,
+            <harvestcraft:candledeco6>,
+            <harvestcraft:candledeco7>,
+            <harvestcraft:candledeco8>,
+            <harvestcraft:candledeco9>,
+
+        //Dungpipe sever pipe
+            <dungpipe:sewer_pipe>,
+
         //Primal_tech 
             
             <primal_tech:charcoal_hopper>,
@@ -52,9 +74,9 @@ static items as IItemStack [][int]  = {
             <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "advancedrocketry:planks"}),
         //CompactDrawers
-            <compactdrawers:compact_drawer_2by1>.withTag({}),
-            <compactdrawers:compact_drawer_2by1_half>.withTag({}),
-            <compactdrawers:compact_drawer_half>.withTag({}),
+            //<compactdrawers:compact_drawer_2by1>.withTag({}),
+            //<compactdrawers:compact_drawer_2by1_half>.withTag({}),
+            //<compactdrawers:compact_drawer_half>.withTag({}),
 
         //Minecraft
             
@@ -320,6 +342,16 @@ static ores as IIngredient[][IItemStack][int] =
 
 
 
+static TiCMat as string [][int] = {
+    1:[
+        "iron",
+        "paper",
+        "pigiron"
+    ],
+    2:[],
+    3:[]
+};
+
 static recipes as string [][int] = {
     1 : [
         
@@ -333,5 +365,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
+
 );

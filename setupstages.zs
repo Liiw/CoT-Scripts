@@ -4,7 +4,7 @@ import scripts.classes.Stage;
 import scripts.utils.AddToStage;
 import scripts.utils.RemainingModsToStage;
 
-
+import crafttweaker.data.IData;
 
 
 
@@ -32,6 +32,7 @@ import scripts.utils.RemainingModsToStage;
 
 import scripts.utils.ChangeItemStage;
 import scripts.utils.ChangeLiquidStage;
+import scripts.utils.ChangeTiCMatStageMOD;
 
 
 
@@ -58,26 +59,41 @@ global StageList as Stage[] = [
 //STAGING
 //mods
 
+//if(stage.mods[i]) does not work, implement better check
+
 for stage in StageList {
   for i in 1 to stage.substages.length + 1 {
-    AddToStage (stage.substages[i], stage.mods[i]);  
+    
+    AddToStage (stage.substages[i], stage.mods[i]);
+
   }
 }
+
+
 
 //Items, recipes and liquids
 for stage in StageList {
   for i in 1 to stage.substages.length + 1 {
-    ChangeItemStage (stage.substages[i], stage.items[i]);
-    ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
 
+    
+    ChangeItemStage (stage.substages[i], stage.items[i]);
+
+    ChangeTiCMatStageMOD(stage.substages[i], stage.TiCMat[i]);
+    
+    ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
+    
+
+    
     for recipe in stage.recipes[i] {
       mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
-    } 
+    }
+    
   }
 }
 
 for stage in StageList {
   for i in 1 to stage.substages.length + 1 {
+    
     var entry = stage.ores[i];
       
       for cover in entry.keys{
@@ -89,7 +105,34 @@ for stage in StageList {
           mods.recipestages.Recipes.setRecipeStage(stage.substages[i], ore);
         }
       }
+    
   }
 }
 
 
+
+//THE FUTURE IS NOW!
+
+print("OREDICT ENTRY NAMES");
+val allEntries= oreDict.entries;
+
+var oth as string[]  = [
+    "ore",
+    "ingot",
+    "block",
+    //"coin",
+    "dust",
+    "nugget",
+    //"gear",
+    "plate"
+];
+
+for entry in allEntries{
+    if (entry.name.toLowerCase has "copper" ){
+        for e in oth {
+            if (entry.name.toLowerCase has e){
+                print (entry.name);
+            }
+        }
+    }
+}

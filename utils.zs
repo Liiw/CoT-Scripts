@@ -49,3 +49,44 @@ function ChangeLiquidStage(stage as string, liquid_list as ILiquidStack []) {
 		mods.ItemStages.stageLiquid(stage, liquid);
 	}
 }
+
+//Stage Tinkers Construct materials and tools with materials
+//Stage by mod
+function ChangeTiCMatStageMOD(stage as string,  materials as string[]){
+	
+	
+	for material in materials{
+		for mod in loadedMods{
+			for item in loadedMods[mod.id].items{
+				if(item.tag.Material){
+					if (item.tag.Material has material)
+					{
+						mods.ItemStages.removeItemStage(item);
+						mods.ItemStages.addItemStage(stage, item);
+						mods.recipestages.Recipes.setRecipeStage(stage, item);
+					}						
+				}
+
+				if(item.tag.TinkerData){
+					if (item.tag.TinkerData.Materials has material)
+					{
+						mods.ItemStages.removeItemStage(item);
+						mods.ItemStages.addItemStage(stage, item);
+						mods.recipestages.Recipes.setRecipeStage(stage, item);
+					}   
+				}
+			}
+		}
+
+		mods.TinkerStages.addMaterialStage(stage, material);
+
+	}
+	
+}
+
+
+
+//Stage by item
+function ChangeTiCMatStageITEM(stage as string, items as IIngredient [], materials as string[]){
+	
+}

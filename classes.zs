@@ -12,6 +12,7 @@ zenClass Stage {
     var items as IItemStack[][int] = {};
     var liquids as ILiquidStack[][int] = {};
     var ores as IIngredient[][IItemStack][int] = {};
+    var TiCMat as string [][int] = {};
     var recipes as string[][int] = {};
 
 
@@ -22,6 +23,7 @@ zenClass Stage {
         classItems as IItemStack[][int],
         classLiquids as ILiquidStack[][int], 
         classOres as IIngredient[][IItemStack][int],
+        classTiCMat as string [][int],
         classRecipes as string[int]
         
     ){
@@ -31,6 +33,7 @@ zenClass Stage {
         items = classItems;
         liquids = classLiquids;
         ores = classOres;
+        TiCMat = classTiCMat;
         recipes = classRecipes;
     }
     

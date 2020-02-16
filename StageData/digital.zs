@@ -32,7 +32,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
-  
+        //Geolysys clusters
+            <geolosys:cluster:8>,
         //Thaumcomp
             <thaumcomp:sealconnector>,
         //Minecraft bedrock
@@ -88,8 +89,13 @@ static items as IItemStack [][int]  = {
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "oppm"}, "oc:color": 6, display: {Name: "OPPM (Package Manager)"}, "oc:lootFactory": "opencomputers:oppm"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "dig"}, "oc:color": 3, display: {Name: "Digger"}, "oc:lootFactory": "opencomputers:dig"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "maze"}, "oc:color": 14, display: {Name: "Mazer"}, "oc:lootFactory": "opencomputers:maze"}),
-            <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "irc"}, "oc:color": 12, display: {Name: "OpenIRC (IRC Client)"}, "oc:lootFactory": "opencomputers:irc"})
-    
+            <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "irc"}, "oc:color": 12, display: {Name: "OpenIRC (IRC Client)"}, "oc:lootFactory": "opencomputers:irc"}),
+        //TE stuff
+            <thermalfoundation:material:22>,
+            <thermalfoundation:material:23>,
+            //Buckets
+            <forge:bucketfilled>.withTag({FluidName: "enderium", Amount: 1000})
+
             
             
     ]
@@ -130,14 +136,35 @@ static liquids as ILiquidStack [][int]  = {
         <liquid:stellar_alloy>,
         <liquid:crystalline_pink_slime>,
         <liquid:energetic_silver>,
-        <liquid:vivid_alloy>
+        <liquid:vivid_alloy>,
+    //TE
+        <liquid:enderium>
     ]    
 };
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {},
+    1: {<minecraft:stone>:[<geolosys:ore:8>],
+    
+        <immcraft:rock>:[<geolosys:ore_sample:8>]},
     2: {}
+};
+
+static TiCMat as string [][int] = {
+    1:[
+        "electrical_steel",
+        "energetic_alloy",
+        "vibrant_alloy",
+        "redstone_alloy",
+        "conductive_iron",
+        "pulsating_iron",
+        "dark_steel",
+        "soularium",
+        "construction_alloy",
+        "end_steel"
+    ],
+    2:[],
+    3:[]
 };
 
 static recipes as string [][int] = {
@@ -153,5 +180,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
+
 );

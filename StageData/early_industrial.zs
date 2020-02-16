@@ -92,7 +92,27 @@ static items as IItemStack [][int] = {
             <forge:bucketfilled>.withTag({FluidName: "concrete", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "potion", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "uranium", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "constantan", Amount: 1000})
+            <forge:bucketfilled>.withTag({FluidName: "constantan", Amount: 1000}),
+        //TE plates
+            <thermalfoundation:material:33>,
+            <thermalfoundation:material:32>,
+            <thermalfoundation:material:320>,
+            <thermalfoundation:material:321>,
+            <thermalfoundation:material:322>,
+            <thermalfoundation:material:323>,
+            <thermalfoundation:material:324>,
+            <thermalfoundation:material:325>,
+            <thermalfoundation:material:326>,
+            <thermalfoundation:material:327>,
+            <thermalfoundation:material:328>,
+            <thermalfoundation:material:352>,
+            <thermalfoundation:material:353>,
+            <thermalfoundation:material:354>,
+            <thermalfoundation:material:355>,
+            <thermalfoundation:material:356>,
+            <thermalfoundation:material:357>,
+            <thermalfoundation:material:358>,
+            <thermalfoundation:material:359>
 
         
         
@@ -124,6 +144,17 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
+static TiCMat as string [][int] = {
+    1:[
+        "slime",
+        "blueslime",
+        "magmaslime",
+        "ardite"
+    ],
+    2:[],
+    3:[]
+};
+
 static recipes as string [][int] = {
     1 : [
         
@@ -137,5 +168,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
+
 );

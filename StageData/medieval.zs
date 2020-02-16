@@ -524,6 +524,28 @@ static ores as IIngredient[][IItemStack][int] =
 
 
 
+static TiCMat as string [][int] = {
+    1:[
+        "obsidian",
+        "prismarine",
+        "firewood",
+        "knightslime",
+        "netherrack",
+        "steel",
+
+        //Thaumcraft TiC
+        "perditio_thaumium",
+        "ordo_thaumium",
+        "terra_thaumium",
+        "aqua_thaumium",
+        "ignis_thaumium",
+        "aer_thaumium"
+
+    ],
+    2:[],
+    3:[]
+};
+
 static recipes as string [][int] = {
     1 : [
         
@@ -537,5 +559,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
+
 );

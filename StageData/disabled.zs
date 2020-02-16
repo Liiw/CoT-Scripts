@@ -38,6 +38,12 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
+static TiCMat as string [][int] = {
+    1:[],
+    2:[],
+    3:[]
+};
+
 static recipes as string [][int] = {
     1 : [
         
@@ -51,5 +57,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
+    TiCMat,
     recipes
+
 );
