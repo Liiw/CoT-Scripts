@@ -51,13 +51,19 @@ function ChangeLiquidStage(stage as string, liquid_list as ILiquidStack []) {
 }
 
 //Stage Tinkers Construct materials and tools with materials
-//Stage by mod
-function ChangeTiCMatStageMOD(stage as string,  materials as string[]){
+//Stage by items in mods, liquids
+
+
+function ChangeMaterialStage(stage as string,  
+                             materials as string[]){
 	
+    var oreDictEnt = oreDict.entries;
 	
+    //TiC parts and equipment sorting
 	for material in materials{
 		for mod in loadedMods{
 			for item in loadedMods[mod.id].items{
+                //check if item is tool part with material
 				if(item.tag.Material){
 					if (item.tag.Material has material)
 					{
@@ -66,7 +72,7 @@ function ChangeTiCMatStageMOD(stage as string,  materials as string[]){
 						mods.recipestages.Recipes.setRecipeStage(stage, item);
 					}						
 				}
-
+                //check if item is tool with TiC materials
 				if(item.tag.TinkerData){
 					if (item.tag.TinkerData.Materials has material)
 					{
@@ -75,18 +81,37 @@ function ChangeTiCMatStageMOD(stage as string,  materials as string[]){
 						mods.recipestages.Recipes.setRecipeStage(stage, item);
 					}   
 				}
+                //check if item is bucket or similar with material fluid
+                if(item.tag.FluidName){
+					if (item.tag.FluidName has material)
+					{
+						mods.ItemStages.removeItemStage(item);
+						mods.ItemStages.addItemStage(stage, item);
+						mods.recipestages.Recipes.setRecipeStage(stage, item);
+                        //stage the liquid as well
+                        mods.ItemStages.stageLiquid(stage, item.liquid);
+					}   
+				}
+
 			}
 		}
 
+        //TiC materials sorting
 		mods.TinkerStages.addMaterialStage(stage, material);
 
-	}
-	
-}
+        //Oredict items sorting
 
+        for entry in oreDictEnt{
+            if (entry.name.toLowerCase has material){
 
-
-//Stage by item
-function ChangeTiCMatStageITEM(stage as string, items as IIngredient [], materials as string[]){
-	
+                for item in entry.items{    
+                    mods.ItemStages.removeItemStage(item);
+                    mods.ItemStages.addItemStage(stage, item);
+                    mods.recipestages.Recipes.setRecipeStage(stage, item);
+                }
+			                   
+            }
+			
+        }
+    }  
 }

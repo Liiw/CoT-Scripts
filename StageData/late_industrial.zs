@@ -17,7 +17,6 @@ static mods as string[][int] = {
         "thaumicrestoration",
         "immersive_energy",
         "immersivepetroleum",
-        "immersive_energy",
         "immersiveposts",
         "mts",
         "mtsofficialpack",
@@ -110,16 +109,24 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {},
+    1 : {<minecraft:stone>:[
+                                <geolosys:ore:6>
+                           ],
+                           
+
+        <immcraft:rock>:[
+                            <geolosys:ore_sample:6>
+                        ]
+    },
     2: {}
 };
 
-static TiCMat as string [][int] = {
-    1:[
-        "endstone",
+
+static materials as string [][int] = {
+    1:[ "endstone",
         "cobalt",
-        "manyullyn"
-    ],
+        "manyullyn",
+        "lead"],
     2:[],
     3:[]
 };
@@ -137,7 +144,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );

@@ -23,7 +23,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1: [
-       
+       //B.A.S.E wrench
+            <base:wrench>,
         //Tconstuct
             <tconstruct:wooden_hopper>,
 
@@ -298,8 +299,14 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
-static TiCMat as string [][int] = {
-    1:[],
+
+static materials as string [][int] = {
+    1:[
+        "iridium",
+        "mithril",
+        "signalum",
+        "lumium"
+    ],
     2:[],
     3:[]
 };
@@ -317,7 +324,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );

@@ -20,6 +20,7 @@ static mods as string[][int] = {
     1 : [        
         "comforts",
         "astikorcarts" ,
+        "horsepower",
         "primalchests"
     ]
 };
@@ -210,7 +211,7 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
-static TiCMat as string [][int] = {
+static materials as string [][int] = {
     1:[
         "wood",
         "bone",
@@ -222,6 +223,7 @@ static TiCMat as string [][int] = {
         "sponge",
         "cactus"
     ],
+
     2:[],
     3:[]
 };
@@ -241,7 +243,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );

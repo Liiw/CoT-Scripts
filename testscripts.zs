@@ -1,3 +1,4 @@
+#norun
 import crafttweaker.oredict.IOreDictEntry;
 
 

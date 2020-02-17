@@ -29,10 +29,10 @@ import crafttweaker.data.IData;
   import scripts.StageData.disabled.class  as disabled;
   import scripts.StageData.creative.class  as creative;
 
-
+//Utility functons
 import scripts.utils.ChangeItemStage;
 import scripts.utils.ChangeLiquidStage;
-import scripts.utils.ChangeTiCMatStageMOD;
+import scripts.utils.ChangeMaterialStage;
 
 
 
@@ -77,12 +77,10 @@ for stage in StageList {
 
     
     ChangeItemStage (stage.substages[i], stage.items[i]);
-
-    ChangeTiCMatStageMOD(stage.substages[i], stage.TiCMat[i]);
     
     ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
     
-
+    ChangeMaterialStage(stage.substages[i], stage.materials[i]);
     
     for recipe in stage.recipes[i] {
       mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 

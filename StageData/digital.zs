@@ -150,7 +150,7 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
-static TiCMat as string [][int] = {
+static materials as string [][int] = {
     1:[
         "electrical_steel",
         "energetic_alloy",
@@ -161,7 +161,8 @@ static TiCMat as string [][int] = {
         "dark_steel",
         "soularium",
         "construction_alloy",
-        "end_steel"
+        "end_steel",
+        "platinum"
     ],
     2:[],
     3:[]
@@ -180,7 +181,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );

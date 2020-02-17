@@ -509,12 +509,12 @@ static ores as IIngredient[][IItemStack][int] =
 {
     1 : {<minecraft:stone>:[<minecraft:redstone>,
                             <geolosys:ore_vanilla:1>,
-                            <geolosys:ore:6>,
+                            //<geolosys:ore:6>,
                             <geolosys:ore_vanilla:6>,
                             <geolosys:ore_vanilla:4>],
 
         <immcraft:rock>:[<geolosys:ore_sample_vanilla:1>,
-                         <geolosys:ore_sample:6>,
+                         //<geolosys:ore_sample:6>,
                          <geolosys:ore_sample_vanilla:6>,
                          <geolosys:ore_sample_vanilla:4>]
     },
@@ -524,7 +524,8 @@ static ores as IIngredient[][IItemStack][int] =
 
 
 
-static TiCMat as string [][int] = {
+
+static materials as string [][int] = {
     1:[
         "obsidian",
         "prismarine",
@@ -532,6 +533,7 @@ static TiCMat as string [][int] = {
         "knightslime",
         "netherrack",
         "steel",
+        "silver",
 
         //Thaumcraft TiC
         "perditio_thaumium",
@@ -539,9 +541,11 @@ static TiCMat as string [][int] = {
         "terra_thaumium",
         "aqua_thaumium",
         "ignis_thaumium",
-        "aer_thaumium"
-
+        "aer_thaumium",
+        //ALL THE DUSTS BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
+        "dust"
     ],
+
     2:[],
     3:[]
 };
@@ -559,7 +563,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );

@@ -144,12 +144,18 @@ static ores as IIngredient[][IItemStack][int] =
     2: {}
 };
 
-static TiCMat as string [][int] = {
+
+static materials as string [][int] = {
     1:[
         "slime",
         "blueslime",
         "magmaslime",
-        "ardite"
+        "ardite",
+        "electrum",
+        "aluminum",
+        "nickel",
+        //ALL THE PLATES BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
+        "plate"
     ],
     2:[],
     3:[]
@@ -168,7 +174,7 @@ static class as Stage  = Stage(
     items,
     liquids,
     ores,
-    TiCMat,
+    materials,
     recipes
 
 );
