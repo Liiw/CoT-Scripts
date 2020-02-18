@@ -221,7 +221,10 @@ static materials as string [][int] = {
         "tin",
         "bronze",
         "sponge",
-        "cactus"
+        "cactus",
+        //TiC patterns and Clay casts
+        "pattern",
+        "clay_cast"
     ],
 
     2:[],

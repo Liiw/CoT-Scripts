@@ -55,63 +55,111 @@ function ChangeLiquidStage(stage as string, liquid_list as ILiquidStack []) {
 
 
 function ChangeMaterialStage(stage as string,  
-                             materials as string[]){
-	
+                             materials as string[],
+                             oreDictFilter as string[/*include*/][/*exclude*/]){                       
+
     var oreDictEnt = oreDict.entries;
+	
+    var stageItem = false;
+    var stageItemOD = true;
+
 	
     //TiC parts and equipment sorting
 	for material in materials{
 		for mod in loadedMods{
+            
 			for item in loadedMods[mod.id].items{
+                
+                stageItem = false;
+                
                 //check if item is tool part with material
 				if(item.tag.Material){
-					if (item.tag.Material has material)
+					if (item.tag.Material has material || 
+                        item.definition.owner has material ||
+                        item.name has material)
 					{
-						mods.ItemStages.removeItemStage(item);
-						mods.ItemStages.addItemStage(stage, item);
-						mods.recipestages.Recipes.setRecipeStage(stage, item);
-					}						
+						stageItem = true;
+					}
+
+					//If it has a Material tag, it probably is a TiC part
+					if (item.tag.Material has material){
+						//TiC materials sorting
+						mods.TinkerStages.addMaterialStage(stage, material);
+					}
+
 				}
+                //check if item is cast or pattern
+                if(item.tag.PartType){
+                   if (item.tag.PartType.asString() has material){
+                       stageItem = true;
+                   }
+                   //SPECIAL CASE if clay cast then put it to early_metal basically
+                   if (item.name has material){
+                       stageItem = true;
+                   }
+                }
+
                 //check if item is tool with TiC materials
 				if(item.tag.TinkerData){
-					if (item.tag.TinkerData.Materials has material)
+					if (item.tag.TinkerData.Materials has material || 
+                        item.definition.owner has material ||
+                        item.name has material)
 					{
-						mods.ItemStages.removeItemStage(item);
-						mods.ItemStages.addItemStage(stage, item);
-						mods.recipestages.Recipes.setRecipeStage(stage, item);
+						stageItem = true;
 					}   
 				}
                 //check if item is bucket or similar with material fluid
                 if(item.tag.FluidName){
-					if (item.tag.FluidName has material)
+					if (item.tag.FluidName has material || item.definition.owner has material)
 					{
-						mods.ItemStages.removeItemStage(item);
-						mods.ItemStages.addItemStage(stage, item);
-						mods.recipestages.Recipes.setRecipeStage(stage, item);
+						stageItem = true;
                         //stage the liquid as well
                         mods.ItemStages.stageLiquid(stage, item.liquid);
 					}   
 				}
 
-			}
-		}
-
-        //TiC materials sorting
-		mods.TinkerStages.addMaterialStage(stage, material);
-
-        //Oredict items sorting
-
-        for entry in oreDictEnt{
-            if (entry.name.toLowerCase has material){
-
-                for item in entry.items{    
+                //STAGE ITEM IF CONDITION TRIGGERED
+                if (stageItem)
+                {
                     mods.ItemStages.removeItemStage(item);
                     mods.ItemStages.addItemStage(stage, item);
                     mods.recipestages.Recipes.setRecipeStage(stage, item);
+
+                   
                 }
-			                   
+			}
+		}
+
+        
+
+        //Oredict items sorting
+		
+        for entry in oreDictEnt{
+            if (entry.name.toLowerCase has material){
+                stageItemOD = true;
+				//Stage only stuff that also has a part from the list
+				for X in oreDictFilter[1]{
+					if(entry.name.toLowerCase has X){
+                        stageItemOD = false;
+						break;
+                	}
+
+                    if (stageItemOD) {
+                        for I in oreDictFilter[0]{
+                            if(entry.name.toLowerCase has I){
+
+                                for item in entry.items{
+                                    mods.ItemStages.removeItemStage(item);
+                                    mods.ItemStages.addItemStage(stage, item);
+                                    mods.recipestages.Recipes.setRecipeStage(stage, item);
+                                }
+                                
+                                break;
+                            }
+                        }                   
+                    }  
+				}                                
             }
-			
         }
     }  
 }

@@ -54,7 +54,24 @@ global StageList as Stage[] = [
   creative
 ];
 
+//Filter for oredict staging as string [included][excluded]
+static oreDictFilter as string[][] = 
+[
+  [
+    "ore",
+    "ingot",
+    "block",
+    //"coin",
+    "dust",
+    "nugget",
+    //"gear",
+    "plate"
+  ],
 
+  [
+    "clathrate"
+  ]
+];
 
 //STAGING
 //mods
@@ -80,7 +97,7 @@ for stage in StageList {
     
     ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
     
-    ChangeMaterialStage(stage.substages[i], stage.materials[i]);
+    ChangeMaterialStage(stage.substages[i], stage.materials[i], oreDictFilter);
     
     for recipe in stage.recipes[i] {
       mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 

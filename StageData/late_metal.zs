@@ -347,7 +347,19 @@ static materials as string [][int] = {
     1:[
         "iron",
         "paper",
-        "pigiron"
+        "pigiron",
+
+        //TiC parts
+        "hammer",
+        "tough",
+        "excavator",
+        "broad",
+        "lumber",
+        "crossbow",
+        "scythe",
+        "bolt",
+        "large_sword",
+        "cleaver"
     ],
 
     2:[],

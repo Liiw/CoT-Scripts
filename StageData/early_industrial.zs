@@ -155,7 +155,7 @@ static materials as string [][int] = {
         "aluminum",
         "nickel",
         //ALL THE PLATES BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
-        "plate"
+        "oreplate"
     ],
     2:[],
     3:[]

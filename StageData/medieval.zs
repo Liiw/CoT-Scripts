@@ -543,7 +543,10 @@ static materials as string [][int] = {
         "ignis_thaumium",
         "aer_thaumium",
         //ALL THE DUSTS BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
-        "dust"
+        "dust",
+        //ALL THE ARMOR BEFORE THIS STAGE
+        "conarm"
+
     ],
 
     2:[],
