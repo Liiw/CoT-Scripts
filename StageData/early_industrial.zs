@@ -93,7 +93,7 @@ static items as IItemStack [][int] = {
             <forge:bucketfilled>.withTag({FluidName: "potion", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "uranium", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "constantan", Amount: 1000}),
-        //TE plates
+        //TE plates and rockwool
             <thermalfoundation:material:33>,
             <thermalfoundation:material:32>,
             <thermalfoundation:material:320>,
@@ -112,7 +112,39 @@ static items as IItemStack [][int] = {
             <thermalfoundation:material:356>,
             <thermalfoundation:material:357>,
             <thermalfoundation:material:358>,
-            <thermalfoundation:material:359>
+            <thermalfoundation:material:359>,
+
+            <thermalfoundation:rockwool>,
+            <thermalfoundation:rockwool:1>,
+            <thermalfoundation:rockwool:2>,
+            <thermalfoundation:rockwool:3>,
+            <thermalfoundation:rockwool:4>,
+            <thermalfoundation:rockwool:5>,
+            <thermalfoundation:rockwool:6>,
+            <thermalfoundation:rockwool:7>,
+            <thermalfoundation:rockwool:8>,
+            <thermalfoundation:rockwool:9>,
+            <thermalfoundation:rockwool:10>,
+            <thermalfoundation:rockwool:11>,
+            <thermalfoundation:rockwool:12>,
+            <thermalfoundation:rockwool:13>,
+            <thermalfoundation:rockwool:14>,
+            <thermalfoundation:rockwool:15>,
+
+        
+
+        //Coke
+            <thermalfoundation:material:802>,
+
+        //HorseArmor
+            <thermalfoundation:horse_armor_aluminum>,
+            <thermalfoundation:horse_armor_nickel>,
+            <thermalfoundation:horse_armor_electrum>,
+            <thermalfoundation:horse_armor_invar>,
+            <thermalfoundation:horse_armor_constantan>,
+
+        //fancy item frame
+            <tconstruct:fancy_frame:3>
 
         
         
@@ -129,7 +161,8 @@ static liquids as ILiquidStack [][int] = {
         <liquid:concrete>,
         <liquid:potion>,
         <liquid:uranium>,
-        <liquid:constantan>
+        <liquid:constantan>,
+    
     ]
     
 };
@@ -147,15 +180,18 @@ static ores as IIngredient[][IItemStack][int] =
 
 static materials as string [][int] = {
     1:[
-        "slime",
-        "blueslime",
-        "magmaslime",
         "ardite",
         "electrum",
         "aluminum",
+        "aluminium",
         "nickel",
+        "constantan",
+        "invar",
+        "coke",
         //ALL THE PLATES BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
         "oreplate"
+        
+        
     ],
     2:[],
     3:[]

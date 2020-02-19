@@ -125,7 +125,7 @@ function ChangeMaterialStage(stage as string,
                     mods.ItemStages.addItemStage(stage, item);
                     mods.recipestages.Recipes.setRecipeStage(stage, item);
 
-                   
+					
                 }
 			}
 		}
@@ -134,32 +134,35 @@ function ChangeMaterialStage(stage as string,
 
         //Oredict items sorting
 		
-        for entry in oreDictEnt{
-            if (entry.name.toLowerCase has material){
-                stageItemOD = true;
+		
+		for entry in oreDictEnt{
+			if (entry.name.toLowerCase has material){
+				stageItemOD = true;
 				//Stage only stuff that also has a part from the list
 				for X in oreDictFilter[1]{
 					if(entry.name.toLowerCase has X){
-                        stageItemOD = false;
+						stageItemOD = false;
 						break;
-                	}
+					}
 
-                    if (stageItemOD) {
-                        for I in oreDictFilter[0]{
-                            if(entry.name.toLowerCase has I){
+					if (stageItemOD) {
+						for I in oreDictFilter[0]{
+							if(entry.name.toLowerCase has I){
 
-                                for item in entry.items{
-                                    mods.ItemStages.removeItemStage(item);
-                                    mods.ItemStages.addItemStage(stage, item);
-                                    mods.recipestages.Recipes.setRecipeStage(stage, item);
-                                }
-                                
-                                break;
-                            }
-                        }                   
-                    }  
+								for item in entry.items{
+									mods.ItemStages.removeItemStage(item);
+									mods.ItemStages.addItemStage(stage, item);
+									mods.recipestages.Recipes.setRecipeStage(stage, item);
+								}
+								
+								
+							}
+						}                   
+					}  
 				}                                
-            }
-        }
+			}
+		}
+		
+       
     }  
 }

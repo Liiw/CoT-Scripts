@@ -268,7 +268,10 @@ static items as IItemStack[][int] = {
             <harvestcraft:soggygarden>,
             <harvestcraft:tropicalgarden>,
             <harvestcraft:windygarden>,
-            <harvestcraft:aridgarden>    
+            <harvestcraft:aridgarden>,
+
+        //Themal foundation dyes
+            <thermalfoundation:dye:*>
             
 
     ],
@@ -284,6 +287,8 @@ static items as IItemStack[][int] = {
         //Minecraft
             <minecraft:lapis_block>,
             <minecraft:dye:4>
+
+        
 
 
 
@@ -324,7 +329,9 @@ static ores as IIngredient[][IItemStack][int] =
 
 static materials as string [][int] = {
     1:[],
-    2:[],
+    2:[
+        "charcoal"
+    ],
     3:[]
 };
 

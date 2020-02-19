@@ -94,7 +94,10 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:material:22>,
             <thermalfoundation:material:23>,
             //Buckets
-            <forge:bucketfilled>.withTag({FluidName: "enderium", Amount: 1000})
+            <forge:bucketfilled>.withTag({FluidName: "enderium", Amount: 1000}),
+
+        //horsearmor
+            <thermalfoundation:horse_armor_platinum>
 
             
             

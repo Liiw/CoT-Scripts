@@ -69,7 +69,8 @@ static oreDictFilter as string[][] =
   ],
 
   [
-    "clathrate"
+    "clathrate",
+    "fused"
   ]
 ];
 
@@ -126,28 +127,3 @@ for stage in StageList {
 
 
 
-//THE FUTURE IS NOW!
-
-print("OREDICT ENTRY NAMES");
-val allEntries= oreDict.entries;
-
-var oth as string[]  = [
-    "ore",
-    "ingot",
-    "block",
-    //"coin",
-    "dust",
-    "nugget",
-    //"gear",
-    "plate"
-];
-
-for entry in allEntries{
-    if (entry.name.toLowerCase has "copper" ){
-        for e in oth {
-            if (entry.name.toLowerCase has e){
-                print (entry.name);
-            }
-        }
-    }
-}

@@ -39,6 +39,12 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+        //Horse armor
+            <thermalfoundation:horse_armor_copper>,
+            <thermalfoundation:horse_armor_tin>,
+            <thermalfoundation:horse_armor_steel>,
+            <thermalfoundation:horse_armor_bronze>,
+            <thermalfoundation:horse_armor_silver>,
         //Geolosys clusters
             <geolosys:cluster:4>,
             <geolosys:cluster:5>,
@@ -501,7 +507,9 @@ static liquids as ILiquidStack [][int] = {
     //Thaumcraft
         <liquid:liquid_death>,
         <liquid:purifying_fluid>,
-        <liquid:flux_goo>
+        <liquid:flux_goo>,
+
+       
     ]
 };
 
@@ -534,6 +542,8 @@ static materials as string [][int] = {
         "netherrack",
         "steel",
         "silver",
+        "emerald",
+        "brass",
 
         //Thaumcraft TiC
         "perditio_thaumium",
@@ -546,6 +556,8 @@ static materials as string [][int] = {
         "dust",
         //ALL THE ARMOR BEFORE THIS STAGE
         "conarm"
+
+        
 
     ],
 

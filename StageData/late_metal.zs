@@ -254,7 +254,18 @@ static items as IItemStack [][int]  = {
             <tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
             <tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
             <tconstruct:bolt>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, Accuracy: 1.0 as float, MiningSpeed: 7.07 as float, FreeModifiers: 3, Durability: 111, HarvestLevel: 4, Attack: 4.2 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, Accuracy: 1.0 as float, MiningSpeed: 7.07 as float, FreeModifiers: 3, Durability: 111, HarvestLevel: 4, Attack: 4.2 as float}, Special: {Categories: ["no_melee", "projectile", "tool"]}, TinkerData: {Materials: ["wood", "obsidian", "feather"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "ecological", color: -7444965, level: 1}, {identifier: "duritos", color: -10478396, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["ecological", "duritos", "toolleveling"]}),
+
+            //Slime?
+            <tconstruct:slime:2>,
+            <tconstruct:slime:4>,
+            <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}), 
+
+        //Horsearmor
+            <thermalfoundation:horse_armor_lead>
+            
+            
             //Buckets
+            /*
             <forge:bucketfilled>.withTag({FluidName: "iron", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "gold", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "pigiron", Amount: 1000}),
@@ -271,18 +282,16 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "lead", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "nickel", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "silver", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "electrum", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "steel", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "aluminum", Amount: 1000}),
+
+
             <forge:bucketfilled>.withTag({FluidName: "stone", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "obsidian", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "dirt", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "emerald", Amount: 1000}),
+            
+            
             <forge:bucketfilled>.withTag({FluidName: "glass", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "blueslime", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}),
+            */
+
 
     ]
 
@@ -290,13 +299,18 @@ static items as IItemStack [][int]  = {
 
 static liquids as ILiquidStack [][int] = {   
     1 : [ 
+         //TiC
+            <liquid:blueslime>,
+            <liquid:purpleslime>
+
     //Tinkers Construct Fluids
+    /*
         <liquid:iron>,
         <liquid:gold>,
         <liquid:pigiron>,
-        <liquid:cobalt>,
-        <liquid:ardite>,
-        <liquid:manyullyn>,
+       
+        
+       
         <liquid:knightslime>,
         <liquid:alubrass>,
         <liquid:brass>,
@@ -304,22 +318,18 @@ static liquids as ILiquidStack [][int] = {
         <liquid:tin>,
         <liquid:bronze>,
         <liquid:zinc>,
-        <liquid:lead>,
-        <liquid:nickel>,
-        <liquid:silver>,
-        <liquid:electrum>,
-        <liquid:steel>,
-        <liquid:aluminum>,
+        
+        
+
+        
+
+
         <liquid:stone>,
         <liquid:obsidian>,
-        <liquid:clay>,
-        <liquid:dirt>,
-        <liquid:emerald>,
+        
         <liquid:glass>,
-        <liquid:blood>,
-        <liquid:blueslime>,
-        <liquid:purpleslime>
-  
+        
+    */
     ]
 };
 
@@ -346,8 +356,17 @@ static ores as IIngredient[][IItemStack][int] =
 static materials as string [][int] = {
     1:[
         "iron",
+        "gold",
         "paper",
         "pigiron",
+        "diamond",
+        "glass",
+        "alubrass",
+        "obsidian",
+
+        "blockslime",
+        "blueslime",
+        "magmaslime",
 
         //TiC parts
         "hammer",
@@ -359,7 +378,8 @@ static materials as string [][int] = {
         "scythe",
         "bolt",
         "large_sword",
-        "cleaver"
+        "cleaver",
+        
     ],
 
     2:[],

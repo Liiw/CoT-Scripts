@@ -82,8 +82,11 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_aqua", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_terra", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_ordo", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "fluid_molten_perditio", Amount: 1000})
-
+            <forge:bucketfilled>.withTag({FluidName: "fluid_molten_perditio", Amount: 1000}),
+        //Fancy item frames
+            <tconstruct:fancy_frame:4>,
+            
+            <tconstruct:fancy_frame:2>
     ]
     
 };

@@ -139,6 +139,7 @@ static items as IItemStack [][int]  = {
         //TiC toolstation
 
             <tconstruct:tooltables:3>,
+            <tconstruct:casting>,
 
         //TiC stencils and clay casts (and tcomplement bucket and cast)
 
@@ -176,8 +177,13 @@ static items as IItemStack [][int]  = {
             <tconstruct:clay_cast>.withTag({PartType: "tconstruct:axe_head"}),
             <tconstruct:clay_cast>.withTag({PartType: "tconstruct:shovel_head"}),
             <tconstruct:clay_cast>.withTag({PartType: "tconstruct:tool_rod"}),
-            <tconstruct:clay_cast>.withTag({PartType: "tconstruct:kama_head"})
+            <tconstruct:clay_cast>.withTag({PartType: "tconstruct:kama_head"}),
+            
+        //Buckets
 
+            <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dirt", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000})
 
 
 
@@ -190,7 +196,13 @@ static liquids as ILiquidStack [][int] = {
   1 : [
         //Minecraft
             
-            <liquid:lava>
+            <liquid:lava>,
+
+        //TiC
+            <liquid:clay>,
+            <liquid:dirt>,
+            <liquid:blood>
+        
   ]
 };
 
@@ -222,6 +234,9 @@ static materials as string [][int] = {
         "bronze",
         "sponge",
         "cactus",
+        "clay",
+
+        "doorwood",
         //TiC patterns and Clay casts
         "pattern",
         "clay_cast"
