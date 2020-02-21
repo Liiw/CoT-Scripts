@@ -38,6 +38,11 @@ static items as IItemStack [][int]  = {
             <thaumcomp:sealconnector>,
         //Minecraft bedrock
             <minecraft:bedrock>,
+        //Agricraft
+            <agricraft:peripheral>,
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:platiolus_plant", agri_growth: 1 as byte}),
+        //AE2
+            <appliedenergistics2:material:46>,
         //EnderIO
             //buckets
             <forge:bucketfilled>.withTag({FluidName: "nutrient_distillation", Amount: 1000}),
@@ -56,6 +61,9 @@ static items as IItemStack [][int]  = {
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 24 as short}]}),
             //Some soul vial thing
             <enderio:item_soul_vial:1>.withTag({entityId: "minecraft:pig", customName: "Bacon in a Bottle"}),
+            //idk
+            <enderio:item_material:63>,
+            <enderio:item_material:21>,
         //EIO_TiC
             <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),
@@ -97,7 +105,13 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "enderium", Amount: 1000}),
 
         //horsearmor
-            <thermalfoundation:horse_armor_platinum>
+            <thermalfoundation:horse_armor_platinum>,
+        //EIO glass
+            <enderio:block_fused_quartz:*>,
+            <enderio:block_fused_glass:*>,
+
+        //TiC
+            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}})
 
             
             
@@ -156,16 +170,28 @@ static ores as IIngredient[][IItemStack][int] =
 static materials as string [][int] = {
     1:[
         "electrical_steel",
+        "electricalsteel",
         "energetic_alloy",
+        "energeticsilver",
         "vibrant_alloy",
         "redstone_alloy",
+        "redstonealloy",
         "conductive_iron",
         "pulsating_iron",
         "dark_steel",
+        "darksteel",
         "soularium",
         "construction_alloy",
         "end_steel",
-        "platinum"
+        "endsteel",
+        "platinum",
+        "pulsatingiron",
+        "conductiveiron",
+        "certusquartz",
+        "darksteel",
+        "bedrock",
+        "crudesteel",
+
     ],
     2:[],
     3:[]

@@ -65,11 +65,9 @@ static items as IItemStack [][int]  = {
             <minecraft:silver_shulker_box>,
             <minecraft:white_shulker_box>,
             <minecraft:yellow_shulker_box>,
+            <minecraft:ender_eye>,
 
-        //The One Probe
-            <theoneprobe:diamond_helmet_probe>.withTag({theoneprobe: 1}),
-            <theoneprobe:gold_helmet_probe>.withTag({theoneprobe: 1}),
-            <theoneprobe:iron_helmet_probe>.withTag({theoneprobe: 1}),
+        
         //Immersive Petroleum Buckets and shaders
             <forge:bucketfilled>.withTag({FluidName: "oil", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "diesel", Amount: 1000}),
@@ -113,13 +111,17 @@ static liquids as ILiquidStack [][int] = {
 static ores as IIngredient[][IItemStack][int] = 
 {
     1 : {<minecraft:stone>:[
-                                <geolosys:ore:6>
-                           ],
+            <geolosys:ore:6>
+        ],
                            
 
         <immcraft:rock>:[
-                            <geolosys:ore_sample:6>
-                        ]
+            <geolosys:ore_sample:6>
+        ],
+
+        <minecraft:netherrack> : [
+            <tconstruct:ore>
+        ]
     },
     2: {}
 };

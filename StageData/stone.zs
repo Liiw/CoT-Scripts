@@ -73,10 +73,11 @@ static items as IItemStack[][int] = {
             <minecraft:clay>,
             <minecraft:clay_ball>,
             <minecraft:clownfish>,
-            <minecraft:coal>,
-            <minecraft:coal:1>,
+
             <minecraft:coal_block>,
             
+
+
             <minecraft:cobblestone>,
             <minecraft:cobblestone_wall>,
             <minecraft:cobblestone_wall:1>,
@@ -330,7 +331,11 @@ static ores as IIngredient[][IItemStack][int] =
 static materials as string [][int] = {
     1:[],
     2:[
-        "charcoal"
+        "charcoal",
+        "coal",
+        "fishraw",
+        "meatraw",
+        "allveggie"
     ],
     3:[]
 };

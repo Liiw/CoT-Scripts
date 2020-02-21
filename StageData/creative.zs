@@ -17,16 +17,24 @@ static mods as string[][int] = {
         "customnpcs",
         
         "omlib",
+        "zerocore" 
         
     ]
 };
 
 static items as IItemStack [][int]  = {
     1: [
-       //B.A.S.E wrench
+        //Agricraft
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:jaslumine_plant", agri_growth: 1 as byte}),
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:weed_plant", agri_growth: 1 as byte}),
+            <agricraft:agri_nugget:12>,
+
+        //B.A.S.E wrench
             <base:wrench>,
         //Tconstuct
             <tconstruct:wooden_hopper>,
+            <tconstruct:materials:50>,
 
         //Minecraft
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:bat"}}),
@@ -131,7 +139,11 @@ static items as IItemStack [][int]  = {
             <minecraft:mob_spawner>,
             <minecraft:barrier>,
             
-
+        //Extreme Reactors
+            <bigreactors:mineralbenitoite>,
+            <bigreactors:orebenitoite>,
+            <bigreactors:oreanglesite>,
+            <bigreactors:mineralanglesite>,
        
         
         //Minecolonies Barbarians
@@ -304,8 +316,70 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000})
-            
+            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
+
+        //Medieval C-mode
+            <thaumcraft:creative_flux_sponge>,
+            <storagedrawers:upgrade_creative:1>,
+            <storagedrawers:upgrade_creative>,
+            <littletiles:screwdriver>.withTag({}),
+        //Early indust C-mode
+            <theoneprobe:creativeprobe>,
+            <immersiveengineering:metal_device0:3>,
+        //Late indust C-mode
+            <buildinggadgets:constructionpastecontainercreative>,
+            <dse:airtank_creative>,
+            <dse:powerunit_creative>,
+            <mtsofficialpack:engineamci4>.withTag({isCreative: 1 as byte}),
+            <mtsofficialpack:enginebristolmercury>.withTag({isCreative: 1 as byte}),
+            <mtsofficialpack:enginedetroitdiesel>.withTag({isCreative: 1 as byte}),
+            <mtsofficialpack:enginelycomingo360>.withTag({isCreative: 1 as byte}),
+            <mtsofficialpack:enginepw610f>.withTag({isCreative: 1 as byte}),
+        //Atomic C-mode
+            <projectred-fabrication:ic_chip:1>,
+            <bigreactors:reactorcreativecoolantport>,
+            <bigreactors:turbinecreativesteamgenerator>,
+            <btcivil:unuparts_part_unu_engine_j1018tjx2>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i1m>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_apu>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j1018tj>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j2350tf>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j3283tf>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j34200tj>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v12ha>.withTag({isCreative: 1 as byte}),
+            <rftools:powercell_creative>,
+            <unuparts:unuparts_part_unu_engine_h6>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i2>.withTag({isCreative: 1 as byte}),
+            <rftools:creative_screen>,
+            <unuparts:unuparts_part_unu_engine_v6>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v8>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i10h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i12h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i6h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i8h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v10h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v8h>.withTag({isCreative: 1 as byte}),
+        //Digital C-mode
+            <appliedenergistics2:creative_energy_cell>,
+            <appliedenergistics2:creative_storage_cell>.withTag({}),
+            <appliedenergistics2:facade>.withTag({damage: 4, item: "enderio:block_decoration2"}),
+            <enderio:block_decoration2:4>,
+            <enderio:block_buffer:3>,
+            <enderio:block_creative_spawner>,
+            <enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
+            <opencomputers:casecreative>,
+            <opencomputers:material:25>,
+            <opencomputers:material:22>,
+            <opencomputers:material:19>,
+            <opencomputers:component:18>,
+            <opencomputers:component:12>,
+            <opencomputers:upgrade:32>,
+            <thaumicenergistics:essentia_cell_creative>,
+        //Endgame C-mode
+            <wct:wct_creative>.withTag({IsInRange: 0 as byte}),
+            <wft:wft_creative>.withTag({IsInRange: 0 as byte}),
+            <wit:wit_creative>.withTag({IsInRange: 0 as byte}),
+            <wpt:wpt_creative>.withTag({IsInRange: 0 as byte})
     ]
 };
 
@@ -347,7 +421,8 @@ static materials as string [][int] = {
         "iridium",
         "mithril",
         "signalum",
-        "lumium"
+        "lumium",
+        "yellorium"
     ],
     2:[],
     3:[]

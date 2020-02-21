@@ -142,7 +142,6 @@ function ChangeMaterialStage(stage as string,
 				for X in oreDictFilter[1]{
 					if(entry.name.toLowerCase has X){
 						stageItemOD = false;
-						break;
 					}
 
 					if (stageItemOD) {

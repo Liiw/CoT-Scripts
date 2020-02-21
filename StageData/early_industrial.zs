@@ -34,9 +34,10 @@ static items as IItemStack [][int] = {
             <geolosys:coal_coke>,
 
         //Agricraft
-            <agricraft:agri_nugget:8>,
-            <agricraft:agri_nugget:10>,
-            <agricraft:agri_nugget:11>,
+            //<agricraft:agri_nugget:8>,
+            //<agricraft:agri_nugget:10>,
+            //<agricraft:agri_nugget:11>,
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:niccissus_plant", agri_growth: 1 as byte}),
 
         //Minecraft
             <minecraft:activator_rail>,
@@ -131,8 +132,12 @@ static items as IItemStack [][int] = {
             <thermalfoundation:rockwool:14>,
             <thermalfoundation:rockwool:15>,
 
-        
-
+        //The One Probe
+            <theoneprobe:diamond_helmet_probe>.withTag({theoneprobe: 1}),
+            <theoneprobe:gold_helmet_probe>.withTag({theoneprobe: 1}),
+            <theoneprobe:iron_helmet_probe>.withTag({theoneprobe: 1}),
+        //The One Probe
+            <theoneprobe:probe_goggles>,
         //Coke
             <thermalfoundation:material:802>,
 
@@ -171,7 +176,11 @@ static ores as IIngredient[][IItemStack][int] =
 {
     1: {<minecraft:stone>:[<geolosys:ore:7>],
 
-        <immcraft:rock>:[<geolosys:ore_sample:7>]
+        <immcraft:rock>:[<geolosys:ore_sample:7>],
+
+        <minecraft:netherrack> : [
+            <tconstruct:ore:1>
+        ]
 
     },
     2: {}
@@ -189,7 +198,10 @@ static materials as string [][int] = {
         "invar",
         "coke",
         //ALL THE PLATES BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
-        "oreplate"
+        "oreplate",
+
+        "sheetmetal"
+        
         
         
     ],

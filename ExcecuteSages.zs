@@ -35,7 +35,7 @@ import scripts.utils.ChangeLiquidStage;
 import scripts.utils.ChangeMaterialStage;
 
 
-
+//var axe = <tconstruct:hatchet>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Special: {Categories: ["aoe", "harvest", "weapon", "tool"]}, TinkerData: {Materials: ["stone", "flint", "wood"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "cheap", color: -6710887 as long, level: 1}, {identifier: "crude", color: -9868951 as long, level: 2, crude2: 1 as byte}, {identifier: "ecological", color: -7444965 as long, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["cheap", "crude2", "ecological", "toolleveling"]});
 
 global StageList as Stage[] = [
   stone,
@@ -48,9 +48,9 @@ global StageList as Stage[] = [
   digital,
   //space,
   endgame,
-  agriculture,
-  culinary,
-  disabled,
+  //agriculture,
+  //culinary,
+  //disabled,
   creative
 ];
 
@@ -65,12 +65,15 @@ static oreDictFilter as string[][] =
     "dust",
     "nugget",
     //"gear",
-    "plate"
+    "plate",
+    "fish",
+    "item"
   ],
 
   [
     "clathrate",
-    "fused"
+    "fused",
+    "hardened"
   ]
 ];
 
@@ -107,6 +110,13 @@ for stage in StageList {
   }
 }
 
+
+//Add first axe materials separately to first stage
+mods.TinkerStages.addMaterialStage(stone.substages[1], "flint");
+mods.TinkerStages.addMaterialStage(stone.substages[1], "stone");
+mods.TinkerStages.addMaterialStage(stone.substages[1], "wood");
+
+//ore masking etc
 for stage in StageList {
   for i in 1 to stage.substages.length + 1 {
     

@@ -44,13 +44,14 @@ static items as IItemStack [][int]  = {
       <ompd:wall:3>,
     //Openglider
       <openglider:hang_glider_advanced>,
-    //The One Probe
-      <theoneprobe:probe_goggles>,
+    
     //Extreme Reactors
       <forge:bucketfilled>.withTag({FluidName: "yellorium", Amount: 1000}),
       <forge:bucketfilled>.withTag({FluidName: "cyanite", Amount: 1000}),
       <forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000}),
-      <forge:bucketfilled>.withTag({FluidName: "steam", Amount: 1000})
+      <forge:bucketfilled>.withTag({FluidName: "steam", Amount: 1000}),
+    //IE
+      <immersiveengineering:storage_slab:5>
   ]
 };
 
@@ -77,7 +78,9 @@ static ores as IIngredient[][IItemStack][int] =
 
 static materials as string [][int] = {
     1:[
-        "enderium"
+        "enderium",
+        //"yellorium",
+        "uranium"
     ],
     2:[],
     3:[]
