@@ -38,7 +38,8 @@ static mods as string[][int] = {
         "farmingforblockheads",
         "cookingforblockheads",
         "harvestcraft",
-        "brewcraft"
+        "brewcraft",
+        "naturescompass"
         
     ]
 };
