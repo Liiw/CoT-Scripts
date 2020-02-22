@@ -411,7 +411,7 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {},
+    1: {<minecraft:stone>:[<geolosys:ore:10>]},
     2: {}
 };
 

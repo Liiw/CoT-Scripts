@@ -62,6 +62,7 @@ static items as IItemStack [][int] = {
             <thermalfoundation:horse_armor_steel>,
             <thermalfoundation:horse_armor_bronze>,
             <thermalfoundation:horse_armor_silver>,
+            <thermalfoundation:horse_armor_lead>,
         //Geolosys clusters
             <geolosys:cluster:4>,
             <geolosys:cluster:5>,
@@ -523,23 +524,23 @@ static ores as IIngredient[][IItemStack][int] =
         <minecraft:redstone>,
         <minecraft:redstone_ore>,
         <geolosys:ore_vanilla:1>,
-        //<geolosys:ore:6>,
+        <geolosys:ore:6>,
         <geolosys:ore_vanilla:6>,
         <geolosys:ore_vanilla:4>,
-        <thaumcraft:crystal_aer>,
-        <thaumcraft:crystal_ignis>,
-        <thaumcraft:crystal_aqua>,
-        <thaumcraft:crystal_terra>,
-        <thaumcraft:crystal_ordo>,
-        <thaumcraft:crystal_perditio>,
-        <thaumcraft:crystal_vitium>,
-        <thaumcraft:stone_porous>,
-        <thaumcraft:ore_cinnabar>,
-        <thaumcraft:ore_amber>
+        <thaumcraft:crystal_aer:*>,
+        <thaumcraft:crystal_ignis:*>,
+        <thaumcraft:crystal_aqua:*>,
+        <thaumcraft:crystal_terra:*>,
+        <thaumcraft:crystal_ordo:*>,
+        <thaumcraft:crystal_perditio:*>,
+        <thaumcraft:crystal_vitium:*>,
+        <thaumcraft:stone_porous:*>,
+        <thaumcraft:ore_cinnabar:*>,
+        <thaumcraft:ore_amber:*>
     ],
 
         <immcraft:rock>:[<geolosys:ore_sample_vanilla:1>,
-                         //<geolosys:ore_sample:6>,
+                         <geolosys:ore_sample:6>,
                          <geolosys:ore_sample_vanilla:6>,
                          <geolosys:ore_sample_vanilla:4>]
     },
@@ -561,6 +562,7 @@ static materials as string [][int] = {
         "emerald",
         "brass",
         "quartz",
+        "lead",
 
         //Thaumcraft TiC
         "perditio_thaumium",

@@ -110,14 +110,8 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1 : {<minecraft:stone>:[
-            <geolosys:ore:6>
-        ],
-                           
-
-        <immcraft:rock>:[
-            <geolosys:ore_sample:6>
-        ],
+    1 : {
+                        
 
         <minecraft:netherrack> : [
             <tconstruct:ore>
@@ -128,10 +122,15 @@ static ores as IIngredient[][IItemStack][int] =
 
 
 static materials as string [][int] = {
-    1:[ "endstone",
+    1:
+    [
+        "endstone",
         "cobalt",
         "manyullyn",
-        "lead"],
+        
+        "tungsten",
+        "thorium"
+    ],
     2:[],
     3:[]
 };

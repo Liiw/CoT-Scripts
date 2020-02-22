@@ -49,7 +49,7 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {},
+    1: {<minecraft:stone>:[<sgcraft:naquadahore>]},
     2: {}
 };
 

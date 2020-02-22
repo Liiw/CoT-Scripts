@@ -436,7 +436,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}), 
 
         //Horsearmor
-            <thermalfoundation:horse_armor_lead>
+            
             
             
             //Buckets
