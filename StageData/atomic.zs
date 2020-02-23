@@ -33,7 +33,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
   1 : [
-
+    //PR electrotine
+      <projectred-core:resource_item:104>,
     //Geolysys ore clusters
       <geolosys:cluster:11>,
       <geolosys:cluster:9>,

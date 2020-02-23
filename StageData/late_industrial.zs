@@ -48,6 +48,8 @@ static items as IItemStack [][int]  = {
             <minecraft:end_rod>,
             <minecraft:end_stone>,
             <minecraft:ender_chest>,
+            <minecraft:chorus_flower>,
+            <minecraft:chorus_plant>,
             <minecraft:gray_shulker_box>,
             <minecraft:green_shulker_box>,
             <minecraft:light_blue_shulker_box>,

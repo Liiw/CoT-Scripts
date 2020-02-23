@@ -13,16 +13,20 @@ static name as string = "early_metal";
 
 
 static substages as string[int] = {
-    1 : "early_metal_1"
+    1 : "early_metal_1",
+    2 : "early_metal_2",
+    3 : "early_metal_3"
 };
 
 static mods as string[][int] = {
     1 : [        
         "comforts",
-        "astikorcarts" ,
+        
         "horsepower",
         "primalchests"
-    ]
+    ],
+    2 : ["astikorcarts"],
+    3:[]
 };
 
 static items as IItemStack [][int]  = {
@@ -31,25 +35,9 @@ static items as IItemStack [][int]  = {
         //DungPipe
             <dungpipe:dung_pipe>,
 
-        //METAL ITEMS
-            //copper
-            <thermalfoundation:material:128>,
-            <immersiveengineering:metal>,
-            <projectred-core:resource_item:100>,
-            //tin
-            <thermalfoundation:material:129>,
-            <projectred-core:resource_item:101>,
-            //bronze
-            <thermalfoundation:material:163>,
+        
 
-        //ORE ITEMS
-            //copper
-            <thermalfoundation:ore>,
-            <immersiveengineering:ore>,
-            <geolosys:cluster:2>,
-            //tin
-            <thermalfoundation:ore:1>,
-            <geolosys:cluster:3>,   
+        
 
         //Clay Bucket
             <claybucket:unfiredclaybucket>,
@@ -65,12 +53,10 @@ static items as IItemStack [][int]  = {
 
         //Immersive Craft
             <immcraft:furnace>,
+            
 
         //Agricraft
-            <agricraft:agri_nugget:4>,
-            <agricraft:agri_nugget:5>,
-            <agricraft:agri_nugget:6>,
-            <agricraft:agri_nugget:7>,
+           
 
         //Harvestcraft
             
@@ -87,8 +73,12 @@ static items as IItemStack [][int]  = {
             <minecraft:stonebrick:1>,
             <minecraft:stonebrick:2>,
             <minecraft:stonebrick:3>,
-            <minecraft:chest>,
+            <minecraft:brick>,
+            <minecraft:brick_block>,
+            <minecraft:brick_stairs>,
+            
             <minecraft:furnace>,
+            
             <minecraft:wooden_door>,
             <minecraft:spruce_door>,
             <minecraft:birch_door>,
@@ -168,7 +158,7 @@ static items as IItemStack [][int]  = {
 
             <tcomplement:melter:8>,
             <tcomplement:melter>,
-            <tcomplement:alloy_tank>,
+            
             <tconstruct:soil>,
             <tconstruct:materials>,
             <tconstruct:seared_tank>,
@@ -260,7 +250,11 @@ static items as IItemStack [][int]  = {
 
 
 
-    ]
+    ],
+
+    2 : [<tcomplement:alloy_tank>],
+
+    3:[]
 
 };
 
@@ -275,24 +269,35 @@ static liquids as ILiquidStack [][int] = {
             <liquid:dirt>,
             <liquid:blood>
         
-  ]
+  ],
+  2:[],
+  3:[]
 };
 
 static ores as IIngredient[][IItemStack][int] = 
 {
     1: {<minecraft:stone>:[<geolosys:ore:2>,
-                           <geolosys:ore:3>,
-                           <geolosys:ore:4>,
-                           <geolosys:ore:5>],
+                           <geolosys:ore:3>],
         
         <immcraft:rock>:[<geolosys:ore_sample:2>,
-                         <geolosys:ore_sample:3>,
-                         <geolosys:ore_sample:4>,
-                         <geolosys:ore_sample:5>]
+                         <geolosys:ore_sample:3>]
                            
        },
 
-    2: {}
+     
+    2: {<minecraft:stone>:[<geolosys:ore:4>,
+                           <geolosys:ore:5>,
+                           <geolosys:ore>],
+        
+        <immcraft:rock>:[<geolosys:ore_sample:4>,
+                         <geolosys:ore_sample:5>,
+                         <geolosys:ore_sample>]
+                           
+       },
+    3: {
+            
+                        
+    }
 };
 
 static materials as string [][int] = {
@@ -302,8 +307,7 @@ static materials as string [][int] = {
         "flint",
         "stone",
         "copper",
-        "tin",
-        "bronze",
+        
         "sponge",
         "cactus",
         "clay",
@@ -316,7 +320,10 @@ static materials as string [][int] = {
         "clay_cast"
     ],
 
-    2:[],
+    2:[
+        "tin",
+        "bronze"
+    ],
     3:[]
 };
 
@@ -325,7 +332,9 @@ static recipes as string [][int] = {
         "primalChest",
         "primalChestAdv",
         "woodHopper"
-    ]
+    ],
+    2:[],
+    3:[]
 };
 
 static class as Stage  = Stage(

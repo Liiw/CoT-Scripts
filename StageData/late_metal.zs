@@ -272,9 +272,7 @@ static items as IItemStack [][int]  = {
             <minecraft:birch_fence>,
             <minecraft:birch_fence_gate>,
             <minecraft:birch_stairs>,
-            <minecraft:brick>,
-            <minecraft:brick_block>,
-            <minecraft:brick_stairs>,
+            
             <minecraft:bucket>,
             <minecraft:cauldron>,
             <minecraft:acacia_boat>,
@@ -305,7 +303,7 @@ static items as IItemStack [][int]  = {
             <minecraft:fence_gate>,
             <minecraft:filled_map>,
             <minecraft:flint_and_steel>,
-            <minecraft:furnace>,
+            
             <minecraft:glass>,
             <minecraft:glass_bottle>,
             <minecraft:glass_pane>,
@@ -488,7 +486,7 @@ static ores as IIngredient[][IItemStack][int] =
 {
     1: {<minecraft:stone>:[<geolosys:ore_vanilla:2>,
                            <geolosys:ore_vanilla:5>,
-                           <geolosys:ore>,
+                           
                            <minecraft:iron_ore>,
                            <geolosys:ore:1>,
                            <minecraft:diamond_ore>,
@@ -496,7 +494,7 @@ static ores as IIngredient[][IItemStack][int] =
 
           <immcraft:rock>:[<geolosys:ore_sample_vanilla:2>,
                            <geolosys:ore_sample_vanilla:5>,
-                           <geolosys:ore_sample>,
+                           
                            <geolosys:ore_sample:1>]},
     2: {}
 };
