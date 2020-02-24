@@ -11,8 +11,8 @@ import crafttweaker.data.IData;
 //Import staging data (substages, mods, items, liquids, ores)
   //Main epochs
   import scripts.StageData.stone.class as stone;
-  import scripts.StageData.early_metal.class as early_metal;
-  import scripts.StageData.late_metal.class as late_metal;
+  import scripts.StageData.metal.class as metal;
+  //import scripts.StageData.late_metal.class as late_metal;
   import scripts.StageData.medieval.class as medieval;
   import scripts.StageData.early_industrial.class as early_industrial;
   import scripts.StageData.late_industrial.class as late_industrial;
@@ -22,11 +22,11 @@ import crafttweaker.data.IData;
   import scripts.StageData.endgame.class as endgame;
 
   //Additional stages running parallel
-  import scripts.StageData.culinary.class  as culinary;
-  import scripts.StageData.agriculture.class  as agriculture;
+  //import scripts.StageData.culinary.class  as culinary;
+  //import scripts.StageData.agriculture.class  as agriculture;
 
   //Disabled and creative stages
-  import scripts.StageData.disabled.class  as disabled;
+  //import scripts.StageData.disabled.class  as disabled;
   import scripts.StageData.creative.class  as creative;
 
 //Utility functons
@@ -39,8 +39,8 @@ import scripts.utils.ChangeMaterialStage;
 
 global StageList as Stage[] = [
   stone,
-  early_metal,
-  late_metal,
+  metal,
+  //late_metal,
   medieval,
   early_industrial,
   late_industrial,
