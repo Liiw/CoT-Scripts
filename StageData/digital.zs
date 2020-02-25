@@ -64,6 +64,13 @@ static items as IItemStack [][int]  = {
             //idk
             <enderio:item_material:63>,
             <enderio:item_material:21>,
+            <enderio:item_material:23>,
+            <enderio:item_material:24>,
+            <enderio:item_material:25>,
+            <enderio:item_material:29>,
+            <enderio:item_material:32>,
+            <enderio:item_material:33>,
+            <enderio:item_material:61>,
         //EIO_TiC
             <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),

@@ -14,8 +14,8 @@ import crafttweaker.data.IData;
   import scripts.StageData.metal.class as metal;
   //import scripts.StageData.late_metal.class as late_metal;
   import scripts.StageData.medieval.class as medieval;
-  import scripts.StageData.early_industrial.class as early_industrial;
-  import scripts.StageData.late_industrial.class as late_industrial;
+  import scripts.StageData.industrial.class as industrial;
+  //import scripts.StageData.late_industrial.class as late_industrial;
   import scripts.StageData.atomic.class as atomic;
   import scripts.StageData.digital.class as digital;
   //import scripts.StageData.space.class as space;
@@ -42,8 +42,8 @@ global StageList as Stage[] = [
   metal,
   //late_metal,
   medieval,
-  early_industrial,
-  late_industrial,
+  industrial,
+  //late_industrial,
   atomic,
   digital,
   //space,
@@ -109,6 +109,8 @@ for stage in StageList {
     
   }
 }
+
+
 
 
 //Add first axe materials separately to first stage

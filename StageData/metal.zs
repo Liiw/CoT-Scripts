@@ -26,9 +26,9 @@ static mods as string[][int] = {
         "horsepower",
         "primalchests"
     ],
-    2 : ["astikorcarts"],
-    3:[],
-    4:[
+    2 : [],
+    3 : ["astikorcarts"],
+    4 : [
         "tconstruct",
         "ironbackpacks",
         "torchbandolier",
@@ -256,7 +256,10 @@ static items as IItemStack [][int]  = {
 
     2 : [<tcomplement:alloy_tank>],
 
-    3:[],
+    3 : [
+
+            <minecraft:chest>,
+    ],
 
     4:[
 
@@ -583,7 +586,7 @@ static items as IItemStack [][int]  = {
             <minecraft:lever>,
             <minecraft:lit_pumpkin>,
             <minecraft:map>,
-            <minecraft:minecart>,
+            
             <minecraft:oak_stairs>,
             <minecraft:painting>,
             <minecraft:paper>,

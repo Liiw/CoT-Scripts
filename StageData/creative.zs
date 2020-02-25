@@ -379,7 +379,9 @@ static items as IItemStack [][int]  = {
             <wct:wct_creative>.withTag({IsInRange: 0 as byte}),
             <wft:wft_creative>.withTag({IsInRange: 0 as byte}),
             <wit:wit_creative>.withTag({IsInRange: 0 as byte}),
-            <wpt:wpt_creative>.withTag({IsInRange: 0 as byte})
+            <wpt:wpt_creative>.withTag({IsInRange: 0 as byte}),
+        //Tool progression magic mushroom (leveling item)
+            <toolprogression:magic_mushroom>
     ]
 };
 

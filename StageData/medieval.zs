@@ -9,56 +9,64 @@ import crafttweaker.liquid.ILiquidStack;
 static name as string = "medieval";
 
 static substages as string[int] = {
-    1 : "medieval_1"
+    1 : "medieval_1",
+    2 : "medieval_2",
+    3 : "medieval_3"
 };
 
 static mods as string[][int] = {
     1 : [
         "conarm",
         "chesttransporter",
-        "storagedrawers",
-        "littletiles",
-        "littleopener",
+        
+        
         "microblockcbe",
-        "thaumcraft",
-        "tcomplement",
+        
         "torchlever",
         "openglider",
-        "thaumcraft",
-        "openglider",
-        "torchlever",
-        "thaumcraft",
+        
         "ironchest",
         "solcarrot",
         "opframe",
-        "minecolonies",
-        "structurize",
-        "mcjtylib_ng",
-        "tombstone",
+        
+        //"mcjtylib_ng",
+        
         "farmingforblockheads",
         "cookingforblockheads",
         "harvestcraft",
-        "brewcraft",
-        "naturescompass"
         
+        
+        
+    ],
+
+    2 : [
+        "thaumcraft",
+        "brewcraft",
+        "littletiles",
+        "littleopener"
+    ],
+    3 : [
+        "tcomplement",
+        "minecolonies",
+        "tombstone",
+        "structurize"
     ]
 };
 
 static items as IItemStack [][int] = {
     1 : [
         
-        //Asticor carts
-            <astikorcarts:cargocart>,
+       
 
         //Agricraft seeds
-        /*
+       
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:emeryllis_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:quartzanthemum_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:cuprosia_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:nether_wart_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:nitorwart_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:redstodendron_plant", agri_growth: 1 as byte}),
-        */
+        
         //TiC
             <tconstruct:throwball:*>,
 
@@ -69,12 +77,9 @@ static items as IItemStack [][int] = {
             <thermalfoundation:horse_armor_bronze>,
             <thermalfoundation:horse_armor_silver>,
             <thermalfoundation:horse_armor_lead>,
-        //Geolosys clusters
-            <geolosys:cluster:4>,
-            <geolosys:cluster:5>,
+       
 
-        //Baubles
-            <baubles:ring>,  
+          
         //Minecraft
             
             <minecraft:armor_stand>,
@@ -113,9 +118,9 @@ static items as IItemStack [][int] = {
             <minecraft:chainmail_chestplate>,
             <minecraft:chainmail_helmet>,
             <minecraft:chainmail_leggings>,
-            <minecraft:chest>,
+            
             <minecraft:chest_minecart>,
-            <minecraft:compass>,
+           
             <minecraft:cyan_glazed_terracotta>,
             
             <minecraft:dispenser>,
@@ -314,7 +319,7 @@ static items as IItemStack [][int] = {
             <minecraft:netherbrick>,
             <minecraft:netherrack>,
             <minecraft:noteblock>,
-            //<minecraft:obsidian>,
+            
             <minecraft:orange_glazed_terracotta>,
             <minecraft:pink_glazed_terracotta>,
             <minecraft:piston>,
@@ -470,7 +475,7 @@ static items as IItemStack [][int] = {
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:strong_floating"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:long_floating"}),
             <minecraft:tnt>,
-            <minecraft:trapped_chest>,
+            
             <minecraft:tripwire_hook>,
             <minecraft:white_glazed_terracotta>,
             <minecraft:wooden_pressure_plate>,
@@ -489,11 +494,9 @@ static items as IItemStack [][int] = {
             <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
         //Microblock
             <microblockcbe:microblock:1>.withTag({mat: "minecraft:stone[variant=stone]"}),
-        //Thaumcraft fluid buckets
-            <forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000}),
-        //Tool progression magic mushroom (leveling item)
-            <toolprogression:magic_mushroom>,
+            <minecraft:compass>,
+            <minecraft:trapped_chest>,
+        
         //Some Random MAgic books again
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 25 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 25 as short}]}),
@@ -508,50 +511,85 @@ static items as IItemStack [][int] = {
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 11 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 11 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 25 as short}]})
+    ],
+
+    2 : [
+        //Baubles
+            <baubles:ring>,
+
+    ],
+    3 : [
+        
     ]
 };
 
 static liquids as ILiquidStack [][int] = {   
     1 : [ 
     
-    //Thaumcraft
+    
+       
+    ],
+
+    2 : [
+        //Thaumcraft
         <liquid:liquid_death>,
         <liquid:purifying_fluid>,
         <liquid:flux_goo>,
 
-       
-    ]
+    ],
+    3 : []
 };
 
 static ores as IIngredient[][IItemStack][int] = 
 {
     1 : {<minecraft:stone>:
-    [
-        <minecraft:redstone>,
-        <minecraft:redstone_ore>,
-        <geolosys:ore_vanilla:1>,
-        <geolosys:ore:6>,
-        <geolosys:ore_vanilla:6>,
-        <geolosys:ore_vanilla:4>,
-        <thaumcraft:crystal_aer:*>,
-        <thaumcraft:crystal_ignis:*>,
-        <thaumcraft:crystal_aqua:*>,
-        <thaumcraft:crystal_terra:*>,
-        <thaumcraft:crystal_ordo:*>,
-        <thaumcraft:crystal_perditio:*>,
-        <thaumcraft:crystal_vitium:*>,
-        <thaumcraft:stone_porous:*>,
-        <thaumcraft:ore_cinnabar:*>,
-        <thaumcraft:ore_amber:*>
-    ],
+        [
+            <minecraft:redstone>,
+            <minecraft:redstone_ore>,
+            <geolosys:ore_vanilla:1>,],
 
-        <immcraft:rock>:[<geolosys:ore_sample_vanilla:1>,
-                         <geolosys:ore_sample:6>,
-                         <geolosys:ore_sample_vanilla:6>,
-                         <geolosys:ore_sample_vanilla:4>]
+        <immcraft:rock>:
+        [
+            <geolosys:ore_sample_vanilla:1>
+        
+        ]
+        
     },
 
-    2 : {}
+    2 : {
+            
+        <minecraft:stone>:
+        [
+                        
+            <thaumcraft:crystal_aer:*>,
+            <thaumcraft:crystal_ignis:*>,
+            <thaumcraft:crystal_aqua:*>,
+            <thaumcraft:crystal_terra:*>,
+            <thaumcraft:crystal_ordo:*>,
+            <thaumcraft:crystal_perditio:*>,
+            <thaumcraft:crystal_vitium:*>,
+            <thaumcraft:stone_porous:*>,
+            <thaumcraft:ore_cinnabar:*>,
+            <thaumcraft:ore_amber:*>
+        ]
+        
+    },
+    3 : {
+
+        <minecraft:stone>:[
+            <geolosys:ore:6>,
+            <geolosys:ore_vanilla:6>,
+            <geolosys:ore_vanilla:4>,
+        ],
+
+
+        <immcraft:rock>:
+        [
+            <geolosys:ore_sample:6>,
+            <geolosys:ore_sample_vanilla:6>,
+            <geolosys:ore_sample_vanilla:4>
+        ]
+    }
 };
 
 
@@ -593,7 +631,9 @@ static materials as string [][int] = {
 static recipes as string [][int] = {
     1 : [
         
-    ]
+    ],
+    2 : [],
+    3 : []
 };
 
 static class as Stage  = Stage(

@@ -51,6 +51,13 @@ static items as IItemStack [][int]  = {
       <forge:bucketfilled>.withTag({FluidName: "cyanite", Amount: 1000}),
       <forge:bucketfilled>.withTag({FluidName: "dist_water", Amount: 1000}),
       <forge:bucketfilled>.withTag({FluidName: "steam", Amount: 1000}),
+
+      <bigreactors:ingotsteel>,
+      <bigreactors:dustcyanite>,
+      <bigreactors:dustgraphite>,
+      <bigreactors:dustblutonium>,
+      <bigreactors:dustludicrite>,
+      <bigreactors:duststeel>,
     //IE
       <immersiveengineering:storage_slab:5>
   ]
