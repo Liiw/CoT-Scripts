@@ -10,7 +10,7 @@ static name as string = "industrial";
 
 static substages as string[int] = {
     1 : "industrial_1",
-    2 : "industrial_5"
+    2 : "industrial_2"
 };
 
 static mods as string[][int] = {
@@ -36,9 +36,8 @@ static mods as string[][int] = {
         "buildinggadgets",
         "dse",
         "nhc",
-        "alternatingflux",  
         "ompd",
-        "engineeredgolems" 
+        "immersivetech"
     ]
 };
 

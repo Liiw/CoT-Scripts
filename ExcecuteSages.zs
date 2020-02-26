@@ -16,8 +16,8 @@ import crafttweaker.data.IData;
   import scripts.StageData.medieval.class as medieval;
   import scripts.StageData.industrial.class as industrial;
   //import scripts.StageData.late_industrial.class as late_industrial;
-  import scripts.StageData.atomic.class as atomic;
-  import scripts.StageData.digital.class as digital;
+  import scripts.StageData.information.class as information;
+  //import scripts.StageData.digital.class as digital;
   //import scripts.StageData.space.class as space;
   import scripts.StageData.endgame.class as endgame;
 
@@ -44,8 +44,8 @@ global StageList as Stage[] = [
   medieval,
   industrial,
   //late_industrial,
-  atomic,
-  digital,
+  information,
+  //digital,
   //space,
   endgame,
   //agriculture,

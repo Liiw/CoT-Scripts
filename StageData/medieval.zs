@@ -29,7 +29,7 @@ static mods as string[][int] = {
         "solcarrot",
         "opframe",
         
-        //"mcjtylib_ng",
+        "mcjtylib_ng",
         
         "farmingforblockheads",
         "cookingforblockheads",
