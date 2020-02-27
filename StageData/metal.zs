@@ -107,7 +107,7 @@ static items as IItemStack [][int]  = {
             <minecraft:bread>,
             <minecraft:cake>,
             <minecraft:carrot>,
-            <minecraft:chicken>,
+            
             <minecraft:chorus_flower>,
             <minecraft:chorus_fruit>,
             <minecraft:chorus_fruit_popped>,
@@ -133,9 +133,9 @@ static items as IItemStack [][int]  = {
             <minecraft:melon_block>,
             <minecraft:milk_bucket>,
             <minecraft:mushroom_stew>,
-            <minecraft:mutton>,
+            
             <minecraft:poisonous_potato>,
-            <minecraft:porkchop>,
+            
             <minecraft:potato>,
             <minecraft:pufferfish>,
             <minecraft:pumpkin>,
@@ -258,7 +258,8 @@ static items as IItemStack [][int]  = {
 
     3 : [
 
-            <minecraft:chest>,
+            <minecraft:chest>
+            
     ],
 
     4:[
@@ -590,7 +591,7 @@ static items as IItemStack [][int]  = {
             <minecraft:oak_stairs>,
             <minecraft:painting>,
             <minecraft:paper>,
-            <minecraft:rail>,
+            
             <minecraft:sandstone_stairs>,
             <minecraft:shears>,
             <minecraft:shield>,
@@ -672,7 +673,7 @@ static items as IItemStack [][int]  = {
             <tconstruct:slime:2>,
             <tconstruct:slime:4>,
             <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}), 
-
+            <naturescompass:naturescompass>.withTag({})
     ]
 
 
@@ -753,8 +754,7 @@ static materials as string [][int] = {
         "sponge",
         "cactus",
         "clay",
-        "fishcooked",
-        "meatcooked",
+        
 
         
         //TiC patterns and Clay casts

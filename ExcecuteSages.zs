@@ -80,8 +80,6 @@ static oreDictFilter as string[][] =
 //STAGING
 //mods
 
-//if(stage.mods[i]) does not work, implement better check
-
 for stage in StageList {
   for i in 1 to stage.substages.length + 1 {
     
@@ -111,6 +109,9 @@ for stage in StageList {
 }
 
 
+//Staging vanilla dimensions
+mods.DimensionStages.addDimensionStage("medieval_1", -1);
+mods.DimensionStages.addDimensionStage("industrial_2", 1);
 
 
 //Add first axe materials separately to first stage

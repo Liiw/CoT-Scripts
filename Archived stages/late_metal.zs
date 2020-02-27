@@ -18,7 +18,8 @@ static mods as string[][int] = {
         "ironbackpacks",
         "torchbandolier",
         "opframe",
-        "agricraft"
+        "agricraft",
+        "naturescompass"
         
     ]
 };
@@ -349,7 +350,7 @@ static items as IItemStack [][int]  = {
             <minecraft:lever>,
             <minecraft:lit_pumpkin>,
             <minecraft:map>,
-            <minecraft:minecart>,
+            
             <minecraft:oak_stairs>,
             <minecraft:painting>,
             <minecraft:paper>,

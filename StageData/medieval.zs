@@ -118,9 +118,9 @@ static items as IItemStack [][int] = {
             <minecraft:chainmail_chestplate>,
             <minecraft:chainmail_helmet>,
             <minecraft:chainmail_leggings>,
-            
+            <minecraft:minecart>,
             <minecraft:chest_minecart>,
-           
+            <minecraft:rail>,
             <minecraft:cyan_glazed_terracotta>,
             
             <minecraft:dispenser>,
@@ -498,6 +498,7 @@ static items as IItemStack [][int] = {
             <minecraft:trapped_chest>,
         
         //Some Random MAgic books again
+            <minecraft:enchanted_book>,
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 25 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 25 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 5 as short, id: 25 as short}]}),
@@ -510,13 +511,18 @@ static items as IItemStack [][int] = {
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 15 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 11 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 11 as short}]}),
-            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 25 as short}]})
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 25 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 14 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 14 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 4 as short, id: 14 as short}]})
     ],
 
     2 : [
         //Baubles
             <baubles:ring>,
-
+        //Some buckets again
+            <forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000})
     ],
     3 : [
         

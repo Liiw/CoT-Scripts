@@ -12,7 +12,8 @@ static name as string = "stone";
 static substages as string[int] = {
     1 : "stone_1",
     2 : "stone_2",
-    3 : "stone_3"
+    3 : "stone_3",
+    4 : "stone_4"
 };
 
 static mods as string[][int] = {
@@ -23,7 +24,8 @@ static mods as string[][int] = {
         "immcraft",
         "primal_tech"
     ],
-    3 : []
+    3 : [],
+    4 : []
 };
 
 static items as IItemStack[][int] = {
@@ -287,13 +289,17 @@ static items as IItemStack[][int] = {
 
         //Minecraft
             <minecraft:lapis_block>,
-            <minecraft:dye:4>
+            <minecraft:dye:4>,
+            <minecraft:coal>,
+            <minecraft:coal:1>
 
         
 
 
 
-    ] 
+    ],
+    3 : [],
+    4 : [] 
 };
 
 static liquids as ILiquidStack[][int] = {   
@@ -305,7 +311,8 @@ static liquids as ILiquidStack[][int] = {
     ],  
     3 : [
         
-    ]
+    ],
+    4 : [] 
 
 };
 
@@ -324,7 +331,8 @@ static ores as IIngredient[][IItemStack][int] =
                              <geolosys:ore_sample_vanilla:3>,],
 
             
-    }
+    },
+    4 : {}
 };
 
 
@@ -335,9 +343,12 @@ static materials as string [][int] = {
         "coal",
         "fishraw",
         "meatraw",
+        
         "allveggie"
     ],
-    3:[]
+    3:[],
+    4 : ["fishcooked",
+        "meatcooked"] 
 };
 
 static recipes as string [][int] = {
@@ -354,7 +365,8 @@ static recipes as string [][int] = {
         "clayKiln",
         "boneShard"
     ], 
-    3 : []
+    3 : [],
+    4 : [] 
 };
 
 
