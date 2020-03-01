@@ -67,7 +67,8 @@ static oreDictFilter as string[][] =
     //"gear",
     "plate",
     "fish",
-    "item"
+    "item",
+    "listall"
   ],
 
   [

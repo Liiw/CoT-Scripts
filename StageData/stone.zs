@@ -55,6 +55,10 @@ static items as IItemStack[][int] = {
             <minecraft:planks:5>,
             <minecraft:grass>,
 
+            <minecraft:dirt>,
+            <minecraft:dirt:1>,
+            <minecraft:dirt:2>,
+            <minecraft:grass>
        
             
     ],
@@ -101,9 +105,7 @@ static items as IItemStack[][int] = {
             <minecraft:concrete:14>,
             <minecraft:concrete:15>,
             <minecraft:deadbush>,
-            <minecraft:dirt>,
-            <minecraft:dirt:1>,
-            <minecraft:dirt:2>,
+            
             <minecraft:double_plant>,
             <minecraft:double_plant:1>,
             <minecraft:double_plant:2>,
@@ -130,7 +132,7 @@ static items as IItemStack[][int] = {
             <minecraft:fishing_rod>,
             
             <minecraft:flower_pot>,
-            <minecraft:grass>,
+            
             <minecraft:grass_path>,
             
             <minecraft:hardened_clay>,
@@ -287,6 +289,8 @@ static items as IItemStack[][int] = {
             <geolosys:coal:1>,
             <geolosys:coal>,
 
+            
+
         //Minecraft
             <minecraft:lapis_block>,
             <minecraft:dye:4>,
@@ -298,7 +302,7 @@ static items as IItemStack[][int] = {
 
 
     ],
-    3 : [],
+    
     4 : [] 
 };
 
@@ -337,14 +341,25 @@ static ores as IIngredient[][IItemStack][int] =
 
 
 static materials as string [][int] = {
-    1:[],
-    2:[
-        "charcoal",
-        "coal",
+    1:[
         "fishraw",
         "meatraw",
         
-        "allveggie"
+        "veggie",
+        "greenveggie",
+        "grain",
+        "fiber",
+        "berry",
+        "fruit",
+        "herb",
+        "croptea",
+        "mushroom",
+        "nut"
+    ],
+    2:[
+        "charcoal",
+        "coal",
+        
     ],
     3:[],
     4 : ["fishcooked",
@@ -354,7 +369,8 @@ static materials as string [][int] = {
 static recipes as string [][int] = {
     1 : [
         "stickfromtwigs",
-        "flintaxe"
+        "flintaxe",
+        "flint"
     ],
     2 : [ 
         "stoneClub",

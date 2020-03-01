@@ -68,6 +68,7 @@ static items as IItemStack [][int]  = {
             <harvestcraft:hardenedleatherleggingsitem>,
         
         //Minecraft
+            <minecraft:glass>,
             <minecraft:torch>,
             <minecraft:name_tag>,
             <minecraft:saddle>,
@@ -112,15 +113,7 @@ static items as IItemStack [][int]  = {
             <minecraft:chorus_fruit>,
             <minecraft:chorus_fruit_popped>,
             <minecraft:chorus_plant>,
-            <minecraft:cooked_beef>,
-            <minecraft:cooked_chicken>,
-            <minecraft:cooked_cod>,
-            <minecraft:cooked_fish>,
-            <minecraft:cooked_fish:1>,
-            <minecraft:cooked_mutton>,
-            <minecraft:cooked_porkchop>,
-            <minecraft:cooked_rabbit>,
-            <minecraft:cooked_salmon>,
+            
             <minecraft:cookie>,
             <minecraft:egg>,
             <minecraft:fish>,
@@ -542,9 +535,10 @@ static items as IItemStack [][int]  = {
             <minecraft:filled_map>,
             <minecraft:flint_and_steel>,
             
-            <minecraft:glass>,
-            <minecraft:glass_bottle>,
+            
+            
             <minecraft:glass_pane>,
+            <minecraft:glass_bottle>,
             <minecraft:gold_block>,
             <minecraft:gold_ingot>,
             <minecraft:gold_nugget>,

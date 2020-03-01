@@ -18,22 +18,17 @@ static mods as string[][int] = {
     1 : [
         "conarm",
         "chesttransporter",
-        
-        
         "microblockcbe",
-        
         "torchlever",
-        "openglider",
-        
+        "openglider", 
         "ironchest",
         "solcarrot",
         "opframe",
-        
         "mcjtylib_ng",
-        
         "farmingforblockheads",
         "cookingforblockheads",
         "harvestcraft",
+        "minecolonies"
         
         
         
@@ -47,7 +42,7 @@ static mods as string[][int] = {
     ],
     3 : [
         "tcomplement",
-        "minecolonies",
+        
         "tombstone",
         "structurize"
     ]
@@ -56,7 +51,31 @@ static mods as string[][int] = {
 static items as IItemStack [][int] = {
     1 : [
         
-       
+        //Harvestrcraft stuff
+
+            <harvestcraft:peanutbutteritem>,
+            <harvestcraft:almondbutteritem>,
+            <harvestcraft:cashewbutteritem>,
+            <harvestcraft:chestnutbutteritem>,
+            <harvestcraft:pistachiobutteritem>,
+            <harvestcraft:groundbeefitem>,
+            <harvestcraft:groundchickenitem>,
+            <harvestcraft:groundduckitem>,
+            <harvestcraft:groundfishitem>,
+            <harvestcraft:groundmuttonitem>,
+            <harvestcraft:groundporkitem>,
+            <harvestcraft:groundrabbititem>,
+            <harvestcraft:groundturkeyitem>,
+            <harvestcraft:groundvenisonitem>,
+            <harvestcraft:rawtofeakitem>,
+            <harvestcraft:rawtofaconitem>,
+            <harvestcraft:rawtofuttonitem>,
+            <harvestcraft:rawtofickenitem>,
+            <harvestcraft:rawtofabbititem>,
+            <harvestcraft:rawtofurkeyitem>,
+            <harvestcraft:rawtofenisonitem>,
+            <harvestcraft:rawtofuduckitem>,
+            <harvestcraft:rawtofishitem>,
 
         //Agricraft seeds
        
@@ -125,9 +144,6 @@ static items as IItemStack [][int] = {
             
             <minecraft:dispenser>,
             <minecraft:dropper>,
-            <minecraft:emerald>,
-            <minecraft:emerald_block>,
-            <minecraft:emerald_ore>,
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 0 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 0 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 0 as short}]}),
@@ -525,7 +541,8 @@ static items as IItemStack [][int] = {
             <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000})
     ],
     3 : [
-        
+        <tombstone:tablet_of_home>.withTag({ancient: 1 as byte}),
+        <tombstone:tablet_of_recall>.withTag({ancient: 1 as byte})
     ]
 };
 
@@ -552,6 +569,7 @@ static ores as IIngredient[][IItemStack][int] =
         [
             <minecraft:redstone>,
             <minecraft:redstone_ore>,
+            
             <geolosys:ore_vanilla:1>,],
 
         <immcraft:rock>:
@@ -584,6 +602,7 @@ static ores as IIngredient[][IItemStack][int] =
 
         <minecraft:stone>:[
             <geolosys:ore:6>,
+            <minecraft:emerald_ore>,
             <geolosys:ore_vanilla:6>,
             <geolosys:ore_vanilla:4>,
         ],
@@ -607,20 +626,12 @@ static materials as string [][int] = {
         "firewood",
         "knightslime",
         "netherrack",
-        "steel",
-        "silver",
-        "emerald",
+        
         "brass",
         "quartz",
-        "lead",
+        
 
-        //Thaumcraft TiC
-        "perditio_thaumium",
-        "ordo_thaumium",
-        "terra_thaumium",
-        "aqua_thaumium",
-        "ignis_thaumium",
-        "aer_thaumium",
+        
         //ALL THE DUSTS BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
         "dust",
         //ALL THE ARMOR BEFORE THIS STAGE
@@ -630,8 +641,21 @@ static materials as string [][int] = {
 
     ],
 
-    2:[],
-    3:[]
+    2:[
+        //Thaumcraft TiC
+        "perditio_thaumium",
+        "ordo_thaumium",
+        "terra_thaumium",
+        "aqua_thaumium",
+        "ignis_thaumium",
+        "aer_thaumium"
+    ],
+    3:[
+        "steel",
+        "silver",
+        "emerald",
+        "lead"
+    ]
 };
 
 static recipes as string [][int] = {

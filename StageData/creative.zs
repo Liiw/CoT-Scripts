@@ -31,7 +31,7 @@ static items as IItemStack [][int]  = {
             <agricraft:agri_nugget:12>,
 
         //B.A.S.E wrench
-            <base:wrench>,
+            //<base:wrench>,
         //Tconstuct
             <tconstruct:wooden_hopper>,
             <tconstruct:materials:50>,
@@ -165,8 +165,8 @@ static items as IItemStack [][int]  = {
             <geolosys:ore:10>,
 
         //Bountiful
-            <bountiful:bountyboarditem>,
-            <bountiful:bounty>,
+            //<bountiful:bountyboarditem>,
+            //<bountiful:bounty>,
         
         //Immcraft
             <immcraft:dummybook:*>,
@@ -339,18 +339,14 @@ static items as IItemStack [][int]  = {
             <projectred-fabrication:ic_chip:1>,
             <bigreactors:reactorcreativecoolantport>,
             <bigreactors:turbinecreativesteamgenerator>,
-            <btcivil:unuparts_part_unu_engine_j1018tjx2>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_i1m>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_apu>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_j1018tj>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_j2350tf>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_j3283tf>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_j34200tj>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_v12ha>.withTag({isCreative: 1 as byte}),
+            
             <rftools:powercell_creative>,
+            <rftools:creative_screen>,
+
+            <unucivil:unuparts_part_unu_engine_j1018tjx2>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_h6>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i2>.withTag({isCreative: 1 as byte}),
-            <rftools:creative_screen>,
+            <unuparts:unuparts_part_unu_engine_i4>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v6>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v8>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i10h>.withTag({isCreative: 1 as byte}),
@@ -359,6 +355,14 @@ static items as IItemStack [][int]  = {
             <unuparts:unuparts_part_unu_engine_i8h>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v10h>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v8h>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_i1m>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_apu>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j1018tj>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j2350tf>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j3283tf>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_j34200tj>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v12ha>.withTag({isCreative: 1 as byte}),
+            
         //Digital C-mode
             <appliedenergistics2:creative_energy_cell>,
             <appliedenergistics2:creative_storage_cell>.withTag({}),
@@ -380,6 +384,7 @@ static items as IItemStack [][int]  = {
             <wft:wft_creative>.withTag({IsInRange: 0 as byte}),
             <wit:wit_creative>.withTag({IsInRange: 0 as byte}),
             <wpt:wpt_creative>.withTag({IsInRange: 0 as byte}),
+            <ae2wtlib:wut_creative>.withTag({StoredTerminals: [{ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wft:wft_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wpt:wpt_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wct:wct_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wit:wit_creative", Count: 1 as byte, Damage: 0 as short}], IsInRange: 0 as byte, SelectedTerminal: 0, internalCurrentPower: 1600000.0}),
         //Tool progression magic mushroom (leveling item)
             <toolprogression:magic_mushroom>
     ]
