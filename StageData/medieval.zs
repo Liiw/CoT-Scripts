@@ -38,7 +38,8 @@ static mods as string[][int] = {
         "thaumcraft",
         "brewcraft",
         "littletiles",
-        "littleopener"
+        "littleopener",
+        "astikorcarts"
     ],
     3 : [
         "tcomplement",
@@ -137,9 +138,7 @@ static items as IItemStack [][int] = {
             <minecraft:chainmail_chestplate>,
             <minecraft:chainmail_helmet>,
             <minecraft:chainmail_leggings>,
-            <minecraft:minecart>,
-            <minecraft:chest_minecart>,
-            <minecraft:rail>,
+            
             <minecraft:cyan_glazed_terracotta>,
             
             <minecraft:dispenser>,
@@ -266,7 +265,7 @@ static items as IItemStack [][int] = {
             <minecraft:fire_charge>,
             <minecraft:firework_charge>,
             <minecraft:fireworks>,
-            <minecraft:furnace_minecart>,
+            
             <minecraft:ghast_tear>,
             <minecraft:glowstone>,
             <minecraft:glowstone_dust>,
@@ -275,7 +274,7 @@ static items as IItemStack [][int] = {
             <minecraft:gunpowder>,
             <minecraft:heavy_weighted_pressure_plate>,
             <minecraft:hopper>,
-            <minecraft:hopper_minecart>,
+            
             <minecraft:jukebox>,
             
             <minecraft:knowledge_book>,
@@ -538,7 +537,16 @@ static items as IItemStack [][int] = {
             <baubles:ring>,
         //Some buckets again
             <forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000})
+            <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000}),
+
+        //Minecraft
+            <minecraft:minecart>,
+            <minecraft:chest_minecart>,
+            <minecraft:rail>,
+            <minecraft:furnace_minecart>,
+            <minecraft:hopper_minecart>,
+            <tconstruct:wood_rail>,
+            <tconstruct:wood_rail_trapdoor>
     ],
     3 : [
         <tombstone:tablet_of_home>.withTag({ancient: 1 as byte}),
@@ -642,13 +650,7 @@ static materials as string [][int] = {
     ],
 
     2:[
-        //Thaumcraft TiC
-        "perditio_thaumium",
-        "ordo_thaumium",
-        "terra_thaumium",
-        "aqua_thaumium",
-        "ignis_thaumium",
-        "aer_thaumium"
+        
     ],
     3:[
         "steel",

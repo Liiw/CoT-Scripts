@@ -58,6 +58,7 @@ global StageList as Stage[] = [
 static oreDictFilter as string[][] = 
 [
   [
+    "gem",
     "ore",
     "ingot",
     "block",

@@ -22,7 +22,9 @@ static mods as string[][int] = {
         "immersiveengineering",
         "weirdinggadget",
         "compactdrawers",
-        "storagedrawers"
+        "storagedrawers",
+        "researchtable"
+
     ],
     2:[
         "thaumicrestoration",
@@ -277,6 +279,12 @@ static ores as IIngredient[][IItemStack][int] =
     2: {
         <minecraft:netherrack> : [
             <tconstruct:ore>
+        ],
+
+        <minecraft:stone> : [
+            <immersive_energy:ore:0>,
+            <immersive_energy:ore:1>
+
         ]
     }
 };
@@ -307,7 +315,15 @@ static materials as string [][int] = {
         "manyullyn",
         
         "tungsten",
-        "thorium"
+        "thorium",
+
+        //Thaumcraft TiC
+        "perditio_thaumium",
+        "ordo_thaumium",
+        "terra_thaumium",
+        "aqua_thaumium",
+        "ignis_thaumium",
+        "aer_thaumium"
     ]
 };
 

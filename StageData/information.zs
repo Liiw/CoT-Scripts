@@ -229,7 +229,17 @@ static ores as IIngredient[][IItemStack][int] =
     
          <immcraft:rock>:[<geolosys:ore_sample:9>]
     },
-    2 : {<minecraft:stone>:[<geolosys:ore:8>],
+    2 : {<minecraft:stone>:[
+            
+            <geolosys:ore:8>,
+            <rftools:dimensional_shard_ore:0>
+        ],
+
+        <minecraft:netherrack>:[<rftools:dimensional_shard_ore:1>],
+
+        <minecraft:end_stone>:[<rftools:dimensional_shard_ore:2>],
+
+
 
     
          <immcraft:rock>:[<geolosys:ore_sample:8>]}

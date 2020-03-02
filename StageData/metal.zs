@@ -27,7 +27,7 @@ static mods as string[][int] = {
         "primalchests"
     ],
     2 : [],
-    3 : ["astikorcarts"],
+    3 : [],
     4 : [
         "tconstruct",
         "ironbackpacks",
