@@ -10,7 +10,13 @@ static name as string = "industrial";
 
 static substages as string[int] = {
     1 : "industrial_1",
-    2 : "industrial_2"
+    
+    12: "blastfurnace",
+    13: "researchtable",
+    2 : "industrial_2",
+
+    100 : "advanced_blastfurnace",
+    101 : "advanced_cokeoven"
 };
 
 static mods as string[][int] = {
@@ -23,8 +29,11 @@ static mods as string[][int] = {
         "weirdinggadget",
         "compactdrawers",
         "storagedrawers",
-        "researchtable"
+        
 
+    ],
+    13 : [
+        "researchtable"
     ],
     2:[
         "thaumicrestoration",
@@ -40,7 +49,9 @@ static mods as string[][int] = {
         "nhc",
         "ompd",
         "immersivetech"
-    ]
+    ],
+
+    
 };
 
 static items as IItemStack [][int] = {
@@ -229,6 +240,26 @@ static items as IItemStack [][int] = {
             <tconstruct:fancy_frame:4>,
             
             <tconstruct:fancy_frame:2>
+    ],
+
+    12 : [
+        <immersiveengineering:stone_decoration:1>,
+        <immersiveengineering:stone_decoration_slab:1>
+
+    ],
+
+
+     100 : [
+        
+        <immersiveengineering:stone_decoration:2>,
+        <immersiveengineering:stone_decoration_slab:2>,
+        <immersiveengineering:metal_device1>
+
+    ],
+
+    101 : [
+        <immersivetech:metal_device>,
+        <immersivetech:stone_decoration>
     ]      
 };
 
@@ -262,6 +293,9 @@ static liquids as ILiquidStack [][int] = {
         <liquid:fluid_molten_ordo>,
         <liquid:fluid_molten_perditio>
     ]
+
+
+   
     
 };
 
@@ -331,7 +365,9 @@ static recipes as string [][int] = {
     1 : [
         
     ],
-    2 : []
+    2 : [],
+
+    13 : ["researchTable"]
 };
 
 static class as Stage  = Stage(

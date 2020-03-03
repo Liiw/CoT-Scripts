@@ -82,11 +82,13 @@ static oreDictFilter as string[][] =
 //STAGING
 //mods
 
-for stage in StageList {
-  for i in 1 to stage.substages.length + 1 {
-    
-    AddToStage (stage.substages[i], stage.mods[i]);
+//FOR I IN STAGE.SUBSTAGES.KEYS or something like that?
 
+for stage in StageList {
+  for i in stage.substages.keys {
+    if (stage.mods.keys has i){
+      AddToStage (stage.substages[i], stage.mods[i]);
+    }
   }
 }
 
@@ -94,17 +96,24 @@ for stage in StageList {
 
 //Items, recipes and liquids
 for stage in StageList {
-  for i in 1 to stage.substages.length + 1 {
+  for i in stage.substages.keys {
 
+    if (stage.items.keys has i) {
+      ChangeItemStage (stage.substages[i], stage.items[i]);
+    }
     
-    ChangeItemStage (stage.substages[i], stage.items[i]);
+    if (stage.liquids.keys has i) {
+      ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
+    }
     
-    ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
-    
-    ChangeMaterialStage(stage.substages[i], stage.materials[i], oreDictFilter);
-    
-    for recipe in stage.recipes[i] {
-      mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
+    if (stage.materials.keys has i) {
+      ChangeMaterialStage(stage.substages[i], stage.materials[i], oreDictFilter);
+    }
+
+    if (stage.recipes.keys  has i){
+      for recipe in stage.recipes[i] {
+        mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
+      }
     }
     
   }
@@ -115,18 +124,26 @@ for stage in StageList {
 mods.DimensionStages.addDimensionStage("medieval_1", -1);
 mods.DimensionStages.addDimensionStage("industrial_2", 1);
 
+//Stage some IE/IP/IT advanced multiblocks separately
+mods.multiblockstages.IEMultiBlockStages.addStage("blastfurnace", "IE:BlastFurnace", "Not yet! You need to master the coke oven first!");
+mods.multiblockstages.IEMultiBlockStages.addStage("advanced_blastfurnace", "IE:BlastFurnaceAdvanced", "You need to research that a little bit (try the research table)");
+mods.multiblockstages.IEMultiBlockStages.addStage("advanced_cokeoven", "IT:CokeOvenAdvanced", "You need to research that a little bit (try the research table)");
+
 
 //Add first axe materials separately to first stage
-mods.TinkerStages.addMaterialStage(stone.substages[1], "flint");
-mods.TinkerStages.addMaterialStage(stone.substages[1], "stone");
-mods.TinkerStages.addMaterialStage(stone.substages[1], "wood");
+  mods.TinkerStages.addMaterialStage(stone.substages[1], "flint");
+  mods.TinkerStages.addMaterialStage(stone.substages[1], "stone");
+  mods.TinkerStages.addMaterialStage(stone.substages[1], "wood");
+//
 
 //ore masking etc
 for stage in StageList {
-  for i in 1 to stage.substages.length + 1 {
+  for i in stage.substages.keys {
     
-    var entry = stage.ores[i];
-      
+
+    if (stage.ores.keys has i){
+      var entry = stage.ores[i];
+        
       for cover in entry.keys{
         for ore in entry[cover]{
           mods.orestages.OreStages.addReplacement(stage.substages[i], ore, cover);
@@ -136,6 +153,7 @@ for stage in StageList {
           mods.recipestages.Recipes.setRecipeStage(stage.substages[i], ore);
         }
       }
+    }
     
   }
 }

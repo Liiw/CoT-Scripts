@@ -2,8 +2,12 @@ import mods.ResearchTable;
 
 // use `/researchtable @p all 0` to clear all progress
 
-var cat = ResearchTable.addCategory(<minecraft:grass>);
+//var cat = ResearchTable.addCategory(<minecraft:grass>);
 
+
+
+
+/*
 ResearchTable.builder("testResearch1", cat) // The second parameter has no use currently
   .setIcons(<minecraft:grass>)
   .setTitle("Alchemy") // I18n support: use language key
@@ -56,3 +60,4 @@ ResearchTable.builder("testResearch4", cat)
 
 ResearchTable.scoreIndicator("points: %d", "points");
 
+*/

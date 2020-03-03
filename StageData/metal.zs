@@ -748,7 +748,7 @@ static materials as string [][int] = {
         "sponge",
         "cactus",
         "clay",
-        
+        "glass",
 
         
         //TiC patterns and Clay casts
@@ -767,7 +767,7 @@ static materials as string [][int] = {
         "paper",
         "pigiron",
         "diamond",
-        "glass",
+        
         "alubrass",
         "obsidian",
 
