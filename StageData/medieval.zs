@@ -28,7 +28,8 @@ static mods as string[][int] = {
         "farmingforblockheads",
         "cookingforblockheads",
         "harvestcraft",
-        "minecolonies"
+        "minecolonies",
+        "structurize"
         
         
         
@@ -44,8 +45,8 @@ static mods as string[][int] = {
     3 : [
         "tcomplement",
         
-        "tombstone",
-        "structurize"
+        "tombstone"
+        
     ]
 };
 

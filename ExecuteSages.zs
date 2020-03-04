@@ -126,8 +126,12 @@ mods.DimensionStages.addDimensionStage("industrial_2", 1);
 
 //Stage some IE/IP/IT advanced multiblocks separately
 mods.multiblockstages.IEMultiBlockStages.addStage("blastfurnace", "IE:BlastFurnace", "Not yet! You need to master the coke oven first!");
-mods.multiblockstages.IEMultiBlockStages.addStage("advanced_blastfurnace", "IE:BlastFurnaceAdvanced", "You need to research that a little bit (try the research table)");
-mods.multiblockstages.IEMultiBlockStages.addStage("advanced_cokeoven", "IT:CokeOvenAdvanced", "You need to research that a little bit (try the research table)");
+mods.multiblockstages.IEMultiBlockStages.addStage("advanced_blastfurnace", "IE:BlastFurnaceAdvanced", "You need to research that a little bit (try the Research Table)");
+//mods.multiblockstages.IEMultiBlockStages.addStage("advanced_cokeoven", "CokeOvenAdvanced", "You need to research that a little bit (try the research table)");
+mods.multiblockstages.IEMultiBlockStages.addStage("excavator", "IE:Excavator", "Please purchase a drilling license first! Look for the Research Table for more info.");
+
+
+
 
 
 //Add first axe materials separately to first stage

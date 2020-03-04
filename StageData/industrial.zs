@@ -13,7 +13,15 @@ static substages as string[int] = {
     
     12: "blastfurnace",
     13: "researchtable",
+
+    14 : "excavator",
+
+
     2 : "industrial_2",
+
+    21 : "pumpjack",
+
+
 
     100 : "advanced_blastfurnace",
     101 : "advanced_cokeoven"
@@ -246,6 +254,11 @@ static items as IItemStack [][int] = {
         <immersiveengineering:stone_decoration:1>,
         <immersiveengineering:stone_decoration_slab:1>
 
+    ],
+
+    14 : [
+        //<immersiveengineering:coresample>,
+        //<immersiveengineering:metal_device1:7>
     ],
 
 
