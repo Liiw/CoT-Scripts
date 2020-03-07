@@ -19,7 +19,7 @@ static substages as string[int] = {
 
     2 : "industrial_2",
 
-    21 : "pumpjack",
+    
 
 
 
@@ -72,6 +72,7 @@ static items as IItemStack [][int] = {
             <geolosys:coal_coke>,
 
         //Agricraft
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:jaslumine_plant", agri_growth: 1 as byte}),
             //<agricraft:agri_nugget:8>,
             //<agricraft:agri_nugget:10>,
             //<agricraft:agri_nugget:11>,

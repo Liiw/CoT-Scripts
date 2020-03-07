@@ -10,6 +10,7 @@ ResearchTable.builder("AdvBlastFurn", cat) // The second parameter has no use cu
   .setDescription("To complete research for a more efficient method of producing steel, you need to spend some steel and coal coke. Input the required amount into this research table by means of some item/fluid transportation system (a hopper will do fine for now)")
   .addCondition(<ore:blockSteel> * 200, <ore:blockFuelCoke> * 200)
   .setRewardStages("advanced_blastfurnace")
+  .setRequiredStages("industrial_1")
 
   .build();
 
@@ -20,6 +21,7 @@ ResearchTable.builder("AdvCokeOven", cat) // The second parameter has no use cur
   .setDescription("To complete research for a more efficient method of producing coal coke and creosote, you need to spend some. Input the required amount into this research table by means of some item/fluid transportation system (for items: a hopper for example, for fluids: by bucket or some piping")
   .addCondition(<liquid:creosote> * 50000, <ore:blockFuelCoke> * 100)
   .setRewardStages("advanced_cokeoven")
+  .setRequiredStages("industrial_1")
 
   .build();
 
@@ -30,6 +32,7 @@ ResearchTable.builder("Excavator", cat) // The second parameter has no use curre
   .setDescription("Mining all the ores by hand can be tiring. Get yourself a drilling license for just 99 iron blocks and a little redstone! Just enjoy the evening while the machines work for you!")
   .addCondition(<ore:blockIron> * 99, <ore:blockRedstone> * 10)
   .setRewardStages("excavator")
+  .setRequiredStages("industrial_1")
  
 
   .build();
@@ -53,6 +56,7 @@ ResearchTable.builder("Upgrade", cat) // The second parameter has no use current
   .setDescription("You have come a long way already and gained a lot of knowledge. It is time to take another step forward! Complete this research to advance in the Industrial Age")
   .addCondition(<ore:blockSheetmetalSteel> * 1000, <liquid:concrete> * 150000)
   .setRewardStages("industrial_2")
+  .setRequiredStages("industrial_1")
  
 
   .build();

@@ -49,8 +49,7 @@ static items as IItemStack [][int]  = {
 
         //Primal tech
             <primal_tech:fluid_bladder>,
-            <primal_tech:water_saw>,
-            <primal_tech:flint_edged_disc>,
+            
             <primal_tech:wooden_hopper>,
 
         //Immersive Craft
@@ -247,7 +246,36 @@ static items as IItemStack [][int]  = {
 
     ],
 
-    2 : [<tcomplement:alloy_tank>],
+    2 : [
+        //Tcomplement alloy tank
+        <tcomplement:alloy_tank>,
+
+        //Primaltech watersaw
+        <primal_tech:water_saw>,
+        <primal_tech:flint_edged_disc>,
+
+
+        //Horse powered stuff
+        <horsepower:hand_grindstone>,
+        <horsepower:press>,
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 1 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 2 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 3 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 1 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_greatwood", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_silverwood", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pammaple", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pampaperbark", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pamcinnamon", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
+        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}})
+    ],
 
     3 : [
 
@@ -667,7 +695,14 @@ static items as IItemStack [][int]  = {
             <tconstruct:slime:2>,
             <tconstruct:slime:4>,
             <forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}), 
-            <naturescompass:naturescompass>.withTag({})
+            <naturescompass:naturescompass>.withTag({}),
+
+        //Structurize
+            <structurize:blockcactusstair>,
+            <structurize:blockcactusfencegate>,
+            <structurize:cactusdoor>,
+            <structurize:blockcactustrapdoor>,
+            <structurize:blockcactusfence>
     ]
 
 
@@ -794,7 +829,9 @@ static recipes as string [][int] = {
     1 : [
         "primalChest",
         "primalChestAdv",
-        "woodHopper"
+        "woodHopper",
+        "dough",
+        "tcomplement:melter/melter"
     ],
     2:[],
     3:[],

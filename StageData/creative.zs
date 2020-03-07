@@ -26,7 +26,7 @@ static items as IItemStack [][int]  = {
     1: [
         //Agricraft
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
-            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:jaslumine_plant", agri_growth: 1 as byte}),
+            
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:weed_plant", agri_growth: 1 as byte}),
             <agricraft:agri_nugget:12>,
 

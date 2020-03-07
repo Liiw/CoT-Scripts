@@ -10,7 +10,7 @@ function AddToStage (stage as string, modlist as string[]){
 	for mod in loadedMods {
 		if (modlist has mod.id) {
 			mods.ItemStages.stageModItems(stage, mod.id);
-			mods.recipestages.Recipes.setRecipeStageByMod(stage, mod.id);
+			//TESTmods.recipestages.Recipes.setRecipeStageByMod(stage, mod.id);
 		}
 	}
 }

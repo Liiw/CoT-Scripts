@@ -58,9 +58,11 @@ static items as IItemStack[][int] = {
             <minecraft:dirt>,
             <minecraft:dirt:1>,
             <minecraft:dirt:2>,
-            <minecraft:grass>
+            <minecraft:grass>,
        
             
+        //Struxturize
+            <structurize:blockcactusplank>
     ],
 
     2 : [  
@@ -276,8 +278,10 @@ static items as IItemStack[][int] = {
             <harvestcraft:aridgarden>,
 
         //Themal foundation dyes
-            <thermalfoundation:dye:*>
+            <thermalfoundation:dye:*>,
             
+        //Structurize
+            <structurize:blockcactusslab_half>
 
     ],
 
