@@ -26,13 +26,13 @@ recipes.removeShaped(primalChestAdv,
 );
 
 
-recipes.addShaped("primalChest",primalChest,
+recipes.addShaped("primal_Chest",primalChest,
     [[orePlank, orePlank, orePlank],
      [orePlank, basketMedium, orePlank],
      [orePlank, orePlank, orePlank]]    
 );
 
-recipes.addShaped("primalChestAdv",primalChestAdv,
+recipes.addShaped("primal_ChestAdv",primalChestAdv,
     [[orePlank, orePlank, orePlank],
      [orePlank, basketLarge, orePlank],
      [orePlank, orePlank, orePlank]]    

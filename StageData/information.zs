@@ -50,6 +50,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
   1 : [
+    // EIO LAPIS, for electrotine
+        <enderio:item_material:32>,
     //PR electrotine
       <projectred-core:resource_item:104>,
     //Geolysys ore clusters
@@ -76,7 +78,9 @@ static items as IItemStack [][int]  = {
       <bigreactors:dustludicrite>,
       <bigreactors:duststeel>,
     //IE
-      <immersiveengineering:storage_slab:5>
+      <immersiveengineering:storage_slab:5>,
+
+      <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000})
   ],
 
   2 : [
@@ -121,7 +125,7 @@ static items as IItemStack [][int]  = {
             <enderio:item_material:61>,
         //EIO_TiC
             <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),
+            
             <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "electrical_steel", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "energetic_alloy", Amount: 1000}),
@@ -182,7 +186,8 @@ static liquids as ILiquidStack [][int] = {
       <liquid:cyanite>,
       <liquid:fuelcolumn>,
       <liquid:dist_water>,
-      <liquid:steam>
+      <liquid:steam>,
+      <liquid:redstone>,
   ],
 
   2:[   
@@ -199,7 +204,7 @@ static liquids as ILiquidStack [][int] = {
         <liquid:cloud_seed_concentrated>,
     //EIO-TiC
         <liquid:glowstone>,
-        <liquid:redstone>,
+        
         <liquid:ender>,
         <liquid:electrical_steel>,
         <liquid:energetic_alloy>,
@@ -248,11 +253,12 @@ static ores as IIngredient[][IItemStack][int] =
 
 static materials as string [][int] = {
     1:[
-        "enderium",
+        
         //"yellorium",
         "uranium"
     ],
     2:[
+        "enderium",
         "electrical_steel",
         "electricalsteel",
         "energetic_alloy",

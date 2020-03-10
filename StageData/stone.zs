@@ -383,7 +383,8 @@ static recipes as string [][int] = {
         "stoneShovel",
         "stoneSword",
         "clayKiln",
-        "boneShard"
+        "boneShard",
+        "strawbed"
     ], 
     3 : [],
     4 : [] 

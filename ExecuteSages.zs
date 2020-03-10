@@ -37,7 +37,7 @@ import scripts.utils.ChangeMaterialStage;
 
 //var axe = <tconstruct:hatchet>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Special: {Categories: ["aoe", "harvest", "weapon", "tool"]}, TinkerData: {Materials: ["stone", "flint", "wood"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "cheap", color: -6710887 as long, level: 1}, {identifier: "crude", color: -9868951 as long, level: 2, crude2: 1 as byte}, {identifier: "ecological", color: -7444965 as long, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["cheap", "crude2", "ecological", "toolleveling"]});
 
-global StageList as Stage[] = [
+static StageList as Stage[] = [
   stone,
   metal,
   //late_metal,
@@ -129,8 +129,6 @@ mods.multiblockstages.IEMultiBlockStages.addStage("blastfurnace", "IE:BlastFurna
 mods.multiblockstages.IEMultiBlockStages.addStage("advanced_blastfurnace", "IE:BlastFurnaceAdvanced", "You need to research that a little bit (try the Research Table)");
 //mods.multiblockstages.IEMultiBlockStages.addStage("advanced_cokeoven", "CokeOvenAdvanced", "You need to research that a little bit (try the research table)");
 mods.multiblockstages.IEMultiBlockStages.addStage("excavator", "IE:Excavator", "Please purchase a drilling license first! Look for the Research Table for more info.");
-
-
 
 
 

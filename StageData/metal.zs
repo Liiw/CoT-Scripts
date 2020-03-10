@@ -827,8 +827,8 @@ static materials as string [][int] = {
 
 static recipes as string [][int] = {
     1 : [
-        "primalChest",
-        "primalChestAdv",
+        "primal_Chest",
+        "primal_ChestAdv",
         "woodHopper",
         "dough",
         "tcomplement:melter/melter"
