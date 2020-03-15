@@ -1,15 +1,50 @@
 #priority 9500
 
+import scripts.classes.Stage;
+
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 import crafttweaker.item.IIngredient;
 
 //Add mods from list to stage
-function AddToStage (stage as string, modlist as string[]){
+function AddToStage (stage as string, modlist as string[], allStages as Stage[]){
 	for mod in loadedMods {
+		
 		if (modlist has mod.id) {
 			mods.ItemStages.stageModItems(stage, mod.id);
+
+			
+				for item in mod.items{
+					var isListed = false;
+					mods.ItemStages.removeItemStage(item);
+					mods.ItemStages.addItemStage(stage, item);
+					
+					for stage in allStages{
+						for i in stage.items{
+							for src in stage.items[i]{
+								//print ("THE ITEM I AM LOOKING AT: " + src.commandString);
+								if (item.commandString == src.commandString){
+									//print ("THE ITEM IS LISTED: " + item.commandString);
+									isListed = true;
+								}
+							}
+						}
+					}
+					if (!isListed){
+						mods.recipestages.Recipes.setRecipeStage(stage, item);
+
+						var itemRecipes = recipes.getRecipesFor(item);
+
+						for rec in itemRecipes{
+							mods.recipestages.Recipes.setRecipeStage(stage, rec.name);
+						}		
+					}
+					
+				}
+			
+			
+			
 			//TESTmods.recipestages.Recipes.setRecipeStageByMod(stage, mod.id);
 		}
 	}
@@ -23,7 +58,6 @@ function RemainingModsToStage(stage as string, staged_list as string[][string]){
 		for mods in staged_list {
 			if (mods has mod.id) {
 				inlist = true;
-				break;
 			}
 		}
 
@@ -39,7 +73,15 @@ function ChangeItemStage(stage as string, item_list as IIngredient []) {
 	for item in item_list {		
 		mods.ItemStages.removeItemStage(item);
 		mods.ItemStages.addItemStage(stage, item);
-		mods.recipestages.Recipes.setRecipeStage(stage, item);		
+
+		
+		mods.recipestages.Recipes.setRecipeStage(stage, item);
+
+		var itemRecipes = recipes.getRecipesFor(item);
+
+		for rec in itemRecipes{
+			mods.recipestages.Recipes.setRecipeStage(stage, rec.name);
+		}		
 	}
 }
 
@@ -118,12 +160,20 @@ function ChangeMaterialStage(stage as string,
 					}   
 				}
 
+				
+
                 //STAGE ITEM IF CONDITION TRIGGERED
                 if (stageItem)
                 {
                     mods.ItemStages.removeItemStage(item);
                     mods.ItemStages.addItemStage(stage, item);
                     mods.recipestages.Recipes.setRecipeStage(stage, item);
+
+					var itemRecipes = recipes.getRecipesFor(item);
+
+						for rec in itemRecipes{
+							mods.recipestages.Recipes.setRecipeStage(stage, rec.name);
+						}
 
 					
                 }
@@ -152,6 +202,12 @@ function ChangeMaterialStage(stage as string,
 									mods.ItemStages.removeItemStage(item);
 									mods.ItemStages.addItemStage(stage, item);
 									mods.recipestages.Recipes.setRecipeStage(stage, item);
+
+									var itemRecipes = recipes.getRecipesFor(item);
+
+										for rec in itemRecipes{
+											mods.recipestages.Recipes.setRecipeStage(stage, rec.name);
+										}
 								}
 								
 								

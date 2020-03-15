@@ -281,6 +281,7 @@ static materials as string [][int] = {
         "darksteel",
         "bedrock",
         "crudesteel",
+        "floppy"
     ],
     3:[]
 };
@@ -293,6 +294,24 @@ static recipes as string [][int] = {
     2 : []
 };
 
+static recipeCategories as string [][int] = {
+    1 : [
+        "inworldcrafting.fluid_to_fluid",
+        "inworldcrafting.itemtransform"
+    ],
+    2 : [
+        "oc.manual",
+        "oc.api",
+        "jetif"
+    ]
+};
+
+static mobs as string [][int] = {
+    1 : []
+};
+
+
+
 static class as Stage  = Stage(
     name,
     substages,
@@ -301,6 +320,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );

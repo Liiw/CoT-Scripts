@@ -1,4 +1,5 @@
 #priority 9400
+#norun
 
 import scripts.classes.Stage;
 

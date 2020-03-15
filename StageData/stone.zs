@@ -13,7 +13,9 @@ static substages as string[int] = {
     1 : "stone_1",
     2 : "stone_2",
     3 : "stone_3",
-    4 : "stone_4"
+    4 : "stone_4",
+
+    11 : "stone_fire"
 };
 
 static mods as string[][int] = {
@@ -29,7 +31,12 @@ static mods as string[][int] = {
 };
 
 static items as IItemStack[][int] = {
-    1 : [
+    1 : [   
+            <harvestcraft:pamcinnamon>,
+            <harvestcraft:pammaple>,
+            <harvestcraft:pampaperbark>,
+            <thaumcraft:log_greatwood>,
+            <thaumcraft:log_silverwood>,
         //Minecraft
             <minecraft:gravel>,
             <minecraft:stick>,
@@ -298,8 +305,8 @@ static items as IItemStack[][int] = {
         //Minecraft
             <minecraft:lapis_block>,
             <minecraft:dye:4>,
-            <minecraft:coal>,
-            <minecraft:coal:1>
+            //<minecraft:coal>,
+            //<minecraft:coal:1>
 
         
 
@@ -307,7 +314,9 @@ static items as IItemStack[][int] = {
 
     ],
     
-    4 : [] 
+    4 : [],
+
+    11: [<primal_tech:stone_grill>] 
 };
 
 static liquids as ILiquidStack[][int] = {   
@@ -361,7 +370,6 @@ static materials as string [][int] = {
         "nut"
     ],
     2:[
-        "charcoal",
         "coal",
         
     ],
@@ -373,7 +381,7 @@ static materials as string [][int] = {
 static recipes as string [][int] = {
     1 : [
         "stickfromtwigs",
-        "flintaxe",
+        "stoneaxe",
         "flint"
     ],
     2 : [ 
@@ -390,6 +398,25 @@ static recipes as string [][int] = {
     4 : [] 
 };
 
+static recipeCategories as string [][int] = {
+    1 : [
+        "minecraft.crafting"
+    ],
+    2: [
+        "primal_tech.clay_kiln_recipes"
+    ],
+
+    11:[
+        "primal_tech.stone_grill_recipes",
+        "primal_tech.stone_anvil_recipes"
+    ]
+};
+
+static mobs as string [][int] = {
+    1 : [
+        "minecraft:zombie"
+    ]
+};
 
 
 static class as Stage  = Stage(
@@ -400,6 +427,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );

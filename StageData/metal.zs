@@ -67,6 +67,7 @@ static items as IItemStack [][int]  = {
             <harvestcraft:hardenedleatherleggingsitem>,
         
         //Minecraft
+            <minecraft:coal:1>,
             <minecraft:glass>,
             <minecraft:torch>,
             <minecraft:name_tag>,
@@ -743,38 +744,49 @@ static ores as IIngredient[][IItemStack][int] =
 
      
     2: {<minecraft:stone>:[<geolosys:ore:4>,
-                           <geolosys:ore:5>,
-                           <geolosys:ore>],
+                           <geolosys:ore:5>
+                           ],
         
         <immcraft:rock>:[<geolosys:ore_sample:4>,
-                         <geolosys:ore_sample:5>,
-                         <geolosys:ore_sample>]
+                         <geolosys:ore_sample:5>
+                         ]
                            
        },
-    3: {
+    3: {<minecraft:stone>:[
+            <minecraft:iron_ore>,
+            <geolosys:ore:1>,
+            <geolosys:ore>
+        ],
+
+        <immcraft:rock>:[
+            <geolosys:ore_sample:1>,
+            <geolosys:ore_sample>
+        ]
             
                         
     },
 
     4:{
-        <minecraft:stone>:[<geolosys:ore_vanilla:2>,
-                           <geolosys:ore_vanilla:5>,
-                           
-                           <minecraft:iron_ore>,
-                           <geolosys:ore:1>,
-                           <minecraft:diamond_ore>,
-                           <minecraft:gold_ore>],
+        <minecraft:stone>:[
+            <geolosys:ore_vanilla:2>,
+            <geolosys:ore_vanilla:5>,
+            <minecraft:diamond_ore>,
+            <minecraft:gold_ore>
+        ],
 
-        <immcraft:rock>:[<geolosys:ore_sample_vanilla:2>,
-                           <geolosys:ore_sample_vanilla:5>,
+        <immcraft:rock>:[
+            <geolosys:ore_sample_vanilla:2>,
+            <geolosys:ore_sample_vanilla:5>
+        ]
                            
-                           <geolosys:ore_sample:1>]
+                           
     }
 };
 
 static materials as string [][int] = {
     1:[
         "wood",
+        "charcoal",
         "bone",
         "flint",
         "stone",
@@ -838,6 +850,34 @@ static recipes as string [][int] = {
     4:[]
 };
 
+static recipeCategories as string [][int] = {
+    1 : [
+        "tconstruct.smeltery",
+        "tconstruct.alloy",
+        "tconstruct.casting_table",
+        "horsepower.grinding",
+        "horsepower.manual_chopping",
+        "tcomplement:melter",
+        "minecraft.smelting"
+    ],
+    2:[
+        "horsepower.chopping"
+    ],
+
+    4:[
+        "agricraft.mutation",
+        "agricraft.produce"
+    ]
+};
+
+static mobs as string [][int] = {
+    4 : [
+        "minecraft:skeleton"
+    ]
+};
+
+
+
 static class as Stage  = Stage(
     name,
     substages,
@@ -846,6 +886,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );

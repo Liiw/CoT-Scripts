@@ -669,6 +669,24 @@ static recipes as string [][int] = {
     3 : []
 };
 
+static recipeCategories as string [][int] = {
+    3 : [
+        "tcomplement:high_oven_mix",
+        "tcomplement:high_oven_heat",
+        "tcomplement:high_oven_melting"
+    ]
+};
+
+static mobs as string [][int] = {
+    1 : [],
+    2 : [
+        "enderiozoo:fallenknight",
+        "enderiozoo:fallenmount"
+    ]
+};
+
+
+
 static class as Stage  = Stage(
     name,
     substages,
@@ -677,6 +695,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );

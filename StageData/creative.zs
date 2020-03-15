@@ -441,6 +441,16 @@ static recipes as string [][int] = {
     ]
 };
 
+static recipeCategories as string [][int] = {
+    1 : []
+};
+
+static mobs as string [][int] = {
+    1 : []
+};
+
+
+
 static class as Stage  = Stage(
     name,
     substages,
@@ -449,6 +459,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );

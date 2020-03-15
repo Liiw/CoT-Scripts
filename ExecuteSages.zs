@@ -87,7 +87,7 @@ static oreDictFilter as string[][] =
 for stage in StageList {
   for i in stage.substages.keys {
     if (stage.mods.keys has i){
-      AddToStage (stage.substages[i], stage.mods[i]);
+      AddToStage (stage.substages[i], stage.mods[i], StageList);
     }
   }
 }
@@ -97,6 +97,14 @@ for stage in StageList {
 //Items, recipes and liquids
 for stage in StageList {
   for i in stage.substages.keys {
+
+    if (stage.recipeCategories.keys has i){
+      for recCat in stage.recipeCategories[i]{
+        mods.ItemStages.stageRecipeCategory(stage.substages[i], recCat);
+        //print("I WAS GONNA STAGE: " + recCat);
+      }    
+    }
+
 
     if (stage.items.keys has i) {
       ChangeItemStage (stage.substages[i], stage.items[i]);
@@ -113,6 +121,15 @@ for stage in StageList {
     if (stage.recipes.keys  has i){
       for recipe in stage.recipes[i] {
         mods.recipestages.Recipes.setRecipeStage(stage.substages[i], recipe); 
+      }
+    }
+
+
+    
+
+    if (stage.mobs.keys has i){
+      for mob in stage.mobs[i]{
+        mods.MobStages.addStage(stage.substages[i], mob);
       }
     }
     
@@ -133,7 +150,7 @@ mods.multiblockstages.IEMultiBlockStages.addStage("excavator", "IE:Excavator", "
 
 
 //Add first axe materials separately to first stage
-  mods.TinkerStages.addMaterialStage(stone.substages[1], "flint");
+  //mods.TinkerStages.addMaterialStage(stone.substages[1], "flint");
   mods.TinkerStages.addMaterialStage(stone.substages[1], "stone");
   mods.TinkerStages.addMaterialStage(stone.substages[1], "wood");
 //
@@ -159,6 +176,5 @@ for stage in StageList {
     
   }
 }
-
 
 

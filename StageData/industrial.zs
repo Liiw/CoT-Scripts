@@ -384,6 +384,39 @@ static recipes as string [][int] = {
     13 : ["researchTable"]
 };
 
+static recipeCategories as string [][int] = {
+    1 : [
+        "ie.cokeoven",
+        "ie.alloysmelter",
+        "ie.blastfurnace",
+        "ie.blastfurnace.fuel",
+        "ie.metalPress",
+        "ie.crusher",
+        "ie.workbench",
+        "ie.squeezer",
+        "ie.fermenter",
+        "ie.refinery",
+        "ie.arcFurnace",
+        "ie.arcFurnace.recycling",
+        "ie.bottlingMachine",
+        "ie.mixer",
+        "mctsmelteryio:casting_machine",
+        "mctsmelteryio:fuel_controller"
+    ],
+    2:[
+        "it.distiller",
+        "it.boiler",
+        "it.solarTower",
+        "immersivepetroleum.distillation"
+    ]
+};
+
+static mobs as string [][int] = {
+    1 : []
+};
+
+
+
 static class as Stage  = Stage(
     name,
     substages,
@@ -392,6 +425,7 @@ static class as Stage  = Stage(
     liquids,
     ores,
     materials,
-    recipes
-
+    recipes,
+    recipeCategories,
+    mobs
 );
