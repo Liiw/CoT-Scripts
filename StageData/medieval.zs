@@ -26,7 +26,7 @@ static mods as string[][int] = {
         "opframe",
         "mcjtylib_ng",
         "farmingforblockheads",
-        "cookingforblockheads",
+        
         "harvestcraft",
         "minecolonies",
         "structurize"
@@ -45,13 +45,28 @@ static mods as string[][int] = {
     3 : [
         "tcomplement",
         
-        "tombstone"
+        "tombstone",
+
+        "moarboats"
         
     ]
 };
 
 static items as IItemStack [][int] = {
     1 : [
+
+        //Malisisdoors large doors
+
+            <malisisdoors:carriage_door>,
+            <malisisdoors:medieval_door>,
+            <malisisdoors:big_door_oak_3x3>,
+            <malisisdoors:big_door_spruce_3x3>,
+            <malisisdoors:big_door_birch_3x3>,
+            <malisisdoors:big_door_jungle_3x3>,
+            <malisisdoors:big_door_acacia_3x3>,
+            <malisisdoors:big_door_dark_oak_3x3>,
+            <malisisdoors:big_door_iron_3x3>,
+            <malisisdoors:big_door_rusty_3x3>,
         
         //Harvestrcraft stuff
 
@@ -551,7 +566,10 @@ static items as IItemStack [][int] = {
     ],
     3 : [
         <tombstone:tablet_of_home>.withTag({ancient: 1 as byte}),
-        <tombstone:tablet_of_recall>.withTag({ancient: 1 as byte})
+        <tombstone:tablet_of_recall>.withTag({ancient: 1 as byte}),
+
+        <malisisdoors:wood_sliding_door>,
+        <malisisdoors:iron_sliding_door>
     ]
 };
 
@@ -678,10 +696,39 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
-    1 : [],
-    2 : [
+    1 : [
         "enderiozoo:fallenknight",
-        "enderiozoo:fallenmount"
+        "enderiozoo:fallenmount",
+        "minecraft:zombie_horse",
+        "minecraft:zombie_villager",
+        "minecraft:witch",
+    ],
+    2 : [
+        
+
+        //Thaumcraft entities
+        "thaumcraft:brainyzombie",
+        "thaumcraft:cultistcleric",
+        "thaumcraft:cultistknight",
+        "thaumcraft:cultistleader",
+        "thaumcraft:cultistportalgreater",
+        "thaumcraft:cultistportallesser",
+        "thaumcraft:giantbrainyzombie",
+        "thaumcraft:inhabitedzombie",
+        "thaumcraft:mindspider",
+        "thaumcraft:wisp"
+    ],
+
+    3 : [
+        "enderiozoo:enderminy",
+        "enderiozoo:withercat",
+        "enderiozoo:witherwitch",
+        "enderiozoo:concussioncreeper",
+        "enderiozoo:direslime",
+        "enderiozoo:direwolf",
+        "enderiozoo:lovechild",
+        "minecraft:enderman"
+
     ]
 };
 

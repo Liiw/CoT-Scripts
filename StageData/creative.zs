@@ -24,6 +24,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1: [
+        //MOarboats
+            <moarboats:creative_engine>,
         //Agricraft
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
             
@@ -185,6 +187,15 @@ static items as IItemStack [][int]  = {
             <primal_tech:rock>,
 
         //Thermal foundation stuff
+            <thermalfoundation:material:1024>,
+            <thermalfoundation:material:1025>,
+            <thermalfoundation:material:1026>,
+            <thermalfoundation:material:1027>,
+            <thermalfoundation:material:1028>,
+            <thermalfoundation:material:2049>,
+            <thermalfoundation:material:2051>,
+            <thermalfoundation:material:2053>,
+
             <thermalfoundation:material:656>,
             <thermalfoundation:glass>,
             <thermalfoundation:glass:1>,
@@ -292,7 +303,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:material:866>,
             <thermalfoundation:material:772>,
             <thermalfoundation:material:801>,
-            <thermalfoundation:material:800>,
+            
             <thermalfoundation:material:816>,
             <thermalfoundation:material:892>,
 
@@ -446,7 +457,12 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
-    1 : []
+    1 : [
+        "thermalfoundation:blizz",
+        "thermalfoundation:blitz",
+        "thermalfoundation:basalz",
+
+    ]
 };
 
 

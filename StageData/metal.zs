@@ -107,7 +107,7 @@ static items as IItemStack [][int]  = {
             <minecraft:beetroot_soup>,
             <minecraft:bread>,
             <minecraft:cake>,
-            <minecraft:carrot>,
+            //<minecraft:carrot>,
             
             <minecraft:chorus_flower>,
             <minecraft:chorus_fruit>,
@@ -116,10 +116,10 @@ static items as IItemStack [][int]  = {
             
             <minecraft:cookie>,
             <minecraft:egg>,
-            <minecraft:fish>,
-            <minecraft:fish:1>,
-            <minecraft:fish:2>,
-            <minecraft:fish:3>,
+            //<minecraft:fish>,
+            //<minecraft:fish:1>,
+            //<minecraft:fish:2>,
+            //<minecraft:fish:3>,
             <minecraft:golden_apple>,
             <minecraft:golden_apple:1>,
             <minecraft:melon>,
@@ -129,7 +129,7 @@ static items as IItemStack [][int]  = {
             
             <minecraft:poisonous_potato>,
             
-            <minecraft:potato>,
+            //<minecraft:potato>,
             <minecraft:pufferfish>,
             <minecraft:pumpkin>,
             <minecraft:pumpkin_pie>,
@@ -285,6 +285,30 @@ static items as IItemStack [][int]  = {
     ],
 
     4:[
+        //Malisisdoors
+            <malisisdoors:curtain_white>,
+            <malisisdoors:curtain_orange>,
+            <malisisdoors:curtain_magenta>,
+            <malisisdoors:curtain_light_blue>,
+            <malisisdoors:curtain_yellow>,
+            <malisisdoors:curtain_lime>,
+            <malisisdoors:curtain_pink>,
+            <malisisdoors:curtain_gray>,
+            <malisisdoors:curtain_silver>,
+            <malisisdoors:curtain_cyan>,
+            <malisisdoors:curtain_purple>,
+            <malisisdoors:curtain_blue>,
+            <malisisdoors:curtain_brown>,
+            <malisisdoors:curtain_black>,
+            <malisisdoors:curtain_red>,
+            <malisisdoors:curtain_green>,
+            <malisisdoors:saloon>,
+            <malisisdoors:trapdoor_acacia>,
+            <malisisdoors:trapdoor_birch>,
+            <malisisdoors:trapdoor_dark_oak>,
+            <malisisdoors:trapdoor_jungle>,
+            <malisisdoors:trapdoor_spruce>,
+            <malisisdoors:camofencegate>,
 
         //Harvestcraft
             <harvestcraft:candledeco1>,
@@ -703,7 +727,10 @@ static items as IItemStack [][int]  = {
             <structurize:blockcactusfencegate>,
             <structurize:cactusdoor>,
             <structurize:blockcactustrapdoor>,
-            <structurize:blockcactusfence>
+            <structurize:blockcactusfence>,
+
+        //TE
+            <thermalfoundation:material:800>
     ]
 
 
@@ -845,7 +872,9 @@ static recipes as string [][int] = {
         "dough",
         "tcomplement:melter/melter"
     ],
-    2:[],
+    2:[
+        "waterSaw"
+    ],
     3:[],
     4:[]
 };
@@ -871,8 +900,16 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
+    1 : [
+        "minecraft:spider"
+    ],
+    
     4 : [
-        "minecraft:skeleton"
+        "minecraft:skeleton",
+        "minecraft:skeleton_horse",
+        "minecraft:creeper",
+        "minecraft:slime",
+        "minecraft:stray"
     ]
 };
 

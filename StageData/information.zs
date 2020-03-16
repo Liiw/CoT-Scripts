@@ -50,6 +50,17 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
   1 : [
+
+    //Malisisdoors
+        <malisisdoors:door_factory>,
+        <malisisdoors:customdooritem>,
+
+        <malisisdoors:hitechdoor>,
+        <malisisdoors:garage_door>,
+        <malisisdoors:verticalhatch>,
+        <malisisdoors:sliding_trapdoor>,
+        <malisisdoors:laboratory_door>,
+
     // EIO LAPIS, for electrotine
         <enderio:item_material:32>,
     //PR electrotine
@@ -80,7 +91,9 @@ static items as IItemStack [][int]  = {
     //IE
       <immersiveengineering:storage_slab:5>,
 
-      <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000})
+      <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),
+
+      <thermalfoundation:fluid_redstone>
   ],
 
   2 : [
@@ -160,6 +173,11 @@ static items as IItemStack [][int]  = {
         //TE stuff
             <thermalfoundation:material:22>,
             <thermalfoundation:material:23>,
+
+
+            //TE_LIQUIDS
+            <thermalfoundation:fluid_ender>,
+
             //Buckets
             <forge:bucketfilled>.withTag({FluidName: "enderium", Amount: 1000}),
 
@@ -170,8 +188,11 @@ static items as IItemStack [][int]  = {
             <enderio:block_fused_glass:*>,
 
         //TiC
-            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}})
+            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
 
+        //Moarboats
+            <moarboats:opencomputers_holder>
+        
             
             
     ]
@@ -259,6 +280,7 @@ static materials as string [][int] = {
     ],
     2:[
         "enderium",
+
         "electrical_steel",
         "electricalsteel",
         "energetic_alloy",

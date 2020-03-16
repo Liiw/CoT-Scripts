@@ -75,7 +75,9 @@ static oreDictFilter as string[][] =
   [
     "clathrate",
     "fused",
-    "hardened"
+    "hardened",
+    "sawdust",
+    "wood"
   ]
 ];
 
@@ -106,6 +108,10 @@ for stage in StageList {
     }
 
 
+    if (stage.materials.keys has i) {
+      ChangeMaterialStage(stage.substages[i], stage.materials[i], oreDictFilter);
+    }
+
     if (stage.items.keys has i) {
       ChangeItemStage (stage.substages[i], stage.items[i]);
     }
@@ -114,9 +120,7 @@ for stage in StageList {
       ChangeLiquidStage(stage.substages[i], stage.liquids[i]);
     }
     
-    if (stage.materials.keys has i) {
-      ChangeMaterialStage(stage.substages[i], stage.materials[i], oreDictFilter);
-    }
+    
 
     if (stage.recipes.keys  has i){
       for recipe in stage.recipes[i] {
@@ -130,6 +134,7 @@ for stage in StageList {
     if (stage.mobs.keys has i){
       for mob in stage.mobs[i]{
         mods.MobStages.addStage(stage.substages[i], mob);
+        mods.MobStages.toggleSpawner(mob, true);
       }
     }
     

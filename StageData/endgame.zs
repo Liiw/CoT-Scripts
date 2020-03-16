@@ -25,6 +25,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
+        //MAlisisdoors
+            <malisisdoors:forcefielditem>,
             <guideapi:woot-guide>,
         //AE2Stuff
             <ae2stuff:wireless>,

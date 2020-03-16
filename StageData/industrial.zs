@@ -37,6 +37,7 @@ static mods as string[][int] = {
         "weirdinggadget",
         "compactdrawers",
         "storagedrawers",
+        "cookingforblockheads",
         
 
     ],
@@ -65,6 +66,11 @@ static mods as string[][int] = {
 static items as IItemStack [][int] = {
     1 : [
 
+        //Malisisdoors
+            <malisisdoors:jail_door>,
+            <malisisdoors:factory_door>,
+            <malisisdoors:shoji_door>,
+        
         //Geolosys clusters
             <geolosys:cluster:6>,
             <geolosys:cluster:7>,
@@ -195,6 +201,20 @@ static items as IItemStack [][int] = {
     ],
 
     2 : [
+
+        //MoarBoats
+            <moarboats:boat_battery>,
+            <moarboats:boat_energy_charger>,
+            <moarboats:boat_energy_discharger>,
+            <moarboats:helm>,
+            <moarboats:boat_fluid_loader>,
+            <moarboats:boat_fluid_unloader>,
+            <moarboats:boat_tank>,
+
+        //MALISISDOORS
+            <malisisdoors:rustyhatch>,
+            <malisisdoors:rustyhandle>,
+            <malisisdoors:rustyladder>,
         //Minecraft
             <minecraft:black_shulker_box>,
             <minecraft:blue_shulker_box>,
@@ -412,7 +432,14 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
-    1 : []
+    1 : [
+        "minecraft:silverfish",
+
+        //TE 
+        "thermalfoundation:basalz",
+        "thermalfoundation:blitz",
+        "thermalfoundation:blizz"
+    ]
 };
 
 

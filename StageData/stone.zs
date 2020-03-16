@@ -32,6 +32,10 @@ static mods as string[][int] = {
 
 static items as IItemStack[][int] = {
     1 : [   
+        //IMMCRAFT ROCK NADA
+            <immcraft:rock>,
+
+            
             <harvestcraft:pamcinnamon>,
             <harvestcraft:pammaple>,
             <harvestcraft:pampaperbark>,
@@ -413,8 +417,12 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
-    1 : [
+    11 : [
         "minecraft:zombie"
+    ],
+
+    3 : [
+        "minecraft:husk"
     ]
 };
 
