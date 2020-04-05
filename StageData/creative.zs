@@ -24,6 +24,10 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1: [
+        //Some flour
+            <enderio:item_material:21>,
+            <appliedenergistics2:material:4>,
+
         //MOarboats
             <moarboats:creative_engine>,
         //Agricraft
@@ -162,9 +166,7 @@ static items as IItemStack [][int]  = {
             <geolosys:cluster:12>,
             
             
-            <geolosys:ore_sample:10>,          
-            <geolosys:cluster:10>,
-            <geolosys:ore:10>,
+           
 
         //Bountiful
             //<bountiful:bountyboarditem>,
@@ -301,7 +303,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:material:864>,
             <thermalfoundation:material:865>,
             <thermalfoundation:material:866>,
-            <thermalfoundation:material:772>,
+            
             <thermalfoundation:material:801>,
             
             <thermalfoundation:material:816>,
@@ -335,7 +337,7 @@ static items as IItemStack [][int]  = {
             <storagedrawers:upgrade_creative>,
             <littletiles:screwdriver>.withTag({}),
         //Early indust C-mode
-            <theoneprobe:creativeprobe>,
+            //<theoneprobe:creativeprobe>,
             <immersiveengineering:metal_device0:3>,
         //Late indust C-mode
             <buildinggadgets:constructionpastecontainercreative>,

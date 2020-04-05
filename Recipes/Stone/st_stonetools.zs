@@ -2,6 +2,7 @@
 
 var stone = <minecraft:stone>;
 var cobble = <minecraft:cobblestone>;
+var mossStone = <minecraft:mossy_cobblestone>;
 var stick = <minecraft:stick>;
 
 var stone_club = <primal_tech:stone_club>;
@@ -9,6 +10,13 @@ var stone_axe = <minecraft:stone_axe>;
 var stone_pick = <minecraft:stone_pickaxe>;
 var stone_shovel = <minecraft:stone_shovel>;
 var stone_sword = <minecraft:stone_sword>;
+
+var cobbleore = <ore:cobbleStones>;
+
+cobbleore.add(cobble);
+cobbleore.add(mossStone);
+
+
 
 //Remove cobble recipes
     recipes.removeShaped(stone_club, 

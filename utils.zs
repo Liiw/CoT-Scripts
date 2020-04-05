@@ -208,16 +208,12 @@ function ChangeMaterialStage(stage as string,
 										for rec in itemRecipes{
 											mods.recipestages.Recipes.setRecipeStage(stage, rec.name);
 										}
-								}
-								
-								
+								}						
 							}
 						}                   
 					}  
 				}                                
 			}
 		}
-		
-       
     }  
 }

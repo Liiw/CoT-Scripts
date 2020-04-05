@@ -31,7 +31,7 @@ static mods as string[][int] = {
     1 : [
         "immersiverailroading",
         "thaumicaugmentation",
-        "theoneprobe",
+        //"theoneprobe",
         "mctsmelteryio", 
         "immersiveengineering",
         "weirdinggadget",
@@ -57,7 +57,9 @@ static mods as string[][int] = {
         "dse",
         "nhc",
         "ompd",
-        "immersivetech"
+        "immersivetech",
+        "randallag",
+        "spitfirepack"
     ],
 
     
@@ -178,11 +180,11 @@ static items as IItemStack [][int] = {
             <thermalfoundation:rockwool:15>,
 
         //The One Probe
-            <theoneprobe:diamond_helmet_probe>.withTag({theoneprobe: 1}),
-            <theoneprobe:gold_helmet_probe>.withTag({theoneprobe: 1}),
-            <theoneprobe:iron_helmet_probe>.withTag({theoneprobe: 1}),
+            //<theoneprobe:diamond_helmet_probe>.withTag({theoneprobe: 1}),
+            //<theoneprobe:gold_helmet_probe>.withTag({theoneprobe: 1}),
+            //<theoneprobe:iron_helmet_probe>.withTag({theoneprobe: 1}),
         //The One Probe
-            <theoneprobe:probe_goggles>,
+            //<theoneprobe:probe_goggles>,
         //Coke
             <thermalfoundation:material:802>,
 
@@ -333,11 +335,23 @@ static liquids as ILiquidStack [][int] = {
     
 };
 
+            //<geolosys:ore_sample:10>,          
+            //<geolosys:cluster:10>,
+            
+
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {<minecraft:stone>:[<geolosys:ore:7>],
+    1: {<minecraft:stone>:
+        [
+            <geolosys:ore:7>,
+            <geolosys:ore:10>
+        ],
 
-        <immcraft:rock>:[<geolosys:ore_sample:7>],
+        <immcraft:rock>:
+        [
+            <geolosys:ore_sample:7>,
+            <geolosys:ore_sample:10>
+        ],
 
         <minecraft:netherrack> : [
             <tconstruct:ore:1>

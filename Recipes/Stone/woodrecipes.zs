@@ -3,6 +3,8 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
+var allLogOre = <ore:allLogs>;
+
 static woods as IIngredient [][] =[
     [<minecraft:log>],
     [<minecraft:log:1>],
@@ -26,6 +28,8 @@ static woods as IIngredient [][] =[
 
     [<minecraft:cactus>]                    
 ];
+
+
 
 static planks as IItemStack[] = [
     <minecraft:planks>,
@@ -86,7 +90,15 @@ for plank in planks {
     var name = "CoT_" + planks[i].displayName + i;
     recipes.addShapeless(name, planks[i], woods[i]);
 
+    allLogOre.add(woods[i]);
+
     i += 1;
 } 
 
-
+//some extra cases with wood
+allLogOre.add(<harvestcraft:pamcinnamon:1>);
+allLogOre.add(<harvestcraft:pamcinnamon:2>);
+allLogOre.add(<thaumcraft:log_greatwood:1>);
+allLogOre.add(<thaumcraft:log_greatwood:2>);
+allLogOre.add(<thaumcraft:log_silverwood:1>);
+allLogOre.add(<thaumcraft:log_silverwood:2>);

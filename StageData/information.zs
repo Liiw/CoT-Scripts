@@ -44,7 +44,8 @@ static mods as string[][int] = {
         "ocsensors",
         "openscreens",   
         "immersivecables",
-        "rftools"
+        "rftools",
+        "ivairlinerpack"
     ]
 };
 

@@ -337,6 +337,8 @@ static liquids as ILiquidStack[][int] = {
 
 };
 
+var poorOreCoal = <ore:poorOreCoal>;
+
 static ores as IIngredient[][IItemStack][int] = 
 {
     1: {},
@@ -348,7 +350,7 @@ static ores as IIngredient[][IItemStack][int] =
                                
                                <minecraft:coal_ore>],
 
-            <immcraft:rock>:[<geolosys:ore_sample_vanilla>,
+            <immcraft:rock>:[<geolosys:ore_sample_vanilla:0>,
                              <geolosys:ore_sample_vanilla:3>,],
 
             
@@ -364,6 +366,7 @@ static materials as string [][int] = {
         
         "veggie",
         "greenveggie",
+        "avocado",
         "grain",
         "fiber",
         "berry",

@@ -569,7 +569,9 @@ static items as IItemStack [][int] = {
         <tombstone:tablet_of_recall>.withTag({ancient: 1 as byte}),
 
         <malisisdoors:wood_sliding_door>,
-        <malisisdoors:iron_sliding_door>
+        <malisisdoors:iron_sliding_door>,
+
+        <thermalfoundation:material:772>
     ]
 };
 

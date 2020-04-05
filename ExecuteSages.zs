@@ -77,7 +77,9 @@ static oreDictFilter as string[][] =
     "fused",
     "hardened",
     "sawdust",
-    "wood"
+    "wood",
+    "soup",
+    "burrito"
   ]
 ];
 
