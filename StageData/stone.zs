@@ -337,7 +337,7 @@ static liquids as ILiquidStack[][int] = {
 
 };
 
-var poorOreCoal = <ore:poorOreCoal>;
+
 
 static ores as IIngredient[][IItemStack][int] = 
 {

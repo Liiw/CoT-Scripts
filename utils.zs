@@ -13,7 +13,7 @@ function AddToStage (stage as string, modlist as string[], allStages as Stage[])
 		
 		if (modlist has mod.id) {
 			mods.ItemStages.stageModItems(stage, mod.id);
-
+			//mods.recipestages.Recipes.setRecipeStageByMod(stage, mod.id);
 			
 				for item in mod.items{
 					var isListed = false;
@@ -28,10 +28,12 @@ function AddToStage (stage as string, modlist as string[], allStages as Stage[])
 									//print ("THE ITEM IS LISTED: " + item.commandString);
 									isListed = true;
 								}
+
+								
 							}
 						}
 					}
-					if (!isListed){
+					if (!isListed  && !(mod.id.toLowerCase has "thaum")){
 						mods.recipestages.Recipes.setRecipeStage(stage, item);
 
 						var itemRecipes = recipes.getRecipesFor(item);

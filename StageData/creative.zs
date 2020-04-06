@@ -442,7 +442,8 @@ static materials as string [][int] = {
         "mithril",
         "signalum",
         "lumium",
-        "yellorium"
+        "yellorium",
+        "zinc"
     ],
     2:[],
     3:[]

@@ -88,6 +88,7 @@ static oreDictFilter as string[][] =
 
 //FOR I IN STAGE.SUBSTAGES.KEYS or something like that?
 
+
 for stage in StageList {
   for i in stage.substages.keys {
     if (stage.mods.keys has i){
@@ -102,6 +103,7 @@ for stage in StageList {
 for stage in StageList {
   for i in stage.substages.keys {
 
+    
     if (stage.recipeCategories.keys has i){
       for recCat in stage.recipeCategories[i]{
         mods.ItemStages.stageRecipeCategory(stage.substages[i], recCat);

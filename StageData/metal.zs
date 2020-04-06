@@ -876,7 +876,9 @@ static recipes as string [][int] = {
         "waterSaw"
     ],
     3:[],
-    4:[]
+    4:[
+        "cot_paper"
+    ]
 };
 
 static recipeCategories as string [][int] = {
