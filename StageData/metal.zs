@@ -870,6 +870,7 @@ static recipes as string [][int] = {
         "primal_ChestAdv",
         "woodHopper",
         "dough",
+        "dough_allwater",
         "tcomplement:melter/melter"
     ],
     2:[

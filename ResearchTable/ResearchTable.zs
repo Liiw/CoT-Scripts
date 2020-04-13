@@ -6,9 +6,9 @@ var cat = ResearchTable.addCategory(<immersiveengineering:material:26>);
 
 ResearchTable.builder("AdvBlastFurn", cat) // The second parameter has no use currently
   .setIcons(<immersiveengineering:stone_decoration:2>)
-  .setTitle("Advanced Blast Furnace") // I18n support: use language key
-  .setDescription("To complete research for a more efficient method of producing steel, you need to spend some steel and coal coke. Input the required amount into this research table by means of some item/fluid transportation system (a hopper will do fine for now)")
-  .addCondition(<ore:blockSteel> * 200, <ore:blockFuelCoke> * 200)
+  .setTitle("research.adv_blastfurnace.title") // I18n support: use language key
+  .setDescription("research.adv_blastfurnace.description")
+  .addCondition(<ore:blockSteel> * 50, <ore:blockFuelCoke> * 25)
   .setRewardStages("advanced_blastfurnace")
   .setRequiredStages("industrial_1")
 
@@ -17,9 +17,9 @@ ResearchTable.builder("AdvBlastFurn", cat) // The second parameter has no use cu
 
 ResearchTable.builder("AdvCokeOven", cat) // The second parameter has no use currently
   .setIcons(<immersiveengineering:stone_decoration:2>)
-  .setTitle("Advanced Coke Oven") // I18n support: use language key
-  .setDescription("To complete research for a more efficient method of producing coal coke and creosote, you need to spend some. Input the required amount into this research table by means of some item/fluid transportation system (for items: a hopper for example, for fluids: by bucket or some piping")
-  .addCondition(<liquid:creosote> * 50000, <ore:blockFuelCoke> * 100)
+  .setTitle("research.adv_cokeoven.title") // I18n support: use language key
+  .setDescription("research.adv_cokeoven.description")
+  .addCondition(<liquid:creosote> * 50000, <ore:blockFuelCoke> * 50)
   .setRewardStages("advanced_cokeoven")
   .setRequiredStages("industrial_1")
 
@@ -28,8 +28,8 @@ ResearchTable.builder("AdvCokeOven", cat) // The second parameter has no use cur
 
 ResearchTable.builder("Excavator", cat) // The second parameter has no use currently
   .setIcons(<immersiveengineering:metal_decoration0:5>)
-  .setTitle("Drilling License") // I18n support: use language key
-  .setDescription("Mining all the ores by hand can be tiring. Get yourself a drilling license for just 99 iron blocks and a little redstone! Just enjoy the evening while the machines work for you!")
+  .setTitle("research.ecvavator.title") // I18n support: use language key
+  .setDescription("research.ecvavator.description")
   .addCondition(<ore:blockIron> * 99, <ore:blockRedstone> * 10)
   .setRewardStages("excavator")
   .setRequiredStages("industrial_1")
@@ -52,9 +52,9 @@ ResearchTable.builder("Excavator", cat) // The second parameter has no use curre
 
 ResearchTable.builder("Upgrade", cat) // The second parameter has no use currently
   .setIcons(<immersiveengineering:sheetmetal:8>)
-  .setTitle("Industrial Upgrade") // I18n support: use language key
-  .setDescription("You have come a long way already and gained a lot of knowledge. It is time to take another step forward! Complete this research to advance in the Industrial Age")
-  .addCondition(<ore:blockSheetmetalSteel> * 1000, <liquid:concrete> * 150000)
+  .setTitle("research.upgrade.title") // I18n support: use language key
+  .setDescription("research.upgrade.description")
+  .addCondition(<ore:blockSheetmetalSteel> * 750, <liquid:concrete> * 100)
   .setRewardStages("industrial_2")
   .setRequiredStages("industrial_1")
  
@@ -64,8 +64,8 @@ ResearchTable.builder("Upgrade", cat) // The second parameter has no use current
   
 ResearchTable.builder("Upgradeend", cat) // The second parameter has no use currently
   .setIcons(<immersiveengineering:metal_decoration0:3>)
-  .setTitle("Information Starter") // I18n support: use language key
-  .setDescription("As you would imagine, combining fucktons of diesel with electricity always yields good results. Complete this research to unlock the next age!")
+  .setTitle("research.upgrade_end.title") // I18n support: use language key
+  .setDescription("research.upgrade_end.description")
   .addCondition(<liquid:diesel> * 1000000)
   .addEnergyCondition(1000000)
   .setRewardStages("industrial_end")
@@ -79,8 +79,8 @@ ResearchTable.builder("Upgradeend", cat) // The second parameter has no use curr
 
 ResearchTable.builder("Info_upgrade", cat_inf) // The second parameter has no use currently
   .setIcons(<immersiveengineering:metal_decoration0:3>)
-  .setTitle("Information Upgrade") // I18n support: use language key
-  .setDescription("Channel more power, blutonium and gasoline to unlock more of the Information Age. It would probably make sense to construct a reactor for that.")
+  .setTitle("research.info_upgrade.title") // I18n support: use language key
+  .setDescription("research.info_upgrade.description")
   .addCondition(<ore:blockBlutonium> * 50, <liquid:gasoline> * 1000000)
   .addEnergyCondition(1000000000003)
   .setRewardStages("information_2")
@@ -91,8 +91,8 @@ ResearchTable.builder("Info_upgrade", cat_inf) // The second parameter has no us
 
 ResearchTable.builder("Info_end", cat_inf) // The second parameter has no use currently
   .setIcons(<immersiveengineering:metal_decoration0:3>)
-  .setTitle("The Start of The End") // I18n support: use language key
-  .setDescription("You have been contacted by the guys living on the nearby planet. They like what you got going on here. They are willing to trade some knowledge about Stargates, wireless terminals and mob farming to you in return for some supplies and gear for a kick-ass LAN party.")
+  .setTitle("research.info_end.title") // I18n support: use language key
+  .setDescription("research.info_end.description")
   .addCondition(
     <ore:oc:ram6> * 10,
     <ore:oc:cpu3>* 10,
