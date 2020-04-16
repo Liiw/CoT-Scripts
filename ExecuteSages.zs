@@ -12,21 +12,12 @@ import crafttweaker.data.IData;
   //Main epochs
   import scripts.StageData.stone.class as stone;
   import scripts.StageData.metal.class as metal;
-  //import scripts.StageData.late_metal.class as late_metal;
+
   import scripts.StageData.medieval.class as medieval;
   import scripts.StageData.industrial.class as industrial;
-  //import scripts.StageData.late_industrial.class as late_industrial;
+
   import scripts.StageData.information.class as information;
-  //import scripts.StageData.digital.class as digital;
-  //import scripts.StageData.space.class as space;
   import scripts.StageData.endgame.class as endgame;
-
-  //Additional stages running parallel
-  //import scripts.StageData.culinary.class  as culinary;
-  //import scripts.StageData.agriculture.class  as agriculture;
-
-  //Disabled and creative stages
-  //import scripts.StageData.disabled.class  as disabled;
   import scripts.StageData.creative.class  as creative;
 
 //Utility functons
@@ -37,20 +28,42 @@ import scripts.utils.ChangeMaterialStage;
 
 //var axe = <tconstruct:hatchet>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 5.0 as float, FreeModifiers: 3, Durability: 33, HarvestLevel: 1, Attack: 3.4 as float}, Special: {Categories: ["aoe", "harvest", "weapon", "tool"]}, TinkerData: {Materials: ["stone", "flint", "wood"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "cheap", color: -6710887 as long, level: 1}, {identifier: "crude", color: -9868951 as long, level: 2, crude2: 1 as byte}, {identifier: "ecological", color: -7444965 as long, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["cheap", "crude2", "ecological", "toolleveling"]});
 
+static StageNames as string[] = [
+  "stone_1",
+  "stone_2",
+  "stone_3",
+  "stone_4",
+
+  "metal_1",
+  "metal_2",
+  "metal_3",
+  "metal_4",
+
+  "medieval_1",
+  "medieval_2",
+  "medieval_3",
+
+  "industrial_1",
+  "blastfurnace",
+  "researchtable",
+  "excavator",
+  "industrial_2",
+  "advanced_blastfurnace",
+  "advanced_cokeoven",
+
+  "information_1",
+  "information_2",
+
+  "endgame_1"
+];
+
 static StageList as Stage[] = [
   stone,
   metal,
-  //late_metal,
   medieval,
   industrial,
-  //late_industrial,
   information,
-  //digital,
-  //space,
   endgame,
-  //agriculture,
-  //culinary,
-  //disabled,
   creative
 ];
 
@@ -186,4 +199,19 @@ for stage in StageList {
   }
 }
 
+//CONTAINER STAGING
+
+//AE2
+mods.recipestages.Recipes.setPackageStage("appeng", StageNames);
+//IE
+//mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering.common", StageNames);
+//blusunrize/immersiveengineering/common/gui/IEBaseContainer.java 
+//mods.recipestages.Recipes.setContainerStage("blusunrize.immersiveengineering.common.gui.AssemblerContainer" , StageNames);
+mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering", StageNames);
+//TC
+mods.recipestages.Recipes.setPackageStage("thaumcraft", StageNames);
+//RFTools
+mods.recipestages.Recipes.setPackageStage("mcjty.rftools.blocks.crafter", StageNames);
+//StorageDrawers
+mods.recipestages.Recipes.setPackageStage("com.jaquadro.minecraft.storagedrawers", StageNames);
 

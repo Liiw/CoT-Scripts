@@ -54,7 +54,7 @@ ResearchTable.builder("Upgrade", cat) // The second parameter has no use current
   .setIcons(<immersiveengineering:sheetmetal:8>)
   .setTitle("research.upgrade.title") // I18n support: use language key
   .setDescription("research.upgrade.description")
-  .addCondition(<ore:blockSheetmetalSteel> * 750, <liquid:concrete> * 100)
+  .addCondition(<ore:blockSheetmetalSteel> * 750, <liquid:concrete> * 100000)
   .setRewardStages("industrial_2")
   .setRequiredStages("industrial_1")
  

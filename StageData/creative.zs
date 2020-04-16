@@ -29,7 +29,7 @@ static items as IItemStack [][int]  = {
             <appliedenergistics2:material:4>,
 
         //MOarboats
-            <moarboats:creative_engine>,
+            //<moarboats:creative_engine>,
         //Agricraft
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
             
@@ -300,7 +300,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:material:817>,
             <thermalfoundation:material:818>,
             <thermalfoundation:material:819>,
-            <thermalfoundation:material:864>,
+            
             <thermalfoundation:material:865>,
             <thermalfoundation:material:866>,
             

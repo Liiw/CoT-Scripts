@@ -47,7 +47,7 @@ static mods as string[][int] = {
         
         "tombstone",
 
-        "moarboats"
+        //"moarboats"
         
     ]
 };

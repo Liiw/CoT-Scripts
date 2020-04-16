@@ -59,7 +59,8 @@ static mods as string[][int] = {
         "ompd",
         "immersivetech",
         "randallag",
-        "spitfirepack"
+        "spitfirepack",
+        "betterrecords"
     ],
 
     
@@ -179,6 +180,8 @@ static items as IItemStack [][int] = {
             <thermalfoundation:rockwool:14>,
             <thermalfoundation:rockwool:15>,
 
+            <thermalfoundation:material:864>,
+
         //The One Probe
             //<theoneprobe:diamond_helmet_probe>.withTag({theoneprobe: 1}),
             //<theoneprobe:gold_helmet_probe>.withTag({theoneprobe: 1}),
@@ -205,13 +208,13 @@ static items as IItemStack [][int] = {
     2 : [
 
         //MoarBoats
-            <moarboats:boat_battery>,
+            /*<moarboats:boat_battery>,
             <moarboats:boat_energy_charger>,
             <moarboats:boat_energy_discharger>,
             <moarboats:helm>,
             <moarboats:boat_fluid_loader>,
             <moarboats:boat_fluid_unloader>,
-            <moarboats:boat_tank>,
+            <moarboats:boat_tank>,*/
 
         //MALISISDOORS
             <malisisdoors:rustyhatch>,
@@ -411,6 +414,8 @@ static materials as string [][int] = {
 
 static recipes as string [][int] = {
     1 : [
+        "conc_slab",
+        "CoT_conc"
         
     ],
     2 : [],

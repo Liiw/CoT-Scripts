@@ -366,7 +366,7 @@ static materials as string [][int] = {
         
         "veggie",
         "greenveggie",
-        "avocado",
+        "cropavocado",
         "grain",
         "fiber",
         "berry",

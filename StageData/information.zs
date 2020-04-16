@@ -192,7 +192,7 @@ static items as IItemStack [][int]  = {
             <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
 
         //Moarboats
-            <moarboats:opencomputers_holder>
+            //<moarboats:opencomputers_holder>
         
             
             
