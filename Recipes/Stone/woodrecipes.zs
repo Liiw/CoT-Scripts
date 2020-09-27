@@ -16,8 +16,8 @@ static woods as IIngredient [][] =[
     [<harvestcraft:pamcinnamon>],
     [<harvestcraft:pammaple>],
     [<harvestcraft:pampaperbark>],
-    [<thaumcraft:log_greatwood>],
-    [<thaumcraft:log_silverwood>],
+    //[<thaumcraft:log_greatwood>],
+    //[<thaumcraft:log_silverwood>],
 
     [<basketcase:log_stripped_dark_oak>],
     [<basketcase:log_stripped_birch>],
@@ -45,8 +45,8 @@ static planks as IItemStack[] = [
     <minecraft:planks:1>,
     //junglewood for paperbark,
     <minecraft:planks:3>,
-    <thaumcraft:plank_greatwood>,
-    <thaumcraft:plank_silverwood>,
+    //<thaumcraft:plank_greatwood>,
+    //<thaumcraft:plank_silverwood>,
 
     <minecraft:planks:5>,
     <minecraft:planks:2>,
@@ -65,8 +65,8 @@ static names as string[] = [
     "minecraft:jungle_planks",
     "minecraft:dark_oak_planks",
     "minecraft:acacia_planks",
-    "thaumcraft:plankgreatwood",
-    "thaumcraft:planksilverwood",
+    //"thaumcraft:plankgreatwood",
+    //"thaumcraft:planksilverwood",
     "basketcase:planks_oak",
     "basketcase:planks_spruce",
     "basketcase:planks_birch",
@@ -98,7 +98,7 @@ for plank in planks {
 //some extra cases with wood
 allLogOre.add(<harvestcraft:pamcinnamon:1>);
 allLogOre.add(<harvestcraft:pamcinnamon:2>);
-allLogOre.add(<thaumcraft:log_greatwood:1>);
-allLogOre.add(<thaumcraft:log_greatwood:2>);
-allLogOre.add(<thaumcraft:log_silverwood:1>);
-allLogOre.add(<thaumcraft:log_silverwood:2>);
+//allLogOre.add(<thaumcraft:log_greatwood:1>);
+//allLogOre.add(<thaumcraft:log_greatwood:2>);
+//allLogOre.add(<thaumcraft:log_silverwood:1>);
+//allLogOre.add(<thaumcraft:log_silverwood:2>);

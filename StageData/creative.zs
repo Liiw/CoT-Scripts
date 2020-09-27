@@ -86,6 +86,7 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie_horse"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie_pigman"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecraft:zombie_villager"}}),
+            /*
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportalgreater"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:cultistportallesser"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:eldritchwarden"}}),
@@ -110,6 +111,7 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:taintswarm"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:taintseed"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:taintseedprime"}}),
+            */
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "tconstruct:blueslime"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:withercat"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:concussioncreeper"}}),
@@ -332,7 +334,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
 
         //Medieval C-mode
-            <thaumcraft:creative_flux_sponge>,
+            //<thaumcraft:creative_flux_sponge>,
             <storagedrawers:upgrade_creative:1>,
             <storagedrawers:upgrade_creative>,
             <littletiles:screwdriver>.withTag({}),
@@ -362,8 +364,8 @@ static items as IItemStack [][int]  = {
             <unuparts:unuparts_part_unu_engine_i4>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v6>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v8>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_i10h>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_i12h>.withTag({isCreative: 1 as byte}),
+            //<unuparts:unuparts_part_unu_engine_i10h>.withTag({isCreative: 1 as byte}),
+            //<unuparts:unuparts_part_unu_engine_i12h>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i6h>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i8h>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_v10h>.withTag({isCreative: 1 as byte}),
@@ -391,7 +393,7 @@ static items as IItemStack [][int]  = {
             <opencomputers:component:18>,
             <opencomputers:component:12>,
             <opencomputers:upgrade:32>,
-            <thaumicenergistics:essentia_cell_creative>,
+            //<thaumicenergistics:essentia_cell_creative>,
         //Endgame C-mode
             <wct:wct_creative>.withTag({IsInRange: 0 as byte}),
             <wft:wft_creative>.withTag({IsInRange: 0 as byte}),

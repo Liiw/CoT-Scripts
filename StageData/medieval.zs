@@ -36,7 +36,7 @@ static mods as string[][int] = {
     ],
 
     2 : [
-        "thaumcraft",
+        //"thaumcraft",
         "brewcraft",
         "littletiles",
         "littleopener",
@@ -584,9 +584,9 @@ static liquids as ILiquidStack [][int] = {
 
     2 : [
         //Thaumcraft
-        <liquid:liquid_death>,
-        <liquid:purifying_fluid>,
-        <liquid:flux_goo>,
+        //<liquid:liquid_death>,
+        //<liquid:purifying_fluid>,
+        //<liquid:flux_goo>,
 
     ],
     3 : []
@@ -614,7 +614,7 @@ static ores as IIngredient[][IItemStack][int] =
         <minecraft:stone>:
         [
                         
-            <thaumcraft:crystal_aer:*>,
+            /*<thaumcraft:crystal_aer:*>,
             <thaumcraft:crystal_ignis:*>,
             <thaumcraft:crystal_aqua:*>,
             <thaumcraft:crystal_terra:*>,
@@ -623,7 +623,7 @@ static ores as IIngredient[][IItemStack][int] =
             <thaumcraft:crystal_vitium:*>,
             <thaumcraft:stone_porous:*>,
             <thaumcraft:ore_cinnabar:*>,
-            <thaumcraft:ore_amber:*>
+            <thaumcraft:ore_amber:*>*/
         ]
         
     },
@@ -709,6 +709,7 @@ static mobs as string [][int] = {
         
 
         //Thaumcraft entities
+        /*
         "thaumcraft:brainyzombie",
         "thaumcraft:cultistcleric",
         "thaumcraft:cultistknight",
@@ -718,7 +719,7 @@ static mobs as string [][int] = {
         "thaumcraft:giantbrainyzombie",
         "thaumcraft:inhabitedzombie",
         "thaumcraft:mindspider",
-        "thaumcraft:wisp"
+        "thaumcraft:wisp"*/
     ],
 
     3 : [

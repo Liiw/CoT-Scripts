@@ -37,7 +37,7 @@ static mods as string[][int] = {
         "enderio",
         "opencomputers",
         "appliedenergistics2",
-        "thaumicenergistics",
+        //"thaumicenergistics",
         "ae2stuff",  
         "enderiointegrationtic",
         "opencomputers",
@@ -101,7 +101,7 @@ static items as IItemStack [][int]  = {
         //Geolysys clusters
             <geolosys:cluster:8>,
         //Thaumcomp
-            <thaumcomp:sealconnector>,
+            //<thaumcomp:sealconnector>,
         //Minecraft bedrock
             <minecraft:bedrock>,
         //Agricraft

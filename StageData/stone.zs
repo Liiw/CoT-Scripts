@@ -39,8 +39,8 @@ static items as IItemStack[][int] = {
             <harvestcraft:pamcinnamon>,
             <harvestcraft:pammaple>,
             <harvestcraft:pampaperbark>,
-            <thaumcraft:log_greatwood>,
-            <thaumcraft:log_silverwood>,
+            //<thaumcraft:log_greatwood>,
+            //<thaumcraft:log_silverwood>,
         //Minecraft
             <minecraft:gravel>,
             <minecraft:stick>,

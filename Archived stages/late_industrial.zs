@@ -15,7 +15,7 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "thaumicrestoration",
+        //"thaumicrestoration",
         "immersive_energy",
         "immersivepetroleum",
         "immersiveposts",
@@ -78,12 +78,14 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "gasoline", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "napalm", Amount: 1000}),
         //Thaumic restoration buckets
+            /*
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_aer", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_ignis", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_aqua", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_terra", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_ordo", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "fluid_molten_perditio", Amount: 1000}),
+            */
         //Fancy item frames
             <tconstruct:fancy_frame:4>,
             
@@ -99,16 +101,19 @@ static liquids as ILiquidStack [][int] = {
         <liquid:diesel>,
         <liquid:lubricant>,
         <liquid:gasoline>,
-        <liquid:napalm>,
+        <liquid:napalm>
 
     //Thaumic restoration liquids
+    /*
         <liquid:fluid_molten_aer>,
         <liquid:fluid_molten_ignis>,
         <liquid:fluid_molten_aqua>,
         <liquid:fluid_molten_terra>,
         <liquid:fluid_molten_ordo>,
         <liquid:fluid_molten_perditio>
+        */
     ]
+
 };
 
 static ores as IIngredient[][IItemStack][int] = 
