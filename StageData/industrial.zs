@@ -59,7 +59,7 @@ static mods as string[][int] = {
         "ompd",
         "immersivetech",
         "randallag",
-        "spitfirepack",
+        //"spitfirepack",
         "betterrecords"
     ],
 
@@ -208,13 +208,13 @@ static items as IItemStack [][int] = {
     2 : [
 
         //MoarBoats
-            /*<moarboats:boat_battery>,
+            <moarboats:boat_battery>,
             <moarboats:boat_energy_charger>,
             <moarboats:boat_energy_discharger>,
             <moarboats:helm>,
             <moarboats:boat_fluid_loader>,
             <moarboats:boat_fluid_unloader>,
-            <moarboats:boat_tank>,*/
+            <moarboats:boat_tank>,
 
         //MALISISDOORS
             <malisisdoors:rustyhatch>,
@@ -285,8 +285,8 @@ static items as IItemStack [][int] = {
     ],
 
     14 : [
-        //<immersiveengineering:coresample>,
-        //<immersiveengineering:metal_device1:7>
+        <immersiveengineering:coresample>,
+        <immersiveengineering:metal_device1:7>
     ],
 
 

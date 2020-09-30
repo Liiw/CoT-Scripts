@@ -17,6 +17,7 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "conarm",
+        "tinkerscompendium",
         "chesttransporter",
         "microblockcbe",
         "torchlever",
@@ -26,29 +27,23 @@ static mods as string[][int] = {
         "opframe",
         "mcjtylib_ng",
         "farmingforblockheads",
-        
         "harvestcraft",
         "minecolonies",
-        "structurize"
-        
-        
-        
+        "structurize"      
     ],
 
     2 : [
         //"thaumcraft",
+        "architecturecraft",
         "brewcraft",
         "littletiles",
         "littleopener",
-        "astikorcarts"
+        //"astikorcarts"
     ],
     3 : [
-        "tcomplement",
-        
+        "tcomplement",       
         "tombstone",
-
-        //"moarboats"
-        
+        "moarboats"
     ]
 };
 
@@ -520,9 +515,9 @@ static items as IItemStack [][int] = {
             <ompd:hardened:1>,
             <ompd:wall:1>,
         //Constructs armory  
-            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
-            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
-            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
         //Microblock
             <microblockcbe:microblock:1>.withTag({mat: "minecraft:stone[variant=stone]"}),
             <minecraft:compass>,
@@ -657,17 +652,11 @@ static materials as string [][int] = {
         "netherrack",
         
         "brass",
-        "quartz",
-        
-
-        
+        "quartz", 
         //ALL THE DUSTS BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
         "dust",
         //ALL THE ARMOR BEFORE THIS STAGE
         "conarm"
-
-        
-
     ],
 
     2:[

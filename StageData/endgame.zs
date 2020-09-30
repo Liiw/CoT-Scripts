@@ -19,7 +19,8 @@ static mods as string[][int] = {
         "wpt",
         "wct",
         "wft",
-        "wit" 
+        "wit",
+        "advancedrocketry" 
     ]
 };
 

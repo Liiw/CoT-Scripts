@@ -14,7 +14,7 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "customnpcs",
+        //"customnpcs",
         
         "omlib",
         "zerocore" 
@@ -29,7 +29,7 @@ static items as IItemStack [][int]  = {
             <appliedenergistics2:material:4>,
 
         //MOarboats
-            //<moarboats:creative_engine>,
+            <moarboats:creative_engine>,
         //Agricraft
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
             
@@ -399,7 +399,7 @@ static items as IItemStack [][int]  = {
             <wft:wft_creative>.withTag({IsInRange: 0 as byte}),
             <wit:wit_creative>.withTag({IsInRange: 0 as byte}),
             <wpt:wpt_creative>.withTag({IsInRange: 0 as byte}),
-            <ae2wtlib:wut_creative>.withTag({StoredTerminals: [{ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wft:wft_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wpt:wpt_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wct:wct_creative", Count: 1 as byte, Damage: 0 as short}, {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "wit:wit_creative", Count: 1 as byte, Damage: 0 as short}], IsInRange: 0 as byte, SelectedTerminal: 0, internalCurrentPower: 1600000.0}),
+            <ae2wtlib:wut_creative>.withTag({StoredTerminals: [{id: "wft:wft_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wpt:wpt_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wct:wct_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wit:wit_creative", Count: 1 as byte, Damage: 0 as short}], IsInRange: 0 as byte, SelectedTerminal: 0, internalCurrentPower: 1600000.0}),
         //Tool progression magic mushroom (leveling item)
             <toolprogression:magic_mushroom>
     ]

@@ -161,35 +161,24 @@ static items as IItemStack [][int]  = {
 
         //TiC stencil tables
 
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 1 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 2 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 3 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 4 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:planks", Count: 1 as byte, Damage: 5 as short}}),
-            //<tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:plank_greatwood", Count: 1 as byte, Damage: 0 as short}}),
-            //<tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:plank_silverwood", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "structurize:blockcactusplank", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 1 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 2 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 3 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 4 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 5 as short}}),
 
         //TiC part builders and part chest
 
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 1 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 2 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 3 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 1 as short}}),
-            //<tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_greatwood", Count: 1 as byte, Damage: 0 as short}}),
-            //<tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_silverwood", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pammaple", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pampaperbark", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pamcinnamon", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 1 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 2 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 3 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log2", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log2", Count: 1 as byte, Damage: 1 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "harvestcraft:pammaple", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "harvestcraft:pampaperbark", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "harvestcraft:pamcinnamon", Count: 1 as byte, Damage: 0 as short}}),
             <tconstruct:tooltables:5>,
             <tconstruct:tooltables:4>,
 
@@ -248,38 +237,39 @@ static items as IItemStack [][int]  = {
     ],
 
     2 : [
-        //Tcomplement alloy tank
-        <tcomplement:alloy_tank>,
-
-        //Primaltech watersaw
-        <primal_tech:water_saw>,
-        <primal_tech:flint_edged_disc>,
-
-
-        //Horse powered stuff
-        <horsepower:hand_grindstone>,
-        <horsepower:press>,
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 1 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 2 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log", Count: 1 as byte, Damage: 3 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "minecraft:log2", Count: 1 as byte, Damage: 1 as short}}),
-        //<horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_greatwood", Count: 1 as byte, Damage: 0 as short}}),
-        //<horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_silverwood", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pammaple", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pampaperbark", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "harvestcraft:pamcinnamon", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
-        <horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}})
+       
     ],
 
     3 : [
 
+             //Tcomplement alloy tank
+            <tcomplement:alloy_tank>,
+
+            //Primaltech watersaw
+            <primal_tech:water_saw>,
+            <primal_tech:flint_edged_disc>,
+
+
+            //Horse powered stuff
+            <horsepower:hand_grindstone>,
+            <horsepower:press>,
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 1 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 2 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 3 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log2", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "minecraft:log2", Count: 1 as byte, Damage: 1 as short}}),
+            //<horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_greatwood", Count: 1 as byte, Damage: 0 as short}}),
+            //<horsepower:chopper>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thaumcraft:log_silverwood", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "harvestcraft:pammaple", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "harvestcraft:pampaperbark", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "harvestcraft:pamcinnamon", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
+            <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}}),
             <minecraft:chest>
             
     ],
@@ -697,19 +687,19 @@ static items as IItemStack [][int]  = {
             <ompd:fence>,
             <ompd:wall>,
         //Tinkers construct
-            <tconstruct:tooltables:1>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "structurize:blockcactusplank", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:1>.withTag({textureBlock: {id: "structurize:blockcactusplank", Count: 1 as byte, Damage: 0 as short}}),
             <tconstruct:nuggets:5>,
             <tconstruct:ingots:5>,
             <tconstruct:metal:5>,
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:tooltables:2>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
-            <tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
-            <tconstruct:toolforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_oak", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_spruce", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_birch", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:tooltables:2>.withTag({textureBlock: {id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:toolforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
+            <tconstruct:toolforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
+            <tconstruct:toolforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
             <tconstruct:bolt>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, Accuracy: 1.0 as float, MiningSpeed: 7.07 as float, FreeModifiers: 3, Durability: 111, HarvestLevel: 4, Attack: 4.2 as float}, Stats: {AttackSpeedMultiplier: 1.0 as float, Accuracy: 1.0 as float, MiningSpeed: 7.07 as float, FreeModifiers: 3, Durability: 111, HarvestLevel: 4, Attack: 4.2 as float}, Special: {Categories: ["no_melee", "projectile", "tool"]}, TinkerData: {Materials: ["wood", "obsidian", "feather"], Modifiers: ["toolleveling"]}, Modifiers: [{identifier: "ecological", color: -7444965, level: 1}, {identifier: "duritos", color: -10478396, level: 1}, {identifier: "toolleveling", color: 16777215, level: 1}], Traits: ["ecological", "duritos", "toolleveling"]}),
 
             //tcomplement clay bucket cast

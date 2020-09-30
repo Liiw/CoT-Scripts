@@ -11,6 +11,7 @@ ResearchTable.builder("AdvBlastFurn", cat) // The second parameter has no use cu
   .addCondition(<ore:blockSteel> * 50, <ore:blockFuelCoke> * 25)
   .setRewardStages("advanced_blastfurnace")
   .setRequiredStages("industrial_1")
+  //.setRewardCommands("/gamestage silentadd @p advanced_blastfurnace")
 
   .build();
 
@@ -66,7 +67,7 @@ ResearchTable.builder("Upgradeend", cat) // The second parameter has no use curr
   .setIcons(<immersiveengineering:metal_decoration0:3>)
   .setTitle("research.upgrade_end.title") // I18n support: use language key
   .setDescription("research.upgrade_end.description")
-  .addCondition(<liquid:diesel> * 1000000)
+  .addCondition(<liquid:diesel> * 100000)
   .addEnergyCondition(1000000)
   .setRewardStages("industrial_end")
   .setRequiredStages("industrial_2")
@@ -81,8 +82,8 @@ ResearchTable.builder("Info_upgrade", cat_inf) // The second parameter has no us
   .setIcons(<immersiveengineering:metal_decoration0:3>)
   .setTitle("research.info_upgrade.title") // I18n support: use language key
   .setDescription("research.info_upgrade.description")
-  .addCondition(<ore:blockBlutonium> * 50, <liquid:gasoline> * 1000000)
-  .addEnergyCondition(1000000000003)
+  .addCondition(<ore:blockBlutonium> * 25, <liquid:gasoline> * 150000)
+  .addEnergyCondition(500000000)
   .setRewardStages("information_2")
   .setRequiredStages("information_1")
 
@@ -94,23 +95,23 @@ ResearchTable.builder("Info_end", cat_inf) // The second parameter has no use cu
   .setTitle("research.info_end.title") // I18n support: use language key
   .setDescription("research.info_end.description")
   .addCondition(
-    <ore:oc:ram6> * 10,
-    <ore:oc:cpu3>* 10,
-    <ore:oc:graphicsCard3> * 10,
-    <ore:oc:hdd3> * 10,
+    <ore:oc:ram6> * 5,
+    <ore:oc:cpu3>* 5,
+    <ore:oc:graphicsCard3> * 5,
+    <ore:oc:hdd3> * 5,
     <ore:oc:materialInterweb> * 1,
-    <liquid:vapor_of_levity> * 50000, 
-    <liquid:fire_water> * 150000, 
-    <ore:blockPlatinum> * 50,
-    <ore:blockVibrantAlloy> * 50,
-    <extracells:storage.component:3> * 10,
-    <extracells:storage.component:10> * 10,
-    <appliedenergistics2:material:34> * 10,
-    <ore:compressed3xDustBedrock> * 50,
-    <appliedenergistics2:material:47> * 25)
-  .addCondition(<liquid:water>, 1000000000 as long)
-  .addCondition(<liquid:lava>, 1000000000 as long)
-  .addEnergyCondition(1000000000000000)
+    <liquid:vapor_of_levity> * 5000, 
+    <liquid:fire_water> * 15000, 
+    <ore:blockPlatinum> * 25,
+    <ore:blockVibrantAlloy> * 25,
+    <extracells:storage.component:3> * 5,
+    <extracells:storage.component:10> * 7,
+    <appliedenergistics2:material:34> * 5,
+    <ore:compressed3xDustBedrock> * 25,
+    <appliedenergistics2:material:47> * 10)
+  .addCondition(<liquid:water>, 10000000 as long)
+  .addCondition(<liquid:lava>, 1000000 as long)
+  .addEnergyCondition(20000000000)
   .setRewardStages("endgame_1")
   .setRequiredStages("information_2")
 

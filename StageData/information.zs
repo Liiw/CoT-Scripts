@@ -18,6 +18,7 @@ static mods as string[][int] = {
         "trafficcontrol",
         "unucivil",   
         "unuparts",
+        "iv_tpp",
         "projectred-core",
         "projectred-core",
         "projectred-compat",
@@ -189,10 +190,10 @@ static items as IItemStack [][int]  = {
             <enderio:block_fused_glass:*>,
 
         //TiC
-            <conarm:armorforge>.withTag({textureBlock: {ForgeCaps: {"customnpcs:itemscripteddata": {}}, id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
 
         //Moarboats
-            //<moarboats:opencomputers_holder>
+            <moarboats:opencomputers_holder>
         
             
             
