@@ -1,10 +1,11 @@
-#priority 9800
+#norun
+/*#priority 9800
 
 import crafttweaker.item.IIngredient;
 
 
-var twig = <basketcase:item_twig>;
-var rock = <immcraft:rock>;
+var twig = <ore:twig>;
+var rock = <pyrotech:rock>;
 var flint = <minecraft:flint>;
 var stick = <minecraft:stick>;
 
@@ -15,4 +16,4 @@ var stoneaxe = <tconstruct:hatchet>.withTag({StatsOriginal: {AttackSpeedMultipli
 
 //recipes.addShapeless(name,output,inputs,function,action)
 recipes.addShapeless("stickfromtwigs", stick, [twig, twig]);
-recipes.addShapeless("stoneaxe", stoneaxe ,[ stick, rock]);
+recipes.addShapeless("stoneaxe", stoneaxe ,[ stick, rock]);*/

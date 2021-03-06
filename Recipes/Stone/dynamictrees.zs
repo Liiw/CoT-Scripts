@@ -1,10 +1,12 @@
+#norun
 #priority 9800
+
 
 var dynTreesOre = <ore:dynTrees>;
 
 dynTreesOre.addItems(
     [
-        <dynamictrees:junglebranch:*>,
+        /*<dynamictrees:junglebranch:*>,
         <dynamictrees:acaciabranch:*>,
         <dynamictrees:birchbranch:*>,
         <dynamictrees:cactusbranch:*>,
@@ -21,6 +23,6 @@ dynTreesOre.addItems(
         <dynamictreesphc:paperbarkbranch:*>,
         <dynamictreestconstruct:slimebluebranch:*>,
         <dynamictreestconstruct:slimemagmabranch:*>,
-        <dynamictreestconstruct:slimepurplebranch:*>
+        <dynamictreestconstruct:slimepurplebranch:*>*/
     ]
 );

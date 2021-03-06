@@ -173,7 +173,7 @@ static ores as IIngredient[][IItemStack][int] =
     1: {<minecraft:stone>:[<geolosys:ore:8>],
 
     
-        <immcraft:rock>:[<geolosys:ore_sample:8>]},
+        <pyrotech:rock>:[<geolosys:ore_sample:8>]},
     2: {}
 };
 

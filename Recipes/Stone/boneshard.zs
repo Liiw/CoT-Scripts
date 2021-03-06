@@ -1,3 +1,4 @@
+#norun
 #priority 9800
 
 var boneShard = <primal_tech:bone_shard>;

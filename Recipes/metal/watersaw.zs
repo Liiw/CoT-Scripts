@@ -1,10 +1,11 @@
+#norun
 #priority 9800
 
 var watersaw = <primal_tech:water_saw>;
 
 var bronze = <ore:blockBronze>;
 
-var pressplate = <enderio:block_painted_pressure_plate:1>;
+var pressplate = <minecraft:light_weighted_pressure_plate>;
 
 var sawblade = <primal_tech:flint_edged_disc>;
 

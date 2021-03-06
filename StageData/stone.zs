@@ -23,8 +23,8 @@ static mods as string[][int] = {
         "basketcase",
     ],
     2 : [
-        "immcraft",
-        "primal_tech"
+        //"immcraft",
+        //"primal_tech"
     ],
     3 : [],
     4 : []
@@ -32,8 +32,8 @@ static mods as string[][int] = {
 
 static items as IItemStack[][int] = {
     1 : [   
-        //IMMCRAFT ROCK NADA
-            <immcraft:rock>,
+        //Pyrotech ROCK NADA
+            <pyrotech:rock>,
 
             
             <harvestcraft:pamcinnamon>,
@@ -45,7 +45,7 @@ static items as IItemStack[][int] = {
             <minecraft:gravel>,
             <minecraft:stick>,
             <minecraft:flint>,
-            <minecraft:crafting_table>,
+            
             <minecraft:wooden_axe>,
             
             <minecraft:wooden_pickaxe>,
@@ -80,6 +80,7 @@ static items as IItemStack[][int] = {
         
 
         //Minecraft
+            <minecraft:ladder>,
             <minecraft:apple>,
             <minecraft:beef>,
             <minecraft:beetroot>,
@@ -275,10 +276,12 @@ static items as IItemStack[][int] = {
             <minecraft:yellow_flower>,
         
         //PrimalTech
-            <primal_tech:stone_anvil>,
+            //<primal_tech:stone_anvil>,
 
-        
-        
+        //Chisel       
+            <chisel:marble2:7>,
+            <chisel:basalt2:7>,
+            <chisel:limestone2:7>,
         //Harvestcraft gardens
 
             <harvestcraft:frostgarden>,
@@ -293,6 +296,8 @@ static items as IItemStack[][int] = {
             
         //Structurize
             <structurize:blockcactusslab_half>
+
+        
 
     ],
 
@@ -320,7 +325,8 @@ static items as IItemStack[][int] = {
     
     4 : [],
 
-    11: [<primal_tech:stone_grill>] 
+    11: [//<primal_tech:stone_grill>
+    ] 
 };
 
 static liquids as ILiquidStack[][int] = {   
@@ -350,7 +356,7 @@ static ores as IIngredient[][IItemStack][int] =
                                
                                <minecraft:coal_ore>],
 
-            <immcraft:rock>:[<geolosys:ore_sample_vanilla:0>,
+            <pyrotech:rock>:[<geolosys:ore_sample_vanilla:0>,
                              <geolosys:ore_sample_vanilla:3>,],
 
             
@@ -387,19 +393,19 @@ static materials as string [][int] = {
 
 static recipes as string [][int] = {
     1 : [
-        "stickfromtwigs",
-        "stoneaxe",
+        //"stickfromtwigs",
+        //"stoneaxe",
         "flint"
     ],
     2 : [ 
-        "stoneClub",
+        /* "stoneClub",
         "stoneAxe",
         "stonePick",
         "stoneShovel",
         "stoneSword",
         "clayKiln",
         "boneShard",
-        "strawbed"
+        "strawbed" */
     ], 
     3 : [],
     4 : [] 
@@ -410,12 +416,12 @@ static recipeCategories as string [][int] = {
         "minecraft.crafting"
     ],
     2: [
-        "primal_tech.clay_kiln_recipes"
+        //"primal_tech.clay_kiln_recipes"
     ],
 
     11:[
-        "primal_tech.stone_grill_recipes",
-        "primal_tech.stone_anvil_recipes"
+        //"primal_tech.stone_grill_recipes",
+        //"primal_tech.stone_anvil_recipes"
     ]
 };
 

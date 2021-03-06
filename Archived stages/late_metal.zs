@@ -178,7 +178,7 @@ static items as IItemStack [][int]  = {
 
         //Primal_tech 
             
-            <primal_tech:charcoal_hopper>,
+            //<primal_tech:charcoal_hopper>,
         //Geolosys clusters
             <geolosys:cluster>,
             <geolosys:cluster:1>,
@@ -220,10 +220,10 @@ static items as IItemStack [][int]  = {
             <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "minecraft:planks"}),
             //<agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "thaumcraft:plank_silverwood"}),
             <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "minecraft:planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "primal:planks"}),
+/*             <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "primal:planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "primal:planks"}),
+            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "primal:planks"}), */
             <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "advancedrocketry:planks"}),
         //CompactDrawers
             //<compactdrawers:compact_drawer_2by1>.withTag({}),
@@ -346,7 +346,7 @@ static items as IItemStack [][int]  = {
             <minecraft:jungle_fence>,
             <minecraft:jungle_fence_gate>,
             <minecraft:jungle_stairs>,
-            <minecraft:ladder>,
+            
             <minecraft:lava_bucket>,
             <minecraft:lever>,
             <minecraft:lit_pumpkin>,
@@ -461,7 +461,7 @@ static ores as IIngredient[][IItemStack][int] =
                            <minecraft:diamond_ore>,
                            <minecraft:gold_ore>],
 
-          <immcraft:rock>:[<geolosys:ore_sample_vanilla:2>,
+          <pyrotech:rock>:[<geolosys:ore_sample_vanilla:2>,
                            <geolosys:ore_sample_vanilla:5>,
                            
                            <geolosys:ore_sample:1>]},

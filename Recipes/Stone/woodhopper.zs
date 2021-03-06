@@ -1,3 +1,5 @@
+#norun
+/*
 #priority 9800
 
 var plankWood = <ore:plankWood>;
@@ -16,4 +18,4 @@ var woodHopper = <primal_tech:wooden_hopper>;
         [[plankWood, null, plankWood],
          [plankWood, primalChestAdv, plankWood],
          [null, plankWood, null]]   
-);
+);*/

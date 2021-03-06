@@ -24,16 +24,20 @@ static mods as string[][int] = {
         "comforts",
         
         "horsepower",
-        "primalchests"
+        //"primalchests"
     ],
     2 : [],
-    3 : [],
+    3 : [
+        "watercan"
+    ],
     4 : [
         "tconstruct",
+        "dynamictreestconstruct",
         "ironbackpacks",
         "torchbandolier",
         "opframe",
-        "agricraft"
+        "agricraft",
+        "customsignposts"
     ]
 };
 
@@ -48,12 +52,12 @@ static items as IItemStack [][int]  = {
 
 
         //Primal tech
-            <primal_tech:fluid_bladder>,
+            //<primal_tech:fluid_bladder>,
             
-            <primal_tech:wooden_hopper>,
+            //<primal_tech:wooden_hopper>,
 
         //Immersive Craft
-            <immcraft:furnace>,
+            //<immcraft:furnace>,
             
 
         //Agricraft
@@ -229,7 +233,10 @@ static items as IItemStack [][int]  = {
 
             <forge:bucketfilled>.withTag({FluidName: "clay", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "dirt", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000})
+            <forge:bucketfilled>.withTag({FluidName: "blood", Amount: 1000}),
+
+        // Dynamic trees
+            //<dynamictrees:dirtbucket>
 
 
 
@@ -237,7 +244,10 @@ static items as IItemStack [][int]  = {
     ],
 
     2 : [
-       
+       <minecraft:wooden_pressure_plate>,
+       <minecraft:heavy_weighted_pressure_plate>,
+       <minecraft:stone_pressure_plate>,
+       <minecraft:light_weighted_pressure_plate>
     ],
 
     3 : [
@@ -246,8 +256,8 @@ static items as IItemStack [][int]  = {
             <tcomplement:alloy_tank>,
 
             //Primaltech watersaw
-            <primal_tech:water_saw>,
-            <primal_tech:flint_edged_disc>,
+            //<primal_tech:water_saw>,
+            //<primal_tech:flint_edged_disc>,
 
 
             //Horse powered stuff
@@ -270,7 +280,11 @@ static items as IItemStack [][int]  = {
             <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_jungle", Count: 1 as byte, Damage: 0 as short}}),
             <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_acacia", Count: 1 as byte, Damage: 0 as short}}),
             <horsepower:chopper>.withTag({textureBlock: {id: "basketcase:log_stripped_dark_oak", Count: 1 as byte, Damage: 0 as short}}),
+
+
+            //Minecraft
             <minecraft:chest>
+            
             
     ],
 
@@ -450,7 +464,7 @@ static items as IItemStack [][int]  = {
 
         //Primal_tech 
             
-            <primal_tech:charcoal_hopper>,
+            //<primal_tech:charcoal_hopper>,
         //Geolosys clusters
             <geolosys:cluster>,
             <geolosys:cluster:1>,
@@ -492,10 +506,10 @@ static items as IItemStack [][int]  = {
             <agricraft:grate>.withTag({agri_material_meta: 5, agri_material: "minecraft:planks"}),
             //<agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "thaumcraft:plank_silverwood"}),
             <agricraft:grate>.withTag({agri_material_meta: 4, agri_material: "minecraft:planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "primal:planks"}),
+/*             <agricraft:grate>.withTag({agri_material_meta: 3, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 2, agri_material: "primal:planks"}),
             <agricraft:grate>.withTag({agri_material_meta: 1, agri_material: "primal:planks"}),
-            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "primal:planks"}),
+            <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "primal:planks"}), */
             <agricraft:grate>.withTag({agri_material_meta: 0, agri_material: "advancedrocketry:planks"}),
         //CompactDrawers
             //<compactdrawers:compact_drawer_2by1>.withTag({}),
@@ -503,7 +517,7 @@ static items as IItemStack [][int]  = {
             //<compactdrawers:compact_drawer_half>.withTag({}),
 
         //Minecraft
-
+            <minecraft:crafting_table>,
             <minecraft:bed>,
             <minecraft:bed:1>,
             <minecraft:bed:2>,
@@ -619,7 +633,7 @@ static items as IItemStack [][int]  = {
             <minecraft:jungle_fence>,
             <minecraft:jungle_fence_gate>,
             <minecraft:jungle_stairs>,
-            <minecraft:ladder>,
+            
             <minecraft:lava_bucket>,
             <minecraft:lever>,
             <minecraft:lit_pumpkin>,
@@ -754,7 +768,7 @@ static ores as IIngredient[][IItemStack][int] =
     1: {<minecraft:stone>:[<geolosys:ore:2>,
                            <geolosys:ore:3>],
         
-        <immcraft:rock>:[<geolosys:ore_sample:2>,
+        <pyrotech:rock>:[<geolosys:ore_sample:2>,
                          <geolosys:ore_sample:3>]
                            
        },
@@ -764,7 +778,7 @@ static ores as IIngredient[][IItemStack][int] =
                            <geolosys:ore:5>
                            ],
         
-        <immcraft:rock>:[<geolosys:ore_sample:4>,
+        <pyrotech:rock>:[<geolosys:ore_sample:4>,
                          <geolosys:ore_sample:5>
                          ]
                            
@@ -775,7 +789,7 @@ static ores as IIngredient[][IItemStack][int] =
             <geolosys:ore>
         ],
 
-        <immcraft:rock>:[
+        <pyrotech:rock>:[
             <geolosys:ore_sample:1>,
             <geolosys:ore_sample>
         ]
@@ -791,7 +805,7 @@ static ores as IIngredient[][IItemStack][int] =
             <minecraft:gold_ore>
         ],
 
-        <immcraft:rock>:[
+        <pyrotech:rock>:[
             <geolosys:ore_sample_vanilla:2>,
             <geolosys:ore_sample_vanilla:5>
         ]
@@ -811,7 +825,7 @@ static materials as string [][int] = {
         
         "sponge",
         "cactus",
-        "clay",
+        //"clay",
         "glass",
 
         
@@ -856,9 +870,9 @@ static materials as string [][int] = {
 
 static recipes as string [][int] = {
     1 : [
-        "primal_Chest",
-        "primal_ChestAdv",
-        "woodHopper",
+        //"primal_Chest",
+        //"primal_ChestAdv",
+        //"woodHopper",
         "dough",
         "dough_allwater",
         "tcomplement:melter/melter"
@@ -878,7 +892,7 @@ static recipeCategories as string [][int] = {
         "tconstruct.alloy",
         "tconstruct.casting_table",
         "horsepower.grinding",
-        "horsepower.manual_chopping",
+        //"horsepower.manual_chopping",
         "tcomplement:melter",
         "minecraft.smelting"
     ],

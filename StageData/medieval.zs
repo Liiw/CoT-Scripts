@@ -17,7 +17,7 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "conarm",
-        "tinkerscompendium",
+        //"tinkerscompendium",
         "chesttransporter",
         "microblockcbe",
         "torchlever",
@@ -28,6 +28,7 @@ static mods as string[][int] = {
         "mcjtylib_ng",
         "farmingforblockheads",
         "harvestcraft",
+        "dynamictreesphc",
         "minecolonies",
         "structurize"      
     ],
@@ -37,13 +38,16 @@ static mods as string[][int] = {
         "architecturecraft",
         "brewcraft",
         "littletiles",
+        "alet",
         "littleopener",
-        //"astikorcarts"
+        "astikorcarts"
     ],
     3 : [
         "tcomplement",       
         "tombstone",
-        "moarboats"
+        //"moarboats",
+        "bonsaitrees",
+        "chisel"
     ]
 };
 
@@ -268,6 +272,14 @@ static items as IItemStack [][int] = {
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 62 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 70 as short}]}),
             <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 71 as short}]}),
+
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 13 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 13 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 30 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 30 as short}]}),
+            <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 2 as short, id: 30 as short}]}),
+
+
             <minecraft:enchanting_table>,
             
             <minecraft:ender_pearl>,
@@ -283,14 +295,14 @@ static items as IItemStack [][int] = {
             <minecraft:gray_glazed_terracotta>,
             <minecraft:green_glazed_terracotta>,
             <minecraft:gunpowder>,
-            <minecraft:heavy_weighted_pressure_plate>,
+            
             <minecraft:hopper>,
             
             <minecraft:jukebox>,
             
             <minecraft:knowledge_book>,
             <minecraft:light_blue_glazed_terracotta>,
-            <minecraft:light_weighted_pressure_plate>,
+            
             <minecraft:lime_glazed_terracotta>,
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:thick"}),
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
@@ -326,13 +338,13 @@ static items as IItemStack [][int] = {
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:weakness"}),
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:long_weakness"}),
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:luck"}),
-            <minecraft:lingering_potion>.withTag({Potion: "enderio:confusion"}),
+            /*<minecraft:lingering_potion>.withTag({Potion: "enderio:confusion"}),
             <minecraft:lingering_potion>.withTag({Potion: "enderio:long_confusion"}),
             <minecraft:lingering_potion>.withTag({Potion: "enderio:withering"}),
             <minecraft:lingering_potion>.withTag({Potion: "enderio:long_withering"}),
             <minecraft:lingering_potion>.withTag({Potion: "enderio:floating"}),
             <minecraft:lingering_potion>.withTag({Potion: "enderio:strong_floating"}),
-            <minecraft:lingering_potion>.withTag({Potion: "enderio:long_floating"}),
+            <minecraft:lingering_potion>.withTag({Potion: "enderio:long_floating"}),*/
             <minecraft:magenta_glazed_terracotta>,
             <minecraft:magma>,
             <minecraft:magma_cream>,
@@ -386,13 +398,13 @@ static items as IItemStack [][int] = {
             <minecraft:potion>.withTag({Potion: "minecraft:weakness"}),
             <minecraft:potion>.withTag({Potion: "minecraft:long_weakness"}),
             <minecraft:potion>.withTag({Potion: "minecraft:luck"}),
-            <minecraft:potion>.withTag({Potion: "enderio:confusion"}),
+            /*<minecraft:potion>.withTag({Potion: "enderio:confusion"}),
             <minecraft:potion>.withTag({Potion: "enderio:long_confusion"}),
             <minecraft:potion>.withTag({Potion: "enderio:withering"}),
             <minecraft:potion>.withTag({Potion: "enderio:long_withering"}),
             <minecraft:potion>.withTag({Potion: "enderio:floating"}),
             <minecraft:potion>.withTag({Potion: "enderio:strong_floating"}),
-            <minecraft:potion>.withTag({Potion: "enderio:long_floating"}),
+            <minecraft:potion>.withTag({Potion: "enderio:long_floating"}),*/
             <minecraft:prismarine>,
             <minecraft:prismarine:1>,
             <minecraft:prismarine:2>,
@@ -452,15 +464,15 @@ static items as IItemStack [][int] = {
             <minecraft:splash_potion>.withTag({Potion: "minecraft:weakness"}),
             <minecraft:splash_potion>.withTag({Potion: "minecraft:long_weakness"}),
             <minecraft:splash_potion>.withTag({Potion: "minecraft:luck"}),
-            <minecraft:splash_potion>.withTag({Potion: "enderio:confusion"}),
+           /* <minecraft:splash_potion>.withTag({Potion: "enderio:confusion"}),
             <minecraft:splash_potion>.withTag({Potion: "enderio:long_confusion"}),
             <minecraft:splash_potion>.withTag({Potion: "enderio:withering"}),
             <minecraft:splash_potion>.withTag({Potion: "enderio:long_withering"}),
             <minecraft:splash_potion>.withTag({Potion: "enderio:floating"}),
             <minecraft:splash_potion>.withTag({Potion: "enderio:strong_floating"}),
-            <minecraft:splash_potion>.withTag({Potion: "enderio:long_floating"}),
+            <minecraft:splash_potion>.withTag({Potion: "enderio:long_floating"}),*/
             
-            <minecraft:stone_pressure_plate>,
+            
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:night_vision"}),
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_night_vision"}),
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:invisibility"}),
@@ -493,18 +505,18 @@ static items as IItemStack [][int] = {
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:weakness"}),
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:long_weakness"}),
             <minecraft:tipped_arrow>.withTag({Potion: "minecraft:luck"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "enderio:confusion"}),
+            /*<minecraft:tipped_arrow>.withTag({Potion: "enderio:confusion"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:long_confusion"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:withering"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:long_withering"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:floating"}),
             <minecraft:tipped_arrow>.withTag({Potion: "enderio:strong_floating"}),
-            <minecraft:tipped_arrow>.withTag({Potion: "enderio:long_floating"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "enderio:long_floating"}),*/
             <minecraft:tnt>,
             
             <minecraft:tripwire_hook>,
             <minecraft:white_glazed_terracotta>,
-            <minecraft:wooden_pressure_plate>,
+            
             <minecraft:written_book>,
             <minecraft:yellow_glazed_terracotta>,
             <minecraft:lingering_potion>.withTag({Potion: "minecraft:mundane"}),
@@ -518,6 +530,23 @@ static items as IItemStack [][int] = {
             <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 0 as short}}),
             <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 8 as short}}),
             <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 1 as short}}),
+
+            <forge:bucketfilled>.withTag({FluidName: "slush", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "aeonsteel", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "queensgold", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dogbearium", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "sinisterium", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "nihilite", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "orichalcum", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "pandorium", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "rosegold", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "valyriansteel", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "froststeel", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "chorusjuice", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "vile", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "vibrant", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "slush", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dragonsbreath", Amount: 1000}),
         //Microblock
             <microblockcbe:microblock:1>.withTag({mat: "minecraft:stone[variant=stone]"}),
             <minecraft:compass>,
@@ -545,10 +574,19 @@ static items as IItemStack [][int] = {
 
     2 : [
         //Baubles
-            <baubles:ring>,
+            //<baubles:ring>,
         //Some buckets again
             <forge:bucketfilled>.withTag({FluidName: "liquid_death", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "purifying_fluid", Amount: 1000}),
+
+        // Dynamic trees potions
+            /*<dynamictrees:dendropotion>,
+            <dynamictrees:dendropotion:1>,
+            <dynamictrees:dendropotion:2>,
+            <dynamictrees:dendropotion:3>,
+            <dynamictrees:dendropotion:4>,
+            <dynamictrees:dendropotion:5>,
+            <dynamictrees:dendropotion:6>,*/
 
         //Minecraft
             <minecraft:minecart>,
@@ -557,7 +595,116 @@ static items as IItemStack [][int] = {
             <minecraft:furnace_minecart>,
             <minecraft:hopper_minecart>,
             <tconstruct:wood_rail>,
-            <tconstruct:wood_rail_trapdoor>
+            <tconstruct:wood_rail_trapdoor>,
+
+        // Constructs Armory
+            /*<conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_aeonsteel", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_queensgold", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_dogbearium", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_sinisterium", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_nihilite", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_orichalcum", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_pandorium", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_rosegold", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_valyriansteel", Count: 1 as byte, Damage: 0 as short}}),
+            <conarm:armorforge>.withTag({textureBlock: {id: "tinkerscompendium:block_froststeel", Count: 1 as byte, Damage: 0 as short}}),*/
+
+        //Architecturecraft
+            <architecturecraft:shape>.withTag({Shape: 0, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 1, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 2, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 3, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 4, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 5, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 6, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 7, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 8, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 9, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 10, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 11, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 12, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 13, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 14, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 15, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 16, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 17, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 18, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 19, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 20, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 21, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 22, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 23, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 24, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 25, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 26, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 27, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 28, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 29, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 30, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 31, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 32, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 33, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 34, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 35, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 36, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 37, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 38, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 39, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 40, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 41, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 42, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 43, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 44, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 45, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 46, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 47, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 48, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 49, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 50, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 51, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 52, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 53, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 54, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 55, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 56, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 57, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 58, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 59, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 60, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 61, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 62, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 63, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 64, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 65, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 66, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 67, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 68, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 69, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 70, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 71, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 72, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 73, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 74, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 75, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 76, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 77, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 78, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 79, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 80, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 81, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 82, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 83, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 84, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 85, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 86, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 87, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 88, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 89, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 90, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 91, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 92, BaseName: "minecraft:planks", BaseData: 0}),
+            <architecturecraft:shape>.withTag({Shape: 93, BaseName: "minecraft:planks", BaseData: 0})
+            
     ],
     3 : [
         <tombstone:tablet_of_home>.withTag({ancient: 1 as byte}),
@@ -572,7 +719,23 @@ static items as IItemStack [][int] = {
 
 static liquids as ILiquidStack [][int] = {   
     1 : [ 
-    
+        //Tinkers compendium
+        /*<liquid:slush>,
+        <liquid:aeonsteel>,
+        <liquid:queensgold>,
+        <liquid:dogbearium>,
+        <liquid:sinisterium>,
+        <liquid:nihilite>,
+        <liquid:orichalcum>,
+        <liquid:pandorium>,
+        <liquid:rosegold>,
+        <liquid:valyriansteel>,
+        <liquid:froststeel>,
+        <liquid:chorusjuice>,
+        <liquid:vile>,
+        <liquid:vibrant>,
+        <liquid:slush>,
+        <liquid:dragonsbreath>*/
     
        
     ],
@@ -596,7 +759,7 @@ static ores as IIngredient[][IItemStack][int] =
             
             <geolosys:ore_vanilla:1>,],
 
-        <immcraft:rock>:
+        <pyrotech:rock>:
         [
             <geolosys:ore_sample_vanilla:1>
         
@@ -632,7 +795,7 @@ static ores as IIngredient[][IItemStack][int] =
         ],
 
 
-        <immcraft:rock>:
+        <pyrotech:rock>:
         [
             <geolosys:ore_sample:6>,
             <geolosys:ore_sample_vanilla:6>,
@@ -656,7 +819,10 @@ static materials as string [][int] = {
         //ALL THE DUSTS BEFORE THIS STAGE (CUZ STAGES LOOP CHRONOLOGICALLY)
         "dust",
         //ALL THE ARMOR BEFORE THIS STAGE
-        "conarm"
+        "conarm",
+        "buckler",
+        //"heater",
+        //"tower"
     ],
 
     2:[
@@ -688,11 +854,11 @@ static recipeCategories as string [][int] = {
 
 static mobs as string [][int] = {
     1 : [
-        "enderiozoo:fallenknight",
+        /*"enderiozoo:fallenknight",
         "enderiozoo:fallenmount",
         "minecraft:zombie_horse",
         "minecraft:zombie_villager",
-        "minecraft:witch",
+        "minecraft:witch",*/
     ],
     2 : [
         
@@ -712,13 +878,13 @@ static mobs as string [][int] = {
     ],
 
     3 : [
-        "enderiozoo:enderminy",
+        /*"enderiozoo:enderminy",
         "enderiozoo:withercat",
         "enderiozoo:witherwitch",
         "enderiozoo:concussioncreeper",
         "enderiozoo:direslime",
         "enderiozoo:direwolf",
-        "enderiozoo:lovechild",
+        "enderiozoo:lovechild",*/
         "minecraft:enderman"
 
     ]

@@ -1,4 +1,5 @@
 #priority 9000
+#norun
 
 import scripts.classes.Stage;
 import scripts.utils.AddToStage;
@@ -75,10 +76,10 @@ static oreDictFilter as string[][] =
     "ore",
     "ingot",
     "block",
-    //"coin",
+    "coin",
     "dust",
     "nugget",
-    //"gear",
+    "gear",
     "plate",
     "fish",
     "item",
@@ -215,3 +216,34 @@ mods.recipestages.Recipes.setPackageStage("mcjty.rftools.blocks.crafter", StageN
 //StorageDrawers
 mods.recipestages.Recipes.setPackageStage("com.jaquadro.minecraft.storagedrawers", StageNames);
 
+
+
+/*
+{
+			"blocks": [
+				"minecraft:stone:1",
+				34,
+				"minecraft:stone:3",
+				33,
+				"minecraft:stone:5",
+				33
+			],
+			"samples": [
+				"pyrotech:rock:1",
+				34,
+				"pyrotech:rock:2",
+				33,
+				"pyrotech:rock:3",
+				33
+			],
+			"yMin": 8,
+			"yMax": 84,
+			"chance": 15,
+			"size": 380,
+			"dimBlacklist": [
+				-1,
+				1
+			],
+			"density": 1.0
+		}		,
+  */

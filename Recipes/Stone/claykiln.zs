@@ -1,3 +1,4 @@
+#norun
 #priority 9800
 
 var kiln = <primal_tech:clay_kiln>;

@@ -1,3 +1,4 @@
+#norun
 #priority 9800
 
 var wicker = <ore:wicker>;

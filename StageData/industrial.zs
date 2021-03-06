@@ -44,9 +44,12 @@ static mods as string[][int] = {
     13 : [
         "researchtable"
     ],
+    14 : [
+        //"portabledrill"
+    ],
     2:[
         //"thaumicrestoration",
-        "immersive_energy",
+        //"immersive_energy",
         "immersivepetroleum",
         "immersiveposts",
         "mts",
@@ -68,6 +71,8 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+        //Chisel factory blocks
+           <chisel:factory:*>, 
 
         //Malisisdoors
             <malisisdoors:jail_door>,
@@ -208,13 +213,13 @@ static items as IItemStack [][int] = {
     2 : [
 
         //MoarBoats
-            <moarboats:boat_battery>,
+            /*<moarboats:boat_battery>,
             <moarboats:boat_energy_charger>,
             <moarboats:boat_energy_discharger>,
             <moarboats:helm>,
             <moarboats:boat_fluid_loader>,
             <moarboats:boat_fluid_unloader>,
-            <moarboats:boat_tank>,
+            <moarboats:boat_tank>,*/
 
         //MALISISDOORS
             <malisisdoors:rustyhatch>,
@@ -299,8 +304,8 @@ static items as IItemStack [][int] = {
     ],
 
     101 : [
-        <immersivetech:metal_device>,
-        <immersivetech:stone_decoration>
+        //<immersivetech:metal_device>,
+        //<immersivetech:stone_decoration>
     ]      
 };
 
@@ -354,7 +359,7 @@ static ores as IIngredient[][IItemStack][int] =
             <geolosys:ore:10>
         ],
 
-        <immcraft:rock>:
+        <pyrotech:rock>:
         [
             <geolosys:ore_sample:7>,
             <geolosys:ore_sample:10>
@@ -368,13 +373,13 @@ static ores as IIngredient[][IItemStack][int] =
     2: {
         <minecraft:netherrack> : [
             <tconstruct:ore>
-        ],
+        ]
 
-        <minecraft:stone> : [
+        /*<minecraft:stone> : [
             <immersive_energy:ore:0>,
             <immersive_energy:ore:1>
 
-        ]
+        ]*/
     }
 };
 

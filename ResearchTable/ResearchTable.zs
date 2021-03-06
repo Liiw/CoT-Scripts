@@ -100,8 +100,6 @@ ResearchTable.builder("Info_end", cat_inf) // The second parameter has no use cu
     <ore:oc:graphicsCard3> * 5,
     <ore:oc:hdd3> * 5,
     <ore:oc:materialInterweb> * 1,
-    <liquid:vapor_of_levity> * 5000, 
-    <liquid:fire_water> * 15000, 
     <ore:blockPlatinum> * 25,
     <ore:blockVibrantAlloy> * 25,
     <extracells:storage.component:3> * 5,
@@ -110,7 +108,7 @@ ResearchTable.builder("Info_end", cat_inf) // The second parameter has no use cu
     <ore:compressed3xDustBedrock> * 25,
     <appliedenergistics2:material:47> * 10)
   .addCondition(<liquid:water>, 10000000 as long)
-  .addCondition(<liquid:lava>, 1000000 as long)
+  .addCondition(<liquid:lava>, 10000000 as long)
   .addEnergyCondition(20000000000)
   .setRewardStages("endgame_1")
   .setRequiredStages("information_2")

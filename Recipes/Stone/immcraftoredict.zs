@@ -1,3 +1,5 @@
+#norun
+/*
 #priority 9800
 
 import crafttweaker.item.IItemStack;
@@ -18,3 +20,4 @@ static immStuff as IItemStack [] = [
 for item in immStuff {
     recipes.replaceAllOccurences(planks, orePlanks, item);
 }
+*/

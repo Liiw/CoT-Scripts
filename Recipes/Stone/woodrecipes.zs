@@ -12,21 +12,16 @@ static woods as IIngredient [][] =[
     [<minecraft:log:3>],
     [<minecraft:log2>],
     [<minecraft:log2:1>],
-
     [<harvestcraft:pamcinnamon>],
     [<harvestcraft:pammaple>],
     [<harvestcraft:pampaperbark>],
-    //[<thaumcraft:log_greatwood>],
-    //[<thaumcraft:log_silverwood>],
-
-    [<basketcase:log_stripped_dark_oak>],
-    [<basketcase:log_stripped_birch>],
-    [<basketcase:log_stripped_oak>],
-    [<basketcase:log_stripped_jungle>],
-    [<basketcase:log_stripped_acacia>],
-    [<basketcase:log_stripped_spruce>],
-
-    [<minecraft:cactus>]                    
+    [<minecraft:cactus>]
+/*     [<primallib:log_stripped_oak>],
+    [<primallib:log_stripped_spruce>], 
+    [<primallib:log_stripped_birch>], 
+    [<primallib:log_stripped_jungle>], 
+    [<primallib:log_stripped_acacia>], 
+    [<primallib:log_stripped_dark_oak>],  */                    
 ];
 
 
@@ -38,24 +33,16 @@ static planks as IItemStack[] = [
     <minecraft:planks:3>,
     <minecraft:planks:4>,
     <minecraft:planks:5>,
-
-    //junglewood for cinnamon,
     <minecraft:planks:3>,
-    //spruce for maple,
     <minecraft:planks:1>,
-    //junglewood for paperbark,
     <minecraft:planks:3>,
-    //<thaumcraft:plank_greatwood>,
-    //<thaumcraft:plank_silverwood>,
-
-    <minecraft:planks:5>,
+    <structurize:blockcactusplank>
+/*     <minecraft:planks>,
+    <minecraft:planks:1>,
     <minecraft:planks:2>,
-    <minecraft:planks>,
     <minecraft:planks:3>,
     <minecraft:planks:4>,
-    <minecraft:planks:1>,
-
-    <structurize:blockcactusplank>
+    <minecraft:planks:5>, */
 ];
 
 static names as string[] = [
@@ -65,18 +52,16 @@ static names as string[] = [
     "minecraft:jungle_planks",
     "minecraft:dark_oak_planks",
     "minecraft:acacia_planks",
-    //"thaumcraft:plankgreatwood",
-    //"thaumcraft:planksilverwood",
-    "basketcase:planks_oak",
-    "basketcase:planks_spruce",
-    "basketcase:planks_birch",
-    "basketcase:planks_jungle",
-    "basketcase:planks_acacia",
     "harvestcraft:minecraft_planks_meta_3_x4_pamcinnamon",
     "harvestcraft:minecraft_planks_meta_3_x4_pampaperbark",
     "harvestcraft:minecraft_planks_meta_1_x4_pammaple",
     "structurize:blockcactusplank"
-
+/*     "primallib:planks_oak",
+    "primallib:planks_spruce",
+    "primallib:planks_birch",
+    "primallib:planks_jungle",
+    "primallib:planks_acacia",
+    "primallib:planks_dark_oak", */
 ];
 
 for name in names {
@@ -87,8 +72,8 @@ for plank in planks {
 
     //recipes.removeShapeless(output, inputs, wildcard);
     //recipes.removeShapeless(plank[i]*4, wood[i]);
-    var name = "CoT_" + planks[i].displayName + i;
-    recipes.addShapeless(name, planks[i], woods[i]);
+    //var name = "CoT_" + planks[i].displayName + i;
+    //recipes.addShapeless(name, planks[i], woods[i]);
 
     allLogOre.add(woods[i]);
 

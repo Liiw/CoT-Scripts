@@ -16,9 +16,10 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [
         "trafficcontrol",
-        "unucivil",   
-        "unuparts",
+        //"unucivil",   
+        //"unuparts",
         "iv_tpp",
+        "iv_tcp",
         "projectred-core",
         "projectred-core",
         "projectred-compat",
@@ -26,8 +27,8 @@ static mods as string[][int] = {
         "projectred-transmission",
         "projectred-fabrication",
         "projectred-illumination",
-        "bigreactors"
-        
+        "bigreactors",
+        "helicopterpack"
         
         
     ],
@@ -35,24 +36,29 @@ static mods as string[][int] = {
         "openmodularturrets",
         "opensecurity",
         "extracells",
-        "enderio",
+        //"enderio",
         "opencomputers",
         "appliedenergistics2",
         //"thaumicenergistics",
         "ae2stuff",  
-        "enderiointegrationtic",
+        //"enderiointegrationtic",
         "opencomputers",
         "ocsensors",
         "openscreens",   
         "immersivecables",
         "rftools",
-        "ivairlinerpack"
+        //"ivairlinerpack",
+        "thermalfoundation",
+        "thermalexpansion",
+        "thermaldynamics"
     ]
 };
 
 static items as IItemStack [][int]  = {
   1 : [
 
+    //Conarm armor forge
+        <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 5 as short}}),
     //Malisisdoors
         <malisisdoors:door_factory>,
         <malisisdoors:customdooritem>,
@@ -64,7 +70,7 @@ static items as IItemStack [][int]  = {
         <malisisdoors:laboratory_door>,
 
     // EIO LAPIS, for electrotine
-        <enderio:item_material:32>,
+        //<enderio:item_material:32>,
     //PR electrotine
       <projectred-core:resource_item:104>,
     //Geolysys ore clusters
@@ -110,7 +116,7 @@ static items as IItemStack [][int]  = {
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:platiolus_plant", agri_growth: 1 as byte}),
         //AE2
             <appliedenergistics2:material:46>,
-        //EnderIO
+        /*//EnderIO
             //buckets
             <forge:bucketfilled>.withTag({FluidName: "nutrient_distillation", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}),
@@ -138,6 +144,8 @@ static items as IItemStack [][int]  = {
             <enderio:item_material:32>,
             <enderio:item_material:33>,
             <enderio:item_material:61>,
+            <enderio:item_material:14>,
+            <enderio:item_material:36>,
         //EIO_TiC
             <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
             
@@ -158,7 +166,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "stellar_alloy", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "crystalline_pink_slime", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "energetic_silver", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "vivid_alloy", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "vivid_alloy", Amount: 1000}), */
         //OC RS card and Disks
             <opencomputers:card:5>,
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "plan9k"}, "oc:color": 1, display: {Name: "Plan9k (Operating System)"}, "oc:lootFactory": "opencomputers:plan9k"}),
@@ -185,15 +193,15 @@ static items as IItemStack [][int]  = {
 
         //horsearmor
             <thermalfoundation:horse_armor_platinum>,
-        //EIO glass
+        /*//EIO glass
             <enderio:block_fused_quartz:*>,
-            <enderio:block_fused_glass:*>,
+            <enderio:block_fused_glass:*>,*/
 
         //TiC
             <conarm:armorforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
 
         //Moarboats
-            <moarboats:opencomputers_holder>
+            //<moarboats:opencomputers_holder>
         
             
             
@@ -204,18 +212,18 @@ static items as IItemStack [][int]  = {
 
 static liquids as ILiquidStack [][int] = {
   1 : [
-    //Extrene Reactors
+    //Extreme Reactors
       <liquid:yellorium>,
       <liquid:cyanite>,
       <liquid:fuelcolumn>,
-      <liquid:dist_water>,
+      //<liquid:dist_water>,
       <liquid:steam>,
       <liquid:redstone>,
   ],
 
   2:[   
     //EIO
-        <liquid:nutrient_distillation>,
+       /* <liquid:nutrient_distillation>,
         <liquid:ender_distillation>,
         <liquid:vapor_of_levity>,
         <liquid:hootch>,
@@ -245,9 +253,29 @@ static liquids as ILiquidStack [][int] = {
         <liquid:stellar_alloy>,
         <liquid:crystalline_pink_slime>,
         <liquid:energetic_silver>,
-        <liquid:vivid_alloy>,
+        <liquid:vivid_alloy>,*/
     //TE
-        <liquid:enderium>
+        <liquid:enderium>,
+        <liquid:coal>,
+        <liquid:crude_oil>,
+        <liquid:refined_oil>,
+        <liquid:refined_fuel>,
+        <liquid:sap>,
+        <liquid:syrup>,
+        <liquid:resin>,
+        <liquid:tree_oil>,
+        <liquid:seed_oil>,
+        <liquid:biocrude>,
+        <liquid:refined_biofuel>,
+        <liquid:mushroom_stew>,
+        <liquid:experience>,
+        <liquid:potion_splash>,
+        <liquid:potion_lingering>,
+        <liquid:pyrotheum>,
+        <liquid:cryotheum>,
+        <liquid:aerotheum>,
+        <liquid:petrotheum>,
+        <liquid:mana>
     ]
 };
 
@@ -255,22 +283,26 @@ static ores as IIngredient[][IItemStack][int] =
 {
     1 : {<minecraft:stone>:[<geolosys:ore:9>],
     
-         <immcraft:rock>:[<geolosys:ore_sample:9>]
+         <pyrotech:rock>:[<geolosys:ore_sample:9>]
     },
     2 : {<minecraft:stone>:[
             
             <geolosys:ore:8>,
-            <rftools:dimensional_shard_ore:0>
+            <rftools:dimensional_shard_ore:0>,
+            <geolosys:ore:10>,
+            <thermalfoundation:ore_fluid:2>
         ],
 
-        <minecraft:netherrack>:[<rftools:dimensional_shard_ore:1>],
+        <minecraft:netherrack>:[<rftools:dimensional_shard_ore:1>, <thermalfoundation:ore_fluid:3>],
 
-        <minecraft:end_stone>:[<rftools:dimensional_shard_ore:2>],
+        <minecraft:end_stone>:[<rftools:dimensional_shard_ore:2>, <thermalfoundation:ore_fluid:4>],
 
-
+        <minecraft:sand>: [<thermalfoundation:ore_fluid>],
+        
+        <minecraft:sand:1>: [<thermalfoundation:ore_fluid:5>],
 
     
-         <immcraft:rock>:[<geolosys:ore_sample:8>]}
+         <pyrotech:rock>:[<geolosys:ore_sample:8>, <geolosys:ore_sample:10>]}
 };
 
 
@@ -305,7 +337,12 @@ static materials as string [][int] = {
         "darksteel",
         "bedrock",
         "crudesteel",
-        "floppy"
+        "floppy",
+        "iridium",
+        "mithril",
+        "signalum",
+        "lumium",
+        "zinc",
     ],
     3:[]
 };
@@ -331,7 +368,12 @@ static recipeCategories as string [][int] = {
 };
 
 static mobs as string [][int] = {
-    1 : []
+    1 : [],
+    2 : [
+        "thermalfoundation:blizz",
+        "thermalfoundation:blitz",
+        "thermalfoundation:basalz",
+        ]
 };
 
 

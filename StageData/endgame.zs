@@ -16,11 +16,12 @@ static mods as string[][int] = {
     1 : [
         "sgcraft",
         "woot",
-        "wpt",
-        "wct",
-        "wft",
-        "wit",
-        "advancedrocketry" 
+        //"wpt",
+        //"wct",
+        //"wft",
+        //"wit",
+        "advancedrocketry",
+        "libvulpes" 
     ]
 };
 
@@ -30,11 +31,11 @@ static items as IItemStack [][int]  = {
             <malisisdoors:forcefielditem>,
             <guideapi:woot-guide>,
         //AE2Stuff
-            <ae2stuff:wireless>,
+            /*<ae2stuff:wireless>,
             <ae2stuff:wireless_kit>,
             <ae2wtlib:infinity_booster_card>,
-            <ae2wtlib:wut>,
- 
+            <ae2wtlib:wut>,*/
+            <chisel:futura:*>,
 
         
         //OMPD
@@ -52,7 +53,11 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {<minecraft:stone>:[<sgcraft:naquadahore>]},
+    1: {<minecraft:stone>:[
+        <sgcraft:naquadahore>,
+        <libvulpes:ore0>,
+        <libvulpes:ore0:8>
+    ]},
     2: {}
 };
 

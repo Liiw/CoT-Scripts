@@ -25,14 +25,14 @@ static mods as string[][int] = {
 static items as IItemStack [][int]  = {
     1: [
         //Some flour
-            <enderio:item_material:21>,
+            //<enderio:item_material:21>,
             <appliedenergistics2:material:4>,
 
         //MOarboats
-            <moarboats:creative_engine>,
+            //<moarboats:creative_engine>,
         //Agricraft
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:osmonium_plant", agri_growth: 1 as byte}),
-            
+       
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:weed_plant", agri_growth: 1 as byte}),
             <agricraft:agri_nugget:12>,
 
@@ -113,7 +113,7 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thaumcraft:taintseedprime"}}),
             */
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "tconstruct:blueslime"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:withercat"}}),
+            /*<minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:withercat"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:concussioncreeper"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:enderminy"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:witherwitch"}}),
@@ -123,14 +123,14 @@ static items as IItemStack [][int]  = {
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:lovechild"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:epicsquid"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:fallenknight"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:direslime"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:ovis_atre"}}),
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "enderiozoo:direslime"}}),*/
+/*             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:ovis_atre"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:canis_campestris"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:bear_brown"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:bear_black"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:creeper_nether"}}),
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:gator"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:shark_hammerhead"}}),
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "primal:shark_hammerhead"}}), */
 
             <minecraft:monster_egg>,
             <minecraft:monster_egg:1>,
@@ -151,8 +151,7 @@ static items as IItemStack [][int]  = {
             <bigreactors:mineralbenitoite>,
             <bigreactors:orebenitoite>,
             <bigreactors:oreanglesite>,
-            <bigreactors:mineralanglesite>,
-       
+            <bigreactors:mineralanglesite>,       
         
         //Minecolonies Barbarians
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "minecolonies:barbarian"}}),
@@ -174,24 +173,32 @@ static items as IItemStack [][int]  = {
             //<bountiful:bountyboarditem>,
             //<bountiful:bounty>,
         
-        //Immcraft
+        //Immcraft 
+            /*
             <immcraft:dummybook:*>,
-            <immcraft:manual>,
-            
+            <immcraft:manual>,       
             <immcraft:chisel>,
             <immcraft:saw>,
             <immcraft:workbench>,
             <immcraft:workbench_sec>,
+            */
 
         //Primal tech
-            <primal_tech:work_stump>,
-            <primal_tech:work_stump_upgraded>,
-            
+/*             <primal_tech:work_stump>,
+            <primal_tech:work_stump_upgraded>,      
             <primal_tech:wooden_basin>,
-            <primal_tech:rock>,
+            <primal_tech:rock>, */
 
         //Thermal foundation stuff
-            <thermalfoundation:material:1024>,
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}}),
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:basalz"}}),
+
+            <thermalfoundation:upgrade:256>,
+            <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}),
+            <thermalexpansion:reservoir:32000>.withTag({}),
+            <thermalexpansion:satchel:32000>.withTag({Accessible: 1 as byte}),
+            /*<thermalfoundation:material:1024>,
             <thermalfoundation:material:1025>,
             <thermalfoundation:material:1026>,
             <thermalfoundation:material:1027>,
@@ -199,7 +206,6 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:material:2049>,
             <thermalfoundation:material:2051>,
             <thermalfoundation:material:2053>,
-
             <thermalfoundation:material:656>,
             <thermalfoundation:glass>,
             <thermalfoundation:glass:1>,
@@ -225,7 +231,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:upgrade:33>,
             <thermalfoundation:upgrade:34>,
             <thermalfoundation:upgrade:35>,
-            <thermalfoundation:upgrade:256>,
+            
             <thermalfoundation:wrench>,
             <thermalfoundation:wrench>,
             <thermalfoundation:meter>,
@@ -233,8 +239,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:diagram_redprint>,
             <thermalfoundation:tome_lexicon>,
             <thermalfoundation:tome_experience>.withTag({}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}}),
+            
             <thermalfoundation:material:640>,
             <thermalfoundation:material:657>,
             <thermalfoundation:coin:*>,
@@ -288,7 +293,7 @@ static items as IItemStack [][int]  = {
             <thermalfoundation:fluid_petrotheum>,
             <thermalfoundation:fluid_mana>,
 
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:basalz"}}),
+            
             <thermalfoundation:ore_fluid>,
             <thermalfoundation:ore_fluid:1>,
             <thermalfoundation:ore_fluid:2>,
@@ -331,7 +336,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),*/
 
         //Medieval C-mode
             //<thaumcraft:creative_flux_sponge>,
@@ -345,11 +350,11 @@ static items as IItemStack [][int]  = {
             <buildinggadgets:constructionpastecontainercreative>,
             <dse:airtank_creative>,
             <dse:powerunit_creative>,
-            <mtsofficialpack:engineamci4>.withTag({isCreative: 1 as byte}),
+            /*<mtsofficialpack:engineamci4>.withTag({isCreative: 1 as byte}),
             <mtsofficialpack:enginebristolmercury>.withTag({isCreative: 1 as byte}),
             <mtsofficialpack:enginedetroitdiesel>.withTag({isCreative: 1 as byte}),
             <mtsofficialpack:enginelycomingo360>.withTag({isCreative: 1 as byte}),
-            <mtsofficialpack:enginepw610f>.withTag({isCreative: 1 as byte}),
+            <mtsofficialpack:enginepw610f>.withTag({isCreative: 1 as byte}),*/
         //Atomic C-mode
             <projectred-fabrication:ic_chip:1>,
             <bigreactors:reactorcreativecoolantport>,
@@ -358,7 +363,7 @@ static items as IItemStack [][int]  = {
             <rftools:powercell_creative>,
             <rftools:creative_screen>,
 
-            <unucivil:unuparts_part_unu_engine_j1018tjx2>.withTag({isCreative: 1 as byte}),
+            /*<unucivil:unuparts_part_unu_engine_j1018tjx2>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_h6>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i2>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_i4>.withTag({isCreative: 1 as byte}),
@@ -376,16 +381,16 @@ static items as IItemStack [][int]  = {
             <unuparts:unuparts_part_unu_engine_j2350tf>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_j3283tf>.withTag({isCreative: 1 as byte}),
             <unuparts:unuparts_part_unu_engine_j34200tj>.withTag({isCreative: 1 as byte}),
-            <unuparts:unuparts_part_unu_engine_v12ha>.withTag({isCreative: 1 as byte}),
+            <unuparts:unuparts_part_unu_engine_v12ha>.withTag({isCreative: 1 as byte}),*/
             
         //Digital C-mode
             <appliedenergistics2:creative_energy_cell>,
             <appliedenergistics2:creative_storage_cell>.withTag({}),
             <appliedenergistics2:facade>.withTag({damage: 4, item: "enderio:block_decoration2"}),
-            <enderio:block_decoration2:4>,
+            /*<enderio:block_decoration2:4>,
             <enderio:block_buffer:3>,
             <enderio:block_creative_spawner>,
-            <enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),
+            <enderio:block_cap_bank>.withTag({"enderio:energy": 50000000}),*/
             <opencomputers:casecreative>,
             <opencomputers:material:25>,
             <opencomputers:material:22>,
@@ -395,38 +400,27 @@ static items as IItemStack [][int]  = {
             <opencomputers:upgrade:32>,
             //<thaumicenergistics:essentia_cell_creative>,
         //Endgame C-mode
-            <wct:wct_creative>.withTag({IsInRange: 0 as byte}),
+            /*<wct:wct_creative>.withTag({IsInRange: 0 as byte}),
             <wft:wft_creative>.withTag({IsInRange: 0 as byte}),
             <wit:wit_creative>.withTag({IsInRange: 0 as byte}),
             <wpt:wpt_creative>.withTag({IsInRange: 0 as byte}),
             <ae2wtlib:wut_creative>.withTag({StoredTerminals: [{id: "wft:wft_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wpt:wpt_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wct:wct_creative", Count: 1 as byte, Damage: 0 as short}, {id: "wit:wit_creative", Count: 1 as byte, Damage: 0 as short}], IsInRange: 0 as byte, SelectedTerminal: 0, internalCurrentPower: 1600000.0}),
+        */
         //Tool progression magic mushroom (leveling item)
-            <toolprogression:magic_mushroom>
+            <toolprogression:magic_mushroom>,
+
+        //Littletiles premades
+            <littletiles:premade>.withTag({structure: {id: "photoimporter"}}),
+            <littletiles:premade>.withTag({structure: {id: "typewriter"}}),
+
+        //Dynamic trees
+            //<dynamictrees:staff>.withTag({code: "P", tree: "dynamictrees:oak"})
     ]
 };
 
 static liquids as ILiquidStack [][int] = {
   1 : [
-        <liquid:coal>,
-        <liquid:crude_oil>,
-        <liquid:refined_oil>,
-        <liquid:refined_fuel>,
-        <liquid:sap>,
-        <liquid:syrup>,
-        <liquid:resin>,
-        <liquid:tree_oil>,
-        <liquid:seed_oil>,
-        <liquid:biocrude>,
-        <liquid:refined_biofuel>,
-        <liquid:mushroom_stew>,
-        <liquid:experience>,
-        <liquid:potion_splash>,
-        <liquid:potion_lingering>,
-        <liquid:pyrotheum>,
-        <liquid:cryotheum>,
-        <liquid:aerotheum>,
-        <liquid:petrotheum>,
-        <liquid:mana>
+        
     
   ]
 };
@@ -440,12 +434,9 @@ static ores as IIngredient[][IItemStack][int] =
 
 static materials as string [][int] = {
     1:[
-        "iridium",
-        "mithril",
-        "signalum",
-        "lumium",
-        "yellorium",
-        "zinc"
+        
+        "yellorium"
+        
     ],
     2:[],
     3:[]
