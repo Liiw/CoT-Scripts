@@ -1,5 +1,5 @@
 #priority 9000
-#norun
+//#norun
 
 import scripts.classes.Stage;
 import scripts.utils.AddToStage;
@@ -208,9 +208,11 @@ mods.recipestages.Recipes.setPackageStage("appeng", StageNames);
 //mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering.common", StageNames);
 //blusunrize/immersiveengineering/common/gui/IEBaseContainer.java 
 //mods.recipestages.Recipes.setContainerStage("blusunrize.immersiveengineering.common.gui.AssemblerContainer" , StageNames);
-mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering", StageNames);
+mods.recipestages.Recipes.setPackageStage("mods.immersiveengineering", StageNames);
+//mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering.common.util.Utils$InventoryCraftingFalse$1", StageNames);
+
 //TC
-mods.recipestages.Recipes.setPackageStage("thaumcraft", StageNames);
+//mods.recipestages.Recipes.setPackageStage("thaumcraft", StageNames);
 //RFTools
 mods.recipestages.Recipes.setPackageStage("mcjty.rftools.blocks.crafter", StageNames);
 //StorageDrawers

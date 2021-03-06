@@ -20,7 +20,7 @@ static substages as string[int] = {
 
 static mods as string[][int] = {
     1 : [
-        "basketcase",
+        //"basketcase",
     ],
     2 : [
         //"immcraft",
@@ -35,7 +35,7 @@ static items as IItemStack[][int] = {
         //Pyrotech ROCK NADA
             <pyrotech:rock>,
 
-            
+        //Harvestcraft    
             <harvestcraft:pamcinnamon>,
             <harvestcraft:pammaple>,
             <harvestcraft:pampaperbark>,
