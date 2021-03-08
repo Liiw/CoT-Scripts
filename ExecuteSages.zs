@@ -34,7 +34,7 @@ static StageNames as string[] = [
   "stone_2",
   "stone_3",
   "stone_4",
-
+  "stone_fire",
   "metal_1",
   "metal_2",
   "metal_3",
@@ -76,7 +76,7 @@ static oreDictFilter as string[][] =
     "ore",
     "ingot",
     "block",
-    "coin",
+  //  "coin",
     "dust",
     "nugget",
     "gear",
@@ -93,7 +93,9 @@ static oreDictFilter as string[][] =
     "sawdust",
     "wood",
     "soup",
-    "burrito"
+    "burrito",
+    "flint",
+    "limestone"
   ]
 ];
 
@@ -165,6 +167,8 @@ mods.DimensionStages.addDimensionStage("medieval_1", -1);
 mods.DimensionStages.addDimensionStage("industrial_2", 1);
 
 //Stage some IE/IP/IT advanced multiblocks separately
+mods.multiblockstages.IEMultiBlockStages.addStage("industrial_1", "IE:Assembler", "You must construct additional Pylons!");  
+
 mods.multiblockstages.IEMultiBlockStages.addStage("blastfurnace", "IE:BlastFurnace", "Not yet! You need to master the coke oven first!");
 mods.multiblockstages.IEMultiBlockStages.addStage("advanced_blastfurnace", "IE:BlastFurnaceAdvanced", "You need to research that a little bit (try the Research Table)");
 //mods.multiblockstages.IEMultiBlockStages.addStage("advanced_cokeoven", "CokeOvenAdvanced", "You need to research that a little bit (try the research table)");
@@ -208,7 +212,7 @@ mods.recipestages.Recipes.setPackageStage("appeng", StageNames);
 //mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering.common", StageNames);
 //blusunrize/immersiveengineering/common/gui/IEBaseContainer.java 
 //mods.recipestages.Recipes.setContainerStage("blusunrize.immersiveengineering.common.gui.AssemblerContainer" , StageNames);
-mods.recipestages.Recipes.setPackageStage("mods.immersiveengineering", StageNames);
+mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering", StageNames);
 //mods.recipestages.Recipes.setPackageStage("blusunrize.immersiveengineering.common.util.Utils$InventoryCraftingFalse$1", StageNames);
 
 //TC

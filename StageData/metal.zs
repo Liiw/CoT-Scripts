@@ -22,7 +22,7 @@ static substages as string[int] = {
 static mods as string[][int] = {
     1 : [        
         "comforts",
-        
+        "armorunder",
         "horsepower",
         //"primalchests"
     ],
@@ -43,13 +43,49 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1 : [
-        
+        // Serene seasons
+            <sereneseasons:greenhouse_glass>,
+
+        // Simple difficulty
+            <simpledifficulty:purified_water_bottle>,
+            <simpledifficulty:juice>,
+            <simpledifficulty:juice:1>,
+            <simpledifficulty:juice:2>,
+            <simpledifficulty:juice:3>,
+            <simpledifficulty:juice:4>,
+            <simpledifficulty:juice:5>,
+            <simpledifficulty:juice:6>,
+            <simpledifficulty:juice:7>,
+            <simpledifficulty:juice:8>,
+            <simpledifficulty:juice:9>,
         //DungPipe
             <dungpipe:dung_pipe>,
 
-        
+        //Pyrotech
+            <pyrotech:torch_stone>,
 
+            <pyrotech:bellows>,
+            <pyrotech:bloomery>,
 
+            <pyrotech:tongs_stone>,
+            <pyrotech:tongs_flint>,
+            <pyrotech:tongs_bone>,
+
+            <pyrotech:slag>,
+            <pyrotech:pile_slag>,
+
+            <pyrotech:material:24>,
+            <pyrotech:marshmallow>,
+            <pyrotech:marshmallow_roasted>.withTag({}),
+            <pyrotech:marshmallow_stick_empty>,
+            <pyrotech:marshmallow_burned>,
+            <pyrotech:material:32>,
+            <pyrotech:stone_tank>,
+
+            <pyrotech:generated_slag_copper>,
+            <pyrotech:generated_pile_slag_copper>,
+            
+            
 
         //Primal tech
             //<primal_tech:fluid_bladder>,
@@ -163,6 +199,8 @@ static items as IItemStack [][int]  = {
             <tconstruct:seared_tank>,
             <tconstruct:faucet>,
 
+            <tconstruct:wooden_hopper>,
+
         //TiC stencil tables
 
             <tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}),
@@ -247,10 +285,49 @@ static items as IItemStack [][int]  = {
        <minecraft:wooden_pressure_plate>,
        <minecraft:heavy_weighted_pressure_plate>,
        <minecraft:stone_pressure_plate>,
-       <minecraft:light_weighted_pressure_plate>
+       <minecraft:light_weighted_pressure_plate>,
+
+       //Pyrotech
+            <pyrotech:refractory_door>,
+            <pyrotech:refractory_brick_block>,
+            <pyrotech:material:4>,
+            <pyrotech:material:5>,
+            <pyrotech:material:9>,
+            <pyrotech:material:35>,
+            <pyrotech:igniter:1>,
+            <pyrotech:brick_tank>,
+            <pyrotech:faucet_brick>,
+            <pyrotech:brick_kiln>,
+            <pyrotech:brick_oven>,
+            <pyrotech:brick_sawmill>,
+            <pyrotech:brick_crucible>,
+            <pyrotech:tar_collector:1>,
+            <pyrotech:tar_drain:1>,
+            <pyrotech:refractory_brick_block>,
+
+            <pyrotech:material:8>,
+            <pyrotech:material:35>,
+            <pyrotech:material:3>,
+            <pyrotech:material:22>,
+            <pyrotech:material:28>,
+            <pyrotech:material:31>,
+
+            <pyrotech:generated_slag_tin>,
+            <pyrotech:generated_pile_slag_tin>,           
+
     ],
 
     3 : [
+
+            //Pyrotech
+                <pyrotech:cog_bone>,
+                <pyrotech:cog_flint>,
+                <pyrotech:cog_stone>,
+                <pyrotech:cog_wood>,
+                <pyrotech:mechanical_mulch_spreader>,
+                <pyrotech:mechanical_compacting_bin>,
+                <pyrotech:mechanical_bellows>,
+                <pyrotech:mechanical_hopper>,
 
              //Tcomplement alloy tank
             <tcomplement:alloy_tank>,
@@ -289,6 +366,12 @@ static items as IItemStack [][int]  = {
     ],
 
     4:[
+
+        //Pyrotech
+            <pyrotech:anvil_iron_plated>,
+            <pyrotech:bag_durable>,
+            <pyrotech:material:25>,
+
         //Malisisdoors
             <malisisdoors:curtain_white>,
             <malisisdoors:curtain_orange>,
@@ -734,7 +817,62 @@ static items as IItemStack [][int]  = {
             <structurize:blockcactusfence>,
 
         //TE
-            <thermalfoundation:material:800>
+            <thermalfoundation:material:800>,
+
+
+        //Pyrotech
+            
+            <pyrotech:obsidian_axe>,
+            <pyrotech:obsidian_hoe>,
+            <pyrotech:obsidian_pickaxe>,
+            <pyrotech:obsidian_shovel>,
+            <pyrotech:obsidian_sword>,
+
+            <pyrotech:sawmill_blade_iron>,
+            <pyrotech:sawmill_blade_gold>,
+            <pyrotech:sawmill_blade_diamond>,
+            <pyrotech:sawmill_blade_obsidian>,
+            <pyrotech:cog_iron>,
+            <pyrotech:cog_gold>,
+            <pyrotech:cog_diamond>,
+            <pyrotech:cog_obsidian>,
+
+            <pyrotech:gold_shears>,
+            <pyrotech:diamond_shears>,
+            <pyrotech:obsidian_shears>,
+
+            <pyrotech:tongs_iron>,
+            <pyrotech:tongs_gold>,
+            <pyrotech:tongs_diamond>,
+            <pyrotech:tongs_obsidian>,
+
+            <pyrotech:iron_hammer>,
+            <pyrotech:gold_hammer>,
+            <pyrotech:diamond_hammer>,
+            <pyrotech:obsidian_hammer>,
+
+            <pyrotech:material:33>,
+            <pyrotech:material:34>,
+            <pyrotech:material:19>,
+            <pyrotech:material:18>,
+
+            <pyrotech:generated_slag_gold>,
+            <pyrotech:generated_pile_slag_gold>,
+            <pyrotech:generated_slag_iron>,
+            <pyrotech:generated_pile_slag_iron>,
+
+        //Simple difficulty
+            <simpledifficulty:rain_collector>,
+            <simpledifficulty:charcoal_filter>,
+
+        //Armor Underwear
+            <armorunder:cooling_goo>,
+            <armorunder:cool_liner_material>,
+            <armorunder:cool_boots_liner>,
+            <armorunder:cool_chestplate_liner>,
+            <armorunder:cool_helmet_liner>,
+            <armorunder:cool_leggings_liner>,
+            <armorunder:liner_snips>
     ]
 
 
@@ -875,10 +1013,11 @@ static recipes as string [][int] = {
         //"woodHopper",
         "dough",
         "dough_allwater",
-        "tcomplement:melter/melter"
+        "tcomplement:melter/melter",
+        "COT_woodHopper"
     ],
     2:[
-        "waterSaw"
+        //"waterSaw"
     ],
     3:[],
     4:[

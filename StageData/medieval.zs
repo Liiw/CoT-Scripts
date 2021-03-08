@@ -53,6 +53,79 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+        //Armor underwear
+            <armorunder:goopak_cool>,
+            <armorunder:goopak_heat>,
+            <armorunder:goopak_spent>,
+            <armorunder:flipflop_liner_material>,
+            <armorunder:warm_liner_material>,
+            <armorunder:flipflop_goo>,
+            <armorunder:auto_chestplate_liner>,
+            <armorunder:auto_leggings_liner>,
+            <armorunder:diamond_strong_thread>,
+            <armorunder:obsidian_goo>,
+            <armorunder:obsidian_wrap_material>,
+            <armorunder:barrier_boots_liner>,
+            <armorunder:barrier_chestplate_liner>,
+            <armorunder:barrier_helmet_liner>,
+            <armorunder:barrier_leggings_liner>,
+            <armorunder:heating_goo>,
+            <armorunder:antifreeze_boots_liner>,
+            <armorunder:antifreeze_chestplate_liner>,
+            <armorunder:antifreeze_helmet_liner>,
+            <armorunder:antifreeze_leggings_liner>,
+
+        //Serene seasons and simple difficulty
+            <sereneseasons:season_sensor_spring>,
+            <sereneseasons:season_clock>,
+            <sereneseasons:ss_icon>,
+            <sereneseasons:season_sensor_summer>,
+            <sereneseasons:season_sensor_autumn>,
+            <sereneseasons:season_sensor_winter>,
+            <minecraft:potion>.withTag({Potion: "simpledifficulty:cold_resist_type"}),
+            <minecraft:potion>.withTag({Potion: "simpledifficulty:cold_resist_type"}),
+            <minecraft:potion>.withTag({Potion: "simpledifficulty:long_cold_resist_type"}),
+            <minecraft:potion>.withTag({Potion: "simpledifficulty:heat_resist_type"}),
+            <minecraft:potion>.withTag({Potion: "simpledifficulty:long_heat_resist_type"}),
+            <minecraft:splash_potion>.withTag({Potion: "simpledifficulty:cold_resist_type"}),
+            <minecraft:splash_potion>.withTag({Potion: "simpledifficulty:long_cold_resist_type"}),
+            <minecraft:splash_potion>.withTag({Potion: "simpledifficulty:heat_resist_type"}),
+            <minecraft:splash_potion>.withTag({Potion: "simpledifficulty:long_heat_resist_type"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "simpledifficulty:cold_resist_type"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "simpledifficulty:long_cold_resist_type"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "simpledifficulty:heat_resist_type"}),
+            <minecraft:tipped_arrow>.withTag({Potion: "simpledifficulty:long_heat_resist_type"}),
+            <minecraft:lingering_potion>.withTag({Potion: "simpledifficulty:cold_resist_type"}),
+            <minecraft:lingering_potion>.withTag({Potion: "simpledifficulty:long_cold_resist_type"}),
+            <minecraft:lingering_potion>.withTag({Potion: "simpledifficulty:heat_resist_type"}),
+            <minecraft:lingering_potion>.withTag({Potion: "simpledifficulty:long_heat_resist_type"}),
+            <simpledifficulty:thermometer>,
+        //Pyrotech
+            <pyrotech:redstone_axe>.withTag({}),
+            <pyrotech:redstone_hoe>.withTag({}),
+            <pyrotech:redstone_pickaxe>.withTag({}),
+            <pyrotech:redstone_shovel>.withTag({}),
+            <pyrotech:redstone_sword>.withTag({}),
+            <pyrotech:quartz_axe>.withTag({}),
+            <pyrotech:quartz_hoe>.withTag({}),
+            <pyrotech:quartz_pickaxe>.withTag({}),
+            <pyrotech:quartz_shovel>.withTag({}),
+            <pyrotech:quartz_sword>.withTag({}),
+
+            <pyrotech:wither_forge>,
+            <pyrotech:living_tar>,
+
+            <pyrotech:igniter>,
+            <pyrotech:igniter:1>,
+            <pyrotech:dense_redstone_ore_large>,
+            <pyrotech:dense_redstone_ore_small>,
+            <pyrotech:dense_redstone_ore_rocks>,
+            <pyrotech:dense_quartz_ore_large>,
+            <pyrotech:dense_quartz_ore_small>,
+            <pyrotech:dense_quartz_ore_rocks>,
+            <pyrotech:material:36>,
+            <pyrotech:material:37>,
+
 
         //Malisisdoors large doors
 
@@ -130,7 +203,7 @@ static items as IItemStack [][int] = {
            
             <minecraft:book>,
             <minecraft:bookshelf>,
-            <minecraft:bow>,
+            
             <minecraft:brewing_stand>,
             <minecraft:brown_glazed_terracotta>,
             <minecraft:carpet>,
@@ -713,7 +786,13 @@ static items as IItemStack [][int] = {
         <malisisdoors:wood_sliding_door>,
         <malisisdoors:iron_sliding_door>,
 
-        <thermalfoundation:material:772>
+        <thermalfoundation:material:772>,
+
+        //Pyrotech
+            <pyrotech:generated_slag_silver>,
+            <pyrotech:generated_pile_slag_silver>,
+            <pyrotech:generated_slag_lead>,
+            <pyrotech:generated_pile_slag_lead>
     ]
 };
 
@@ -747,7 +826,10 @@ static liquids as ILiquidStack [][int] = {
         //<liquid:flux_goo>,
 
     ],
-    3 : []
+    3 : [
+
+
+    ]
 };
 
 static ores as IIngredient[][IItemStack][int] = 
@@ -756,13 +838,26 @@ static ores as IIngredient[][IItemStack][int] =
         [
             <minecraft:redstone>,
             <minecraft:redstone_ore>,
-            
-            <geolosys:ore_vanilla:1>,],
+            <geolosys:ore_vanilla:1>,
+            <pyrotech:dense_redstone_ore_large>,
+            <pyrotech:dense_redstone_ore_small>,
+            <pyrotech:dense_redstone_ore_rocks>,
+            <pyrotech:dense_redstone_ore_large_inactive>,
+            <pyrotech:dense_redstone_ore_small_inactive>,
+            <pyrotech:dense_redstone_ore_rocks_inactive>
+            ],
 
         <pyrotech:rock>:
         [
             <geolosys:ore_sample_vanilla:1>
         
+        ],
+
+        <minecraft:netherrack>:
+        [
+            <pyrotech:dense_quartz_ore_large>,
+            <pyrotech:dense_quartz_ore_small>,
+            <pyrotech:dense_quartz_ore_rocks>,
         ]
         
     },

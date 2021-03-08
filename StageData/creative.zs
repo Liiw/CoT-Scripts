@@ -24,6 +24,16 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
     1: [
+        //Simple difficulty
+            <simpledifficulty:wool_helmet>,
+            <simpledifficulty:wool_chestplate>,
+            <simpledifficulty:wool_leggings>,
+            <simpledifficulty:wool_boots>,
+            <simpledifficulty:ice_helmet>,
+            <simpledifficulty:ice_chestplate>,
+            <simpledifficulty:ice_leggings>,
+            <simpledifficulty:ice_boots>,
+
         //Some flour
             //<enderio:item_material:21>,
             <appliedenergistics2:material:4>,
@@ -188,6 +198,10 @@ static items as IItemStack [][int]  = {
             <primal_tech:work_stump_upgraded>,      
             <primal_tech:wooden_basin>,
             <primal_tech:rock>, */
+
+        //Pyrotech
+            <simpledifficulty:campfire>,
+            <simpledifficulty:spit>,
 
         //Thermal foundation stuff
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),
@@ -435,7 +449,7 @@ static ores as IIngredient[][IItemStack][int] =
 static materials as string [][int] = {
     1:[
         
-        "yellorium"
+        //"yellorium"
         
     ],
     2:[],

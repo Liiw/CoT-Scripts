@@ -71,6 +71,18 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int] = {
     1 : [
+        //Simpledifficulty
+            <simpledifficulty:heater>,
+            <simpledifficulty:chiller>,
+        //Pyrotech
+            <pyrotech:generated_slag_ardite>,
+            <pyrotech:generated_pile_slag_ardite>,
+            <pyrotech:generated_slag_aluminum>,
+            <pyrotech:generated_pile_slag_aluminum>,
+            <pyrotech:generated_slag_nickel>,
+            <pyrotech:generated_pile_slag_nickel>,
+            
+
         //Chisel factory blocks
            <chisel:factory:*>, 
 
@@ -211,6 +223,10 @@ static items as IItemStack [][int] = {
     ],
 
     2 : [
+
+        //Pyrotech
+            <pyrotech:generated_slag_cobalt>,
+            <pyrotech:generated_pile_slag_cobalt>,  
 
         //MoarBoats
             /*<moarboats:boat_battery>,
@@ -451,7 +467,8 @@ static recipeCategories as string [][int] = {
         "ie.bottlingMachine",
         "ie.mixer",
         "mctsmelteryio:casting_machine",
-        "mctsmelteryio:fuel_controller"
+        "mctsmelteryio:fuel_controller",
+        
     ],
     2:[
         "it.distiller",

@@ -77,7 +77,11 @@ static items as IItemStack[][int] = {
     ],
 
     2 : [  
-        
+        //Simple difficulty
+
+
+            <simpledifficulty:magma_chunk>,
+            <simpledifficulty:ice_chunk>,
 
         //Minecraft
             <minecraft:ladder>,
@@ -94,7 +98,7 @@ static items as IItemStack[][int] = {
             <minecraft:clay_ball>,
             <minecraft:clownfish>,
 
-            <minecraft:coal_block>,
+            
             
 
 
@@ -275,15 +279,40 @@ static items as IItemStack[][int] = {
             <minecraft:wool:15>,
             <minecraft:yellow_flower>,
         
-        //PrimalTech
-            //<primal_tech:stone_anvil>,
+
+        //Pyrotech
+            <pyrotech:anvil_granite>,
+            <pyrotech:worktable_stone>,
+            <pyrotech:shelf>,
+            <pyrotech:stash>,
+            <pyrotech:crate>,
+            <pyrotech:wood_rack>,
+
+            <pyrotech:bone_axe>,
+            <pyrotech:bone_hoe>,
+            <pyrotech:bone_pickaxe>,
+            <pyrotech:bone_shovel>,
+            <pyrotech:bone_sword>,
+
+            <pyrotech:material:16>,
+            <pyrotech:bucket_stone>,
+            <pyrotech:bag_simple>,
+            <pyrotech:stone_door>,
+            <pyrotech:material:27>,
+            <pyrotech:fossil_ore>,
+
+            <pyrotech:bag_simple>,
+
+            <pyrotech:compacting_bin>,
+            <pyrotech:compost_bin>,
+            
 
         //Chisel       
             <chisel:marble2:7>,
             <chisel:basalt2:7>,
             <chisel:limestone2:7>,
-        //Harvestcraft gardens
 
+        //Harvestcraft gardens
             <harvestcraft:frostgarden>,
             <harvestcraft:shadedgarden>,
             <harvestcraft:soggygarden>,
@@ -302,30 +331,108 @@ static items as IItemStack[][int] = {
     ],
 
     3 : [
+        //Minecraft
+            <minecraft:bow>,
 
+        //Pyrotech
+            <pyrotech:bow_drill>,
+            <pyrotech:stone_kiln>,
+            <pyrotech:stone_oven>,
+            <pyrotech:stone_sawmill>,
+            <pyrotech:stone_crucible>,
+            <pyrotech:faucet_stone>,
+
+            <pyrotech:sawmill_blade_stone>,
+            <pyrotech:sawmill_blade_flint>,
+            <pyrotech:sawmill_blade_bone>,
+            
+            <pyrotech:flint_axe>,
+            <pyrotech:flint_hoe>,
+            <pyrotech:flint_pickaxe>,
+            <pyrotech:flint_shovel>,
+            <pyrotech:flint_sword>,
+
+
+            <pyrotech:stone_shears>,
+            <pyrotech:flint_shears>,
+            <pyrotech:bone_shears>,
+
+            <pyrotech:stone_hammer>,
+            <pyrotech:bone_hammer>,
+            <pyrotech:flint_hammer>
+
+
+
+
+    ],
+    
+    4 : [
+ 
+        
         //Geolosys clusters
             <geolosys:coal:3>,
             <geolosys:coal:2>,
             <geolosys:coal:1>,
             <geolosys:coal>,
 
-            
+            <minecraft:coal_block>,
 
         //Minecraft
             <minecraft:lapis_block>,
             <minecraft:dye:4>,
-            //<minecraft:coal>,
+            <minecraft:coal>,
             //<minecraft:coal:1>
 
-        
+        //Pyrotech
+            <pyrotech:tar_collector:1>,
+            <pyrotech:tar_drain:1>,
+            <pyrotech:tar_drain>,
+            <pyrotech:tar_collector>,
+            <pyrotech:material:21>,
+            <pyrotech:material:30>,
+            <pyrotech:material:26>,
+            <pyrotech:material:15>,
+            <pyrotech:material:23>,
+            <pyrotech:shelf_stone>,
+            <pyrotech:stash_stone>,
+            <pyrotech:crate_stone>,
+            <pyrotech:wool_tarred>,
+            <pyrotech:charcoal_block>,
+            <pyrotech:wood_tar_block>,
+            <pyrotech:material:1>,
+            <forge:bucketfilled>.withTag({FluidName: "coal_tar", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "wood_tar", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "liquid_clay", Amount: 1000}),
 
+            <pyrotech:dense_coal_ore>,
 
+            <pyrotech:soaking_pot>
 
     ],
-    
-    4 : [],
 
-    11: [//<primal_tech:stone_grill>
+    11: [//"stone_Fire" - after getting flint and tinder
+        <pyrotech:kiln_pit>,
+        <pyrotech:drying_rack:1>,
+        <pyrotech:bucket_clay>,
+        <pyrotech:bucket_clay_unfired>,
+        <pyrotech:torch_fiber>,
+        <pyrotech:tinder>,
+        <pyrotech:campfire>,
+        <pyrotech:worktable>,
+
+        <pyrotech:unfired_clay_shears>,
+        <pyrotech:clay_shears>,
+        <pyrotech:material:6>,
+        <pyrotech:material:7>,
+
+        <pyrotech:apple_baked>,
+        <pyrotech:carrot_roasted>,
+        <pyrotech:egg_roasted>,
+        <pyrotech:mushroom_brown_roasted>,
+        <pyrotech:mushroom_red_roasted>,
+        <pyrotech:beetroot_roasted>,
+        <pyrotech:burned_food>,
+        
     ] 
 };
 
@@ -339,7 +446,11 @@ static liquids as ILiquidStack[][int] = {
     3 : [
         
     ],
-    4 : [] 
+    4 : [
+        <liquid:coal_tar>,
+        <liquid:wood_tar>,
+        <liquid:liquid_clay>
+    ] 
 
 };
 
@@ -347,21 +458,25 @@ static liquids as ILiquidStack[][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {},
+    1: {
+        <minecraft:stone>:[<pyrotech:fossil_ore>],},
     2: {},
     3: {
-            <minecraft:stone>:[<geolosys:ore_vanilla>,
-                               <minecraft:lapis_ore>,
-                               <geolosys:ore_vanilla:3>,
-                               
-                               <minecraft:coal_ore>],
 
-            <pyrotech:rock>:[<geolosys:ore_sample_vanilla:0>,
-                             <geolosys:ore_sample_vanilla:3>,],
 
             
     },
-    4 : {}
+    4 : {
+            <minecraft:stone>:[<geolosys:ore_vanilla>,
+                               <minecraft:lapis_ore>,
+                               <geolosys:ore_vanilla:3>,
+                                
+                               <minecraft:coal_ore>,
+                               <pyrotech:dense_coal_ore>],
+
+            <pyrotech:rock>:[<geolosys:ore_sample_vanilla:0>,
+                             <geolosys:ore_sample_vanilla:3>,],
+    }
 };
 
 
@@ -383,11 +498,12 @@ static materials as string [][int] = {
         "nut"
     ],
     2:[
-        "coal",
+        
         
     ],
     3:[],
-    4 : ["fishcooked",
+    4 : ["coal"],
+    11 : ["fishcooked",
         "meatcooked"] 
 };
 
@@ -395,9 +511,11 @@ static recipes as string [][int] = {
     1 : [
         //"stickfromtwigs",
         //"stoneaxe",
-        "flint"
+        //"flint"
     ],
     2 : [ 
+        "magmaChunk",
+        "iceChunk"
         /* "stoneClub",
         "stoneAxe",
         "stonePick",
@@ -407,7 +525,12 @@ static recipes as string [][int] = {
         "boneShard",
         "strawbed" */
     ], 
-    3 : [],
+    3 : [
+        "CoT_purifiedWater",
+        "CoT_purifiedWaterCanteen1",
+        "CoT_purifiedWaterCanteen2",
+        "CoT_purifiedWaterCanteen3"
+    ],
     4 : [] 
 };
 
@@ -422,6 +545,7 @@ static recipeCategories as string [][int] = {
     11:[
         //"primal_tech.stone_grill_recipes",
         //"primal_tech.stone_anvil_recipes"
+        
     ]
 };
 

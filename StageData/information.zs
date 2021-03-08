@@ -56,9 +56,16 @@ static mods as string[][int] = {
 
 static items as IItemStack [][int]  = {
   1 : [
+    //Bigreactors book
+        <patchouli:guide_book>.withTag({"patchouli:book": "bigreactors:erguide"}),
+    
+    //Pyrotech
+        <pyrotech:generated_slag_uranium>,
+        <pyrotech:generated_pile_slag_uranium>,
 
     //Conarm armor forge
         <conarm:armorforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 5 as short}}),
+        <tconstruct:toolforge>.withTag({textureBlock: {id: "immersiveengineering:storage", Count: 1 as byte, Damage: 5 as short}}),
     //Malisisdoors
         <malisisdoors:door_factory>,
         <malisisdoors:customdooritem>,
@@ -181,9 +188,112 @@ static items as IItemStack [][int]  = {
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "maze"}, "oc:color": 14, display: {Name: "Mazer"}, "oc:lootFactory": "opencomputers:maze"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "irc"}, "oc:color": 12, display: {Name: "OpenIRC (IRC Client)"}, "oc:lootFactory": "opencomputers:irc"}),
         //TE stuff
+
             <thermalfoundation:material:22>,
             <thermalfoundation:material:23>,
 
+            <forge:bucketfilled>.withTag({FluidName: "coal", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "crude_oil", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "refined_oil", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "refined_fuel", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "sap", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "syrup", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "resin", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "tree_oil", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "seed_oil", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "biocrude", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "refined_biofuel", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "mushroom_stew", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "experience", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "potion_splash", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "potion_lingering", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "pyrotheum", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "ender", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}),
+
+            //<thermalexpansion:florb>.withTag({Fluid: ".*"}),
+            <thermalexpansion:florb>.withTag({Fluid: "water"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "lava"}),
+            <thermalexpansion:florb>.withTag({Fluid: "iron"}),
+            <thermalexpansion:florb>.withTag({Fluid: "gold"}),
+            <thermalexpansion:florb>.withTag({Fluid: "pigiron"}),
+            <thermalexpansion:florb>.withTag({Fluid: "cobalt"}),
+            <thermalexpansion:florb>.withTag({Fluid: "ardite"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "manyullyn"}),
+            <thermalexpansion:florb>.withTag({Fluid: "knightslime"}),
+            <thermalexpansion:florb>.withTag({Fluid: "alubrass"}),
+            <thermalexpansion:florb>.withTag({Fluid: "brass"}),
+            <thermalexpansion:florb>.withTag({Fluid: "copper"}),
+            <thermalexpansion:florb>.withTag({Fluid: "tin"}),
+            <thermalexpansion:florb>.withTag({Fluid: "bronze"}),
+            <thermalexpansion:florb>.withTag({Fluid: "zinc"}),
+            <thermalexpansion:florb>.withTag({Fluid: "lead"}),
+            <thermalexpansion:florb>.withTag({Fluid: "nickel"}),
+            <thermalexpansion:florb>.withTag({Fluid: "silver"}),
+            <thermalexpansion:florb>.withTag({Fluid: "electrum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "steel"}),
+            <thermalexpansion:florb>.withTag({Fluid: "aluminum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "creosote"}),
+            <thermalexpansion:florb>.withTag({Fluid: "crude_oil"}),
+            <thermalexpansion:florb>.withTag({Fluid: "redstone"}),
+            <thermalexpansion:florb>.withTag({Fluid: "glowstone"}),
+            <thermalexpansion:florb>.withTag({Fluid: "ender"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "pyrotheum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "cryotheum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "aerotheum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "petrotheum"}),
+            <thermalexpansion:florb>.withTag({Fluid: "mana"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "platinum"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "iridium"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "invar"}),
+            <thermalexpansion:florb>.withTag({Fluid: "constantan"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "signalum"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "lumium"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "enderium"}),
+            <thermalexpansion:florb>.withTag({Fluid: "plantoil"}),
+            <thermalexpansion:florb>.withTag({Fluid: "ethanol"}),
+            <thermalexpansion:florb>.withTag({Fluid: "biodiesel"}),
+            <thermalexpansion:florb>.withTag({Fluid: "concrete"}),
+            <thermalexpansion:florb>.withTag({Fluid: "uranium"}),
+            <thermalexpansion:florb>.withTag({Fluid: "oil"}),
+            <thermalexpansion:florb>.withTag({Fluid: "diesel"}),
+            <thermalexpansion:florb>.withTag({Fluid: "lubricant"}),
+            <thermalexpansion:florb>.withTag({Fluid: "gasoline"}),
+            <thermalexpansion:florb>.withTag({Fluid: "napalm"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "mithril"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "yellorium"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "cyanite"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "blutonium"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "ludicrite"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "electrumflux"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "titanium"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "advancedalloy"}),
+            <thermalexpansion:florb>.withTag({Fluid: "liquid_clay"}),
+            <thermalexpansion:florb>.withTag({Fluid: "wood_tar"}),
+            <thermalexpansion:florb>.withTag({Fluid: "coal_tar"}),
+            <thermalexpansion:florb>.withTag({Fluid: "chocolate_liquor"}),
+            <thermalexpansion:florb>.withTag({Fluid: "milk_chocolate"}),
+            <thermalexpansion:florb>.withTag({Fluid: "dark_chocolate"}),
+            <thermalexpansion:florb>.withTag({Fluid: "oxygen"}),
+            <thermalexpansion:florb>.withTag({Fluid: "hydrogen"}),
+            <thermalexpansion:florb>.withTag({Fluid: "rocketfuel"}),
+            <thermalexpansion:florb>.withTag({Fluid: "nitrogen"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "enrichedlava"}),
+            <thermalexpansion:florb>.withTag({Fluid: "stone"}),
+            <thermalexpansion:florb:1>.withTag({Fluid: "obsidian"}),
+            <thermalexpansion:florb>.withTag({Fluid: "clay"}),
+            <thermalexpansion:florb>.withTag({Fluid: "dirt"}),
+            <thermalexpansion:florb>.withTag({Fluid: "emerald"}),
+            <thermalexpansion:florb>.withTag({Fluid: "glass"}),
+            <thermalexpansion:florb>.withTag({Fluid: "blood"}),
+            <thermalexpansion:florb>.withTag({Fluid: "milk"}),
+            <thermalexpansion:florb>.withTag({Fluid: "blueslime"}),
+            <thermalexpansion:florb>.withTag({Fluid: "purpleslime"}),
+            <thermalexpansion:florb>.withTag({Fluid: "purifiedwater"}),
 
             //TE_LIQUIDS
             <thermalfoundation:fluid_ender>,
@@ -203,7 +313,15 @@ static items as IItemStack [][int]  = {
         //Moarboats
             //<moarboats:opencomputers_holder>
         
-            
+        //Pyrotech
+            <pyrotech:generated_slag_iridium>,
+            <pyrotech:generated_pile_slag_iridium>,
+            <pyrotech:generated_slag_mithril>,
+            <pyrotech:generated_pile_slag_mithril>,
+            <pyrotech:generated_slag_osmium>,
+            <pyrotech:generated_pile_slag_osmium>,
+            <pyrotech:generated_slag_platinum>,
+            <pyrotech:generated_pile_slag_platinum>    
             
     ]
 
@@ -309,7 +427,7 @@ static ores as IIngredient[][IItemStack][int] =
 static materials as string [][int] = {
     1:[
         
-        //"yellorium",
+        "yellorium",
         "uranium"
     ],
     2:[
