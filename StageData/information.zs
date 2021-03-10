@@ -334,6 +334,7 @@ static liquids as ILiquidStack [][int] = {
       <liquid:yellorium>,
       <liquid:cyanite>,
       <liquid:fuelcolumn>,
+      <liquid:blutonium>,
       //<liquid:dist_water>,
       <liquid:steam>,
       <liquid:redstone>,
@@ -393,7 +394,12 @@ static liquids as ILiquidStack [][int] = {
         <liquid:cryotheum>,
         <liquid:aerotheum>,
         <liquid:petrotheum>,
-        <liquid:mana>
+        <liquid:mana>,
+        <liquid:zinc>,
+        <liquid:ludicrite>,
+        <liquid:advancedalloy>,
+        <liquid:platinum>,
+        <liquid:brass>
     ]
 };
 
@@ -428,7 +434,9 @@ static materials as string [][int] = {
     1:[
         
         "yellorium",
-        "uranium"
+        "uranium",
+        "blutonium",
+        "cyanite"
     ],
     2:[
         "enderium",
@@ -461,6 +469,10 @@ static materials as string [][int] = {
         "signalum",
         "lumium",
         "zinc",
+        "ludicrite",
+        "advancedalloy",
+        "platinum",
+        "brass"
     ],
     3:[]
 };

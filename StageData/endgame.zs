@@ -47,7 +47,7 @@ static items as IItemStack [][int]  = {
 
 static liquids as ILiquidStack [][int] = {   
     1 : [ 
-        
+        <liquid:titanium>
     ] 
 };
 
@@ -62,7 +62,7 @@ static ores as IIngredient[][IItemStack][int] =
 };
 
 static materials as string [][int] = {
-    1:[],
+    1:["titanium"],
     2:[],
     3:[]
 };

@@ -1,5 +1,5 @@
 #priority 9000
-//#norun
+#norun
 
 import scripts.classes.Stage;
 import scripts.utils.AddToStage;
