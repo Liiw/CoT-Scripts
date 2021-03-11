@@ -60,8 +60,8 @@ static mods as string[][int] = {
         "dse",
         "nhc",
         "ompd",
-        "immersivetech",
-        "randallag",
+        //"immersivetech",
+        //"randallag",
         //"spitfirepack",
         "betterrecords"
     ],

@@ -4,19 +4,48 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
-#zinc casting, smeltery smelting
+#zinc smeltery smelting
+mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288,<ore:oreZinc>);
 
+
+#brass alloying
+
+    mods.tconstruct.Alloy.addRecipe(<liquid:brass> * 432, [<liquid:copper> * 288, 
+                                                           <liquid:zinc> * 144 ]
+                                                           );
 
 #ludicrite - alloying
-#advanced alloy - alloying  
+
+    mods.tconstruct.Alloy.addRecipe(<liquid:ludicrite> * 2592, [<liquid:electrumflux> * 576, 
+                                                                <liquid:manyullyn> * 432, 
+                                                                <liquid:brass> * 432, 
+                                                                <liquid:signalum> * 576,
+                                                                <liquid:platinum> * 576 ]
+                                                                );
 
 
-#brass alloying = copper + zinc
-#advanced alloy = ludicrite + blutonium + enderium + lumium + mithril
-#ludicrite = fluxed electrum + manyullyn + brass + signalum + platinum
+#advanced alloy - alloying 
 
-#METAL BLOCK MINING LEVELS
+    mods.tconstruct.Alloy.addRecipe(<liquid:advancedalloy> * 5184, [<liquid:ludicrite> * 1296, 
+                                                                    <liquid:blutonium> * 1296, 
+                                                                    <liquid:enderium> * 576, 
+                                                                    <liquid:lumium> * 720,
+                                                                    <liquid:mithril> * 1296 ]
+                                                                    );
 
+//stuff
+    #advanced alloy - alloying  
+
+
+    #brass alloying = copper + zinc
+    #advanced alloy = ludicrite + blutonium + enderium + lumium + mithril
+    #ludicrite = fluxed electrum + manyullyn + brass + signalum + platinum
+
+    #METAL BLOCK MINING LEVELS
+
+
+
+//MAKE SOME EXISTING MATERIAL PARTS ACTUALLY USABLE
 
     static materials as ILiquidStack[] = [
         <liquid:zinc>,
