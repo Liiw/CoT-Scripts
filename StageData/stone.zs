@@ -232,10 +232,15 @@ static items as IItemStack[][int] = {
             <minecraft:stone:5>,
             <minecraft:stone:6>,
             <minecraft:stone_axe>,
+            <minecraft:stone_axe:*>,
             <minecraft:stone_hoe>,
             <minecraft:wooden_hoe>,
+            <minecraft:stone_hoe:*>,
+            <minecraft:wooden_hoe:*>,
             <minecraft:stone_pickaxe>,
+            <minecraft:stone_pickaxe:*>,
             <minecraft:stone_shovel>,
+            <minecraft:stone_shovel:*>,
             <minecraft:stone_slab>,
             <minecraft:stone_slab:1>,
             <minecraft:stone_slab:3>,
@@ -339,7 +344,7 @@ static items as IItemStack[][int] = {
             <pyrotech:stone_kiln>,
             <pyrotech:stone_oven>,
             <pyrotech:stone_sawmill>,
-            <pyrotech:stone_crucible>,
+            
             <pyrotech:faucet_stone>,
 
             <pyrotech:sawmill_blade_stone>,
@@ -406,8 +411,9 @@ static items as IItemStack[][int] = {
 
             <pyrotech:dense_coal_ore>,
 
-            <pyrotech:soaking_pot>
+            <pyrotech:soaking_pot>,
 
+            <pyrotech:stone_crucible>,
     ],
 
     11: [//"stone_Fire" - after getting flint and tinder

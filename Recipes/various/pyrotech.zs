@@ -8,6 +8,8 @@ var magmaChunk = <simpledifficulty:magma_chunk>;
 var ice = <minecraft:ice>;
 var iceChunk = <simpledifficulty:ice_chunk>;
 
+
+
 mods.pyrotech.GraniteAnvil.setGameStages(Stages.and(["stone_2"]));
 
 
@@ -29,10 +31,24 @@ mods.pyrotech.GraniteAnvil.addRecipe(
   true // true if the recipe should be inherited
 );
 
+
 mods.pyrotech.PitKiln.setGameStages(Stages.and(["stone_fire"]));
 mods.pyrotech.Campfire.setGameStages(Stages.and(["stone_fire"]));
 
 mods.pyrotech.StoneKiln.setGameStages(Stages.and(["stone_3"]));
+
+mods.pyrotech.StoneKiln.addRecipe(
+  "CoT_searedbrick",                // unique recipe name
+  <tconstruct:materials>,          // recipe output
+  <tconstruct:soil>,          // recipe input
+  8400,          // recipe duration in ticks
+  0.1,        // chance for item to fail conversion
+  [<pyrotech:material:7>, //pottery shard
+   <pyrotech:material:6>, //pottery fragments
+   <pyrotech:material>,   //ash
+   <pyrotech:material:10>], //flint   // array of randomly chosen failure items
+  true // true if the recipe should be inherited
+);
 
 
 mods.pyrotech.StoneOven.setGameStages(Stages.and(["stone_3"]));
@@ -45,7 +61,7 @@ mods.pyrotech.StoneOven.addRecipe(
 );
 
 
-for i in 1 to 3 {
+for i in 1 to 4 {
 
   mods.pyrotech.StoneOven.addRecipe(
     "CoT_purifiedWaterCanteen" + i,                // unique recipe name
@@ -58,7 +74,9 @@ for i in 1 to 3 {
 
 
 mods.pyrotech.StoneSawmill.setGameStages(Stages.and(["stone_3"]));
-mods.pyrotech.StoneCrucible.setGameStages(Stages.and(["stone_3"]));
+
+
+mods.pyrotech.StoneCrucible.setGameStages(Stages.and(["stone_4"]));
 
 
 mods.pyrotech.SoakingPot.setGameStages(Stages.and(["stone_4"]));
