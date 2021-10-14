@@ -101,11 +101,11 @@ ResearchTable.builder("Info_end", cat_inf) // The second parameter has no use cu
     <ore:oc:hdd3> * 5,
     <ore:oc:materialInterweb> * 1,
     <ore:blockPlatinum> * 25,
-    <ore:blockVibrantAlloy> * 25,
+    //<ore:blockVibrantAlloy> * 25,
     <extracells:storage.component:3> * 5,
     <extracells:storage.component:10> * 7,
     <appliedenergistics2:material:34> * 5,
-    <ore:compressed3xDustBedrock> * 25,
+    //<ore:compressed3xDustBedrock> * 25,
     <appliedenergistics2:material:47> * 10)
   .addCondition(<liquid:water>, 10000000 as long)
   .addCondition(<liquid:lava>, 10000000 as long)

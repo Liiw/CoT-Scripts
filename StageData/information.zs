@@ -108,7 +108,7 @@ static items as IItemStack [][int]  = {
 
       <forge:bucketfilled>.withTag({FluidName: "redstone", Amount: 1000}),
 
-      <thermalfoundation:fluid_redstone>
+      //<thermalfoundation:fluid_redstone>
   ],
 
   2 : [
@@ -123,7 +123,7 @@ static items as IItemStack [][int]  = {
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:platiolus_plant", agri_growth: 1 as byte}),
         //AE2
             <appliedenergistics2:material:46>,
-        /*//EnderIO
+        /*/EnderIO
             //buckets
             <forge:bucketfilled>.withTag({FluidName: "nutrient_distillation", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "ender_distillation", Amount: 1000}),
@@ -173,8 +173,8 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "stellar_alloy", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "crystalline_pink_slime", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "energetic_silver", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "vivid_alloy", Amount: 1000}), */
-        //OC RS card and Disks
+            <forge:bucketfilled>.withTag({FluidName: "vivid_alloy", Amount: 1000}),*/
+
             <opencomputers:card:5>,
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "plan9k"}, "oc:color": 1, display: {Name: "Plan9k (Operating System)"}, "oc:lootFactory": "opencomputers:plan9k"}),
             <opencomputers:storage:1>.withTag({"oc:data": {"oc:fs.label": "network"}, "oc:color": 10, display: {Name: "Network (Network Stack)"}, "oc:lootFactory": "opencomputers:network"}),
@@ -295,6 +295,61 @@ static items as IItemStack [][int]  = {
             <thermalexpansion:florb>.withTag({Fluid: "purpleslime"}),
             <thermalexpansion:florb>.withTag({Fluid: "purifiedwater"}),
 
+            //TE Morbs
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:elder_guardian"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:wither_skeleton"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:stray"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:husk"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:zombie_villager"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:skeleton_horse"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:zombie_horse"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:donkey"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:mule"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:evocation_illager"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:vex"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:vindication_illager"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:creeper"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:skeleton"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:spider"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:zombie"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:slime"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:ghast"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:zombie_pigman"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:enderman"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:cave_spider"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:silverfish"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:blaze"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:magma_cube"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:bat"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:witch"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:endermite"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:guardian"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:shulker"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:pig"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:sheep"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:cow"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:chicken"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:squid"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:wolf"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:mooshroom"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:ocelot"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:horse"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:rabbit"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:polar_bear"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:llama"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:parrot"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecraft:villager"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "thermalfoundation:blizz"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "thermalfoundation:blitz"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "thermalfoundation:basalz"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:barbarian"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:archerbarbarian"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:chiefbarbarian"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:pirate"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:archerpirate"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "minecolonies:chiefpirate"}),
+            <thermalexpansion:morb>.withTag({Generic: 1 as byte, id: "tconstruct:blueslime"}),
+
             //TE_LIQUIDS
             <thermalfoundation:fluid_ender>,
 
@@ -303,9 +358,9 @@ static items as IItemStack [][int]  = {
 
         //horsearmor
             <thermalfoundation:horse_armor_platinum>,
-        /*//EIO glass
-            <enderio:block_fused_quartz:*>,
-            <enderio:block_fused_glass:*>,*/
+        //EIO glass
+            //<enderio:block_fused_quartz:*>,
+            //<enderio:block_fused_glass:*>,
 
         //TiC
             <conarm:armorforge>.withTag({textureBlock: {id: "thermalfoundation:storage_alloy", Count: 1 as byte, Damage: 7 as short}}),
@@ -321,7 +376,7 @@ static items as IItemStack [][int]  = {
             <pyrotech:generated_slag_osmium>,
             <pyrotech:generated_pile_slag_osmium>,
             <pyrotech:generated_slag_platinum>,
-            <pyrotech:generated_pile_slag_platinum>    
+            <pyrotech:generated_pile_slag_platinum>  
             
     ]
 
@@ -341,8 +396,8 @@ static liquids as ILiquidStack [][int] = {
   ],
 
   2:[   
-    //EIO
-       /* <liquid:nutrient_distillation>,
+    /*/EIO
+        <liquid:nutrient_distillation>,
         <liquid:ender_distillation>,
         <liquid:vapor_of_levity>,
         <liquid:hootch>,
@@ -372,7 +427,7 @@ static liquids as ILiquidStack [][int] = {
         <liquid:stellar_alloy>,
         <liquid:crystalline_pink_slime>,
         <liquid:energetic_silver>,
-        <liquid:vivid_alloy>,*/
+        <liquid:vivid_alloy>, */
     //TE
         <liquid:enderium>,
         <liquid:coal>,
@@ -417,7 +472,8 @@ static ores as IIngredient[][IItemStack][int] =
             <thermalfoundation:ore_fluid:2>
         ],
 
-        <minecraft:netherrack>:[<rftools:dimensional_shard_ore:1>, <thermalfoundation:ore_fluid:3>],
+        <minecraft:netherrack>:[<rftools:dimensional_shard_ore:1>, 
+                                <thermalfoundation:ore_fluid:3>],
 
         <minecraft:end_stone>:[<rftools:dimensional_shard_ore:2>, <thermalfoundation:ore_fluid:4>],
 
@@ -441,7 +497,7 @@ static materials as string [][int] = {
     2:[
         "enderium",
 
-        "electrical_steel",
+        /*"electrical_steel",
         "electricalsteel",
         "energetic_alloy",
         "energeticsilver",
@@ -452,12 +508,12 @@ static materials as string [][int] = {
         "pulsating_iron",
         "dark_steel",
         "darksteel",
-        "soularium",
+        "soularium",*/
         "construction_alloy",
         "end_steel",
         "endsteel",
         "platinum",
-        "pulsatingiron",
+        //"pulsatingiron",
         "conductiveiron",
         "certusquartz",
         "darksteel",

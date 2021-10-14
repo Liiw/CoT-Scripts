@@ -1,4 +1,3 @@
-#norun
 #priority 9800
 
 var sawdust =  <thermalfoundation:material:800>;

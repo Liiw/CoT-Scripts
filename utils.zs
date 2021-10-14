@@ -77,7 +77,7 @@ function ChangeItemStage(stage as string, item_list as IIngredient []) {
 		mods.ItemStages.addItemStage(stage, item);
 
 		
-		mods.recipestages.Recipes.setRecipeStage(stage, item);
+		//mods.recipestages.Recipes.setRecipeStage(stage, item);
 
 		var itemRecipes = recipes.getRecipesFor(item);
 

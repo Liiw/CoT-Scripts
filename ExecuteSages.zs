@@ -1,5 +1,5 @@
 #priority 9000
-#norun
+
 
 import scripts.classes.Stage;
 import scripts.utils.AddToStage;
@@ -222,6 +222,13 @@ mods.recipestages.Recipes.setPackageStage("mcjty.rftools.blocks.crafter", StageN
 //StorageDrawers
 mods.recipestages.Recipes.setPackageStage("com.jaquadro.minecraft.storagedrawers", StageNames);
 
+//mods.recipestages.Recipes.setPrintContainers(true);
+
+
+
+//ugly fix, cause the materialchange function doesn't want to work with it.
+mods.ItemStages.removeItemStage(<pyrotech:material:28>);
+mods.ItemStages.addItemStage("metal_1", <pyrotech:material:28>);
 
 
 /*

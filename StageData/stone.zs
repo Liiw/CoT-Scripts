@@ -27,13 +27,14 @@ static mods as string[][int] = {
         //"primal_tech"
     ],
     3 : [],
-    4 : []
+    4 : ["solcarrot"]
 };
 
 static items as IItemStack[][int] = {
     1 : [   
         //Pyrotech ROCK NADA
             <pyrotech:rock>,
+            
 
         //Harvestcraft    
             <harvestcraft:pamcinnamon>,
@@ -42,6 +43,26 @@ static items as IItemStack[][int] = {
             //<thaumcraft:log_greatwood>,
             //<thaumcraft:log_silverwood>,
         //Minecraft
+
+            <minecraft:stone>,
+            <minecraft:stone:1>,
+            <minecraft:stone:2>,
+            <minecraft:stone:3>,
+            <minecraft:stone:4>,
+            <minecraft:stone:5>,
+            <minecraft:stone:6>,
+
+            <minecraft:sandstone>,
+            <minecraft:sandstone:1>,
+            <minecraft:sandstone:2>,
+
+            <minecraft:red_sandstone>,
+            <minecraft:red_sandstone:1>,
+            <minecraft:red_sandstone:2>,
+            <minecraft:cobblestone>,
+            <minecraft:mossy_cobblestone>,
+
+
             <minecraft:gravel>,
             <minecraft:stick>,
             <minecraft:flint>,
@@ -70,6 +91,9 @@ static items as IItemStack[][int] = {
             <minecraft:dirt:1>,
             <minecraft:dirt:2>,
             <minecraft:grass>,
+
+            <minecraft:sand>,
+            <minecraft:sand:1>,
        
             
         //Struxturize
@@ -94,15 +118,14 @@ static items as IItemStack[][int] = {
             <minecraft:brown_mushroom>,
             <minecraft:brown_mushroom_block>,
             <minecraft:cactus>,
-            <minecraft:clay>,
-            <minecraft:clay_ball>,
+
             <minecraft:clownfish>,
 
             
             
 
 
-            <minecraft:cobblestone>,
+            
             <minecraft:cobblestone_wall>,
             <minecraft:cobblestone_wall:1>,
             <minecraft:cod>,
@@ -171,7 +194,7 @@ static items as IItemStack[][int] = {
             <minecraft:leaves2>,
             <minecraft:leaves2:1>,
             
-            <minecraft:mossy_cobblestone>,
+           
             <minecraft:mycelium>,
             <minecraft:packed_ice>,
             
@@ -185,15 +208,10 @@ static items as IItemStack[][int] = {
             <minecraft:red_flower:6>,
             <minecraft:red_flower:7>,
             <minecraft:red_flower:8>,
-            <minecraft:red_sandstone>,
-            <minecraft:red_sandstone:1>,
-            <minecraft:red_sandstone:2>,
+ 
             <minecraft:red_sandstone_stairs>,
-            <minecraft:sand>,
-            <minecraft:sand:1>,
-            <minecraft:sandstone>,
-            <minecraft:sandstone:1>,
-            <minecraft:sandstone:2>,
+
+            
             <minecraft:skull>,
             <minecraft:skull:1>,
             <minecraft:skull:2>,
@@ -224,13 +242,7 @@ static items as IItemStack[][int] = {
             <minecraft:stained_hardened_clay:14>,
             <minecraft:stained_hardened_clay:15>,
             
-            <minecraft:stone>,
-            <minecraft:stone:1>,
-            <minecraft:stone:2>,
-            <minecraft:stone:3>,
-            <minecraft:stone:4>,
-            <minecraft:stone:5>,
-            <minecraft:stone:6>,
+            
             <minecraft:stone_axe>,
             <minecraft:stone_axe:*>,
             <minecraft:stone_hoe>,
@@ -259,12 +271,7 @@ static items as IItemStack[][int] = {
             <minecraft:waterlily>,
             <minecraft:web>,
             
-            <minecraft:wooden_slab>,
-            <minecraft:wooden_slab:1>,
-            <minecraft:wooden_slab:2>,
-            <minecraft:wooden_slab:3>,
-            <minecraft:wooden_slab:4>,
-            <minecraft:wooden_slab:5>,
+            
             
             <minecraft:wool>,
             <minecraft:wool:1>,
@@ -295,14 +302,14 @@ static items as IItemStack[][int] = {
 
             <pyrotech:bone_axe>,
             <pyrotech:bone_hoe>,
-            <pyrotech:bone_pickaxe>,
+            
             <pyrotech:bone_shovel>,
             <pyrotech:bone_sword>,
 
             <pyrotech:material:16>,
             <pyrotech:bucket_stone>,
             <pyrotech:bag_simple>,
-            <pyrotech:stone_door>,
+            
             <pyrotech:material:27>,
             <pyrotech:fossil_ore>,
 
@@ -338,19 +345,31 @@ static items as IItemStack[][int] = {
     3 : [
         //Minecraft
             <minecraft:bow>,
+            <minecraft:wooden_door>,
+            <minecraft:spruce_door>,
+            <minecraft:birch_door>,
+            <minecraft:jungle_door>,
+            <minecraft:dark_oak_door>,
+
+            <minecraft:stonebrick>,
+            <minecraft:stonebrick:1>,
+            <minecraft:stonebrick:2>,
+            <minecraft:stonebrick:3>,
 
         //Pyrotech
             <pyrotech:bow_drill>,
             <pyrotech:stone_kiln>,
             <pyrotech:stone_oven>,
             <pyrotech:stone_sawmill>,
+            <pyrotech:stone_door>,
             
             <pyrotech:faucet_stone>,
 
             <pyrotech:sawmill_blade_stone>,
             <pyrotech:sawmill_blade_flint>,
             <pyrotech:sawmill_blade_bone>,
-            
+            <pyrotech:material:20>,
+
             <pyrotech:flint_axe>,
             <pyrotech:flint_hoe>,
             <pyrotech:flint_pickaxe>,
@@ -361,7 +380,7 @@ static items as IItemStack[][int] = {
             <pyrotech:stone_shears>,
             <pyrotech:flint_shears>,
             <pyrotech:bone_shears>,
-
+            <pyrotech:bone_pickaxe>,
             <pyrotech:stone_hammer>,
             <pyrotech:bone_hammer>,
             <pyrotech:flint_hammer>
@@ -387,6 +406,7 @@ static items as IItemStack[][int] = {
             <minecraft:dye:4>,
             <minecraft:coal>,
             //<minecraft:coal:1>
+            <minecraft:paper>,
 
         //Pyrotech
             <pyrotech:tar_collector:1>,
@@ -408,10 +428,13 @@ static items as IItemStack[][int] = {
             <forge:bucketfilled>.withTag({FluidName: "coal_tar", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "wood_tar", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "liquid_clay", Amount: 1000}),
+            //Pulp
+            <pyrotech:material:25>,
 
             <pyrotech:dense_coal_ore>,
 
             <pyrotech:soaking_pot>,
+            <pyrotech:stone_bricks>,
 
             <pyrotech:stone_crucible>,
     ],
@@ -419,6 +442,7 @@ static items as IItemStack[][int] = {
     11: [//"stone_Fire" - after getting flint and tinder
         <pyrotech:kiln_pit>,
         <pyrotech:drying_rack:1>,
+        
         <pyrotech:bucket_clay>,
         <pyrotech:bucket_clay_unfired>,
         <pyrotech:torch_fiber>,
@@ -438,6 +462,18 @@ static items as IItemStack[][int] = {
         <pyrotech:mushroom_red_roasted>,
         <pyrotech:beetroot_roasted>,
         <pyrotech:burned_food>,
+        
+        //Minecraft
+        <minecraft:book>,
+        <minecraft:wooden_slab>,
+        <minecraft:wooden_slab:1>,
+        <minecraft:wooden_slab:2>,
+        <minecraft:wooden_slab:3>,
+        <minecraft:wooden_slab:4>,
+        <minecraft:wooden_slab:5>,
+
+        <minecraft:clay>,
+        <minecraft:clay_ball>,
         
     ] 
 };
@@ -464,7 +500,7 @@ static liquids as ILiquidStack[][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {
+    11: {
         <minecraft:stone>:[<pyrotech:fossil_ore>],},
     2: {},
     3: {
@@ -551,6 +587,10 @@ static recipeCategories as string [][int] = {
     11:[
         //"primal_tech.stone_grill_recipes",
         //"primal_tech.stone_anvil_recipes"
+        //"pyrotech:tech/basic/worktable",
+        //"pyrotech:tech/basic/tinder",
+        //"CoT_pyrotech_worktable"
+
         
     ]
 };

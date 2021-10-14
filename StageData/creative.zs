@@ -35,7 +35,7 @@ static items as IItemStack [][int]  = {
             <simpledifficulty:ice_boots>,
 
         //Some flour
-            //<enderio:item_material:21>,
+           // <enderio:item_material:21>,
             <appliedenergistics2:material:4>,
 
         //MOarboats
@@ -212,7 +212,7 @@ static items as IItemStack [][int]  = {
             <thermalexpansion:capacitor:32000>.withTag({Energy: 25000000}),
             <thermalexpansion:reservoir:32000>.withTag({}),
             <thermalexpansion:satchel:32000>.withTag({Accessible: 1 as byte}),
-            /*<thermalfoundation:material:1024>,
+            <thermalfoundation:material:1024>,
             <thermalfoundation:material:1025>,
             <thermalfoundation:material:1026>,
             <thermalfoundation:material:1027>,
@@ -350,7 +350,7 @@ static items as IItemStack [][int]  = {
             <forge:bucketfilled>.withTag({FluidName: "cryotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "aerotheum", Amount: 1000}),
             <forge:bucketfilled>.withTag({FluidName: "petrotheum", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),*/
+            <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
 
         //Medieval C-mode
             //<thaumcraft:creative_flux_sponge>,
@@ -441,7 +441,9 @@ static liquids as ILiquidStack [][int] = {
 
 static ores as IIngredient[][IItemStack][int] = 
 {
-    1: {<minecraft:stone>:[<geolosys:ore:10>]},
+    1: {
+        //<minecraft:stone>:[<geolosys:ore:10>]
+        },
     2: {}
 };
 

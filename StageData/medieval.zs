@@ -23,7 +23,7 @@ static mods as string[][int] = {
         "torchlever",
         "openglider", 
         "ironchest",
-        "solcarrot",
+        
         "opframe",
         "mcjtylib_ng",
         "farmingforblockheads",
@@ -201,7 +201,7 @@ static items as IItemStack [][int] = {
             <minecraft:blaze_rod>,
             <minecraft:blue_glazed_terracotta>,
            
-            <minecraft:book>,
+            
             <minecraft:bookshelf>,
             
             <minecraft:brewing_stand>,
@@ -786,7 +786,7 @@ static items as IItemStack [][int] = {
         <malisisdoors:wood_sliding_door>,
         <malisisdoors:iron_sliding_door>,
 
-        <thermalfoundation:material:772>,
+        //<thermalfoundation:material:772>,
 
         //Pyrotech
             <pyrotech:generated_slag_silver>,

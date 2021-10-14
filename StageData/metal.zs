@@ -81,6 +81,7 @@ static items as IItemStack [][int]  = {
             <pyrotech:marshmallow_burned>,
             <pyrotech:material:32>,
             <pyrotech:stone_tank>,
+            
 
             <pyrotech:generated_slag_copper>,
             <pyrotech:generated_pile_slag_copper>,
@@ -97,7 +98,9 @@ static items as IItemStack [][int]  = {
             
 
         //Agricraft
-           
+
+        //Serene seasons
+            <sereneseasons:greenhouse_glass>,   
 
         //Harvestcraft
             
@@ -112,21 +115,14 @@ static items as IItemStack [][int]  = {
             <minecraft:torch>,
             <minecraft:name_tag>,
             <minecraft:saddle>,
-            <minecraft:stonebrick>,
-            <minecraft:stonebrick:1>,
-            <minecraft:stonebrick:2>,
-            <minecraft:stonebrick:3>,
+            
             <minecraft:brick>,
             <minecraft:brick_block>,
             <minecraft:brick_stairs>,
             
             <minecraft:furnace>,
             
-            <minecraft:wooden_door>,
-            <minecraft:spruce_door>,
-            <minecraft:birch_door>,
-            <minecraft:jungle_door>,
-            <minecraft:dark_oak_door>,
+            
 
            
             <minecraft:beetroot_seeds>,
@@ -370,7 +366,7 @@ static items as IItemStack [][int]  = {
         //Pyrotech
             <pyrotech:anvil_iron_plated>,
             <pyrotech:bag_durable>,
-            <pyrotech:material:25>,
+            
 
         //Malisisdoors
             <malisisdoors:curtain_white>,
@@ -562,7 +558,7 @@ static items as IItemStack [][int]  = {
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:orchid_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:sugarcane_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:brown_mushroom_plant", agri_growth: 1 as byte}),
-            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:lapender_plant", agri_growth: 1 as byte}),
+            <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:lapS_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:white_tulip_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "vanilla:orange_tulip_plant", agri_growth: 1 as byte}),
             <agricraft:agri_seed>.withTag({agri_analyzed: 0 as byte, agri_strength: 1 as byte, agri_gain: 1 as byte, agri_seed: "resource:plombean_plant", agri_growth: 1 as byte}),
@@ -724,7 +720,7 @@ static items as IItemStack [][int]  = {
             
             <minecraft:oak_stairs>,
             <minecraft:painting>,
-            <minecraft:paper>,
+            
             
             <minecraft:sandstone_stairs>,
             <minecraft:shears>,

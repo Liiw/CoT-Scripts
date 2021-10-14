@@ -7,6 +7,8 @@ var magma = <minecraft:magma>;
 var magmaChunk = <simpledifficulty:magma_chunk>;
 var ice = <minecraft:ice>;
 var iceChunk = <simpledifficulty:ice_chunk>;
+var oreLimestone = <ore:stoneLimestone>;
+var cobbledLimestone = <pyrotech:cobblestone:3>;
 
 
 
@@ -31,7 +33,18 @@ mods.pyrotech.GraniteAnvil.addRecipe(
   true // true if the recipe should be inherited
 );
 
+mods.pyrotech.GraniteAnvil.addRecipe(
+  "chiselLimestone",                // unique recipe name
+  cobbledLimestone*1,          // recipe output
+  oreLimestone,          // recipe input
+  8,                   // base number of hammer hits required
+  "hammer",                // hammer | pickaxe
+  true // true if the recipe should be inherited
+);
 
+
+
+mods.pyrotech.Worktable.setGameStages(Stages.and(["stone_fire"]));
 mods.pyrotech.PitKiln.setGameStages(Stages.and(["stone_fire"]));
 mods.pyrotech.Campfire.setGameStages(Stages.and(["stone_fire"]));
 
@@ -100,3 +113,10 @@ mods.pyrotech.MechanicalMulcher.setGameStages(Stages.and(["metal_3"]));
 
 mods.pyrotech.IroncladAnvil.setGameStages(Stages.and(["metal_4"]));
 mods.pyrotech.DurableRockBag.setGameStages(Stages.and(["metal_4"]));
+
+
+//Re-add recipes
+
+//worktable
+//recipes.remove(<pyrotech:worktable>);
+//recipes.addShapeless("CoT_pyrotech_worktable",<pyrotech:worktable>,[<ore:slabWood>,<ore:allLogs>]);

@@ -206,14 +206,14 @@ static items as IItemStack [][int] = {
         //The One Probe
             //<theoneprobe:probe_goggles>,
         //Coke
-            <thermalfoundation:material:802>,
+            //<thermalfoundation:material:802>,
 
         //HorseArmor
-            <thermalfoundation:horse_armor_aluminum>,
+            /*<thermalfoundation:horse_armor_aluminum>,
             <thermalfoundation:horse_armor_nickel>,
             <thermalfoundation:horse_armor_electrum>,
             <thermalfoundation:horse_armor_invar>,
-            <thermalfoundation:horse_armor_constantan>,
+            <thermalfoundation:horse_armor_constantan>,*/
 
         //fancy item frame
             <tconstruct:fancy_frame:3>
@@ -372,13 +372,13 @@ static ores as IIngredient[][IItemStack][int] =
     1: {<minecraft:stone>:
         [
             <geolosys:ore:7>,
-            <geolosys:ore:10>
+            //<geolosys:ore:10>
         ],
 
         <pyrotech:rock>:
         [
             <geolosys:ore_sample:7>,
-            <geolosys:ore_sample:10>
+            //<geolosys:ore_sample:10>
         ],
 
         <minecraft:netherrack> : [
@@ -483,9 +483,9 @@ static mobs as string [][int] = {
         "minecraft:silverfish",
 
         //TE 
-        "thermalfoundation:basalz",
+        /*"thermalfoundation:basalz",
         "thermalfoundation:blitz",
-        "thermalfoundation:blizz"
+        "thermalfoundation:blizz"*/
     ]
 };
 

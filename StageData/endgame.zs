@@ -29,7 +29,7 @@ static items as IItemStack [][int]  = {
     1 : [
         //MAlisisdoors
             <malisisdoors:forcefielditem>,
-            <guideapi:woot-guide>,
+            //<guideapi:woot-guide>,
         //AE2Stuff
             /*<ae2stuff:wireless>,
             <ae2stuff:wireless_kit>,
